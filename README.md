@@ -45,6 +45,7 @@ CF 分目测评估：
 #702. [Search in a Sorted Array of Unknown Size (M-) 1200](./code/702.txt) <br />
 #1167. [Minimum Cost to Connect Sticks(M-) 1400](./code/1167.txt) <br />
 #1183. [Maximum Number of Ones(H) 1800](./code/1183.txt) <br />
+#1216. [Valid Palindrome III (H-) 1700  (区间dp)](./code/1216.txt) <br />
 #1243. [Array Transformation (E) 900](./code/1243.txt) <br />
 #1244. [Design A Leaderboard(M-) 1200](./code/1244.txt) <br />
 #1246. [Palindrome Removal(H) 1800 (区间dp)](./code/1246.txt) <br />
