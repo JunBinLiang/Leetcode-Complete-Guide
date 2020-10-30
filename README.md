@@ -33,6 +33,7 @@ CF 分目测评估：
 #252. [Meeting Rooms (E) 900](./code/252.txt) <br />
 #253. [Meeting Rooms (M) 1500](./code/253.txt) <br />
 #276. [Paint Fence (E+) 1200](./code/276.txt) <br />
+#293. [Flip Game (E) 800](./code/293.txt) <br />
 #296. [Best Meeting Point (H-) 1700](./code/296.txt) <br />
 #360. [Sort Transformed Array (E) 1000](./code/360.txt) <br />
 #370. [Range Addition(M) 1500](./code/370.txt) <br />
