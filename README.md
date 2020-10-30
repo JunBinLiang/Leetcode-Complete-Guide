@@ -45,6 +45,7 @@ CF 分目测评估：
 #1244. [Design A Leaderboard(M-) 1200](./code/1244.txt) <br />
 #1246. [Palindrome Removal(H) 1800 (区间dp)](./code/1246.txt) <br />
 #1469. [Find All The Lonely Nodes(E) 900](./code/1469.txt) <br />
+#1506. [Find Root of N-Ary Tree(M-) 1300](./code/1506.txt) <br />
 #1554. [Strings Differ by One Character(M-) 1400](./code/1554.txt) <br />
 #1570. [Dot Product of Two Sparse Vectors(M-) 1200](./code/1570.txt) <br />
 #1602. [Find Nearest Right Node in Binary Tree (M-) 1300](./code/1602.txt) <br />
