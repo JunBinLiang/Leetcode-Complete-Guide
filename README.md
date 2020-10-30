@@ -39,6 +39,7 @@ CF 分目测评估：
 #644. [Maximum Average Subarray II (H) 1800](./code/644.txt) <br />
 #651. [4 Keys Keyboard (M+) 1600](./code/651.txt) <br />
 #1183. [Maximum Number of Ones(H) 1800](./code/1183.txt) <br />
+#1243. [Array Transformation (E) 900](./code/1243.txt) <br />
 #1244. [Design A Leaderboard(M-) 1200](./code/1244.txt) <br />
 #1246. [Palindrome Removal(H) 1800 (区间dp)](./code/1246.txt) <br />
 #1469. [Find All The Lonely Nodes(E) 900](./code/1469.txt) <br />
