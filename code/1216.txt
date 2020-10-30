@@ -1,0 +1,49 @@
+1. navive:n^2k
+2.转化成n^2
+3.可以找最小变成palindorm 的cost，看看它是不是<=k
+
+
+Given a string s and an integer k, find out if the given string is a K-Palindrome or not.
+
+A string is K-Palindrome if it can be transformed into a palindrome by removing at most k characters from it.
+
+ 
+
+Example 1:
+
+Input: s = "abcdeca", k = 2
+Output: true
+Explanation: Remove 'b' and 'e' characters.
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s has only lowercase English letters.
+1 <= k <= s.length
+
+
+
+代码：
+
+class Solution {
+public:
+    int dp[1000][1000];
+    bool isValidPalindrome(string s, int k) {
+        memset(dp,-1,sizeof(dp));
+        return dfs(s,0,s.size()-1)<=k;
+    }
+    
+    int dfs(string&s,int l,int r){
+        if(l>=r)return 0;
+        if(dp[l][r]!=-1)return dp[l][r];
+        int res=INT_MAX;
+        
+        if(s[l]==s[r])res=min(res,dfs(s,l+1,r-1));
+        
+        res=min(res,1+dfs(s,l+1,r));
+        res=min(res,1+dfs(s,l,r-1));
+        dp[l][r]=res;
+        return res;
+    }
+};
