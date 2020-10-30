@@ -38,6 +38,7 @@ CF 分目测评估：
 #582. [Kill Process (M-) 1400](./code/582.txt) <br />
 #644. [Maximum Average Subarray II (H) 1800](./code/644.txt) <br />
 #651. [4 Keys Keyboard (M+) 1600](./code/651.txt) <br />
+#702. [Search in a Sorted Array of Unknown Size (M-) 1200](./code/702.txt) <br />
 #1183. [Maximum Number of Ones(H) 1800](./code/1183.txt) <br />
 #1243. [Array Transformation (E) 900](./code/1243.txt) <br />
 #1244. [Design A Leaderboard(M-) 1200](./code/1244.txt) <br />
