@@ -38,6 +38,7 @@ CF 分目测评估：
 #582. [Kill Process (M-) 1400](./code/582.txt) <br />
 #644. [Maximum Average Subarray II (H) 1800](./code/644.txt) <br />
 #651. [4 Keys Keyboard (M+) 1600](./code/651.txt) <br />
+#1183. [Maximum Number of Ones(H) 1800](./code/1183.txt) <br />
 #1469. [Find All The Lonely Nodes(E) 900](./code/1469.txt) <br />
 #1554. [Strings Differ by One Character(M-) 1400](./code/1554.txt) <br />
 #1570. [Dot Product of Two Sparse Vectors(M-) 1200](./code/1570.txt) <br />
