@@ -38,6 +38,7 @@ CF 分目测评估：
 #582. [Kill Process (M-) 1400](./code/582.txt) <br />
 #644. [Maximum Average Subarray II (H) 1800](./code/644.txt) <br />
 #651. [4 Keys Keyboard (M+) 1600](./code/651.txt) <br />
+#683. [ K Empty Slots (H--) 1500](./code/683.txt) <br />
 #702. [Search in a Sorted Array of Unknown Size (M-) 1200](./code/702.txt) <br />
 #1167. [Minimum Cost to Connect Sticks(M-) 1400](./code/1167.txt) <br />
 #1183. [Maximum Number of Ones(H) 1800](./code/1183.txt) <br />
