@@ -556,6 +556,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #607. [Sales Person (E)](./sql/607.txt) <br />
 #620. [Not Boring Movie (E)](./sql/620.txt) <br />
 #1082. [Sales Analysis I (E)](./sql/1082.txt) <br />
+#1303. [Find the Team Size (E)](./sql/1303.txt) <br />
 #1565. [Unique Orders and Customers Per Month (E)](./sql/1565.txt) <br />
 
 
