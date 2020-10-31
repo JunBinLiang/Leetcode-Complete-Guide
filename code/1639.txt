@@ -1,0 +1,77 @@
+class Solution {
+    int mod=1000000007;
+    char A[][];
+    int cnt[][];
+    String t;
+    long dp[][];
+    public int numWays(String[] words, String target) {
+        this.t=target;
+        A=new char[words.length][words[0].length()];
+        for(int i=0;i<A.length;i++){
+            for(int j=0;j<A[0].length;j++){
+                A[i][j]=words[i].charAt(j);
+            }
+        }
+        
+        cnt=new int[A[0].length][26];
+        dp=new long[A[0].length+1][t.length()];
+        
+        for(int i=0;i<dp.length;i++){
+            Arrays.fill(dp[i],-1);
+        }
+        
+        for(int c=0;c<A[0].length;c++){
+            for(int r=0;r<A.length;r++){
+                cnt[c][A[r][c]-'a']++;
+            }
+        }
+        
+        long res=dfs(0,0);
+        
+        return (int)(res);
+    }
+    
+    
+    public long dfs(int cindex,int tindex){
+        if(tindex>=t.length())return 1;
+        if(cindex>=A[0].length)return 0;
+        if(dp[cindex][tindex]!=-1)return dp[cindex][tindex];
+        char c=t.charAt(tindex);
+        int fre=cnt[cindex][c-'a'];
+        
+        long res=0;
+        //use or not use
+        
+        res=res+fre*dfs(cindex+1,tindex+1);
+        res%=mod;
+        res+=dfs(cindex+1,tindex);
+        res%=mod;
+        dp[cindex][tindex]=res;
+        //msg(cindex+"  "+tindex+"  "+res);
+        return res;
+    }
+    
+    public void msg(String s){
+		System.out.println(s);
+	}
+    
+    public void print1(int A[]){
+		for(long i:A)System.out.print(i+"  ");
+		System.out.println();
+	}
+	public void print2(int A[][]){
+		for(int i=0;i<A.length;i++){
+			for(int j=0;j<A[0].length;j++){
+				System.out.print(A[i][j]+"   ");
+			}System.out.println();
+		}
+	}
+}
+
+
+
+
+
+
+
+
