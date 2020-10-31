@@ -245,6 +245,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 
 ---
 ### Binary Search
+#34. [Find First and Last Position of Element in Sorted Array (M-) 1300](./code/34.txt) <br />
 #35. [Search Insert Position (E) 1000](./code/35.txt) <br />
 #69. [Sqrt(x) (E+) 1100](./code/69.txt) <br />
 #153. [Find Minimum in Rotated Sorted Array (M+) 1600](./code/153.txt) <br />
