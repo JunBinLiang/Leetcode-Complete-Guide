@@ -33,6 +33,7 @@ CF 分目测评估：
 #250. [Count Univalue Subtrees (M-) 1300](./code/250.txt) <br />
 #252. [Meeting Rooms (E) 900](./code/252.txt) <br />
 #253. [Meeting RoomsII (M) 1500](./code/253.txt) <br />
+#256. [Paint House (M-) 1400](./code/256.txt) <br />
 #266. [Palindrome Permutation(E) 900](./code/266.txt) <br />
 #267. [Palindrome Permutation II(M) 1500](./code/267.txt) <br />
 #276. [Paint Fence (E+) 1200](./code/276.txt) <br />
