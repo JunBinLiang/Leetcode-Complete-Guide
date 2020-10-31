@@ -1,0 +1,218 @@
+1.backtrack 就行
+2.backtrack时可以trie 优化，因为需要前缀
+
+
+Given a set of words (without duplicates), find all word squares you can build from them.
+
+A sequence of words forms a valid word square if the kth row and column read the exact same string, where 0 ≤ k < max(numRows, numColumns).
+
+For example, the word sequence ["ball","area","lead","lady"] forms a word square because each word reads the same both horizontally and vertically.
+
+b a l l
+a r e a
+l e a d
+l a d y
+Note:
+There are at least 1 and at most 1000 words.
+All words will have the exact same length.
+Word length is at least 1 and at most 5.
+Each word contains only lowercase English alphabet a-z.
+Example 1:
+
+Input:
+["area","lead","wall","lady","ball"]
+
+Output:
+[
+  [ "wall",
+    "area",
+    "lead",
+    "lady"
+  ],
+  [ "ball",
+    "area",
+    "lead",
+    "lady"
+  ]
+]
+
+Explanation:
+The output consists of two word squares. The order of output does not matter (just the order of words in each word square matters).
+Example 2:
+
+Input:
+["abat","baba","atan","atal"]
+
+Output:
+[
+  [ "baba",
+    "abat",
+    "baba",
+    "atan"
+  ],
+  [ "baba",
+    "abat",
+    "baba",
+    "atal"
+  ]
+]
+
+Explanation:
+The output consists of two word squares. The order of output does not matter (just the order of words in each word square matters).
+
+
+
+
+
+
+class Solution {
+    Node trie[]=new Node[26];
+    int n;
+    List<List<String>>res=new ArrayList<>();
+    public List<List<String>> wordSquares(String[] words) {
+        n=words[0].length();//n*n square
+        for(String w:words){
+            insert(trie,w,0);
+        }
+        
+        List<String>cur=new ArrayList<>();
+        for(String w:words){
+            cur.add(w);
+            dfs(cur);
+            cur.remove(cur.size()-1);
+        }
+        return res;
+    }
+    
+
+    public void dfs(List<String>cur){
+        if(cur.size()>=n){
+            res.add(new ArrayList<>(cur));
+            return;
+        }
+        
+        StringBuilder str=new StringBuilder();
+        int size=cur.size();
+        for(int i=0;i<size;i++){
+            str.append(cur.get(i).charAt(size));
+        }
+        
+        List<String>all=new ArrayList<>();
+        search(trie,str.toString(),0,all);
+        
+        for(String w:all){
+            cur.add(w);
+            dfs(cur);
+            cur.remove(cur.size()-1);
+        }
+    }
+    
+    
+    public void search(Node trie[],String w,int index,List<String>list){
+        if(index>=w.length())return;
+        int c=w.charAt(index)-'a';
+        if(trie[c]==null){
+            return;
+        }else{
+            search(trie[c].next,w,index+1,list);
+        }
+        if(index==w.length()-1){
+            list.addAll(trie[c].list);
+        }
+    }
+    
+    
+    public void insert(Node trie[],String w,int index){
+        if(index>=w.length())return;
+        int c=w.charAt(index)-'a';
+        if(trie[c]==null){
+            trie[c]=new Node();
+            insert(trie[c].next,w,index+1);
+        }else{
+            insert(trie[c].next,w,index+1);
+        }
+        trie[c].list.add(w);
+    }
+    
+    class Node{
+        Node next[]=new Node[26];
+        List<String>list=new ArrayList<>();
+    }
+}
+
+
+
+class Solution {
+    Node trie[]=new Node[26];
+    int n;
+    List<List<String>>res=new ArrayList<>();
+    public List<List<String>> wordSquares(String[] words) {
+        n=words[0].length();//n*n square
+        for(String w:words){
+            insert(trie,w,0);
+        }
+        
+        List<String>cur=new ArrayList<>();
+        for(String w:words){
+            cur.add(w);
+            dfs(cur);
+            cur.remove(cur.size()-1);
+        }
+        return res;
+    }
+    
+
+    public void dfs(List<String>cur){
+        if(cur.size()>=n){
+            res.add(new ArrayList<>(cur));
+            return;
+        }
+        
+        StringBuilder str=new StringBuilder();
+        int size=cur.size();
+        for(int i=0;i<size;i++){
+            str.append(cur.get(i).charAt(size));
+        }
+        
+        List<String>all=new ArrayList<>();
+        search(trie,str.toString(),0,all);
+        
+        for(String w:all){
+            cur.add(w);
+            dfs(cur);
+            cur.remove(cur.size()-1);
+        }
+    }
+    
+    
+    public void search(Node trie[],String w,int index,List<String>list){
+        if(index>=w.length())return;
+        int c=w.charAt(index)-'a';
+        if(trie[c]==null){
+            return;
+        }else{
+            search(trie[c].next,w,index+1,list);
+        }
+        if(index==w.length()-1){
+            list.addAll(trie[c].list);
+        }
+    }
+    
+    
+    public void insert(Node trie[],String w,int index){
+        if(index>=w.length())return;
+        int c=w.charAt(index)-'a';
+        if(trie[c]==null){
+            trie[c]=new Node();
+            insert(trie[c].next,w,index+1);
+        }else{
+            insert(trie[c].next,w,index+1);
+        }
+        trie[c].list.add(w);
+    }
+    
+    class Node{
+        Node next[]=new Node[26];
+        List<String>list=new ArrayList<>();
+    }
+}
