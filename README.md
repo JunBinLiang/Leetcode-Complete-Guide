@@ -372,6 +372,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1563. [Number of Ways to Reorder Array to Get Same BST (H) 1900](./code/1569.txt) <br />
 #1575. [Count All Possible Routes (H) 1800](./code/1575.txt) <br />
 #1621. [Number of Sets of K Non-Overlapping Line Segments (M+) 1700](./code/1621.txt) <br />
+#1639. [Number of Ways to Form a Target String Given a Dictionary (H) 1800](./code/1639.txt) <br />
 #LCP10. [二叉树任务调度 (H+) 2200](./code/LCP10.txt) <br />
 #LCP13. [寻宝 (H+) 2100](./code/LCP13.txt) <br />
 #LCP14. [切分数组 (H+) 2200](./code/LCP14.txt) <br />
