@@ -32,7 +32,8 @@ CF 分目测评估：
 ### Premium
 #250. [Count Univalue Subtrees (M-) 1300](./code/250.txt) <br />
 #252. [Meeting Rooms (E) 900](./code/252.txt) <br />
-#253. [Meeting Rooms (M) 1500](./code/253.txt) <br />
+#253. [Meeting RoomsII (M) 1500](./code/253.txt) <br />
+#266. [Palindrome Permutation(E) 900](./code/266.txt) <br />
 #276. [Paint Fence (E+) 1200](./code/276.txt) <br />
 #293. [Flip Game (E) 800](./code/293.txt) <br />
 #294. [Flip Game II(M) 1500  (MIN_MAX)](./code/294.txt) <br />
