@@ -1,0 +1,75 @@
+Given a string s, return all the palindromic permutations (without duplicates) of it. Return an empty list if no palindromic permutation could be form.
+
+Example 1:
+
+Input: "aabb"
+Output: ["abba", "baab"]
+Example 2:
+
+Input: "abc"
+Output: []
+
+
+
+
+class Solution {
+public:
+    vector<string>res;
+    int t[256];
+    vector<char>A;
+    vector<char>B;
+    int n;
+    int size=0;
+    unordered_set<string>hash;
+    vector<string> generatePalindromes(string s) {
+        int cnt=0;
+        memset(t,0,sizeof(t));
+        for(char &c:s){
+            t[c]++;
+        }
+        for(int i=0;i<256;i++){
+            if(t[i]%2==1){
+                cnt++;
+                B.push_back((char)(i));
+                t[i]--;
+            }
+            t[i]/=2;
+            size+=t[i];
+            if(t[i]!=0)A.push_back((char)(i));
+        }
+        if(cnt>1)return res;
+        string cur="";
+        dfs(cur);
+        return res;
+    }
+    
+    void dfs(string cur){
+        if(cur.size()==size){
+            string a=cur;
+            string b=cur;
+            reverse(b.begin(),b.end());
+            string s=a;
+            if(B.size()!=0){
+                s.push_back(B[0]);
+            }
+            s=s+b;
+            if(hash.find(s)==hash.end()){
+                res.push_back(s);
+                hash.insert(s);
+            }
+            return;
+        }
+        
+        for(int i=0;i<A.size();i++){
+            char c=A[i];
+            if(t[c]!=0){
+                cur.push_back(c);
+                t[c]--;
+                dfs(cur);
+                cur.pop_back();
+                t[c]++;
+            }
+        }
+    }
+    
+};
