@@ -40,6 +40,7 @@ CF 分目测评估：
 #360. [Sort Transformed Array (E) 1000](./code/360.txt) <br />
 #370. [Range Addition(M) 1500](./code/370.txt) <br />
 #422. [Valid Word Square(E) 1000](./code/422.txt) <br />
+#425. [Word Squares(H) 1800](./code/425.txt) <br />
 #582. [Kill Process (M-) 1400](./code/582.txt) <br />
 #644. [Maximum Average Subarray II (H) 1800](./code/644.txt) <br />
 #651. [4 Keys Keyboard (M+) 1600](./code/651.txt) <br />
