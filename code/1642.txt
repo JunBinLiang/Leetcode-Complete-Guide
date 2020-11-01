@@ -1,0 +1,42 @@
+class Solution {
+    public int furthestBuilding(int[] A, int bricks, int ladders) {
+        int res=0;
+        PriorityQueue<Integer>pq=new PriorityQueue<>((a,b)->{
+            return b-a;
+        });//max heap
+        int dis[]=new int[A.length];
+        for(int i=1;i<A.length;i++){
+            dis[i]=A[i]-A[i-1];
+            if(dis[i]<0)dis[i]=0;
+        }
+
+        for(int i=0;i<dis.length;i++){
+            if(dis[i]==0){
+                res=i;
+                continue;
+            }
+            if(bricks<dis[i]&&ladders==0)break;//can not
+            
+            
+            if(bricks>=dis[i]){
+                pq.add(dis[i]);
+                bricks-=dis[i];
+            }
+            else{//max change to ladder
+                int cur=dis[i];
+                pq.add(cur);
+                int max=pq.poll();
+                ladders--;
+                bricks-=cur;
+                bricks+=max;
+            }
+            res=i;
+        }\  
+        return res;
+    }
+    
+    public void print1(int A[]){
+		for(long i:A)System.out.print(i+"  ");
+		System.out.println();
+	}
+}
