@@ -213,6 +213,7 @@ Note: LinkedList can be used as stack or queue or deque<br/><br/>
 #1591.[Strange Printer II  (H) 1800](./code/1591.txt) <br />
 #1605.[Find Valid Matrix Given Row and Column Sums  (M+) 1700](./code/1605.txt) <br />
 #1632.[Rank Transform of a Matrix (H+) 2000](./code/1632.txt) <br />
+#1642.[Furthest Building You Can Reach (M+) 1600](./code/1642.txt) <br />
 #LCP 06. [拿硬币 (E) 800](./code/LCP06.txt) <br />
 
 ---
