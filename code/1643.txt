@@ -1,0 +1,76 @@
+import java.math.*; 
+class Solution {
+    long mod=1000000007;
+    long fact[]=new long[35];
+    public String kthSmallestPath(int[] A, int k) {
+        //take A[0] H, take A[1] V
+        
+        long n=A[0]+A[1];
+        fact[0]=fact[1]=1;
+        for(int i=2;i<fact.length;i++){
+            fact[i]=i*fact[i-1];
+            fact[i]%=mod;
+        }
+       
+            
+        Queue<Node>q=new LinkedList<>();
+        q.add(new Node("",A[1],A[0],k));
+        
+        while(q.size()!=0){
+            Node node=q.poll();
+            String cur=node.cur;
+            int h=node.h;//remain
+            int v=node.v;//remain
+            long need=node.need;
+            
+            
+            if(need==1&&h==0&&v==0)return cur;
+            if(need<0||h<0||v<0)continue;
+            
+            
+            long useh=0;
+            long usev=0;
+            if(h>0){
+                useh=C1(h+v-1,h-1);
+                
+            }
+            if(v>0){
+                usev=C1(h+v-1,v-1);
+            }
+
+            
+            if(need<=useh){
+                q.add(new Node(cur+"H",h-1,v,need));
+            }else{
+                q.add(new Node(cur+"V",h,v-1,need-useh));
+            }  
+        }
+        
+        
+        return "";
+    }
+    
+    class Node{
+        String cur;
+        int h,v;long need;
+        public Node(String cur,int h,int v,long need){
+            this.cur=cur;
+            this.h=h;
+            this.v=v;
+            this.need=need;
+        }
+    }
+    
+    public long C1(int i,int j){ // C(20,3)=20!/(17!*3!)
+		// take   a/b     where a=20!  b=17!*3!
+		if(j>i)return 0;
+		if(j==0)return 1;
+		long a=fact[i];
+		long b=((fact[i-j]%mod)*(fact[j]%mod))%mod;
+		BigInteger B= BigInteger.valueOf(b);
+		long binverse=B.modInverse(BigInteger.valueOf(mod)).longValue();
+		return ((a)*(binverse%mod))%mod;
+	}
+    
+}
+
