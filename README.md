@@ -1,5 +1,5 @@
- # [想参加每日打卡挑战？ (Leetcode Daily Challange)](https://github.com/JunBinLiang/Leetcode-Complete-Guide/tree/master/challange) <br />
- # [C++ Crash Course](./cpp) <br/><br/>
+ ## [想参加每日打卡挑战？ (Leetcode Daily Challange)](https://github.com/JunBinLiang/Leetcode-Complete-Guide/tree/master/challange) <br />
+ ## [C++ Crash Course](./cpp) <br/><br/>
  
  
  <img src="images/LeetCode_logo.png" width=30% align=right />  
@@ -9,8 +9,7 @@
 题目会有我给予的相对难度评价 :heavy_plus_sign: CF的估测难度对应分数<br>
 
 
-CF 分目测评估：
----
+## CF 分目测评估：
 :green_book: **800-1100** 对应  Easy  **(E)** <br />
 :orange_book: **1200-1700** 对应  Medium  **(M)** <br />
 :closed_book: **1700 - 2100** 对应  Hard  **(H)** <br />
@@ -19,51 +18,39 @@ CF 分目测评估：
 
 
 
+## 程序员面试经典 (Wait for Update...)
+|  #  | Title           |    Difficulty  |
+|-----|---------------- | --------------- | 
+|  1  | [判定字符是否唯一](./interview/01.txt)         | (E) 800  |
+|  2  | [ 判定是否互为字符重排](./interview/02.txt)        |  (E) 800 |
+| 3  | [ URL化 ](./interview/03.txt)     | (E) 800 |
+|  4  | [ 回文排列 ](./interview/04.txt)    |(E) 900|
 
----
-### 程序员面试经典 (Wait for Update...)
-#01. [判定字符是否唯一 (E) 800](./interview/01.txt) <br />
-#02. [ 判定是否互为字符重排 (E) 800](./interview/02.txt) <br />
-#03. [ URL化 (E) 800](./interview/03.txt) <br />
-#04. [ 回文排列 (E) 900](./interview/04.txt) <br />
 
 
----
-### Premium
-#250. [Count Univalue Subtrees (M-) 1300](./code/250.txt) <br />
-#252. [Meeting Rooms (E) 900](./code/252.txt) <br />
-#253. [Meeting RoomsII (M) 1500](./code/253.txt) <br />
-#256. [Paint House (M-) 1400](./code/256.txt) <br />
-#266. [Palindrome Permutation(E) 900](./code/266.txt) <br />
-#267. [Palindrome Permutation II(M) 1500](./code/267.txt) <br />
-#276. [Paint Fence (E+) 1200](./code/276.txt) <br />
-#293. [Flip Game (E) 800](./code/293.txt) <br />
-#294. [Flip Game II(M) 1500  (MIN_MAX)](./code/294.txt) <br />
-#296. [Best Meeting Point (H-) 1700](./code/296.txt) <br />
-#360. [Sort Transformed Array (E) 1000](./code/360.txt) <br />
-#370. [Range Addition(M) 1500](./code/370.txt) <br />
-#422. [Valid Word Square(E) 1000](./code/422.txt) <br />
-#425. [Word Squares(H) 1800](./code/425.txt) <br />
-#582. [Kill Process (M-) 1400](./code/582.txt) <br />
-#644. [Maximum Average Subarray II (H) 1800](./code/644.txt) <br />
-#651. [4 Keys Keyboard (M+) 1600](./code/651.txt) <br />
-#683. [ K Empty Slots (H--) 1500](./code/683.txt) <br />
-#702. [Search in a Sorted Array of Unknown Size (M-) 1200](./code/702.txt) <br />
-#1064. [Fixed Point(E-) 600](./code/1064.txt) <br />
-#1167. [Minimum Cost to Connect Sticks(M-) 1400](./code/1167.txt) <br />
-#1183. [Maximum Number of Ones(H) 1800](./code/1183.txt) <br />
-#1196. [How Many Apples Can You Put into the Basket(E) 800](./code/1196.txt) <br />
-#1216. [Valid Palindrome III (H-) 1700  (区间dp)](./code/1216.txt) <br />
-#1243. [Array Transformation (E) 900](./code/1243.txt) <br />
-#1244. [Design A Leaderboard(M-) 1200](./code/1244.txt) <br />
-#1246. [Palindrome Removal(H) 1800 (区间dp)](./code/1246.txt) <br />
-#1469. [Find All The Lonely Nodes(E) 900](./code/1469.txt) <br />
-#1506. [Find Root of N-Ary Tree(M-) 1300](./code/1506.txt) <br />
-#1554. [Strings Differ by One Character(M-) 1400](./code/1554.txt) <br />
-#1570. [Dot Product of Two Sparse Vectors(M-) 1200](./code/1570.txt) <br />
-#1602. [Find Nearest Right Node in Binary Tree (M-) 1300](./code/1602.txt) <br />
-#1612. [Check If Two Expression Trees are Equivalent (M-) 1300](./code/1612.txt) <br />
-#1634. [ Add Two Polynomials Represented as Linked Lists (M-) 1400](./code/1634.txt) <br />
+
+
+## Premium
+
+|  #  | Title           |    Difficulty  | |  #  | Title           |    Difficulty  |
+|-----|---------------- | --------------- | -----|-----|---------------- | --------------- |
+|  250  |[Count Univalue Subtrees ](./code/250.txt)   | (M-) 1300| |  252  |[Meeting Rooms ](./code/252.txt)  |(E) 900|
+|  253  |[Meeting RoomsII ](./code/253.txt)  | (M) 1500| |  256  | [Paint House](./code/256.txt) |  (M-) 1400|
+|  266  |[Palindrome Permutation](./code/266.txt) | (E) 900| |  267  |[Palindrome Permutation II](./code/267.txt)  | (M) 1500|
+|  293  |[Flip Game ](./code/293.txt) |(E) 800| |  296  |[Best Meeting Point ](./code/296.txt)  |(H-) 1700|
+|  294  |[Flip Game II(MIN_MAX)](./code/294.txt) | (M) 1500  | |  360  |[Sort Transformed Array ](./code/360.txt) |(E) 1000|
+|  370  |[Range Addition](./code/370.txt)| (M) 1500  ||  422  |[Valid Word Square](./code/422.txt)| (E) 1000  |
+|  425  |[Word Squares](./code/425.txt) | (H) 1800  ||  582  |[Kill Process ](./code/582.txt) | (M-) 1400  |
+|  644  |[Maximum Average Subarray II ](./code/644.txt) | (H) 1800 ||  651  |[4 Keys Keyboard](./code/651.txt) | (M+) 1600  |
+|  683  |[ K Empty Slots ](./code/683.txt) | (H--) 1500  ||  702  |[Search in a Sorted Array of Unknown Size ](./code/702.txt)| (M-) 1200  |
+|  1064  |[Fixed Point](./code/1064.txt)| (E-) 600 ||  1167  |[Minimum Cost to Connect Sticks](./code/1167.txt)  | (M-) 1400  |
+|  1183  |[Maximum Number of Ones](./code/1183.txt) |(H) 1800  ||  1196  | [How Many Apples Can You Put into the Basket](./code/1196.txt)  | (E) 800 |
+|  1216  |[Valid Palindrome III (区间dp)](./code/1216.txt)  |  (H-) 1700 ||  1243  |[Array Transformation ](./code/1243.txt) | (E) 900 |
+|  1244  |[Design A Leaderboard](./code/1244.txt)  | (M-) 1200 ||  1246  |[Palindrome Removal (区间dp)](./code/1246.txt) |(H) 1800  |
+|  1469  |[Find All The Lonely Nodes](./code/1469.txt) |(E) 900  ||  1506  |[Find Root of N-Ary Tree](./code/1506.txt) |(M-) 1300  |
+|  1554  |[Strings Differ by One Character](./code/1554.txt) |(M-) 1400  ||  1570  |[Dot Product of Two Sparse Vectors](./code/1570.txt) |(M-) 1200 |
+|  1602  |[Find Nearest Right Node in Binary Tree ](./code/1602.txt) |(M-) 1300 ||  1612  |[Check If Two Expression Trees are Equivalent ](./code/1612.txt) |(M-) 1300  |
+|  1634  |[ Add Two Polynomials Represented as Linked Lists](./code/1634.txt) | (M-) 1400  |
 
 ---
 ### Array
