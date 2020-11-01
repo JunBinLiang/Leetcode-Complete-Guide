@@ -385,6 +385,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #891. [Sum of Subsequence Widths (H) 1800](./code/891.txt) <br />
 #888. [Fair Candy Swap (E) 1000](./code/888.txt) <br />
 #908. [Smallest Range I (E+) 1100](./code/908.txt) <br />
+#957. [Prison Cells After N Days (M) 1500](./code/957.txt) <br />
 #976. [Largest Perimeter Triangle (E) 900](./code/976.txt) <br />
 #1006. [ Clumsy Factorial (M) 1500](./code/1006.txt) <br />
 #1018. [ Binary Prefix Divisible By 5 (E) 1000](./code/1018.txt) <br />
