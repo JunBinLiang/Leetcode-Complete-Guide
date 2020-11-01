@@ -375,6 +375,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1575. [Count All Possible Routes (H) 1800](./code/1575.txt) <br />
 #1621. [Number of Sets of K Non-Overlapping Line Segments (M+) 1700](./code/1621.txt) <br />
 #1639. [Number of Ways to Form a Target String Given a Dictionary (H) 1800](./code/1639.txt) <br />
+#1641. [Count Sorted Vowel Strings (M-) 1400](./code/1641.txt) <br />
 #LCP10. [二叉树任务调度 (H+) 2200](./code/LCP10.txt) <br />
 #LCP13. [寻宝 (H+) 2100](./code/LCP13.txt) <br />
 #LCP14. [切分数组 (H+) 2200](./code/LCP14.txt) <br />
@@ -411,6 +412,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1551. [Minimum Operations to Make Array Equal (M-) 1200](./code/1551.txt) <br />
 #1573. [Number of Ways to Split a String (M) 1500](./code/1573.txt) <br />
 #1622. [Fancy Sequence (H+) 2000](./code/1622.txt) <br />
+#1643. [Kth Smallest Instructions (H) 1800](./code/1643.txt) <br />
 #LCP3. [机器人大冒险 (M) 1500](./code/LCP3.txt) <br />
 #LCP11. [期望个数统计 (M-) 1400](./code/LCP11.txt) <br />
 
@@ -522,6 +524,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #806. [Number of Lines To Write String (E) 900](./code/806.txt) <br />
 #1071. [Greatest Common Divisor of Strings (E) 900](./code/1071.txt) <br />
 #1550. [Three Consecutive Odds (E-) 700](./code/1550.txt) <br />
+#1640. [Check Array Formation Through Concatenation (E) 1000](./code/1640.txt) <br />
 
 ---
 ### Bit
