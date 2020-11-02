@@ -159,6 +159,7 @@ Note: LinkedList can be used as stack or queue or deque<br/><br/>
 #92. [Reverse LinkedList II (M) 1500](./code/92.txt) <br />
 #141. [Linked List Cycle (E) 141](./code/1000.txt) <br />
 #146. [LRU Cache (M+) 1600](./code/146.txt) <br />
+#147. [Insertion Sort List (M-) 1200](./code/147.txt) <br />
 #203. [Remove Linked List Elements (E) 900](./code/203.txt) <br />
 #237. [Delete Node in a Linked List(E) 1000](./code/237.txt) <br />
 #328. [Odd Even Linked List (M-) 1300](./code/328.txt) <br />
