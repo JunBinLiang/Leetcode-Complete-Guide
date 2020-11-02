@@ -1,0 +1,82 @@
+Given a picture consisting of black and white pixels, find the number of black lonely pixels.
+
+The picture is represented by a 2D char array consisting of 'B' and 'W', which means black and white pixels respectively.
+
+A black lonely pixel is character 'B' that located at a specific position where the same row and same column don't have any other black pixels.
+
+Example:
+Input: 
+[['W', 'W', 'B'],
+ ['W', 'B', 'W'],
+ ['B', 'W', 'W']]
+
+Output: 3
+Explanation: All the three 'B's are black lonely pixels.
+Note:
+The range of width and height of the input 2D array is [1,500].
+
+
+
+
+
+
+
+
+class Solution {
+public:
+    int findLonelyPixel(vector<vector<char>>& A) {
+        int n=A.size();
+        int m=A[0].size();
+        int res=0;
+        vector<vector<int>>a(n,vector<int>(m));
+        vector<vector<int>>b(n,vector<int>(m));
+        vector<vector<int>>c(n,vector<int>(m));
+        vector<vector<int>>d(n,vector<int>(m));
+        
+        for(int i=0;i<A.size();i++){
+            int sum=0;
+            for(int j=0;j<A[0].size();j++){
+                if(A[i][j]=='B')sum++;
+                a[i][j]=sum;
+            }
+        }
+        
+        for(int i=0;i<A.size();i++){
+            int sum=0;
+            for(int j=A[0].size()-1;j>=0;j--){
+                if(A[i][j]=='B')sum++;
+                b[i][j]=sum;
+            }
+        }
+        
+        for(int j=0;j<A[0].size();j++){
+            int sum=0;
+            for(int i=0;i<A.size();i++){
+                if(A[i][j]=='B')sum++;
+                c[i][j]=sum;
+            }
+        }
+        
+        for(int j=0;j<A[0].size();j++){
+            int sum=0;
+            for(int i=A.size()-1;i>=0;i--){
+                if(A[i][j]=='B')sum++;
+                d[i][j]=sum;
+            }
+        }
+        
+        for(int j=0;j<A[0].size();j++){
+            int sum=0;
+            for(int i=A.size()-1;i>=0;i--){
+                if(a[i][j]==1&&b[i][j]==1&&c[i][j]==1&&d[i][j]==1)res++;
+            }
+        }
+        return res;
+    }
+    
+    int get(vector<vector<int>>&A,int i,int j){
+        if(i<0||j<0||i>=A.size()||j>=A[0].size())return 0;
+        return A[i][j];
+    }
+    
+};
