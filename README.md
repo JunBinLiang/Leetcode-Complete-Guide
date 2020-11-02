@@ -40,7 +40,8 @@
 |  293  |[Flip Game ](./code/293.txt) |(E) 800| |  296  |[Best Meeting Point ](./code/296.txt)  |(H-) 1700|
 |  294  |[Flip Game II(MIN_MAX)](./code/294.txt) | (M) 1500  | |  360  |[Sort Transformed Array ](./code/360.txt) |(E) 1000|
 |  370  |[Range Addition](./code/370.txt)| (M) 1500  ||  422  |[Valid Word Square](./code/422.txt)| (E) 1000  |
-|  425  |[Word Squares](./code/425.txt) | (H) 1800  ||  582  |[Kill Process ](./code/582.txt) | (M-) 1400  |
+|  425  |[Word Squares](./code/425.txt) | (H) 1800  ||  531  |[Lonely Pixel I](./code/531.txt) | (M-) 1400  |
+|  582  |[Kill Process ](./code/582.txt) | (M-) 1400  |
 |  644  |[Maximum Average Subarray II ](./code/644.txt) | (H) 1800 ||  651  |[4 Keys Keyboard](./code/651.txt) | (M+) 1600  |
 |  683  |[ K Empty Slots ](./code/683.txt) | (H--) 1500  ||  702  |[Search in a Sorted Array of Unknown Size ](./code/702.txt)| (M-) 1200  |
 |  1064  |[Fixed Point](./code/1064.txt)| (E-) 600 | |  1136  |[Parallel Courses](./code/1136.txt)| (H-) 1600 |
