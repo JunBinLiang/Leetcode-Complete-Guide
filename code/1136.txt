@@ -1,0 +1,41 @@
+class Solution {
+public:
+    int minimumSemesters(int N, vector<vector<int>>& relations) {
+        int cnt=0;
+        vector<int>in(N+1);
+        vector<vector<int>>graph(N+1);
+        
+        
+        for(vector<int>&pair:relations){
+            int v1=pair[0],v2=pair[1];
+            in[v2]++;
+            graph[v1].push_back(v2);
+        }
+        
+        queue<vector<int>>q;
+        
+        for(int i=1;i<=N;i++){
+            if(in[i]==0){
+                q.push({i,1});
+            }
+        }
+        
+        while(q.size()!=0){
+            vector<int> top=q.front();q.pop();
+            int root=top[0];
+            int level=top[1];
+            cnt++;
+            if(cnt==N)return level;
+            
+            vector<int>&next=graph[root];
+            for(int &c:next){
+                in[c]--;
+                if(in[c]==0){
+                    q.push({c,level+1});
+                }
+            }
+        }
+        
+        return -1;
+    }
+};
