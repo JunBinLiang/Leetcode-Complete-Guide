@@ -41,7 +41,7 @@
 |  294  |[Flip Game II(MIN_MAX)](./code/294.txt) | (M) 1500  | |  360  |[Sort Transformed Array ](./code/360.txt) |(E) 1000|
 |  370  |[Range Addition](./code/370.txt)| (M) 1500  ||  422  |[Valid Word Square](./code/422.txt)| (E) 1000  |
 |  425  |[Word Squares](./code/425.txt) | (H) 1800  ||  531  |[Lonely Pixel I](./code/531.txt) | (M-) 1400  |
-|  582  |[Kill Process ](./code/582.txt) | (M-) 1400  |
+|  544  |[Output Contest Matches ](./code/544.txt) | (M) 1500  ||  582  |[Kill Process ](./code/582.txt) | (M-) 1400  |
 |  644  |[Maximum Average Subarray II ](./code/644.txt) | (H) 1800 ||  651  |[4 Keys Keyboard](./code/651.txt) | (M+) 1600  |
 |  683  |[ K Empty Slots ](./code/683.txt) | (H--) 1500  ||  702  |[Search in a Sorted Array of Unknown Size ](./code/702.txt)| (M-) 1200  |
 |  755  |[Pour Water ](./code/755.txt)| (M-) 1400  ||  774  |[Minimize Max Distance to Gas Station ](./code/774.txt)| (H-) 1700  |
