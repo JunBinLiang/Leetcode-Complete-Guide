@@ -36,6 +36,7 @@
 |-----|---------------- | --------------- | -----|-----|---------------- | --------------- |
 |  250  |[Count Univalue Subtrees ](./code/250.txt)   | (M-) 1300| |  252  |[Meeting Rooms ](./code/252.txt)  |(E) 900|
 |  253  |[Meeting RoomsII ](./code/253.txt)  | (M) 1500| |  256  | [Paint House](./code/256.txt) |  (M-) 1400|
+|  261  | [ Graph Valid Tree](./code/261.txt) |  (M-) 1400|
 |  266  |[Palindrome Permutation](./code/266.txt) | (E) 900| |  267  |[Palindrome Permutation II](./code/267.txt)  | (M) 1500|
 |  277  |[Find the Celebrity](./code/277.txt)  | (M) 1500||  291  |[Word Pattern II ](./code/291.txt) |(H) 1800| 
 |  293  |[Flip Game ](./code/293.txt) |(E) 800| 
