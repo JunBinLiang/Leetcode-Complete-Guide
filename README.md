@@ -54,7 +54,7 @@
 |  1196  | [How Many Apples Can You Put into the Basket](./code/1196.txt)  | (E) 800 ||  1183  |[Maximum Number of Ones](./code/1183.txt) |(H) 1800  |
 |  1216  |[Valid Palindrome III (区间dp)](./code/1216.txt)  |  (H-) 1700 ||  1243  |[Array Transformation ](./code/1243.txt) | (E) 900 |
 |  1244  |[Design A Leaderboard](./code/1244.txt)  | (M-) 1200 ||  1246  |[Palindrome Removal (区间dp)](./code/1246.txt) |(H) 1800  |
-|  1259  |[Handshakes That Don't Cross ](./code/1259.txt) |(H-) 1700  |
+|  1259  |[Handshakes That Don't Cross ](./code/1259.txt) |(H-) 1700  ||  1429  |[First Unique Number ](./code/1429.txt) |(M) 1500  |
 |  1469  |[Find All The Lonely Nodes](./code/1469.txt) |(E) 900  ||  1506  |[Find Root of N-Ary Tree](./code/1506.txt) |(M-) 1300  |
 |  1554  |[Strings Differ by One Character](./code/1554.txt) |(M-) 1400  ||  1570  |[Dot Product of Two Sparse Vectors](./code/1570.txt) |(M-) 1200 |
 |  1602  |[Find Nearest Right Node in Binary Tree ](./code/1602.txt) |(M-) 1300 ||  1612  |[Check If Two Expression Trees are Equivalent ](./code/1612.txt) |(M-) 1300  |
