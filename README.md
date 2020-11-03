@@ -47,9 +47,9 @@
 |  683  |[ K Empty Slots ](./code/683.txt) | (H--) 1500  ||  702  |[Search in a Sorted Array of Unknown Size ](./code/702.txt)| (M-) 1200  |
 |  755  |[Pour Water ](./code/755.txt)| (M-) 1400  ||  774  |[Minimize Max Distance to Gas Station ](./code/774.txt)| (H-) 1700  |
 |  1064  |[Fixed Point](./code/1064.txt)| (E-) 600 ||  1085  |[Sum of Digits in the Minimum Number](./code/1085.txt)| (E) 800 |
+|  1100  |[Find K-Length Substrings With No Repeated Characters](./code/1100.txt)| (M-) 1200 |
 |  1136  |[Parallel Courses](./code/1136.txt)| (H-) 1600 ||  1167  |[Minimum Cost to Connect Sticks](./code/1167.txt)  | (M-) 1400  |
-|  1183  |[Maximum Number of Ones](./code/1183.txt) |(H) 1800  |
-|  1196  | [How Many Apples Can You Put into the Basket](./code/1196.txt)  | (E) 800 |
+|  1196  | [How Many Apples Can You Put into the Basket](./code/1196.txt)  | (E) 800 ||  1183  |[Maximum Number of Ones](./code/1183.txt) |(H) 1800  |
 |  1216  |[Valid Palindrome III (区间dp)](./code/1216.txt)  |  (H-) 1700 ||  1243  |[Array Transformation ](./code/1243.txt) | (E) 900 |
 |  1244  |[Design A Leaderboard](./code/1244.txt)  | (M-) 1200 ||  1246  |[Palindrome Removal (区间dp)](./code/1246.txt) |(H) 1800  |
 |  1259  |[Handshakes That Don't Cross ](./code/1259.txt) |(H-) 1700  |
