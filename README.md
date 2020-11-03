@@ -52,7 +52,8 @@
 |  1100  |[Find K-Length Substrings With No Repeated Characters](./code/1100.txt)| (M-) 1200 |
 |  1136  |[Parallel Courses](./code/1136.txt)| (H-) 1600 ||  1167  |[Minimum Cost to Connect Sticks](./code/1167.txt)  | (M-) 1400  |
 |  1196  | [How Many Apples Can You Put into the Basket](./code/1196.txt)  | (E) 800 ||  1183  |[Maximum Number of Ones](./code/1183.txt) |(H) 1800  |
-|  1216  |[Valid Palindrome III (区间dp)](./code/1216.txt)  |  (H-) 1700 ||  1243  |[Array Transformation ](./code/1243.txt) | (E) 900 |
+|  1216  |[Valid Palindrome III (区间dp)](./code/1216.txt)  |  (H-) 1700 ||  1229  |[Meeting Scheduler](./code/1229.txt) | (M-) 1400 |
+|  1243  |[Array Transformation ](./code/1243.txt) | (E) 900 |
 |  1244  |[Design A Leaderboard](./code/1244.txt)  | (M-) 1200 ||  1246  |[Palindrome Removal (区间dp)](./code/1246.txt) |(H) 1800  |
 |  1259  |[Handshakes That Don't Cross ](./code/1259.txt) |(H-) 1700  ||  1429  |[First Unique Number ](./code/1429.txt) |(M) 1500  |
 |  1469  |[Find All The Lonely Nodes](./code/1469.txt) |(E) 900  ||  1506  |[Find Root of N-Ary Tree](./code/1506.txt) |(M-) 1300  |
