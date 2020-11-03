@@ -47,6 +47,7 @@
 |  644  |[Maximum Average Subarray II ](./code/644.txt) | (H) 1800 ||  651  |[4 Keys Keyboard](./code/651.txt) | (M+) 1600  |
 |  683  |[ K Empty Slots ](./code/683.txt) | (H--) 1500  ||  702  |[Search in a Sorted Array of Unknown Size ](./code/702.txt)| (M-) 1200  |
 |  755  |[Pour Water ](./code/755.txt)| (M-) 1400  ||  774  |[Minimize Max Distance to Gas Station ](./code/774.txt)| (H-) 1700  |
+|  1055  |[Shortest Way to Form String](./code/1055.txt)| (M-) 1300 |
 |  1064  |[Fixed Point](./code/1064.txt)| (E-) 600 ||  1085  |[Sum of Digits in the Minimum Number](./code/1085.txt)| (E) 800 |
 |  1100  |[Find K-Length Substrings With No Repeated Characters](./code/1100.txt)| (M-) 1200 |
 |  1136  |[Parallel Courses](./code/1136.txt)| (H-) 1600 ||  1167  |[Minimum Cost to Connect Sticks](./code/1167.txt)  | (M-) 1400  |
