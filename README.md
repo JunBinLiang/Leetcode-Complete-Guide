@@ -489,6 +489,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #49. [ Group Anagrams (M-) 1300](./code/49.txt) <br />
 #151. [ Reverse Words in a String (M-) 1300](./code/151.txt) <br />
 #242. [Valid Anagram (E) 900](./code/242.txt) <br />
+#290. [Word Pattern (E) 1000](./code/290.txt) <br />
 #336. [Palindrome Pairs (H) 1800](./code/336.txt) <br />
 #696. [Count Binary Substrings (E) 1000](./code/696.txt) <br />
 #833. [Find And Replace in String (M) 1500](./code/833.txt) <br />
