@@ -48,6 +48,7 @@
 |  544  |[Output Contest Matches ](./code/544.txt) | (M) 1500  ||  582  |[Kill Process ](./code/582.txt) | (M-) 1400  |
 |  644  |[Maximum Average Subarray II ](./code/644.txt) | (H) 1800 ||  651  |[4 Keys Keyboard](./code/651.txt) | (M+) 1600  |
 |  683  |[ K Empty Slots ](./code/683.txt) | (H--) 1500  ||  702  |[Search in a Sorted Array of Unknown Size ](./code/702.txt)| (M-) 1200  |
+|  716  |[Max Stack ](./code/716.txt)| (E+) 1200  |
 |  755  |[Pour Water ](./code/755.txt)| (M-) 1400  ||  759  |[Employee Free Time ](./code/759.txt)| (H-) 1600  |
 |  774  |[Minimize Max Distance to Gas Station ](./code/774.txt)| (H-) 1700  |
 |  1055  |[Shortest Way to Form String](./code/1055.txt)| (M-) 1300 ||  1061  |[Lexicographically Smallest Equivalent String](./code/1061.txt)| (M) 1500 |
