@@ -1050,6 +1050,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    [ Fenwick Tree ](./template/BIT.txt) <br />
    [ Hopcroft  (Solving Maximum matching Cardinality for Bipartile Graph)  O(sqrt(n)*m)](./template/Hopcroft.txt) <br />
      [ Min Seg ](./template/seg1.txt) <br />
+     [ Double Linkedlist ](./template/dd.txt) <br />
   
   #  CodeForce 高分精算 
   23C. [Oranges and Apples (2500) Greedy ](./code/23C.txt) <br />
