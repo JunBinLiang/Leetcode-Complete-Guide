@@ -1,0 +1,93 @@
+Design a max stack that supports push, pop, top, peekMax and popMax.
+
+push(x) -- Push element x onto stack.
+pop() -- Remove the element on top of the stack and return it.
+top() -- Get the element on the top.
+peekMax() -- Retrieve the maximum element in the stack.
+popMax() -- Retrieve the maximum element in the stack, and remove it. If you find more than one maximum elements, only remove the top-most one.
+Example 1:
+MaxStack stack = new MaxStack();
+stack.push(5); 
+stack.push(1);
+stack.push(5);
+stack.top(); -> 5
+stack.popMax(); -> 5
+stack.top(); -> 1
+stack.peekMax(); -> 5
+stack.pop(); -> 1
+stack.top(); -> 5
+Note:
+-1e7 <= x <= 1e7
+Number of operations won't exceed 10000.
+The last four operations won't be called when stack is empty.
+
+
+
+
+
+
+
+
+
+class MaxStack {
+
+    /** initialize your data structure here. */
+    PriorityQueue<int[]>stack=new PriorityQueue<>((a,b)->{
+        return b[0]-a[0];
+    });
+    
+    PriorityQueue<int[]>maxheap=new PriorityQueue<>((a,b)->{
+        if(a[1]==b[1])return b[0]-a[0];
+        return b[1]-a[1];
+    });
+    int t=0;
+    Set<Integer>set=new HashSet<>();
+    
+    public MaxStack() {
+        
+    }
+    
+    public void push(int x) {
+        int A[]=new int[]{t,x};
+        stack.add(A);
+        maxheap.add(A);
+        set.add(t);
+        t++;
+    }
+    
+    public int pop() {
+        while(stack.size()>0&&!set.contains(stack.peek()[0]))stack.poll();
+        int top[]=stack.poll();
+        set.remove(top[0]);
+        return top[1];
+    }
+    
+    public int top() {
+        while(stack.size()>0&&!set.contains(stack.peek()[0]))stack.poll();
+        int top[]=stack.peek();
+        return top[1];
+    }
+    
+    public int peekMax() {
+        while(maxheap.size()>0&&!set.contains(maxheap.peek()[0]))maxheap.poll();
+        int top[]=maxheap.peek();
+        return top[1];
+    }
+    
+    public int popMax() {
+        while(maxheap.size()>0&&!set.contains(maxheap.peek()[0]))maxheap.poll();
+        int top[]=maxheap.poll();
+        set.remove(top[0]);
+        return top[1];
+    }
+}
+
+/**
+ * Your MaxStack object will be instantiated and called as such:
+ * MaxStack obj = new MaxStack();
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ * int param_3 = obj.top();
+ * int param_4 = obj.peekMax();
+ * int param_5 = obj.popMax();
+ */
