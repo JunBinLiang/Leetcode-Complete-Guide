@@ -756,7 +756,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  
  ---
  # :punch: CodeForce Contest
- 统计(1800+ 题量)： 75
+ 统计(1800+ 题量)： 76
  
   
   ### Beta Round #3 
@@ -1073,6 +1073,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    1437C. [Chef Monocarp	(1800) DP](./code/1437C.txt) <br />
    1437E. [Make It Increasing(2200) DP+LIS+Binary Search](./code/1437E.txt) <br />
    1437F. [Emotional Fishermen(2600) DP+Combination](./code/1437F.txt) <br />
+   1442A. [Extreme Subtraction(1800) Greedy](./code/1442A.txt) <br />
   311E. [Biologist	(MIN CUT) (2300) ](./code/311E.txt) <br />
   
   
