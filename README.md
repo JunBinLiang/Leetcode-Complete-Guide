@@ -42,7 +42,8 @@
 |  293  |[Flip Game ](./code/293.txt) |(E) 800| 
 |  296  |[Best Meeting Point ](./code/296.txt)  |(H-) 1700||  294  |[Flip Game II(MIN_MAX)](./code/294.txt) | (M) 1500  |
 |  305  |[Number of Islands II](./code/305.txt) | (H-) 1700  | |  360  |[Sort Transformed Array ](./code/360.txt) |(E) 1000|
-|  370  |[Range Addition](./code/370.txt)| (M) 1500  ||  422  |[Valid Word Square](./code/422.txt)| (E) 1000  |
+|  370  |[Range Addition](./code/370.txt)| (M) 1500  ||  379  |[Design Phone Directory](./code/379.txt)| (M-) 1200  |
+|  422  |[Valid Word Square](./code/422.txt)| (E) 1000  |
 |  425  |[Word Squares](./code/425.txt) | (H) 1800  ||  465  |[Optimal Account Balancing](./code/465.txt) | (H) 1800  |
 |  531  |[Lonely Pixel I](./code/531.txt) | (M-) 1400  |
 |  544  |[Output Contest Matches ](./code/544.txt) | (M) 1500  ||  582  |[Kill Process ](./code/582.txt) | (M-) 1400  |
