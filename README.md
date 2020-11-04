@@ -853,6 +853,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  
  
   ### Codeforces Round #578 (Div. 2)
+   A. [Hotelier(800) ](./contest/578A.txt) <br />
  
  ### Codeforces Round #595 (Div. 3)
  A. [Yet Another Dividing into Teams (800) ](./contest/595A.txt) <br />
