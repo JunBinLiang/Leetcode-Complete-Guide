@@ -852,6 +852,8 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  F. [Graph Without Long Directed Paths(1700)  (二分图解)](./code/550F.txt) <br />
  
  
+  ### Codeforces Round #578 (Div. 2)
+ 
  ### Codeforces Round #595 (Div. 3)
  A. [Yet Another Dividing into Teams (800) ](./contest/595A.txt) <br />
  B1. [Booking Exchange (Easy) (1000) ](./contest/595B1.txt) <br />
