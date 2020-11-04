@@ -1,0 +1,26 @@
+class Solution {
+    public int[] arrayRankTransform(int[] A) {
+        if(A.length==0)return new int[]{};
+        int copy[]=new int[A.length];
+        for(int i=0;i<A.length;i++){
+            copy[i]=A[i];
+        }   
+        
+        Arrays.sort(copy);
+        Map<Integer,Integer>map=new HashMap<>();
+        int rank=2;
+        map.put(copy[0],1);
+        for(int i:copy){
+            if(!map.containsKey(i)){
+                map.put(i,rank++);
+            }
+        }
+
+        int res[]=new int[A.length];
+        
+        for(int i=0;i<A.length;i++){
+            res[i]=map.get(A[i]);
+        }
+        return res;
+    }
+}
