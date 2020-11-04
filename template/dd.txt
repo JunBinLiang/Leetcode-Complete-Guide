@@ -1,0 +1,27 @@
+public void delete(Dnode node){
+		Dnode pre=node.pre;
+		Dnode next=node.next;
+		pre.next=next;
+		next.pre=pre;
+		map.remove(node.v);
+	}
+	
+	public void add(int v){
+		Dnode node=new Dnode(v);
+		Dnode pre=tail.pre;
+		pre.next=node;
+		node.pre=pre;
+		node.next=tail;
+		tail.pre=node;
+		map.put(v,node);
+	}
+	
+	class Dnode{
+		Dnode next=null;
+		Dnode pre=null;
+		int v;
+		public Dnode(int v){
+			this.v=v;
+		}
+		
+	}
