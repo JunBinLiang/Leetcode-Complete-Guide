@@ -1,0 +1,31 @@
+class Solution {
+public:
+    string minRemoveToMakeValid(string s) {
+        vector<bool>A(s.size());
+        vector<int>st;
+        for(int i=0;i<s.size();i++){
+            if(s[i]=='('){
+                st.push_back(i);
+            }
+            else if(s[i]==')'){
+               if(st.size()>0){
+                   A[i]=true;
+                   A[st[st.size()-1]]=true;
+                   st.pop_back();
+               }
+            }
+            else{
+                A[i]=true;
+            }
+        }
+        
+        
+        
+        string res="";
+        for(int i=0;i<s.size();i++){
+            if(A[i])res.push_back(s[i]);
+        }
+        
+        return res;
+    }
+};
