@@ -66,7 +66,7 @@
 |  1469  |[Find All The Lonely Nodes](./code/1469.txt) |(E) 900  ||  1485  |[Clone Binary Tree With Random Pointer](./code/1485.txt) |(M) 1500  |
 |  1506  |[Find Root of N-Ary Tree](./code/1506.txt) |(M-) 1300  ||  1522  |[Diameter of N-Ary Tree](./code/1522.txt) |(M-) 1300  |
 |  1554  |[Strings Differ by One Character](./code/1554.txt) |(M-) 1400  ||  1564  |[Put Boxes Into the Warehouse I](./code/1564.txt) |(M) 1500  |
-|  1570  |[Dot Product of Two Sparse Vectors](./code/1570.txt) |(M-) 1200 |
+|  1570  |[Dot Product of Two Sparse Vectors](./code/1570.txt) |(M-) 1200 ||  1580  |[Put Boxes Into the Warehouse II](./code/1580.txt) |(M+) 1600 |
 |  1602  |[Find Nearest Right Node in Binary Tree ](./code/1602.txt) |(M-) 1300 ||  1612  |[Check If Two Expression Trees are Equivalent ](./code/1612.txt) |(M-) 1300  |
 |  1634  |[ Add Two Polynomials Represented as Linked Lists](./code/1634.txt) | (M-) 1400  ||  1644  |[  Lowest Common Ancestor of a Binary Tree II](./code/1644.txt) | (M-) 1400  |
 
