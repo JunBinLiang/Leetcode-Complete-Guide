@@ -764,7 +764,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  
  ---
  # :punch: CodeForce Contest
- 统计(1800+ 题量)： 78
+ 统计(1800+ 题量)： 79
  
   
   ### Beta Round #3 
@@ -860,6 +860,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    B. [Block Adventure(1200) (Greedy)](./contest/578B.txt) <br />
    C. [Round Corridor (1400) （Math） ](./contest/578C.txt) <br />
    D. [White Lines (1900) （Prefix sum+Implementation heavy） ](./contest/578D.txt) <br />
+   E. [Compress Words (2000) （String + KMP） ](./contest/578E.txt) <br />
  
  ### Codeforces Round #595 (Div. 3)
  A. [Yet Another Dividing into Teams (800) ](./contest/595A.txt) <br />
