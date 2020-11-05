@@ -499,6 +499,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 ### String
 #6. [ZigZag Conversion (M-) 1300](./code/6.txt) <br />
 #9. [Palindrom Number (E) 900](./code/9.txt) <br />
+#28. [Implement strStr(M) 1500 (KMP)](./code/28.txt) <br />
 #49. [ Group Anagrams (M-) 1300](./code/49.txt) <br />
 #151. [ Reverse Words in a String (M-) 1300](./code/151.txt) <br />
 #242. [Valid Anagram (E) 900](./code/242.txt) <br />
