@@ -1,0 +1,47 @@
+1. 经典kmp
+
+
+
+class Solution {
+    public int strStr(String s, String pattern) {
+        if(s.equals(pattern))return 0;
+        if(pattern.length()==0)return 0;
+        //if(s.length()<pattern.length())return -1;
+        int pre[]=pre(pattern);
+        for(int i :pre)System.out.print(i+" ");
+        int i=0,pi=0;
+        int res=-1;
+        while(i<s.length()){
+            if(s.charAt(i)==pattern.charAt(pi)){
+                i++;pi++;
+            }else{
+                if(pi==0)i++;
+                else pi=pre[pi-1];
+            }
+            if(pi>=pattern.length()){
+                res=i-pattern.length();
+                break;
+            }
+        }
+        return res;
+        
+    }
+    
+    public int[] pre(String pattern){
+        int pre[]=new int[pattern.length()];
+        int l=0,r=1;
+        while(r<pattern.length()){
+            if(pattern.charAt(r)==pattern.charAt(l)){
+                pre[r]=l+1;
+                l++;
+                r++;
+            }else{
+                if(l==0)r++;
+                else{
+                    l=pre[l-1];
+                }
+            }
+        }
+        return pre;
+    }
+}
