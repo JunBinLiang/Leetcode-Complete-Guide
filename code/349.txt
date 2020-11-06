@@ -1,0 +1,24 @@
+class Solution {
+public:
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        vector<int>res;
+        unordered_set<int>hash;
+        unordered_set<int>unique;
+        for(int i:nums2){
+            hash.insert(i);
+        }
+        
+        for(int i:nums1){
+            if(hash.find(i)!=hash.end()){
+                unique.insert(i);
+            }
+        }
+        
+        
+        for(auto it=unique.begin();it!=unique.end();it++){
+            res.push_back(*it);
+        }
+        
+        return res;
+    }
+};
