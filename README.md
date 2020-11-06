@@ -55,7 +55,8 @@
 |  1055  |[Shortest Way to Form String](./code/1055.txt)| (M-) 1300 ||  1061  |[Lexicographically Smallest Equivalent String](./code/1061.txt)| (M) 1500 |
 |  1063  |[Number of Valid Subarrays](./code/1063.txt)| (H-) 1600 |
 |  1064  |[Fixed Point](./code/1064.txt)| (E-) 600 ||  1085  |[Sum of Digits in the Minimum Number](./code/1085.txt)| (E) 800 |
-|  1100  |[Find K-Length Substrings With No Repeated Characters](./code/1100.txt)| (M-) 1200 ||  1119  |[Remove Vowels from a String](./code/1119.txt)| (E-) 700 |
+|  1100  |[Find K-Length Substrings With No Repeated Characters](./code/1100.txt)| (M-) 1200 ||  1101  |[The Earliest Moment When Everyone Become Friends](./code/1101.txt)| (M) 1500 
+|  1119  |[Remove Vowels from a String](./code/1119.txt)| (E-) 700 |
 |  1136  |[Parallel Courses](./code/1136.txt)| (H-) 1600 ||  1167  |[Minimum Cost to Connect Sticks](./code/1167.txt)  | (M-) 1400  |
 |  1180  |[Count Substrings with Only One Distinct Letter](./code/1180.txt)  | (E) 1000  |
 |  1196  | [How Many Apples Can You Put into the Basket](./code/1196.txt)  | (E) 800 ||  1183  |[Maximum Number of Ones](./code/1183.txt) |(H) 1800  |
