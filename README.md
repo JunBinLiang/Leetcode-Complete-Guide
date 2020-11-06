@@ -1069,6 +1069,9 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
      [ Min Seg ](./template/seg1.txt) <br />
      [ Double Linkedlist ](./template/dd.txt) <br />
   
+  #  CodeForce 日常水题
+  18B. [Platforms(1700) Math ](./easy/18B.txt) <br />
+  
   #  CodeForce 高分精算 
   23C. [Oranges and Apples (2500) Greedy ](./code/23C.txt) <br />
   324D. [Xenia and Dominoes (2100) DP+容斥原理 ](./code/324D.txt) <br />
