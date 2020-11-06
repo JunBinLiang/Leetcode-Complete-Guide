@@ -1073,7 +1073,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   ### 800<br/>
   1445A.[Array Rearrangment (Greedy) ](./easy/1445A.txt) <br />
   ### 1700<br/>
-  18B. [Platforms(1700) Math ](./easy/18B.txt) <br />
+  18B. [Platforms (Math) ](./easy/18B.txt) <br />
   
   #  CodeForce 高分精算 
   23C. [Oranges and Apples (2500) Greedy ](./code/23C.txt) <br />
