@@ -41,7 +41,7 @@
 |  277  |[Find the Celebrity](./code/277.txt)  | (M) 1500||  291  |[Word Pattern II ](./code/291.txt) |(H) 1800| 
 |  293  |[Flip Game ](./code/293.txt) |(E) 800| 
 |  296  |[Best Meeting Point ](./code/296.txt)  |(H-) 1700||  294  |[Flip Game II(MIN_MAX)](./code/294.txt) | (M) 1500  |
-|  305  |[Number of Islands II](./code/305.txt) | (H-) 1700  | |  340  |Longest Substring with At Most K Distinct Characters](./code/340.txt) | (H-) 1600  | 
+|  305  |[Number of Islands II](./code/305.txt) | (H-) 1700  | |  340  |[Longest Substring with At Most K Distinct Characters](./code/340.txt) | (H-) 1600  | 
 |  360  |[Sort Transformed Array ](./code/360.txt) |(E) 1000|
 |  370  |[Range Addition](./code/370.txt)| (M) 1500  ||  379  |[Design Phone Directory](./code/379.txt)| (M-) 1200  |
 |  422  |[Valid Word Square](./code/422.txt)| (E) 1000  |
