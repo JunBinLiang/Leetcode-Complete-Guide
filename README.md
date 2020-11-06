@@ -43,7 +43,7 @@
 |  305  |[Number of Islands II](./code/305.txt) | (H-) 1700  | |  340  |[Longest Substring with At Most K Distinct Characters](./code/340.txt) | (H-) 1600  | 
 |  360  |[Sort Transformed Array ](./code/360.txt) |(E) 1000|
 |  370  |[Range Addition](./code/370.txt)| (M) 1500  ||  379  |[Design Phone Directory](./code/379.txt)| (M-) 1200  |
-|  422  |[Valid Word Square](./code/422.txt)| (E) 1000  |
+|  411  |[Minimum Unique Word Abbreviation](./code/411.txt)| (H) 1800  ||  422  |[Valid Word Square](./code/422.txt)| (E) 1000  |
 |  425  |[Word Squares](./code/425.txt) | (H) 1800  ||  465  |[Optimal Account Balancing](./code/465.txt) | (H) 1800  |
 |  531  |[Lonely Pixel I](./code/531.txt) | (M-) 1400  ||  544  |[Output Contest Matches ](./code/544.txt) | (M) 1500  |
 |  568  |[Maximum Vacation Days ](./code/568.txt) | (H-) 1700  | |  582  |[Kill Process ](./code/582.txt) | (M-) 1400  |
