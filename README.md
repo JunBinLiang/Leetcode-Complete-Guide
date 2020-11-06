@@ -1069,7 +1069,10 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
      [ Min Seg ](./template/seg1.txt) <br />
      [ Double Linkedlist ](./template/dd.txt) <br />
   
-  #  CodeForce 日常水题
+  #  CodeForce 日常水题 ( 小于1200分 )
+  ### 800
+  1445A.[Array Rearrangment(800) Greedy ](./easy/1445A.txt) <br />
+  
   18B. [Platforms(1700) Math ](./easy/18B.txt) <br />
   
   #  CodeForce 高分精算 
