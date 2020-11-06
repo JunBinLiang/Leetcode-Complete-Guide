@@ -1,0 +1,114 @@
+思路：
+
+暴力+pruning。。。
+
+
+
+
+A string such as "word" contains the following abbreviations:
+
+["word", "1ord", "w1rd", "wo1d", "wor1", "2rd", "w2d", "wo2", "1o1d", "1or1", "w1r1", "1o2", "2r1", "3d", "w3", "4"]
+Given a target string and a set of strings in a dictionary, find an abbreviation of this target string with the smallest possible length such that it does not conflict with abbreviations of the strings in the dictionary.
+
+Each number or letter in the abbreviation is considered length = 1. For example, the abbreviation "a32bc" has length = 4.
+
+Examples:
+
+"apple", ["blade"] -> "a4" (because "5" or "4e" conflicts with "blade")
+
+"apple", ["plain", "amber", "blade"] -> "1p3" (other valid answers include "ap3", "a3e", "2p2", "3le", "3l1").
+ 
+
+Constraints:
+
+In the case of multiple answers as shown in the second example below, you may return any one of them.
+Assume length of target string = m, and dictionary size = n. You may assume that m ≤ 21, n ≤ 1000, and log2(n) + m ≤ 20.
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Solution {
+public:
+    vector<pair<string,int>>ab;
+    unordered_map<string,string>hash;
+    string minAbbreviation(string target, vector<string>& dictionary) {        
+        vector<string>A;
+        for(string &w:dictionary){
+            if(w.size()==target.size()){
+                A.push_back(w);
+            }
+        }
+        if(A.size()==0)return to_string(target.size());
+        
+        all(target);
+        sort(ab.begin(),ab.end(),[](const pair<string,int>&p1,const pair<string,int>&p2){
+           return p1.second<p2.second; 
+        });
+        
+        for(pair<string,int>&p:ab){
+            string &s=p.first;
+            string &hack=hash[s];
+            bool good=true;
+            
+            for(string &w:A){
+                bool ok=false;
+                for(int i=0;i<hack.size();i++){
+                    if(hack[i]!='#'&&hack[i]!=w[i]){
+                        ok=true;
+                        break;
+                    }
+                }
+                good=good&ok;
+                if(!good)break;
+            }
+            
+            
+            if(good){
+                return s;
+            }
+        }
+        
+        
+        return to_string(target.size());
+    }
+    
+    
+    void all(string& target){//generate all abbreviation for the target string
+        int N=target.size();
+        for(int state=0;state<(1<<N);state++){
+            int cnt=0;string s1="";string s2="";
+            int num=0;
+            for(int j=0;j<N;j++){
+                if((state&(1<<j))==0){//not use char
+                    num++;
+                    s2.push_back('#');
+                }
+                else{//use char
+                    if(num!=0){
+                        s1=s1+(to_string(num));
+                        num=0;
+                        cnt++;
+                    }
+                    cnt++;
+                    s1.push_back(target[j]);
+                    s2.push_back(target[j]);
+                }
+            }
+            if(num!=0){
+                s1=s1+(to_string(num));
+                cnt++;
+            }
+            ab.push_back({s1,cnt});
+            hash[s1]=s2;
+        }
+    }
+};
