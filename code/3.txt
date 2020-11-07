@@ -1,0 +1,20 @@
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        
+        int r=0,l=0;
+        int res=0;
+        unordered_map<char,int>hash;
+        for(int i=0;i<s.size();i++){
+            r=i;
+            hash[s[i]]++;
+            while(hash[s[i]]>1){
+                hash[s[l]]--;
+                l++;
+            }
+            res=max(res,(int)(r-l+1));
+            
+        }
+        return res;
+    }
+};
