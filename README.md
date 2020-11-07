@@ -1080,6 +1080,8 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   1445B.[Eliminationt (Math) ](./easy/1445B.txt) <br />
   ### 1200<br/>
   18C.[Stripe ](./easy/18C.txt) <br />
+  ### 1300<br/>
+  1285B.[Just Eat It! (prefix sum) ](./easy/1285B.txt) <br />
   ### 1700<br/>
   18B. [Platforms (Math) ](./easy/18B.txt) <br />
   
