@@ -594,6 +594,10 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1627. [Graph Connectivity With Threshold (H) 1800](./code/1627.txt) <br />
 
 ---
+### Ordered Map
+#1606. [Find Servers That Handled Most Number of Requests(H) 1800](./code/1606.txt) <br />
+
+---
 ### SQL
 #175. [Combine Two Tables (E)](./sql/175.txt) <br />
 #177. [Nth Highest Salary (M)](./sql/177.txt) <br />
