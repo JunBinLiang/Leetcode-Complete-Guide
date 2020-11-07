@@ -1084,6 +1084,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   18C.[Stripe ](./easy/18C.txt) <br />
   
   ### 1300<br/>
+  298A.[Snow Footprints (Greedy) ](./easy/298A.txt) <br />
   1285B.[Just Eat It! (prefix sum) ](./easy/1285B.txt) <br />
   
    ### 1600<br/>
