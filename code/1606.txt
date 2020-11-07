@@ -1,0 +1,56 @@
+class Solution {
+    public List<Integer> busiestServers(int k, int[] A, int[] load) {
+        List<Integer>res=new ArrayList<>();
+        TreeSet<Integer>treeset=new TreeSet<>();
+        PriorityQueue<int[]>pq=new PriorityQueue<>((a,b)->{
+            return a[0]-b[0];
+        });//[endtime,servedId]
+        
+        int server[]=new int[k];
+        
+        for(int i=0;i<k;i++){
+            treeset.add(i);
+        }
+        
+        for(int i=0;i<A.length;i++){
+            int pos=i%k;
+            while(pq.size()>0&&pq.peek()[0]<=A[i]){//get all available server
+                int top[]=pq.poll();
+                treeset.add(top[1]);
+            }
+            
+            Integer next1=treeset.higher(pos-1);
+            if(next1!=null){
+                int index=next1;
+                pq.add(new int[]{A[i]+load[i],index});
+                treeset.remove(next1);
+                server[index]++;
+            }
+            else{
+                Integer next2=treeset.higher(-1);
+                 if(next2!=null){
+                    int index=next2;
+                    pq.add(new int[]{A[i]+load[i],index});
+                    treeset.remove(next2);
+                    server[index]++;
+                }
+            }
+        }
+        
+        
+        
+        //final result obtaining
+        int max=-1;
+        for(int i=0;i<server.length;i++){
+            max=Math.max(max,server[i]);
+        }
+        
+        for(int i=0;i<server.length;i++){
+            if(server[i]==max){
+                res.add(i);
+            }
+        }
+        
+        return res;
+    }
+}
