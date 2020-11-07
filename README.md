@@ -1076,12 +1076,19 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   ### 800<br/>
   119A.[Epic Game (Implementation) ](./easy/119A.txt) <br />
   1445A.[Array Rearrangment (Greedy) ](./easy/1445A.txt) <br />
+  
   ### 900<br/>
   1445B.[Eliminationt (Math) ](./easy/1445B.txt) <br />
+  
   ### 1200<br/>
   18C.[Stripe ](./easy/18C.txt) <br />
+  
   ### 1300<br/>
   1285B.[Just Eat It! (prefix sum) ](./easy/1285B.txt) <br />
+  
+   ### 1600<br/>
+  28B. [pSort (Union Find) ](./easy/28B.txt) <br />
+  
   ### 1700<br/>
   18B. [Platforms (Math) ](./easy/18B.txt) <br />
   
