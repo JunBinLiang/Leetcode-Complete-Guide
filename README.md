@@ -775,7 +775,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  
  ---
  # :punch: CodeForce Contest
- 统计(1800+ 题量)： 79
+ 统计(1800+ 题量)： 80
  
   
   ### Beta Round #3 
@@ -1108,6 +1108,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   757C. [Felicity is Coming!	(1900)  ](./code/757C.txt) <br />
   776D. [The Door Problem	(2000) 2 SAT + SCC ](./code/776D.txt) <br />
   803C. [Maximal GCD	(1900) (Math)  ](./code/803C.txt) <br />
+   1031D. [Minimum Path (1900) (Do + Greedy) ](./code/1031D.txt) <br />
   1062D. [Fun with Integers	(DIV 2) (1800) Graph ](./code/1062D.txt) <br />
   1392D. [Omkar and Bed Wars	(Global) (1700) DP ](./code/1392D.txt) <br />
   1392F. [Omkar and Landslide	(Global) (2400) Math+observation ](./code/1392F.txt) <br />
