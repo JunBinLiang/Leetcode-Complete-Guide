@@ -207,3 +207,167 @@ class Fancy {
  * obj.multAll(m);
  * int param_4 = obj.getIndex(idx);
  */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class Fancy {
+    int mod=1000000007;
+    Seg seg;
+    int index=0;
+    List<long[]>ops[]=new ArrayList[2000030];
+    
+    public Fancy() {
+        seg=new Seg(0,2000010);
+    }
+    
+    //state0:add    state1:mul
+    public void append(int val) {
+        seg.update(0,1000010,index,index,val,0,0);
+        index++;
+    }
+    
+    public void addAll(int inc) {
+        if(index==0)return;
+        seg.update(0,1000010,0,index-1,inc,0,0);
+    }
+    
+    public void multAll(int m) {
+        seg.update(0,1000010,0,index-1,m,1,0);
+    }
+    
+    public int getIndex(int idx) {
+        if(idx>=index)return -1;
+        long res=seg.query(0,1000010,idx,0);
+        return (int)(res);
+    }
+    
+    
+    //laza propogation
+    class Seg{
+        long val=0;
+        long m=1;
+        Seg left=null,right=null;
+        List<long[]>op;
+        public Seg(int l,int r){
+           
+        }
+        
+        public long query(int s,int e,int index,int id){
+            if(ops[id]==null){
+                ops[id]=new ArrayList<>();
+            }
+            
+            long res=0;
+            if(s==e){
+                for(long pair[]:ops[id]){
+                    if(pair[0]==0){
+                        res+=pair[1];
+                    }
+                    else{
+                        res*=pair[1];
+                    }
+                    res%=mod;
+                }
+                return res;
+            }
+            int mid=s+(e-s)/2;
+            
+            if(index<=mid){
+                res=query(s,mid,index,id*2+1);
+            }else{
+                res=query(mid+1,e,index,id*2+2);
+            }
+            
+            for(long pair[]:ops[id]){
+                if(pair[0]==0){
+                    res+=pair[1];
+                }
+                else{
+                    res*=pair[1];
+                }
+                res%=mod;
+            }
+            return res;
+        }
+        
+        
+        public void update(int s,int e,int l,int r,long v,int state,int id){ 
+            //System.out.println(s+"  "+e);
+            if(l==s&&r==e){
+                if(ops[id]==null){
+                    ops[id]=new ArrayList<>();
+                }
+                
+                if(state==0){
+                    ops[id].add(new long[]{state,v});
+                }
+                else{
+                    ops[id].add(new long[]{state,v});
+                }
+                return;
+            }
+
+            int mid=s+(e-s)/2;
+            
+            
+            if(r<=mid){
+                update(s,mid,l,r,v,state,id*2+1);
+            }
+            else if(l>=mid+1){
+                update(mid+1,e,l,r,v,state,id*2+2);
+            }else{
+                update(s,mid,l,mid,v,state,id*2+1);
+                update(mid+1,e,mid+1,r,v,state,id*2+2);
+            }
+        }
+    }//end of tree
+    
+}
+
+
+
+/**
+ * Your Fancy object will be instantiated and called as such:
+ * Fancy obj = new Fancy();
+ * obj.append(val);
+ * obj.addAll(inc);
+ * obj.multAll(m);
+ * int param_4 = obj.getIndex(idx);
+ */
