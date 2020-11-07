@@ -1,0 +1,81 @@
+    class Seg{
+        int s,e;
+        long val=0;
+        long m=1;
+        Seg left=null,right=null;
+        List<long[]>ops=new ArrayList<>();
+        public Seg(int l,int r){
+            this.s=l;
+            this.e=r;
+            if(s!=e){
+                //int mid=s+(e-s)/2;
+                //if(s<=mid)left=new Seg(s,mid);
+                //if(e>=mid+1)right=new Seg(mid+1,e);
+            }else{
+                //done initialization
+            }
+        }
+        
+        public long query(int index){
+            long res=0;
+            if(s==e){
+                for(long pair[]:ops){
+                    if(pair[0]==0){
+                        res+=pair[1];
+                    }
+                    else{
+                        res*=pair[1];
+                    }
+                    res%=mod;
+                }
+                return res;
+            }
+            int mid=s+(e-s)/2;
+            
+            if(index<=mid){
+                if(left==null)left=new Seg(s,mid);
+                res=left.query(index);
+            }else{
+                if(right==null)right=new Seg(mid+1,e);
+                res=right.query(index);
+            }
+            
+            for(long pair[]:ops){
+                if(pair[0]==0){
+                    res+=pair[1];
+                }
+                else{
+                    res*=pair[1];
+                }
+                res%=mod;
+            }
+            return res;
+        }
+        
+        
+        public void update(int l,int r,long v,int state){ 
+            if(l==s&&r==e){
+                if(state==0){
+                    ops.add(new long[]{state,v});
+                }
+                else{
+                    ops.add(new long[]{state,v});
+                }
+                return;
+            }
+
+            int mid=s+(e-s)/2;
+            if(left==null)left=new Seg(s,mid);
+            if(right==null)right=new Seg(mid+1,e);
+            
+            if(r<=mid){
+                left.update(l,r,v,state);
+            }
+            else if(l>=mid+1){
+                right.update(l,r,v,state);
+            }else{
+                left.update(l,mid,v,state);
+                right.update(mid+1,r,v,state);
+            }
+        }
+    }//end of tree
