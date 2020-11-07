@@ -1,3 +1,7 @@
+思路：
+1. 先dp 看看最多能几个a
+2.然后类似bfs 那样多源，append 最小的那个
+
 // Don't place your source in a package
 import java.util.*;
 import java.lang.*;
