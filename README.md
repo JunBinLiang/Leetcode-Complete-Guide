@@ -1072,7 +1072,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
      [ Min Seg ](./template/seg1.txt) <br />
      [ Double Linkedlist ](./template/dd.txt) <br />
   
-  #  CodeForce 日常水题 ( 小于1200分 )
+  #  CodeForce 日常水题 ( 小于1500分 )
   ### 800<br/>
   119A.[Epic Game (Implementation) ](./easy/119A.txt) <br />
   1445A.[Array Rearrangment (Greedy) ](./easy/1445A.txt) <br />
