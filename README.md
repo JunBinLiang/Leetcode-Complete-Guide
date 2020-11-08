@@ -99,6 +99,7 @@
 #1582. [Special Positions in a Binary Matrix(E) 900](./code/1582.txt) <br />
 #1588. [Sum of All Odd Length Subarrays(E) 800](./code/1588.txt) <br />
 #1589. [ Maximum Sum Obtained of Any Permutation (M) 1500](./code/1589.txt) <br />
+#1646. [ Get Maximum in Generated Array (E) 800](./code/1646.txt) <br />
 
 ---
 ### BFS
