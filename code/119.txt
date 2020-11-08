@@ -1,0 +1,19 @@
+class Solution {
+public:
+    vector<int> getRow(int n) {
+        vector<int>A(1,1);
+        
+        for(int j=1;j<=n;j++){
+            vector<int>next(A.size()+1,0);;
+            next[0]=next[next.size()-1]=1;
+            
+            for(int i=1;i<next.size()-1;i++){
+                next[i]=A[i]+A[i-1];
+            }
+            
+            A=next;
+        }
+        
+        return A;
+    }
+};
