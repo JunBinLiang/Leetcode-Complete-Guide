@@ -1094,6 +1094,9 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   ### 900<br/>
   1445B.[Eliminationt (Math) ](./easy/1445B.txt) <br />
   
+  ### 1000<br/>
+  371A.[K-Periodic Array (Greedy) ](./easy/371A.txt) <br />
+  
   ### 1200<br/>
   18C.[Stripe ](./easy/18C.txt) <br />
   23A.[You're Given a String... ](./easy/23A.txt) <br />
