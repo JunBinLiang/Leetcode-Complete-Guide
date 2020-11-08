@@ -1,3 +1,6 @@
+1.只有两种可能，在一个区间内，要不全横要不竖着，不可能在中间来个vertical，因为这肯定不是最优的，可以想想为什么
+2.接下来分区间处理就行
+
 // Don't place your source in a package
 import java.util.*;
 import java.lang.*;
