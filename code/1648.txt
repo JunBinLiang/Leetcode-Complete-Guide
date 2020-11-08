@@ -1,0 +1,40 @@
+class Solution {
+    int mod=1000000007;
+    public int maxProfit(int[] A, int orders) {
+       
+        List<Long>list=new ArrayList<>();
+        list.add(0l);
+        for(long i:A)list.add(i);
+        Collections.sort(list);
+       
+        int cnt=1;
+        long res=0;
+        
+        
+        for(int i=list.size()-2;i>=0;i--){
+            long dif=list.get(i+1)-list.get(i);
+            
+            if(dif*cnt<=orders){
+                orders-=dif*cnt;
+                res=res+cnt*(list.get(i)+1+list.get(i+1))*dif/2;
+                res%=mod;
+            }
+            else{
+                long div=orders/cnt;
+                orders-=(div*cnt);
+                long first=list.get(i+1)-div+1;
+                res=res+cnt*(first+list.get(i+1))*div/2;
+                if(orders!=0){
+                    res+=(orders*(first-1));
+                }
+                res%=mod;
+                break;
+            }
+            cnt++;
+            if(orders==0)break;
+        }
+        return (int)(res);
+    }
+    
+ 
+}
