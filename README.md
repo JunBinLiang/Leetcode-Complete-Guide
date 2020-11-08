@@ -1087,6 +1087,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   
   #  CodeForce 日常水题 ( 小于1500分 )
   ### 800<br/>
+  38A.[Army (Implementation) ](./easy/38A.txt) <br />
   119A.[Epic Game (Implementation) ](./easy/119A.txt) <br />
   1445A.[Array Rearrangment (Greedy) ](./easy/1445A.txt) <br />
   
