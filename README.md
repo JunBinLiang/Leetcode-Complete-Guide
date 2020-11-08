@@ -58,7 +58,7 @@
 |  1064  |[Fixed Point](./code/1064.txt)| (E-) 600 ||  1085  |[Sum of Digits in the Minimum Number](./code/1085.txt)| (E) 800 |
 |  1099  |[Two Sum Less Than K](./code/1099.txt)| (E) 800 |
 |  1100  |[Find K-Length Substrings With No Repeated Characters](./code/1100.txt)| (M-) 1200 ||  1101  |[The Earliest Moment When Everyone Become Friends](./code/1101.txt)| (M) 1500 
-|  1119  |[Remove Vowels from a String](./code/1119.txt)| (E-) 700 |
+|  1119  |[Remove Vowels from a String](./code/1119.txt)| (E-) 700 ||  1121  |[Divide Array Into Increasing Sequences (Greedy)](./code/1121.txt)| (H-) 1700 |
 |  1136  |[Parallel Courses](./code/1136.txt)| (H-) 1600 ||  1167  |[Minimum Cost to Connect Sticks](./code/1167.txt)  | (M-) 1400  |
 |  1168  |[Optimize Water Distribution in a Village](./code/1168.txt)  | (H) 1800  |
 |  1180  |[Count Substrings with Only One Distinct Letter](./code/1180.txt)  | (E) 1000  |
