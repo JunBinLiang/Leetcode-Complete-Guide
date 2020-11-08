@@ -1101,11 +1101,18 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   298A.[Snow Footprints (Greedy) ](./easy/298A.txt) <br />
   1285B.[Just Eat It! (prefix sum) ](./easy/1285B.txt) <br />
   
+  
+  #  CodeForce 日常刷题 
    ### 1600<br/>
   28B. [pSort (Union Find) ](./easy/28B.txt) <br />
   
   ### 1700<br/>
   18B. [Platforms (Math) ](./easy/18B.txt) <br />
+  
+   ### 1900<br/>
+  448C. [Painting Fence (Divide Conquer+Greedy) ](./cf/448C.txt) <br />
+  
+
   
   #  CodeForce 高分精算 
   23C. [Oranges and Apples (2500) Greedy ](./code/23C.txt) <br />
