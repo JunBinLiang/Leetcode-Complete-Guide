@@ -43,14 +43,8 @@ class LRUCache {
         }
     }
     
-    public void addFirst(Node node){
-        Node first=head.next;
-        first.pre=node;
-        node.next=first;
-        node.pre=head;
-        head.next=node;
-    }
-    
+ 
+
     public void remove(Node node){
         Node pre=node.pre;
         Node next=node.next;
