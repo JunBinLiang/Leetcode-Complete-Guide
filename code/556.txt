@@ -1,0 +1,32 @@
+class Solution {
+public:
+    int nextGreaterElement(int n) {
+        string nums=to_string(n);
+        int index=-1;
+        bool good=false;
+        int index1=-1,index2=-1;
+        
+        for(int i=0;i<nums.size();i++){
+            int mn=100000;
+            for(int j=i+1;j<nums.size();j++){
+                if(nums[j]>nums[i]&&nums[j]<mn){
+                    good=true;
+                    mn=nums[j];
+                    index1=i;index2=j;
+                }
+            }
+        }
+        
+        if(!good)return -1;
+        
+        
+        char temp=nums[index1];
+        nums[index1]=nums[index2];
+        nums[index2]=temp;
+        sort(nums.begin()+index1+1,nums.end());
+        
+        long long res=stol(nums);
+        if(res>INT_MAX)return -1;
+        return stoi(nums);
+    }
+};
