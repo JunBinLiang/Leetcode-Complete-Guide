@@ -326,6 +326,8 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #85. [Maximal Rectangle (H-) 1700](./code/85.txt) <br />
 #91. [Decode Way (M+) 1700](./code/91.txt) <br />
 #97. [Interleaving String (H-) 1700](./code/97.txt) <br />
+#118. [Pascal's Triangle (E) 900](./code/118.txt) <br />
+#119. [Pascal's Triangle II (E) 1000](./code/119.txt) <br />
 #120. [Triangle (M-) 1300](./code/120.txt) <br />
 #123. [Best Time to Buy and Sell Stock III (H-) 1700](./code/123.txt) <br />
 #132. [Palindrome Partitioning II (H-) 1700](./code/132.txt) <br />
@@ -547,7 +549,6 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #7. [Reverse Integer (E) 900](./code/7.txt) <br />
 #26. [Remove Duplicates from Sorted Array (E) 800](./code/26.txt) <br />
 #68. [Text Justification (H) 1800](./code/68.txt) <br />
-#118. [Pascal's Triangle (E) 900](./code/118.txt) <br />
 #202. [Happy Number (E) 800](./code/202.txt) <br />
 #258. [Add Digits (E) 800](./code/258.txt) <br />
 #747. [Largest Number At Least Twice of Others (E) 900](./code/747.txt) <br />
