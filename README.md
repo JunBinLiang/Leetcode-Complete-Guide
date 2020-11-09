@@ -1113,6 +1113,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   ### 1300<br/>
   298A.[Snow Footprints (Greedy) ](./easy/298A.txt) <br />
   371B.[Fox Dividing Cheese (Math) ](./easy/371B.txt) <br />
+  1234B2.[Social Network (hard version) (LinkedList) ](./easy/1234B2.txt) <br />
   1285B.[Just Eat It! (prefix sum) ](./easy/1285B.txt) <br />
   
   
