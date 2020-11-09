@@ -782,7 +782,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  
  ---
  # :punch: CodeForce Contest
- 统计(1800+ 题量)： 82
+ 统计(1800+ 题量)： 83
  
   
   ### Beta Round #3 
@@ -849,6 +849,12 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  A. [The Brand New Function (1600) ](./code/150A.txt) <br />
  B. [Hydra (2000) (集合相交)](./code/150B.txt) <br />
  
+  ### Codeforces Round #281 (Div. 2)
+ 371A.[K-Periodic Array (Greedy)  (1000) ](./easy/371A.txt) <br />
+ 371B.[Fox Dividing Cheese (Math)  (1300) ](./easy/371B.txt) <br />
+ 371C. [Hamburgers (Binary Search + Math)  (1600) ](./cf/371C.txt) <br />
+ 371D. [Vessels (Ordered Map)  (1800) ](./cf/371D.txt) <br />
+ 371E. [Subway Innovation (Prefix Sum+Math) (2000) ](./cf/371E.txt) <br />
  
  ### Codeforces Round #295 (Div. 2)
  
@@ -1121,6 +1127,9 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   
    ### 1900<br/>
   448C. [Painting Fence (Divide Conquer+Greedy) ](./cf/448C.txt) <br />
+  
+  ### 2000<br/>
+  371E. [Subway Innovation (Prefix Sum+Math) ](./cf/371E.txt) <br />
   
 
   
