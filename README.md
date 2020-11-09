@@ -89,6 +89,7 @@
 #414. [Third Maximum Number (E) 900](./code/414.txt) <br />
 #419. [Battleships in a Board(M-) 1300](./code/419.txt) <br />
 #442. [Find All Duplicates in an Array (M-) 1400](./code/442.txt) <br />
+#665. [ Non-decreasing Array (E+) 1200](./code/665.txt) <br />
 #795. [Number of Subarrays with Bounded Maximum (M) 1500](./code/795.txt) <br />
 #797. [All Paths From Source to Target (M) 1500](./code/797.txt) <br />
 #849. [Maximize Distance to Closest Person (M-) 1400](./code/849.txt) <br />
