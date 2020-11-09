@@ -65,7 +65,8 @@
 |  1196  | [How Many Apples Can You Put into the Basket](./code/1196.txt)  | (E) 800 ||  1183  |[Maximum Number of Ones](./code/1183.txt) |(H) 1800  |
 |  1216  |[Valid Palindrome III (区间dp)](./code/1216.txt)  |  (H-) 1700 ||  1229  |[Meeting Scheduler](./code/1229.txt) | (M-) 1400 |
 |  1243  |[Array Transformation ](./code/1243.txt) | (E) 900 ||  1244  |[Design A Leaderboard](./code/1244.txt)  | (M-) 1200 |
-|  1246  |[Palindrome Removal (区间dp)](./code/1246.txt) |(H) 1800  ||  1273  |[Delete Tree Nodes](./code/1273.txt) |(M) 1500  |
+|  1246  |[Palindrome Removal (区间dp)](./code/1246.txt) |(H) 1800  ||  1257  |[Smallest Common Region (LCA)](./code/1257.txt) |(M) 1500  |
+|  1273  |[Delete Tree Nodes](./code/1273.txt) |(M) 1500  |
 |  1259  |[Handshakes That Don't Cross ](./code/1259.txt) |(H-) 1700  ||  1426  |[Counting Elements ](./code/1426.txt) |(E) 900  |
 |  1429  |[First Unique Number ](./code/1429.txt) |(M) 1500  ||  1469  |[Find All The Lonely Nodes](./code/1469.txt) |(E) 900  |
 |  1474  |[ Delete N Nodes After M Nodes of a Linked Lists](./code/1474.txt) |(E) 1000  ||  1485  |[Clone Binary Tree With Random Pointer](./code/1485.txt) |(M) 1500  |
