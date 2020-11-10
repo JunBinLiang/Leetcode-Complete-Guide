@@ -33,6 +33,7 @@
 
 |  #  | Title           |    Difficulty  | |  #  | Title           |    Difficulty  |
 |-----|---------------- | --------------- | -----|-----|---------------- | --------------- |
+|  243  |[Shortest Word Distance](./code/243.txt)   | (E) 900|
 |  246  |[Strobogrammatic Number ](./code/246.txt)   | (E) 900||  247  |[Strobogrammatic Number II ](./code/247.txt)   | (M) 1500|
 |  248  |[Strobogrammatic Number III ](./code/248.txt)   | (H-) 1700|
 |  250  |[Count Univalue Subtrees ](./code/250.txt)   | (M-) 1300| |  252  |[Meeting Rooms ](./code/252.txt)  |(E) 900|
