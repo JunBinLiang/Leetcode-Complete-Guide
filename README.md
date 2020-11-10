@@ -1133,6 +1133,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   #  CodeForce 日常刷题 
    ### 1600<br/>
   28B. [pSort (Union Find) ](./easy/28B.txt) <br />
+  46C. [Hamsters and Tigers (Sliding Window) ](./cf/46C.txt) <br />
   371C. [Hamburgers (Binary Search + Math) ](./cf/371C.txt) <br />
   
   ### 1700<br/>
