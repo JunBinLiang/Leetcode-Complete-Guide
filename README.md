@@ -48,7 +48,7 @@
 |  370  |[Range Addition](./code/370.txt)| (M) 1500  ||  379  |[Design Phone Directory](./code/379.txt)| (M-) 1200  |
 |  411  |[Minimum Unique Word Abbreviation](./code/411.txt)| (H) 1800  ||  422  |[Valid Word Square](./code/422.txt)| (E) 1000  |
 |  425  |[Word Squares](./code/425.txt) | (H) 1800  ||  465  |[Optimal Account Balancing](./code/465.txt) | (H) 1800  |
-|  487  |[Max Consecutive Ones II](./code/487.txt)| (M-) 1300 |
+|  471  |[Encode String with Shortest Length (String + Interval DP)](./code/471.txt) | (H) 1900  ||  487  |[Max Consecutive Ones II](./code/487.txt)| (M-) 1300 |
 |  531  |[Lonely Pixel I](./code/531.txt) | (M-) 1400  ||  544  |[Output Contest Matches ](./code/544.txt) | (M) 1500  |
 |  568  |[Maximum Vacation Days ](./code/568.txt) | (H-) 1700  | |  582  |[Kill Process ](./code/582.txt) | (M-) 1400  |
 |  644  |[Maximum Average Subarray II ](./code/644.txt) | (H) 1800 ||  651  |[4 Keys Keyboard](./code/651.txt) | (M+) 1600  |
