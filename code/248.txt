@@ -1,0 +1,83 @@
+思路：
+用2 的方法backtrack就行，加点bound check的条件check即可
+
+
+
+A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
+
+Write a function to count the total strobogrammatic numbers that exist in the range of low <= num <= high.
+
+Example:
+
+Input: low = "50", high = "100"
+Output: 3 
+Explanation: 69, 88, and 96 are three strobogrammatic numbers.
+Note:
+Because the range might be a large number, the low and high numbers are represented as string.
+
+
+
+
+
+
+
+class Solution {
+public:
+    long long l,h;
+    int n1,n2;
+    int res=0;
+    
+    int strobogrammaticInRange(string low, string high) {
+        n1=low.size();n2=high.size();
+        l=stoll(low);h=stoll(high);
+        unordered_map<char,char>hash{{'0', '0'}, {'1', '1'}, {'6', '9'}, {'8', '8'}, {'9', '6'}};
+        string cur="";
+        dfs(hash,0,cur);
+        return res;
+    }
+    
+    void dfs(unordered_map<char,char>&hash,int i,string& cur){
+        if(i*2>n2){
+            return;
+        }
+        
+        if(i*2+1>=n1){
+            string rev=cur;
+            for(int i=0;i<cur.size();i++){
+                rev[i]=hash[cur[i]];
+            }
+            reverse(rev.begin(),rev.end());
+            long a=-1;
+            if(cur.size()>0){
+                a=stoll(cur+rev);
+            }
+            long long b=stoll(cur+"0"+rev);
+            long long c=stoll(cur+"1"+rev);
+            long long d=stoll(cur+"8"+rev);
+
+            if(a>=l&&a<=h){
+                res++;
+            }
+             if(b>=l&&b<=h){
+                res++;
+            }
+             if(c>=l&&c<=h){
+                res++;
+            }
+             if(d>=l&&d<=h){
+                res++;
+            }
+        }
+        
+        
+        
+        for(auto it=hash.begin();it!=hash.end();it++){
+            char key=it->first;
+            if(key=='0'&&i==0)continue;
+            cur.push_back(key);
+            dfs(hash,i+1,cur);
+            cur.pop_back();
+        }
+        
+    }
+};
