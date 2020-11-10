@@ -1,0 +1,61 @@
+Given n nodes labeled from 0 to n - 1 and a list of undirected edges (each edge is a pair of nodes), write a function to find the number of connected components in an undirected graph.
+
+Example 1:
+
+Input: n = 5 and edges = [[0, 1], [1, 2], [3, 4]]
+
+     0          3
+     |          |
+     1 --- 2    4 
+
+Output: 2
+Example 2:
+
+Input: n = 5 and edges = [[0, 1], [1, 2], [2, 3], [3, 4]]
+
+     0           4
+     |           |
+     1 --- 2 --- 3
+
+Output:  1
+Note:
+You can assume that no duplicate edges will appear in edges. Since all edges are undirected, [0, 1] is the same as [1, 0] and thus will not appear together in edges.
+
+
+
+
+
+
+
+
+
+
+
+
+class Solution {
+public:
+    int countComponents(int n, vector<vector<int>>& A) {
+        vector<int>nums(n);
+        for(int i=0;i<n;i++){
+            nums[i]=i;
+        }
+        
+        for(vector<int>&p:A){
+            int r1=find(nums,p[0]);
+            int r2=find(nums,p[1]);
+            if(r1!=r2){
+                n--;
+                nums[r1]=r2;
+            }
+        }
+        return n;
+        
+    }
+    
+     int find(vector<int>&nums,int x){//union find => find method
+		if(nums[x]==x)return x;
+		int root=find(nums,nums[x]);
+		nums[x]=root;
+		return root;
+	}
+};
