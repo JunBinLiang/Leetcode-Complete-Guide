@@ -33,6 +33,7 @@
 
 |  #  | Title           |    Difficulty  | |  #  | Title           |    Difficulty  |
 |-----|---------------- | --------------- | -----|-----|---------------- | --------------- |
+|  246  |[Strobogrammatic Number ](./code/246.txt)   | (E) 900|
 |  250  |[Count Univalue Subtrees ](./code/250.txt)   | (M-) 1300| |  252  |[Meeting Rooms ](./code/252.txt)  |(E) 900|
 |  253  |[Meeting RoomsII ](./code/253.txt)  | (M) 1500| |  256  | [Paint House](./code/256.txt) |  (M-) 1400|
 |  261  | [ Graph Valid Tree](./code/261.txt) |  (M-) 1400||  265  | [Paint House II](./code/265.txt) |  (H-) 1700|
