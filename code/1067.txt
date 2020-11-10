@@ -1,0 +1,100 @@
+1.number of digit one 升级版
+2.用 f(high)-f(low-1)
+3.digit 0 的case 要额外注意，其他就是可以用数学堆出来
+
+
+
+Given an integer d between 0 and 9, and two positive integers low and high as lower and upper bounds, respectively. Return the number of times that d occurs as a digit in all integers between low and high, including the bounds low and high.
+ 
+
+Example 1:
+
+Input: d = 1, low = 1, high = 13
+Output: 6
+Explanation: 
+The digit d=1 occurs 6 times in 1,10,11,12,13. Note that the digit d=1 occurs twice in the number 11.
+Example 2:
+
+Input: d = 3, low = 100, high = 250
+Output: 35
+Explanation: 
+The digit d=3 occurs 35 times in 103,113,123,130,131,...,238,239,243.
+ 
+
+Note:
+
+0 <= d <= 9
+1 <= low <= high <= 2×10^8
+
+
+
+
+
+
+
+
+class Solution {
+public:
+    int digitsCount(int d, int low, int high) {
+        return calculate(high,d)-calculate(low-1,d);
+    }
+    
+    int calculate(int n,int d){//n is the bound => [0,n] => how many digit d occur
+        if(n==0&&d==0)return 1;
+        if(n<d)return 0;
+        int res=0;
+        string num=to_string(n);
+        
+        vector<int>A;
+        A.push_back(1l);
+        int mul=10;
+        for(int i=1;i<9;i++){
+            int sum=A[A.size()-1]*10+mul;
+            A.push_back(sum);
+            mul*=10;
+        }
+        
+        mul=1;
+        for(int i=0;i<num.size()-1;i++){
+            mul*=10;
+        }
+        int index=num.size()-2;
+        
+        cout<<mul<<endl;
+        
+        for(int i=0;i<num.size();i++){
+            int digit=num[i]-'0';
+            if(i==num.size()-1){
+                if(digit>=d){
+                    res++;
+                }
+                break;
+            }
+            if(d==0&&i==0){
+                res+=((digit)*A[index]);
+                int div=10;
+                for(int j=0;j<num.size()-2;j++){
+                    res-=(mul/div);
+                    div*=10;
+                }
+                mul/=10;
+                index--;
+                continue;
+            }
+            
+            if(digit>d){
+                res+=((digit)*A[index]+mul); 
+            }
+            else if(digit<d){
+                res+=((digit)*A[index]);
+            }
+            else{
+                res+=((digit)*A[index]+stoi(num.substr(i+1))+1);
+            }
+            mul/=10;
+            index--;
+        }
+        return res;   
+    }
+    
+};
