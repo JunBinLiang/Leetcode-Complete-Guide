@@ -1,0 +1,110 @@
+思路：
+1.dp[l][r] 是这个区间最短的encode
+2. 只做出最原始的n^4 暴力法，没处理string 的repeate findding（这里目测可以优化成 n^3，但not sure）
+
+
+
+Given a non-empty string, encode the string such that its encoded length is the shortest.
+
+The encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times.
+
+Note:
+
+k will be a positive integer.
+If an encoding process does not make the string shorter, then do not encode it. If there are several solutions, return any of them.
+ 
+
+Example 1:
+
+Input: s = "aaa"
+Output: "aaa"
+Explanation: There is no way to encode it such that it is shorter than the input string, so we do not encode it.
+Example 2:
+
+Input: s = "aaaaa"
+Output: "5[a]"
+Explanation: "5[a]" is shorter than "aaaaa" by 1 character.
+Example 3:
+
+Input: s = "aaaaaaaaaa"
+Output: "10[a]"
+Explanation: "a9[a]" or "9[a]a" are also valid solutions, both of them have the same length = 5, which is the same as "10[a]".
+Example 4:
+
+Input: s = "aabcaabcd"
+Output: "2[aabc]d"
+Explanation: "aabc" occurs twice, so one answer can be "2[aabc]d".
+Example 5:
+
+Input: s = "abbbabbbcabbbabbbc"
+Output: "2[2[abbb]c]"
+Explanation: "abbbabbbc" occurs twice, but "abbbabbbc" can also be encoded to "2[abbb]c", so one answer can be "2[2[abbb]c]".
+ 
+
+Constraints:
+
+1 <= s.length <= 150
+s consists of only lowercase English letters.
+
+
+代码：
+
+
+class Solution {
+    String dp[][][];
+    public String encode(String s) {
+        int n=s.length();
+        dp=new String[n][n][2];
+        
+        return dfs(s,0,s.length()-1)[0];
+    }
+    
+    
+    //less than 4,just return that string
+    public String[] dfs(String s,int l,int r){
+        if(r-l+1<=4){
+            String sub=s.substring(l,r+1);
+            return new String[]{sub,sub};//[encode form,regular form]
+        }
+        if(dp[l][r][0]!=null)return dp[l][r];
+        
+        
+        String sub=s.substring(l,r+1);
+        String res[]=new String[2];
+        res[1]=sub;
+        int min=Integer.MAX_VALUE;
+        
+        for(int i=l+1;i<=r;i++){
+            String A[]=dfs(s,l,i-1);
+            String B[]=dfs(s,i,r);
+            if(min>A[0].length()+B[0].length()){
+                res[0]=A[0]+B[0];
+                min=A[0].length()+B[0].length();
+            }
+            if(isrepeat(A[1],sub)){
+                int t=sub.length()/A[1].length();
+                String news=t+"["+A[0]+"]";
+                if(news.length()<min){
+                    min=news.length();
+                    res[0]=news;
+                }
+            }
+        }
+        
+        dp[l][r]=res;
+        return res;
+    }
+    
+    public boolean isrepeat(String p,String s){
+        if((s.length()%p.length())!=0)return false;
+        int t=s.length()/p.length();
+        for(int i=0;i<t;i++){
+            for(int j=0;j<p.length();j++){
+                if(s.charAt(i*p.length()+j)!=p.charAt(j))return false;
+            }
+        }
+        return true;
+    }
+}
+
+
