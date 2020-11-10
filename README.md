@@ -1106,6 +1106,10 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   ### 1000<br/>
   371A.[K-Periodic Array (Greedy) ](./easy/371A.txt) <br />
   
+    
+  ### 1100<br/>
+  1038B.[Non-Coprime Partition (Math) ](./easy/1038B.txt) <br />
+  
   ### 1200<br/>
   18C.[Stripe ](./easy/18C.txt) <br />
   23A.[You're Given a String... ](./easy/23A.txt) <br />
