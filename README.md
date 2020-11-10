@@ -1127,6 +1127,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   18B. [Platforms (Math) ](./easy/18B.txt) <br />
   
   ### 1800<br/>
+  38E. [Let's Go Rolling! (DP) ](./cf/38E.txt) <br />
   371D. [Vessels (Ordered Map) ](./cf/371D.txt) <br />
   
    ### 1900<br/>
