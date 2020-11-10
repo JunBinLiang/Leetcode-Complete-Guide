@@ -1,0 +1,76 @@
+顾虑后双指针即可
+
+
+
+Design a class which receives a list of words in the constructor, and implements a method that takes two words word1 and word2 and return the shortest distance between these two words in the list. Your method will be called repeatedly many times with different parameters. 
+
+Example:
+Assume that words = ["practice", "makes", "perfect", "coding", "makes"].
+
+Input: word1 = “coding”, word2 = “practice”
+Output: 3
+Input: word1 = "makes", word2 = "coding"
+Output: 1
+Note:
+You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.
+
+
+
+
+
+
+
+
+
+
+class WordDistance {
+public:
+    unordered_map<string,vector<int>>hash;
+    WordDistance(vector<string>& A) {
+        for(int i=0;i<A.size();i++){
+            hash[A[i]].push_back(i);
+        }
+    }
+    
+    int shortest(string word1, string word2) {
+        int res=INT_MAX;
+        vector<int>&A1=hash[word1];
+        vector<int>&A2=hash[word2];
+        
+        int i=0,j=0;
+        
+        while(i<A1.size()&&j<A2.size()){
+            if(A1[i]<A2[j]){
+                if(j!=0){
+                    res=min(res,A1[i]-A2[j-1]);
+                }
+                i++;
+                
+            }
+            else{
+                if(i!=0){
+                    res=min(res,A2[j]-A1[i-1]);
+                }
+                j++;
+            }
+        }
+        
+        while(i<A1.size()){
+            res=min(res,A1[i]-A2[j-1]);
+            i++;
+        }
+        
+        while(j<A2.size()){
+            res=min(res,A2[j]-A1[i-1]);
+            j++;
+        }
+        
+        return res;
+    }
+};
+
+/**
+ * Your WordDistance object will be instantiated and called as such:
+ * WordDistance* obj = new WordDistance(words);
+ * int param_1 = obj->shortest(word1,word2);
+ */
