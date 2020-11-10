@@ -1107,6 +1107,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   ### 800<br/>
   38A.[Army (Implementation) ](./easy/38A.txt) <br />
   119A.[Epic Game (Implementation) ](./easy/119A.txt) <br />
+  1430B.[ Barrels (Sort) ](./easy/1430B.txt) <br />
   1445A.[Array Rearrangment (Greedy) ](./easy/1445A.txt) <br />
   
   ### 900<br/>
