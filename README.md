@@ -1144,7 +1144,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   28B. [pSort (Union Find) ](./easy/28B.txt) <br />
   46C. [Hamsters and Tigers (Sliding Window) ](./cf/46C.txt) <br />
   371C. [Hamburgers (Binary Search + Math) ](./cf/371C.txt) <br />
-  
+  1077D. [Cutting Out (Binary Search) ](./cf/1077D.txt) <br />
   ### 1700<br/>
   18B. [Platforms (Math) ](./easy/18B.txt) <br />
    29C. [Mail Stamps (Graph) ](./cf/29C.txt) <br />
