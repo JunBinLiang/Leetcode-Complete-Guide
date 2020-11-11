@@ -60,7 +60,8 @@
 |  716  |[Max Stack ](./code/716.txt)| (E+) 1200  ||  755  |[Pour Water ](./code/755.txt)| (M-) 1400  |
 |  759  |[Employee Free Time ](./code/759.txt)| (H-) 1600  ||  760  |[ Find Anagram Mappings ](./code/760.txt)| (E) 900  |
 |  774  |[Minimize Max Distance to Gas Station ](./code/774.txt)| (H-) 1700  ||  1004  |[Max Consecutive Ones III](./code/1004.txt)| (M-) 1300 |
-|  1055  |[Shortest Way to Form String](./code/1055.txt)| (M-) 1300 ||  1061  |[Lexicographically Smallest Equivalent String](./code/1061.txt)| (M) 1500 |
+|  1055  |[Shortest Way to Form String](./code/1055.txt)| (M-) 1300 ||  1056  |[Confusing Number](./code/1056.txt)| (E) 900 |
+|  1061  |[Lexicographically Smallest Equivalent String](./code/1061.txt)| (M) 1500 |
 |  1063  |[Number of Valid Subarrays](./code/1063.txt)| (H-) 1600 |
 |  1064  |[Fixed Point](./code/1064.txt)| (E-) 600 ||  1066  |[Campus Bikes II](./code/1066.txt)| (M+) 1600 |
 |  1067  |[ Digit Count in Range(Math)](./code/1067.txt)| (H+) 2000 |
