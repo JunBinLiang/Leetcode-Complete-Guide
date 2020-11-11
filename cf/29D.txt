@@ -1,3 +1,6 @@
+走到每一个node，返回的时候返回lca的点
+
+
 // Don't place your source in a package
 import java.util.*;
 import java.lang.*;
