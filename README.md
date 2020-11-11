@@ -1141,6 +1141,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   
   ### 1700<br/>
   18B. [Platforms (Math) ](./easy/18B.txt) <br />
+  1430D. [String Deletion (Greedy) ](./cf/1430D.txt) <br />
   
   ### 1800<br/>
   38E. [Let's Go Rolling! (DP) ](./cf/38E.txt) <br />
