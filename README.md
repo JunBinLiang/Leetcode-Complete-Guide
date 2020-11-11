@@ -795,7 +795,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  
  ---
  # :punch: CodeForce Contest
- 统计(1800+ 题量)： 84
+ 统计(1800+ 题量)： 85
  
   
   ### Beta Round #3 
@@ -1150,6 +1150,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   
    ### 1900<br/>
   14D. [Two Path ](./cf/14D.txt) <br />
+  19B. [Checkout Assistant (DP) ](./cf/19B.txt) <br />
   448C. [Painting Fence (Divide Conquer+Greedy) ](./cf/448C.txt) <br />
   
   ### 2000<br/>
