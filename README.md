@@ -1116,6 +1116,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   1445B.[Eliminationt (Math) ](./easy/1445B.txt) <br />
   
   ### 1000<br/>
+  29A.[Spit Problem ](./easy/29A.txt) <br />
   371A.[K-Periodic Array (Greedy) ](./easy/371A.txt) <br />
   
     
