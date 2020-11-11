@@ -1,0 +1,101 @@
+class Solution {
+    public String minInteger(String s, int k) {
+        int arr[]=new int[s.length()];
+        Arrays.fill(arr,1);
+        Fenwick fe=new Fenwick(arr);
+        StringBuilder res=new StringBuilder();
+        Queue<Integer>q[]=new LinkedList[10];
+        for(int i=0;i<q.length;i++){
+            q[i]=new LinkedList<>();
+        }
+        
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            q[c-'0'].add(i);
+        }
+        
+        
+        
+        while(k>0){
+            boolean good=false;
+            for(int i=0;i<10;i++){
+                if(q[i].size()==0)continue;
+                
+                int index=q[i].peek();
+                int less=fe.sumRange(0,index-1);//how many elements remain less than it 
+                if(k>=less){
+                    good=true;
+                    q[i].poll();
+                    k-=less;
+                    res.append(i+"");
+                    fe.update(index,-1);
+                    break;
+                }
+            }
+            
+            if(!good)break;
+        }
+        
+        
+        
+        
+        
+        
+        List<int[]>A=new ArrayList<>();
+        for(int i=0;i<q.length;i++){
+           while(q[i].size()>0){
+               A.add(new int[]{i,q[i].poll()});
+           }
+        }
+        
+        Collections.sort(A,(a,b)->{
+            return a[1]-b[1];
+        });
+        
+        for(int i=0;i<A.size();i++){
+            res.append(A.get(i)[0]+"");
+        }
+        
+        return res.toString();
+    }
+    
+    
+    class Fenwick {
+        int tree[];//1-index based
+        int A[];
+        int arr[];
+        public Fenwick(int[] A) {
+            this.A=A;
+            arr=new int[A.length];
+            tree=new int[A.length+1];
+            int sum=0;
+            for(int i=0;i<A.length;i++){
+                update(i,A[i]);
+            }
+        }
+
+        public void update(int i, int val) {
+            arr[i]+=val;
+            i++;
+            while(i<tree.length){
+                tree[i]+=val;
+                i+=(i&-i);
+            }
+            
+        }
+
+        public int sumRange(int i, int j) {
+            
+            return pre(j+1)-pre(i);
+        }
+
+        public int pre(int i){
+            int sum=0;
+            while(i>0){
+                sum+=tree[i];
+                i-=(i&-i);
+            }
+            return sum;
+        }
+    }
+}
