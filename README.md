@@ -1134,6 +1134,9 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   1285B.[Just Eat It! (prefix sum) ](./easy/1285B.txt) <br />
   
   
+   ### 1500<br/>
+   53D.[Physical Education! (Sort) ](./easy/53D.txt) <br />
+  
   #  CodeForce 日常刷题 
    ### 1600<br/>
   28B. [pSort (Union Find) ](./easy/28B.txt) <br />
