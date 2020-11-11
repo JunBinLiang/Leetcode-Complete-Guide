@@ -796,7 +796,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  
  ---
  # :punch: CodeForce Contest
- 统计(1800+ 题量)： 87
+ 统计(1800+ 题量)： 88
  
   
   ### Beta Round #3 
@@ -1153,7 +1153,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   ### 1800<br/>
   38E. [Let's Go Rolling! (DP) ](./cf/38E.txt) <br />
   371D. [Vessels (Ordered Map) ](./cf/371D.txt) <br />
-  
+  1077E. [Thematic Contests (Binary Search) ](./cf/1077E.txt) <br />
    ### 1900<br/>
   14D. [Two Path ](./cf/14D.txt) <br />
   22D. [Segment (sort+Greedy) ](./cf/22D.txt) <br />
