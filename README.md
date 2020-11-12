@@ -313,6 +313,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #236. [Lowest Common Ancestor of a Binary Tree   (M-) 1400](./code/236.txt) <br />
 #257. [Binary Tree Paths (E) 1000](./code/257.txt) <br />
 #617. [Merge Binary Tree (E) 1000](./code/617.txt) <br />
+#623. [ Add One Row to Tree (M-) 1300](./code/623.txt) <br />
 #654. [Maximum Binary Tree (M-) 1400](./code/654.txt) <br />
 #669. [Trim a Binary Search Tree (M-) 1400](./code/669.txt) <br />
 #783. [Minimum Distance Between BST Nodes (E) 900](./code/783.txt) <br />
