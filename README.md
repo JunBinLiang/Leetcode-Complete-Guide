@@ -55,6 +55,7 @@
 |  471  |[Encode String with Shortest Length (String + Interval DP)](./code/471.txt) | (H) 1900  ||  487  |[Max Consecutive Ones II](./code/487.txt)| (M-) 1300 |
 |  531  |[Lonely Pixel I](./code/531.txt) | (M-) 1400  ||  544  |[Output Contest Matches ](./code/544.txt) | (M) 1500  |
 |  568  |[Maximum Vacation Days ](./code/568.txt) | (H-) 1700  | |  582  |[Kill Process ](./code/582.txt) | (M-) 1400  |
+|  624  |[Maximum Distance in Arrays ](./code/624.txt) | (M-) 1400  |
 |  644  |[Maximum Average Subarray II ](./code/644.txt) | (H) 1800 ||  651  |[4 Keys Keyboard](./code/651.txt) | (M+) 1600  |
 |  683  |[ K Empty Slots ](./code/683.txt) | (H--) 1500  ||  702  |[Search in a Sorted Array of Unknown Size ](./code/702.txt)| (M-) 1200  |
 |  716  |[Max Stack ](./code/716.txt)| (E+) 1200  ||  755  |[Pour Water ](./code/755.txt)| (M-) 1400  |
