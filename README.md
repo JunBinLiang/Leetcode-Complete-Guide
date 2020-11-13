@@ -58,7 +58,8 @@
 |  624  |[Maximum Distance in Arrays ](./code/624.txt) | (M-) 1400  |
 |  644  |[Maximum Average Subarray II ](./code/644.txt) | (H) 1800 ||  651  |[4 Keys Keyboard](./code/651.txt) | (M+) 1600  |
 |  683  |[ K Empty Slots ](./code/683.txt) | (H--) 1500  ||  702  |[Search in a Sorted Array of Unknown Size ](./code/702.txt)| (M-) 1200  |
-|  716  |[Max Stack ](./code/716.txt)| (E+) 1200  ||  755  |[Pour Water ](./code/755.txt)| (M-) 1400  |
+|  716  |[Max Stack ](./code/716.txt)| (E+) 1200  ||  750  |[ Number Of Corner Rectangles ](./code/750.txt)| (M) 1500  |
+|  755  |[Pour Water ](./code/755.txt)| (M-) 1400  |
 |  759  |[Employee Free Time ](./code/759.txt)| (H-) 1600  ||  760  |[ Find Anagram Mappings ](./code/760.txt)| (E) 900  |
 |  774  |[Minimize Max Distance to Gas Station ](./code/774.txt)| (H-) 1700  ||  1004  |[Max Consecutive Ones III](./code/1004.txt)| (M-) 1300 |
 |  1055  |[Shortest Way to Form String](./code/1055.txt)| (M-) 1300 ||  1056  |[Confusing Number](./code/1056.txt)| (E) 900 |
