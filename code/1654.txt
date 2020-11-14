@@ -1,0 +1,53 @@
+Mose people failing some test case is beacuse they use one state. 
+There should be two state for the expansion :[currentPos,direction]
+
+`Additional Question` : why we can beak the position if we pass certain limit?
+We must considerate **Two Case**: a>b and  b>a
+
+1. if a>b, since we can go backward only 1 time,if x pass certain limit, after we do pos-b, the next step is always pos+a, which will increase the position further, the pos will only keep increasing and we can never go back
+2. if b>a, in this case, since the backward is larger, we can go back by  at most  (b-a).  Let's say out current pos is Y(Y>x,if not, just go forward).We want to reach x and (Y-x)%(b-a)=0.We may do (Y-x)/(b-a) steps. Y=(b-a)*x. We can see at some point, we can bound the Y 
+
+
+
+```
+class Solution {
+    Set<Integer>bad=new HashSet<>();
+    Set<String>set=new HashSet<>();
+    public int minimumJumps(int[] A, int a, int b, int x) {
+        for(int i:A){
+            bad.add(i);
+        }
+        
+        Queue<int[]>q=new LinkedList<>();
+        q.add(new int[]{0,0,0});
+        set.add("0,0");
+        while(q.size()!=0){
+            int pair[]=q.poll();
+            
+            int pos=pair[0],level=pair[1],state=pair[2];
+            if(pos==x)return level;
+            
+            if(state>=0){
+                if(pos<=10000&&!set.contains((pos+a)+",0")&&!bad.contains(pos+a)){
+                    set.add((pos+a)+",0");
+                    q.add(new int[]{pos+a,level+1,0});
+                }
+                
+                if(!set.contains((pos-b)+",-1")&&!bad.contains(pos-b)&&pos-b>=0){
+                    set.add((pos-b)+",-1");
+                    q.add(new int[]{pos-b,level+1,-1});
+                }
+            }
+            else if(state<0){
+                if(pos<=10000&&!set.contains((pos+a)+",0")&&!bad.contains(pos+a)){
+                    set.add((pos+a)+",0");
+                    q.add(new int[]{pos+a,level+1,0});
+                }
+               
+            }
+        }
+        return -1;
+    }
+}
+
+```
