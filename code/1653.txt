@@ -1,0 +1,34 @@
+class Solution {
+    public int minimumDeletions(String s) {
+        int res=Integer.MAX_VALUE;
+        int a=0,b=0;
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)=='a')a++;
+            else b++;
+        }
+        res=Math.min(a,b); 
+        
+        int A[]=new int[s.length()];
+        b=0;
+        a=0;
+        
+        for(int i=s.length()-1;i>=0;i--){
+            if(s.charAt(i)=='a')a++;
+            A[i]=a;
+        }
+        
+        
+        for(int i=0;i<s.length();i++){
+            res=Math.min(res,b+get(A,i+1));
+            if(s.charAt(i)=='a')a++;
+            else b++;
+        }
+        
+        return res;
+    }
+    
+    public int get(int A[],int i){
+        if(i>=A.length)return 0;
+        return A[i];
+    }
+}
