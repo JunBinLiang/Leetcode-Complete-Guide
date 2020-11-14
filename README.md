@@ -135,6 +135,7 @@
 #1439. [Find the Kth Smallest Sum of a Matrix With Sorted Rows (H) 1800](./code/1439.txt) <br />
 #1625. [Lexicographically Smallest String After Applying Operations (M) 1500](./code/1625.txt) <br />
 #1631. [Path With Minimum Effort (M) 1500](./code/1631.txt) <br />
+#1654. [Minimum Jumps to Reach Home(M+) 1600](./code/1654.txt) <br />
 #LCP 09. [最小跳跃次数 (H) 1800](./code/LCP09.txt) <br />
 
 ---
