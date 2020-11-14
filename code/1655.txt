@@ -1,0 +1,79 @@
+class Solution {
+    Map<Integer,Integer>map=new HashMap<>();
+    int B[];int q[];
+    boolean dp[][][];
+    
+    public boolean canDistribute(int[] A, int[] q) {
+        this.q=q;
+        for(int i:A){
+            if(!map.containsKey(i)){
+                map.put(i,1);
+            }
+            else{
+                map.put(i,map.get(i)+1);
+            }
+        }
+        
+        B=new int[map.size()];
+        int index=0;
+        for(Integer key:map.keySet()){
+            B[index++]=map.get(key);
+        }
+        
+        
+        int state=(1<<q.length)-1;
+        dp=new boolean[B.length][(1<<q.length)+10][2];
+        return dfs(0,state);
+    }
+    
+    
+    public boolean dfs(int bindex,int state){
+        if(bindex>=B.length){
+            if(state==0)return true;
+            return false;
+        }
+        if(state==0){
+            return true;
+        }
+        if(dp[bindex][state][1])return dp[bindex][state][0];
+        boolean res=false;
+        res|=dfs(bindex+1,state);
+        
+        
+        List<Integer>list=new ArrayList<>();
+        for(int i=0;i<10;i++){//available q
+            if((state&(1<<i))!=0){
+                list.add(i);
+            }
+        }
+        
+        
+        int other=(1<<(list.size()))-1;
+        
+        for(int i=0;i<=other;i++){
+            int sum=0;
+            int newstate=state;
+            for(int j=0;j<10;j++){
+                if((i&(1<<j))!=0){
+                    sum+=q[list.get(j)];
+                    newstate=newstate^(1<<(list.get(j)));
+                }
+            }
+            if(sum<=B[bindex]){
+                res=res|dfs(bindex+1,newstate);
+            }
+            
+            if(res){
+                dp[bindex][state][1]=true;
+                dp[bindex][state][0]=res;
+                return res;
+            }
+        }
+            
+        dp[bindex][state][1]=true;
+        dp[bindex][state][0]=res;
+        return res;
+    }
+}
+
+
