@@ -1,0 +1,28 @@
+class Solution {
+    public int[] decrypt(int[] A, int k) {
+        int res[]=new int[A.length];
+        if(k==0)return res;
+        if(k>0){
+            for(int i=0;i<A.length;i++){
+                int sum=0;
+                for(int j=0;j<k;j++){
+                    sum+=(A[(i+j+1)%A.length]);
+                }
+                res[i]=sum;
+            }
+        }
+        else{
+            k=-k;
+            for(int i=0;i<A.length;i++){
+                int sum=0;
+                for(int j=0;j<k;j++){
+                    int index=i-j-1;
+                    if(index<0)index+=A.length;
+                    sum+=(A[index]);
+                }
+                res[i]=sum;
+            }
+        }
+        return res;
+    }
+}
