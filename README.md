@@ -421,6 +421,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1641. [Count Sorted Vowel Strings (M-) 1400](./code/1641.txt) <br />
 #1653. [Minimum Deletions to Make String Balanced (M) 1500](./code/1653.txt) <br />
 #1655. [Distribute Repeating Integers(H) 1800](./code/1655.txt) <br />
+#1659. [Maximize Grid Happiness(H+) 2200](./code/1659.txt) <br />
 #LCP10. [二叉树任务调度 (H+) 2200](./code/LCP10.txt) <br />
 #LCP13. [寻宝 (H+) 2100](./code/LCP13.txt) <br />
 #LCP14. [切分数组 (H+) 2200](./code/LCP14.txt) <br />
