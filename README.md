@@ -112,6 +112,7 @@
 #944. [Delete Columns to Make Sorted (E) 900](./code/944.txt) <br />
 #1144. [Decrease Elements To Make Array Zigzag (M) 1500](./code/1144.txt) <br />
 #1331. [ Rank Transform of an Array (E) 1000](./code/1331.txt) <br />
+#1380. [Lucky Numbers in a Matrix (E) 900](./code/1380.txt) <br />
 #1572. [Matrix Diagonal Sum (E) 800](./code/1572.txt) <br />
 #1582. [Special Positions in a Binary Matrix(E) 900](./code/1582.txt) <br />
 #1588. [Sum of All Odd Length Subarrays(E) 800](./code/1588.txt) <br />
