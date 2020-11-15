@@ -1,0 +1,37 @@
+class Solution {
+public:
+    vector<int> luckyNumbers (vector<vector<int>>& A) {
+        vector<int>res;
+        vector<int>row;
+        vector<int>col;
+        for(int i=0;i<A.size();i++){
+            int mn=INT_MAX;
+            for(int j=0;j<A[0].size();j++){
+                mn=min(mn,A[i][j]);
+            }
+            row.push_back(mn);
+        }
+        
+        for(int i=0;i<A[0].size();i++){
+            int mx=0;
+            for(int j=0;j<A.size();j++){
+                mx=max(mx,A[j][i]);
+            }
+            col.push_back(mx);
+        }
+        
+        
+        for(int i=0;i<A.size();i++){
+            for(int j=0;j<A[0].size();j++){
+                if(A[i][j]==row[i]&&A[i][j]==col[j]){
+                    res.push_back(A[i][j]);
+                }
+            }
+        }
+        
+        
+        
+        return res;
+        
+    }
+};
