@@ -1,0 +1,145 @@
+How we Compress the state?
+
+We have 5 state:
+1. mat: bit to represent the prerow,what column we want to place people, if the binary representation of mat is 001101, it means we want to place people in the 3rd, 4th and 6th column
+2. people: we know we want to place people in 001101 (3rd, 4th and 6th column), but what people we want to place? The binary representation of people should be the at most 3 digits (as we use 001101 as example). If people is 010 in binary representation, it means we place [ex,in,ex] in 3rd, 4th and 6th column for the last row
+3. r is simply the current row index
+4. ex and in is how many people do we still have, make sure we have enough people to place(>=0)
+5. we can calculate the cost by simply restore the current row and the previous row in my restore method and do the calculation
+
+```
+class Solution {
+    int m,n;
+    int dp[][][][][];
+    public int getMaxGridHappiness(int m, int n, int in, int ex) {
+        this.m=m;
+        this.n=n;
+        dp=new int[m+1][40][64][in+1][ex+1];
+        init();
+        
+        int res=dfs(0,0,0,in,ex);
+        return res;
+    }
+    
+    public int dfs(int r,int mat,int people,int in,int ex){
+        //mat:layout of the last row
+        //people:layout of people in the last row\
+        //r:current row
+        if(r>=m){
+            return 0;
+        }
+        if(in==0&&ex==0){
+            return 0;
+        }
+        
+        if(dp[r][mat][people][in][ex]!=-1)return dp[r][mat][people][in][ex];
+       
+        int res=0;
+        int prerow[]=restore(mat,people);
+        
+        
+        for(int i=0;i<(1<<n);i++){//current row layout
+            int count=Integer.bitCount(i);
+            for(int j=0;j<=((1<<count)-1);j++){//people layout for current row
+                int cur[]=restore(i,j);
+                int sta[]=check(cur);
+                if(sta[0]>in||sta[1]>ex)continue;//make sure there is enough people
+                
+                int sum=0;
+                sum+=(sta[0]*120+sta[1]*40);
+                sum+=cal(cur,prerow);
+                res=Math.max(res,sum+dfs(r+1,i,j,in-sta[0],ex-sta[1]));
+            }
+        }
+        
+        
+        
+        dp[r][mat][people][in][ex]=res;
+        return res;
+    }
+    
+    
+    public int[] restore(int mat,int people){//restore the row  o(6)
+        int A[]=new int[n];
+        if(mat==0)return A;
+        
+        int index=0;
+        for(int i=0;i<A.length;i++){
+            if((mat&(1<<i))!=0){
+                if((people&(1<<index))!=0){
+                    A[i]=1;//in
+                }
+                else{
+                    A[i]=2;//ex
+                }
+                index++;
+            }
+        }
+        return A;
+    }
+    
+    public int[] check(int A[]){//o(6)
+        int res[]=new int[2];
+        for(int i:A){
+            if(i==1)res[0]++;
+            if(i==2)res[1]++;
+        }
+        return res;
+    }
+    
+    public int cal(int row[],int prerow[]){
+        int sum=0;
+        for(int j=1;j<row.length;j++){
+            if(row[j]==1){
+                if(row[j-1]==1){
+                    sum-=60;
+                }
+                if(row[j-1]==2){
+                    sum-=30;sum+=20;
+                }
+            }
+            if(row[j]==2){
+                if(row[j-1]==1){
+                    sum-=30;sum+=20;
+                }
+                if(row[j-1]==2){
+                    sum+=40;
+                }
+            }
+        }
+                
+        for(int j=0;j<row.length;j++){
+            if(row[j]==1){
+                if(prerow[j]==1){
+                    sum-=60;
+                }
+                if(prerow[j]==2){
+                    sum-=30;sum+=20;
+                }
+            }
+            if(row[j]==2){
+                if(prerow[j]==1){
+                    sum-=30;sum+=20;
+                }
+                if(prerow[j]==2){
+                    sum+=40;
+                }
+            }
+        }
+        
+        return sum;
+    }
+    
+    public void init(){
+        for(int i=0;i<dp.length;i++){
+            for(int j=0;j<dp[0].length;j++){
+                for(int k=0;k<dp[0][0].length;k++){
+                    for(int x=0;x<dp[0][0][0].length;x++){
+                        Arrays.fill(dp[i][j][k][x],-1);
+                    }
+                }
+            }
+        }
+    }
+}
+```
