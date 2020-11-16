@@ -1,0 +1,36 @@
+class Solution {
+public:
+    unordered_set<int>hash;
+    int k,n;
+    vector<vector<int>>res;
+    vector<vector<int>> combinationSum3(int k, int n) {
+        this->k=k;
+        this->n=n;
+        
+        vector<int>cur;
+        dfs(cur,0,0);
+        return res;
+    }
+    
+    void dfs(vector<int>&cur,int sum,int state){
+        if(sum>n)return;
+        if(cur.size()==k){
+            if(sum==n){
+                if(hash.find(state)==hash.end()){
+                    res.push_back(cur);
+                    hash.insert(state);
+                    
+                }
+            }
+            return;
+        }
+        
+        for(int i=1;i<=9;i++){
+            if((state&(1<<i))!=0)continue;
+            cur.push_back(i);
+            dfs(cur,sum+i,state|(1<<i));
+            cur.pop_back();
+        }
+        
+    }
+};
