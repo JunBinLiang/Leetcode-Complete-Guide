@@ -551,6 +551,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #28. [Implement strStr(M) 1500 (KMP)](./code/28.txt) <br />
 #49. [ Group Anagrams (M-) 1300](./code/49.txt) <br />
 #151. [ Reverse Words in a String (M-) 1300](./code/151.txt) <br />
+#214. [Shortest Palindromem (H-) (KMP) 1700](./code/214.txt) <br />
 #242. [Valid Anagram (E) 900](./code/242.txt) <br />
 #290. [Word Pattern (E) 1000](./code/290.txt) <br />
 #336. [Palindrome Pairs (H) 1800](./code/336.txt) <br />
