@@ -1,0 +1,31 @@
+class Solution {
+    public String shortestPalindrome(String s) {
+        StringBuilder rev=new StringBuilder(s);
+        rev.reverse();
+        String t=s+"#"+rev;
+        
+        int A[]=kmpPre(t);
+        int mx=A[A.length-1];
+        
+        
+        String sub=s.substring(mx);
+        rev=new StringBuilder(sub);
+
+        return rev.reverse().toString()+s;
+    }
+    
+    public int[] kmpPre(String p){
+		int pre[]=new int[p.length()];
+		int l=0,r=1;
+		while(r<p.length()){
+			if(p.charAt(l)==p.charAt(r)){
+				pre[r]=l+1;
+				l++;r++;
+			}else{
+				if(l==0)r++;
+				else l=pre[l-1];
+			}
+		}
+		return pre;
+	}
+}
