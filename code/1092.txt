@@ -1,0 +1,55 @@
+class Solution {
+public:
+    string shortestCommonSupersequence(string s, string t) {
+        int m=s.size();int n=t.size();
+        vector<vector<int>>dp(m+1,vector<int>(n+1));
+        string sub="";
+        string res="";
+        for(int i=1;i<=s.size();i++){
+            for(int j=1;j<=t.size();j++){
+                if(s[i-1]==t[j-1]){
+                    dp[i][j]=1+dp[i-1][j-1];
+                }
+                else{
+                    dp[i][j]=max(dp[i-1][j],dp[i][j-1]);
+                }
+            }
+        }
+        
+        vector<int>A;
+        int r=s.size(),c=t.size();
+        while(sub.size()!=dp[s.size()][t.size()]){
+            if(s[r-1]==t[c-1]){
+                A.push_back(c-1);
+                sub.push_back(s[r-1]);
+                r--;c--;
+            }
+            else{
+                if(dp[r][c]==dp[r-1][c]){
+                    r--;
+                }
+                else if(dp[r][c]==dp[r][c-1]){
+                    c--;
+                }
+            }
+        }
+        
+        reverse(sub.begin(),sub.end());
+        A.push_back(-1);A.push_back(t.size());
+        sort(A.begin(),A.end());
+        
+        int j=0;
+        int aindex=1;
+        for(int i=0;i<s.size();i++){
+            if(s[i]==sub[j]){
+                res=res+t.substr(A[aindex-1]+1,A[aindex]-A[aindex-1]);
+                aindex++;
+                j++;
+            }else{
+                res.push_back(s[i]);
+            }
+        }
+        res=res+t.substr(A[aindex-1]+1,A[aindex]-A[aindex-1]);
+        return res;
+    }
+};
