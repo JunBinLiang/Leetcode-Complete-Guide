@@ -487,6 +487,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1585. [Check If String Is Transformable With Substring Sort Operations (Segment Tree) (H+) 2400](./code/1585.txt) <br />
 #1649. [Create Sorted Array through Instructions (BIT) (H) 1800](./code/1649.txt) <br />
 #LCP5. [发leetcoin (H+) 2300](./code/LCP5.txt) <br />
+#b857. [Delete Integers In Ascending Order (BIT) (H) 1800](./code/b857.txt) <br />
 
 ---
 ### Sparse Table
