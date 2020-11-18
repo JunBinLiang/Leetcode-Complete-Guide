@@ -1190,6 +1190,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   371D. [Vessels (Ordered Map) ](./cf/371D.txt) <br />
   747D. [Winter Is Coming	 (Greedy+ Sort) ](./cf/747D.txt) <br />
   1077E. [Thematic Contests (Binary Search) ](./cf/1077E.txt) <br />
+   1154E. [Two Teams (TreeMap+Fenwick) ](./cf/1154E.txt) <br />
    ### 1900<br/>
   14D. [Two Path ](./cf/14D.txt) <br />
   22D. [Segment (sort+Greedy) ](./cf/22D.txt) <br />
