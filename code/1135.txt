@@ -1,0 +1,39 @@
+class Solution {
+public:
+    int minimumCost(int N, vector<vector<int>>& connections) {
+        vector<int>nums(N);
+        for(int i=0;i<N;i++){
+            nums[i]=i;
+        }
+        
+        int res=0;
+        sort(connections.begin(),connections.end(),[](const vector<int>&a,const vector<int>&b){
+            return a[2]<b[2];
+        });
+        for(vector<int>&p:connections){
+            int v1=p[0]-1,v2=p[1]-1,w=p[2];
+            int r1=find(nums,v1);
+            int r2=find(nums,v2);
+            if(r1!=r2){
+                nums[r1]=r2;
+                res+=w;
+            }
+        }
+        
+        unordered_set<int>hash;
+        
+        for(int i=0;i<N;i++){
+            int r1=find(nums,i);
+            hash.insert(r1);
+        }
+        if(hash.size()!=1)return -1;
+        return res;
+    }
+    
+    int find(vector<int>&nums,int x){//union find => find method
+		if(nums[x]==x)return x;
+		int root=find(nums,nums[x]);
+		nums[x]=root;
+		return root;
+	}
+};
