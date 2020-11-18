@@ -1,0 +1,42 @@
+class Solution {
+public:
+    int findKthLargest(vector<int>& nums, int k) {
+        int n=nums.size();
+        return dfs(nums,0,n-1,n-k+1);
+    }
+    
+    int dfs(vector<int>&A,int l,int r,int ith){
+        if(l==r){
+            return A[l];
+        }
+        
+        int mid=l+(r-l)/2;
+        int temp=A[mid];
+        A[mid]=A[r];A[r]=temp;
+
+        
+        int index=l;
+        for(int i=l;i<r;i++){
+            if(A[i]<A[r]){
+                int t=A[index];
+                A[index]=A[i];
+                A[i]=t;
+                index++;
+            }
+        }
+        int t=A[index];
+        A[index]=A[r];
+        A[r]=t;
+        
+        int left=index-l+1;
+        int right=(r-index);
+        
+        if(ith<=left){
+            return dfs(A,l,index,ith); 
+        }
+        else{
+           return dfs(A,index+1,r,ith-left); 
+        }
+        
+    }
+};
