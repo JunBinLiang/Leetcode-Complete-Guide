@@ -1061,6 +1061,14 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  F. [ Zero Remainder Sum (2100)](./contest/677F.txt) <br />
  G. [Reducing Delivery Cost (2100) (Shortest Path)](./contest/677G.txt) <br />
  
+  ### Codeforces Round #683 (Div. 2)
+ A. [Add Candies (800) ](./contest/683A.txt) <br />
+ B. [ Numbers Box (800)](./contest/683B.txt) <br />
+ C. [Knapsack (1300)](./contest/683C.txt) <br />
+ D. [ Catching Cheaters (1800)](./contest/683D.txt) <br />
+ E. [ Xor Tree(2100)](./contest/683E.txt) <br />
+
+ 
   ### Educational Codeforces Round 83 (Div. 2)
  1312B. [ Bogo Sort	(DIV 2) (1000) ](./code/1312B.txt) <br />
  1312C. [ Adding Power	(DIV 2) (1400) number theory](./code/1312C.txt) <br />
