@@ -1,0 +1,32 @@
+class Solution {
+public:
+    bool splitArray(vector<int>& A) {
+        if(A.size()<3)return false;
+        int n=A.size();
+        vector<int>pre(n);
+        int sum=0;
+        
+        for(int i=0;i<n;i++){
+            sum+=A[i];pre[i]=sum;
+        }
+        
+        for(int i=3;i<A.size()-2;i++){
+            unordered_set<int>hash;
+            for(int j=1;j<i-1;j++){
+                if(pre[j-1]==pre[i-1]-pre[j]){
+                    hash.insert(pre[j-1]);
+                }
+            }
+            
+            for(int j=i+2;j<A.size()-1;j++){
+                int a=pre[j-1]-pre[i];
+                int b=pre[n-1]-pre[j];
+                if(a==b&&hash.find(a)!=hash.end()){
+                    return true;
+                }
+            }
+        }       
+        return false;
+    }
+
+}; 
