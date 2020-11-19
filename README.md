@@ -1166,9 +1166,11 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   298A.[Snow Footprints (Greedy) ](./easy/298A.txt) <br />
   371B.[Fox Dividing Cheese (Math) ](./easy/371B.txt) <br />
   1038C.[Gambling (Game) ](./easy/1038C.txt) <br />
+  1178B.[WOW Factor ](./easy/1178B.txt) <br />
+  1178C.[Tiles ](./easy/1178C.txt) <br />
   1234B2.[Social Network (hard version) (LinkedList) ](./easy/1234B2.txt) <br />
   1285B.[Just Eat It! (prefix sum) ](./easy/1285B.txt) <br />
-   1443B.[Saving the City (dp) ](./easy/1443B.txt) <br />
+  1443B.[Saving the City (dp) ](./easy/1443B.txt) <br />
   
    ### 1500<br/>
    53D.[Physical Education! (Sort) ](./easy/53D.txt) <br />
