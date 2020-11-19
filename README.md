@@ -822,7 +822,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  
  ---
  # :punch: CodeForce Contest
- 统计(1800+ 题量)： 92
+ 统计(1800+ 题量)： 93
  
   
   ### Beta Round #3 
@@ -1205,7 +1205,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   ### 2000<br/>
   29D. [Ant on the Tree (Tree + LCA + Brute Force) ](./cf/29D.txt) <br />
   371E. [Subway Innovation (Prefix Sum+Math) ](./cf/371E.txt) <br />
-  
+  1438C. [Engineer Artem ](./cf/1438C.txt) <br />
 
   
   #  CodeForce 高分精算 
