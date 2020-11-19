@@ -1206,7 +1206,8 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   29D. [Ant on the Tree (Tree + LCA + Brute Force) ](./cf/29D.txt) <br />
   371E. [Subway Innovation (Prefix Sum+Math) ](./cf/371E.txt) <br />
   1438C. [Engineer Artem ](./cf/1438C.txt) <br />
-
+  ### 2200<br/>
+  1178F1. [Short Colorful Strip (Interval DP) ](./cf/1178F1.txt) <br />
   
   #  CodeForce 高分精算 
   23C. [Oranges and Apples (2500) Greedy ](./code/23C.txt) <br />
