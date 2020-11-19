@@ -39,8 +39,8 @@
 |  250  |[Count Univalue Subtrees ](./code/250.txt)   | (M-) 1300| |  252  |[Meeting Rooms ](./code/252.txt)  |(E) 900|
 |  253  |[Meeting RoomsII ](./code/253.txt)  | (M) 1500| |  256  | [Paint House](./code/256.txt) |  (M-) 1400|
 |  261  | [ Graph Valid Tree](./code/261.txt) |  (M-) 1400||  265  | [Paint House II](./code/265.txt) |  (H-) 1700|
-|  266  |[Palindrome Permutation](./code/266.txt) | (E) 900|
-|  267  |[Palindrome Permutation II](./code/267.txt)  | (M) 1500||  270  |[ Closest Binary Search Tree Value](./code/270.txt)  | (E) 1000|
+|  266  |[Palindrome Permutation](./code/266.txt) | (E) 900||  267  |[Palindrome Permutation II](./code/267.txt)  | (M) 1500|
+|  270  |[ Closest Binary Search Tree Value](./code/270.txt)  | (E) 1000|
 |  277  |[Find the Celebrity](./code/277.txt)  | (M) 1500||  286  |[Walls and Gates ](./code/286.txt) |(M-) 1400| 
 |  291  |[Word Pattern II ](./code/291.txt) |(H) 1800| 
 |  293  |[Flip Game ](./code/293.txt) |(E) 800| 
@@ -99,6 +99,7 @@
 #134. [Gas Station (M-) 1400](./code/134.txt) <br />
 #189. [Rotate Array(M) 1500](./code/189.txt) <br />
 #228. [Summary Ranges(E) 1000](./code/228.txt) <br />
+#268. [Missing Number(E) 900](./code/268.txt) <br />
 #349. [ Intersection of Two Arrays(E) 900](./code/349.txt) <br />
 #350. [ Intersection of Two Arrays II(E) 900](./code/350.txt) <br />
 #414. [Third Maximum Number (E) 900](./code/414.txt) <br />
