@@ -1175,6 +1175,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   
    ### 1500<br/>
    53D.[Physical Education! (Sort) ](./easy/53D.txt) <br />
+   1178D.[Prime Graph (Graph+Brute Force) ](./easy/1178D.txt) <br />
   
   #  CodeForce 日常刷题 
    ### 1600<br/>
