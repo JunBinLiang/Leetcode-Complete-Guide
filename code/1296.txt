@@ -1,0 +1,23 @@
+class Solution {
+public:
+    bool isPossibleDivide(vector<int>& A, int k) {
+        map<int,int>hash;
+        for(int i:A){
+            hash[i]++;
+        }
+        sort(A.begin(),A.end());
+        
+        for(int i=0;i<A.size();i++){
+            if(hash[A[i]]==0)continue;
+            
+            int cur=A[i];
+            
+            for(int j=cur;j<cur+k;j++){
+                if(hash[j]==0)return false;
+                hash[j]--;
+            }
+            
+        }
+        return true;
+    }
+};
