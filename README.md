@@ -406,6 +406,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1012. [Numbers With Repeated Digits (H) 1800](./code/1012.txt) <br />
 #1027. [Longest Arithmetic Subsequence (M) 1500](./code/1027.txt) <br />
 #1029. [Two City Scheduling (M) 1500](./code/1029.txt) <br />
+#1039. [Minimum Score Triangulation of Polygon (M+) 1700](./code/1039.txt) <br />
 #1066. [Campus Bike II (H-) 1700](./code/1066.txt) <br />
 #1092. [Shortest Common Supersequenceg (H) 1800](./code/1092.txt) <br />
 #1137. [N-th Tribonacci Number (E) 900](./code/1137.txt) <br />
