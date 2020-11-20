@@ -1,0 +1,24 @@
+problem can be translated into find the longest subarray with at most 2 distince number
+
+
+
+
+class Solution {
+public:
+    int totalFruit(vector<int>& A) {
+        int res=0;
+        queue<int>q;
+        unordered_map<int,int>hash;
+        for(int i=0;i<A.size();i++){
+            q.push(A[i]);
+            hash[A[i]]++;
+            while(hash.size()>2){
+                int f=q.front();q.pop();
+                hash[f]--;
+                if(hash[f]==0)hash.erase(f);
+            }
+            res=max(res,(int)(q.size()));
+        }
+        return res;
+    }
+};
