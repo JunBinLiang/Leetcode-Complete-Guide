@@ -827,7 +827,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  
  ---
  # :punch: CodeForce Contest
- 统计(1800+ 题量)： 95
+ 统计(1800+ 题量)： 96
  
   
   ### Beta Round #3 
@@ -1207,6 +1207,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   22D. [Segment (sort+Greedy) ](./cf/22D.txt) <br />
   19B. [Checkout Assistant (DP) ](./cf/19B.txt) <br />
   448C. [Painting Fence (Divide Conquer+Greedy) ](./cf/448C.txt) <br />
+    1178E. [ Archaeology (Greedy) ](./cf/1178E.txt) <br />
   1430E. [String Reversal (BIT) ](./cf/1430E.txt) <br />
   ### 2000<br/>
   2B. [The least Round Way(DP) ](./cf/  .txt) <br />
