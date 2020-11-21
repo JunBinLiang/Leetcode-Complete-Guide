@@ -1178,6 +1178,9 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   1285B.[Just Eat It! (prefix sum) ](./easy/1285B.txt) <br />
   1443B.[Saving the City (dp) ](./easy/1443B.txt) <br />
   
+   ### 1300<br/>
+   205B.[Little Elephant and Sorting ](./easy/205B.txt) <br />
+  
    ### 1500<br/>
    53D.[Physical Education! (Sort) ](./easy/53D.txt) <br />
    1178D.[Prime Graph (Graph+Brute Force) ](./easy/1178D.txt) <br />
