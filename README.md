@@ -384,6 +384,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #717. [1-bit and 2-bit Characters (E) 1000](./code/717.txt) <br />
 #718. [Maximum Length of Repeated Subarray (M) 1500](./code/718.txt) <br />
 #727. [Minimum Window Subsequence (H) 1800](./code/727.txt) <br />
+#730. [Count Different Palindromic Subsequences (H) 1800](./code/730.txt) <br />
 #740. [Delete and Earn (M) 1500](./code/740.txt) <br />
 #741. [Cherry Pickup (H) 1800](./code/741.txt) <br />
 #764. [Largest Plus Sign (M) 1500](./code/764.txt) <br />
