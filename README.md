@@ -258,6 +258,8 @@ Note: LinkedList can be used as stack or queue or deque<br/><br/>
 #1605.[Find Valid Matrix Given Row and Column Sums  (M+) 1700](./code/1605.txt) <br />
 #1632.[Rank Transform of a Matrix (H+) 2000](./code/1632.txt) <br />
 #1642.[Furthest Building You Can Reach (M+) 1600](./code/1642.txt) <br />
+#1663.[Smallest String With A Given Numeric Value (M-) 1400](./code/1663.txt) <br />
+#1665. [Minimum Initial Energy to Finish Tasks (H-) 1700](./code/1665.txt) <br />
 #LCP 06. [拿硬币 (E) 800](./code/LCP06.txt) <br />
 
 ---
@@ -479,6 +481,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #LCP11. [期望个数统计 (M-) 1400](./code/LCP11.txt) <br />
 
 ### Prefix Sum
+#1664. [Ways to Make a Fair Array (M) 1500](./code/1664.txt) <br />
 
 ### Geometry
 #1610. [ Maximum Number of Visible Points(H) 1800](./code/1610.txt) <br />
