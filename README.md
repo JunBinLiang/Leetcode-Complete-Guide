@@ -478,6 +478,8 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #LCP3. [机器人大冒险 (M) 1500](./code/LCP3.txt) <br />
 #LCP11. [期望个数统计 (M-) 1400](./code/LCP11.txt) <br />
 
+### Prefix Sum
+
 ### Geometry
 #1610. [ Maximum Number of Visible Points(H) 1800](./code/1610.txt) <br />
 
@@ -602,6 +604,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1071. [Greatest Common Divisor of Strings (E) 900](./code/1071.txt) <br />
 #1550. [Three Consecutive Odds (E-) 700](./code/1550.txt) <br />
 #1640. [Check Array Formation Through Concatenation (E) 1000](./code/1640.txt) <br />
+#1662. [Check If Two String Arrays are Equivalent (E) 800](./code/1662.txt) <br />
 
 ---
 ### Bit
