@@ -1,0 +1,18 @@
+class Solution {
+    public int minimumEffort(int[][] A) {
+        Arrays.sort(A,(a,b)->{
+            return (b[1]-b[0])-(a[1]-a[0]);
+        });
+        int res=0;
+        int cur=0;
+        for(int pair[]:A){
+            if(cur<pair[1]){
+                res+=(pair[1]-cur);
+                cur=pair[1];
+            }
+            cur-=pair[0];
+            
+        }
+        return res;
+    }
+}
