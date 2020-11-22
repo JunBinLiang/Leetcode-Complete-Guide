@@ -1,0 +1,24 @@
+class Solution {
+    public String getSmallestString(int n, int k) {
+        StringBuilder str=new StringBuilder();
+        for(int i=0;i<n;i++){
+            if(i==n-1){
+                char c=(char)(k-1+'a');
+                str.append(c+"");
+                break;
+            }
+            
+            int remain=n-(i+1);
+            for(int j=1;j<=26;j++){
+                char c=(char)(j-1+'a');
+                if(k-j<=(remain*26)){
+                    k-=j;
+                    str.append(c+"");
+                    break;
+                }
+            }
+        }
+        
+        return str.toString();
+    }
+}
