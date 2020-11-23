@@ -1,0 +1,33 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+     unsigned long long A,B;
+     cin>>A>>B;
+     
+     unsigned long long dif=A-B;
+     if(dif<0||dif%2!=0){
+         cout<<-1<<endl;
+         return 0;
+     }
+     dif/=2;
+     
+     if((dif&B)!=0){
+        cout<<-1<<endl;
+        return 0; 
+     }
+     
+     cout<<dif<<" "<<A-dif<<endl;
+
+    return 0;
+}
