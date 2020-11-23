@@ -1,0 +1,22 @@
+class Solution {
+    public List<String> letterCasePermutation(String s) {
+        String low=s.toLowerCase();
+        String high=s.toUpperCase();
+        Set<String>set=new HashSet<>();
+        int state=(1<<s.length())-1;
+        for(int i=0;i<=state;i++){
+            StringBuilder str=new StringBuilder();
+            for(int j=0;j<s.length();j++){
+                if((i&(1<<j))==0){
+                    str.append(low.charAt(j)+"");
+                }
+                else{
+                    str.append(high.charAt(j));
+                }
+            }
+            set.add(str.toString());
+        }
+        
+        return new ArrayList<>(set);
+    }
+}
