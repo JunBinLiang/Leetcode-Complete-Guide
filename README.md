@@ -1205,6 +1205,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   ### 1700<br/>
   18B. [Platforms (Math) ](./easy/18B.txt) <br />
    29C. [Mail Stamps (Graph) ](./cf/29C.txt) <br />
+   76D. [Plus and xor (Bit) ](./cf/76D.txt) <br />
    160C. [Find Pair (Math) ](./cf/160C.txt) <br />
    627A. [XOR Equation (Bit + DP) ](./cf/627A.txt) <br />
   1430D. [String Deletion (Greedy) ](./cf/1430D.txt) <br />
