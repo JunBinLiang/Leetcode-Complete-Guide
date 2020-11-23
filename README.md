@@ -1177,6 +1177,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   
   
   ### 1300<br/>
+  39F.[Pacifist frogs ](./easy/39F.txt) <br />
   298A.[Snow Footprints (Greedy) ](./easy/298A.txt) <br />
   371B.[Fox Dividing Cheese (Math) ](./easy/371B.txt) <br />
   1038C.[Gambling (Game) ](./easy/1038C.txt) <br />
