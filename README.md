@@ -1234,6 +1234,9 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   ### 2200<br/>
   1178F1. [Short Colorful Strip (Interval DP) ](./cf/1178F1.txt) <br />
   
+  ### 2600<br/>
+  1446D1. [Frequency Problem (Easy Version) (Greedy) ](./cf/1446D1.txt) <br />
+  
   #  CodeForce 高分精算 
   23C. [Oranges and Apples (2500) Greedy ](./code/23C.txt) <br />
   324D. [Xenia and Dominoes (2100) DP+容斥原理 ](./code/324D.txt) <br />
