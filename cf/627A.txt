@@ -1,3 +1,6 @@
+如果dif >0, 2^n种方法
+如果dif==0， 考虑情况，因为两个数都要大于0，所以要dp
+
 // Don't place your source in a package
 import java.util.*;
 import java.lang.*;
