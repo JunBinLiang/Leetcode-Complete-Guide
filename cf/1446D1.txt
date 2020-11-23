@@ -1,0 +1,57 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+#include <unordered_map>
+#include <vector>
+#include <cstring>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    vector<int>A;
+    int cnt[101];
+    int res=0;
+    memset(cnt,0,sizeof(cnt));
+    int mx=0;int v=0;
+    for(int i=0;i<n;i++){
+        int a;cin>>a;
+        A.push_back(a);
+        cnt[a]++;
+        if(mx<cnt[a]){
+            mx=cnt[a];
+            v=a;
+        }
+    }
+    
+    
+    for(int i=0;i<101;i++){
+        if(i==v||cnt[i]==0)continue;
+        int sum=0;
+        unordered_map<int,int>hash;
+        
+        for(int j=0;j<A.size();j++){
+            if(A[j]==i)sum--;
+            else if(A[j]==v)sum++;
+            
+            if(sum==0)res=max(res,j+1);
+            
+            if(hash.find(sum)==hash.end()){
+                hash[sum]=j;
+            }
+            else{
+                res=max(res,j-hash[sum]);
+            }
+        }
+    }
+    cout<<res<<endl;
+
+    return 0;
+}
