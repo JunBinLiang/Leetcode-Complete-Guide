@@ -1,0 +1,52 @@
+思路：
+一个数字首先有n-1种方法，如果我选择放在ith，ith的element有两种选择，swap or not，swap 的话就变成了n-2的subproblem，否则就是n-1
+
+
+In combinatorial mathematics, a derangement is a permutation of the elements of a set, such that no element appears in its original position.
+
+There's originally an array consisting of n integers from 1 to n in ascending order, you need to find the number of derangement it can generate.
+
+Also, since the answer may be very large, you should return the output mod 109 + 7.
+
+Example 1:
+Input: 3
+Output: 2
+Explanation: The original array is [1,2,3]. The two derangements are [2,3,1] and [3,1,2].
+Note:
+n is in the range of [1, 106].
+
+
+
+
+
+
+
+
+
+
+
+class Solution {
+public:
+    int dp[1000005];
+    int mod=1000000007;
+    int findDerangement(int n) {
+        memset(dp,-1,sizeof(dp));
+        return dfs(n);
+    }
+    
+    long dfs(int n){
+        if(n==1||n==0){
+            return 0;
+        }
+        if(n==2){
+            return 1;
+        }
+        
+        if(dp[n]!=-1)return dp[n];
+        long res=0;
+        res=res+(n-1)*(dfs(n-1)+dfs(n-2));
+        res%=mod;
+        dp[n]=res;
+        return res;
+    }
+};
