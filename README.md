@@ -1207,6 +1207,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   371C. [Hamburgers (Binary Search + Math) ](./cf/371C.txt) <br />
   788A. [Functions again (Prefix) ](./cf/788A.txt) <br />
   1077D. [Cutting Out (Binary Search) ](./cf/1077D.txt) <br />
+  1288C. [Two Array (Dp) ](./cf/1288C.txt) <br />
   1389B. [Array Walk	 (Dp + Greedy) ](./cf/1389B.txt) <br />
   1452D. [Radio Towers	 (Dp + Mod Inverse) ](./cf/1452D.txt) <br />
   ### 1700<br/>
