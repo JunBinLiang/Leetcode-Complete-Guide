@@ -1174,6 +1174,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
     
   ### 1100<br/>
   1038B.[Non-Coprime Partition (Math) ](./easy/1038B.txt) <br />
+  1288B.[Yet Another Meme Problem (Math) ](./easy/1288B.txt) <br />
   
   ### 1200<br/>
   18C.[Stripe ](./easy/18C.txt) <br />
