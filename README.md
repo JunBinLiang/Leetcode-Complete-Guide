@@ -306,6 +306,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #374. [Guess Number Higher or Lower (E) 800](./code/374.txt) <br />
 #436. [ Find Right Interval (M) 1500](./code/436.txt) <br />
 #475. [Heaters (M) 1500](./code/475.txt) <br />
+#540. [Single Element in a Sorted Array (M-) 1400](./code/540.txt) <br />
 #704. [Binary Search(E) 900](./code/704.txt) <br />
 #744. [Find Smallest Letter Greater Than Target (M-) 1200](./code/744.txt) <br />
 #786. [K-th Smallest Prime Fraction (H) 1800](./code/786.txt) <br />
