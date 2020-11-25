@@ -1273,6 +1273,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    1442B. [Identify the Operations	(1800) Math+Observation+Dara Structure](./code/1442B.txt) <br />
   311E. [Biologist	(MIN CUT) (2300) ](./code/311E.txt) <br />
   1454E. [Number of Simple Paths	(Graph+ Tarjan+Math)  ](./code/1454E.txt) <br />
+  1454F. [Array Partition	(Segment Tree)  ](./code/1454F.txt) <br />
   
    #  参考
    1. 最大权闭合子图 (https://www.cnblogs.com/TreeDream/p/5942354.html#_labelTop)  (强顶)<br/>
