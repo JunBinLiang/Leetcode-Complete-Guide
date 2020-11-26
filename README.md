@@ -97,6 +97,7 @@
 #27. [Remove Element (E) 800](./code/27.txt) <br />
 #41. [First Missing Positive (H-) 1600](./code/41.txt) <br />
 #54. [Spiral Matrix (M-) 1400](./code/54.txt) <br />
+#66. [Add one (E) 900](./code/66.txt) <br />
 #134. [Gas Station (M-) 1400](./code/134.txt) <br />
 #189. [Rotate Array(M) 1500](./code/189.txt) <br />
 #228. [Summary Ranges(E) 1000](./code/228.txt) <br />
