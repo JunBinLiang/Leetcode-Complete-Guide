@@ -1237,7 +1237,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   1178E. [ Archaeology (Greedy) ](./cf/1178E.txt) <br />
   1430E. [String Reversal (BIT) ](./cf/1430E.txt) <br />
   ### 2000<br/>
-  2B. [The least Round Way(DP) ](./cf/  .txt) <br />
+  2B. [The least Round Way(DP) ](./cf/2B.txt) <br/>
   29D. [Ant on the Tree (Tree + LCA + Brute Force) ](./cf/29D.txt) <br />
   371E. [Subway Innovation (Prefix Sum+Math) ](./cf/371E.txt) <br />
   1288D. [Minimax Problem (Binary Search+Greedy+Bit) ](./cf/1288D.txt) <br />
