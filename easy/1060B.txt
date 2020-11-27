@@ -1,0 +1,48 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int cal(long long n){
+    int sum=0;
+    string s=to_string(n);
+    
+    for(int i=0;i<s.size();i++){
+        sum=sum+(s[i]-'0');
+    }
+    return sum;
+}
+
+int main()
+{
+    long long n;
+    cin>>n;
+    if(n<9){
+        cout<<n<<endl;
+        return 0;
+    }
+    long long i=9;
+    long long a=-1;
+    for(int j=0;j<13;j++){
+        if(i<=n){
+            a=i;
+            i=i*10+9;
+        }
+        else{
+            break;
+        }
+    }
+    
+    long long b=n-a;
+    
+    cout<<cal(a)+cal(b)<<endl;
+
+    return 0;
+}
