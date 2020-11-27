@@ -638,6 +638,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #825. [Friends Of Appropriate Ages(M-) 1300](./code/825.txt) <br />
 #893. [ Groups of Special-Equivalent Strings (E) 1000](./code/893.txt) <br />
 #954. [Array of Doubled Pairs(M-) 1400](./code/954.txt) <br />
+#1001. [Grid Illumination(H-) 1700](./code/1001.txt) <br />
 #1267. [Count Servers that Communicate (M-) 1300](./code/1267.txt) <br />
 #1282. [Group the People Given the Group Size They Belong To (M-) 1300](./code/1282.txt) <br />
 #1396. [Design Underground System (M) 1500](./code/1396.txt) <br />
