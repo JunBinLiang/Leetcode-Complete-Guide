@@ -1,3 +1,5 @@
+题意：多个queens 在棋盘内，问每个queen 能杀掉的有多少个
+
 // Don't place your source in a package
 import java.util.*;
 import java.lang.*;
