@@ -68,7 +68,7 @@
 |  1063  |[Number of Valid Subarrays](./code/1063.txt)| (H-) 1600 |
 |  1064  |[Fixed Point](./code/1064.txt)| (E-) 600 ||  1066  |[Campus Bikes II](./code/1066.txt)| (M+) 1600 |
 |  1067  |[ Digit Count in Range(Math)](./code/1067.txt)| (H+) 2000 |
-|  1085  |[Sum of Digits in the Minimum Number](./code/1085.txt)| (E) 800 |
+|  1085  |[Sum of Digits in the Minimum Number](./code/1085.txt)| (E) 800 ||  1088  |[Confusing Number II](./code/1088.txt)| (H-) 1700 |
 |  1099  |[Two Sum Less Than K](./code/1099.txt)| (E) 800 |
 |  1100  |[Find K-Length Substrings With No Repeated Characters](./code/1100.txt)| (M-) 1200 ||  1101  |[The Earliest Moment When Everyone Become Friends](./code/1101.txt)| (M) 1500 
 |  1119  |[Remove Vowels from a String](./code/1119.txt)| (E-) 700 ||  1121  |[Divide Array Into Increasing Sequences (Greedy)](./code/1121.txt)| (H-) 1700 |
