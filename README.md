@@ -1210,6 +1210,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   46C. [Hamsters and Tigers (Sliding Window) ](./cf/46C.txt) <br />
   371C. [Hamburgers (Binary Search + Math) ](./cf/371C.txt) <br />
   788A. [Functions again (Prefix) ](./cf/788A.txt) <br />
+  1060C. [Maximum Subrectangle (Brute Force) ](./cf/1060C.txt) <br />
   1077D. [Cutting Out (Binary Search) ](./cf/1077D.txt) <br />
   1288C. [Two Array (Dp) ](./cf/1288C.txt) <br />
   1389B. [Array Walk	 (Dp + Greedy) ](./cf/1389B.txt) <br />
