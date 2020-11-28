@@ -1242,6 +1242,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   1060D. [Social Circles (Greedy) ](./cf/1060D.txt) <br />
   1178E. [ Archaeology (Greedy) ](./cf/1178E.txt) <br />
   1430E. [String Reversal (BIT) ](./cf/1430E.txt) <br />
+  1444B. [Divide and Sum (Math +Combination) ](./cf/1444B.txt) <br />
   1439A2. [Binary Table (Hard Version) (Greedy + Constructive)](./cf/1439A2.txt) <br />
   ### 2000<br/>
   2B. [The least Round Way(DP) ](./cf/2B.txt) <br/>
