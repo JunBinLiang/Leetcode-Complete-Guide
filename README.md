@@ -220,6 +220,7 @@ Note: LinkedList can be used as stack or queue or deque<br/><br/>
 #817. [Linked List Components (M-) 1300](./code/817.txt) <br />
 #876. [Middle of the Linked List (E) 900](./code/876.txt) <br />
 #950. [Reveal Cards In Increasing Order (M) 1500](./code/950.txt) <br />
+#1669. [Merge In Between Linked Lists (E) 1000](./code/1669.txt) <br />
 
 ---
 ### Greedy
