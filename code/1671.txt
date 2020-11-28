@@ -1,0 +1,50 @@
+class Solution {
+    public int minimumMountainRemovals(int[] A) {
+        int res=Integer.MAX_VALUE;
+        int n=A.length;
+        int dp1[]=new int[n];
+        int dp2[]=new int[n];
+        
+        dp1[0]=1;
+        for(int i=1;i<A.length;i++){
+            int max=0;
+            for(int j=i-1;j>=0;j--){
+                if(A[j]<A[i]){
+                    if(max<dp1[j]){
+                        max=dp1[j];
+                    }
+                }
+            }
+            dp1[i]=max+1;
+        }
+        
+        
+        dp2[n-1]=1;
+        
+        for(int i=n-2;i>=0;i--){
+            int max=0;
+            for(int j=i+1;j<A.length;j++){
+                if(A[j]<A[i]){
+                    max=Math.max(max,dp2[j]);
+                }
+            }
+            dp2[i]=max+1;
+        }
+        
+        for(int i=0;i<n;i++){
+            if(dp1[i]<2||dp2[i]<2)continue;
+            
+            int len=dp1[i]+dp2[i]-1;
+            res=Math.min(res,n-len);
+        }
+        
+        
+        return res;
+        
+    }
+    
+    public void print1(int A[]){
+		for(long i:A)System.out.print(i+"  ");
+		System.out.println();
+	}
+}
