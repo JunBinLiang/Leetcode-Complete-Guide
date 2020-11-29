@@ -1296,6 +1296,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   
   #  KickStart
   2020G3. [Combination Lock  ](./kick/2020G3.txt) <br />
+  2020G4. [Merge Cards  ](./kick/2020G4.txt) <br />
   
    #  参考
    1. 最大权闭合子图 (https://www.cnblogs.com/TreeDream/p/5942354.html#_labelTop)  (强顶)<br/>
