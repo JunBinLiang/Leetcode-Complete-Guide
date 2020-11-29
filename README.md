@@ -126,6 +126,7 @@
 #1589. [ Maximum Sum Obtained of Any Permutation (M) 1500](./code/1589.txt) <br />
 #1646. [ Get Maximum in Generated Array (E) 800](./code/1646.txt) <br />
 #1652. [ Defuse the Bomb (E) 900](./code/1652.txt) <br />
+#1674. [ Minimum Moves to Make Array Complementary(H-) 1700](./code/1674.txt) <br />
 
 ---
 ### BFS
