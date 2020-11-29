@@ -1,0 +1,46 @@
+class Solution {
+    public int minimumDeviation(int[] A) {
+        int res=Integer.MAX_VALUE;
+        List<int[]>list=new ArrayList<>();
+        int n=A.length;
+        Queue<int[]>q=new LinkedList<>();
+        Map<Integer,Integer>map=new HashMap<>();//[index,count]
+        
+        
+        for(int i=0;i<A.length;i++){
+            list.add(new int[]{A[i],i});
+            if(A[i]%2==1){
+                list.add(new int[]{A[i]*2,i});
+            }
+            else{
+                while(A[i]%2==0){
+                    A[i]/=2;
+                    list.add(new int[]{A[i],i});
+                }
+            }
+        }
+        
+        Collections.sort(list,(a,b)->{
+            return a[0]-b[0];
+        });
+        
+        for(int i=0;i<list.size();i++){
+            int pair[]=list.get(i);
+            q.add(pair);
+            if(!map.containsKey(pair[1])){
+                map.put(pair[1],1);
+            }
+            else{
+                map.put(pair[1],map.get(pair[1])+1);
+            }
+            
+            while(map.size()==n){
+                int front[]=q.poll();
+                res=Math.min(res,pair[0]-front[0]);
+                map.put(front[1],map.get(front[1])-1);
+                if(map.get(front[1])==0)map.remove(front[1]);
+            }
+        }
+        return res;
+    }
+}
