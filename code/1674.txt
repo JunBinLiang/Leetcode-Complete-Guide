@@ -1,0 +1,39 @@
+class Solution {
+    Map<Integer,Integer>map=new HashMap<>();
+    public int minMoves(int[] A, int limit) {
+        int n=A.length;
+        int res=Integer.MAX_VALUE;
+        int bound[][]=new int[n/2][2];
+        int line[]=new int[limit*2+10];
+        
+        for(int i=0;i<n/2;i++){
+            int mx=Math.max(A[i],A[n-i-1]);
+            int mn=Math.min(A[i],A[n-i-1]);
+            bound[i][0]=mx+limit;
+            bound[i][1]=mn+1;
+            
+            line[bound[i][0]+1]--;
+            line[bound[i][1]]++;
+            if(!map.containsKey(mx+mn)){
+                map.put(mx+mn,1);
+            }
+            else{
+                map.put(mx+mn,map.get(mx+mn)+1);
+            }
+        }
+        
+        
+        int sum=0;
+        for(int com=1;com<line.length;com++){
+            sum+=line[com];//1 move
+            int need=sum+(n/2-sum)*2;
+            int repeat=0;
+            if(map.containsKey(com)){
+                repeat=map.get(com);
+            }
+            res=Math.min(res,need-repeat);
+        }
+        
+        return res;
+    }
+}
