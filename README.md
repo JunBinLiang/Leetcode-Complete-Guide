@@ -116,6 +116,7 @@
 #852. [Peak Index in a Mountain Array (E) 800](./code/852.txt) <br />
 #867. [Transpose Matrix (E) 900](./code/867.txt) <br />
 #905. [Sort Array By Parity (E) 800](./code/905.txt) <br />
+#941. [Valid Mountain Array (E) 900](./code/941.txt) <br />
 #944. [Delete Columns to Make Sorted (E) 900](./code/944.txt) <br />
 #1144. [Decrease Elements To Make Array Zigzag (M) 1500](./code/1144.txt) <br />
 #1331. [ Rank Transform of an Array (E) 1000](./code/1331.txt) <br />
