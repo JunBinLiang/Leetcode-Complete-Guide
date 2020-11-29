@@ -1,0 +1,10 @@
+class Solution {
+    public boolean validMountainArray(int[] A) {
+        if(A.length<3)return false;
+        int j=1;
+        while(j<A.length&&A[j]>A[j-1])j++;
+        if(j==1||j==A.length)return false;
+        while(j<A.length&&A[j]<A[j-1])j++;
+        return j==A.length;
+    }
+}
