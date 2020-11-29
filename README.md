@@ -1294,6 +1294,9 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   1454E. [Number of Simple Paths	(Graph+ Tarjan+Math)  ](./code/1454E.txt) <br />
   1454F. [Array Partition	(Segment Tree)  ](./code/1454F.txt) <br />
   
+  #  KickStart
+  2020G3. [Combination Lock  ](./kick/2020G3.txt) <br />
+  
    #  参考
    1. 最大权闭合子图 (https://www.cnblogs.com/TreeDream/p/5942354.html#_labelTop)  (强顶)<br/>
       证明 1: https://blog.csdn.net/yo_bc/article/details/75322370 <br/>
