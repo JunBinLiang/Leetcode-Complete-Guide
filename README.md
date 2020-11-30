@@ -201,6 +201,7 @@
 #1249. [Minimum Remove to Make Valid Parentheses (M-) 1400](./code/1249.txt) <br />
 #1544. [Make The String Great (E+) 1100](./code/1544.txt) <br />
 #1614. [Maximum Nesting Depth of the Parentheses (E) 900](./code/1614.txt) <br />
+#1673. [Find the Most Competitive Subsequence (M-) 1400](./code/1673.txt) <br />
 
 ---
 ### LinkedList
