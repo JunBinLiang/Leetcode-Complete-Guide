@@ -1,0 +1,82 @@
+class Solution {
+    public String alienOrder(String[] A) {
+        Set<Integer>set=new HashSet<>();
+        
+        int in[]=new int[26];
+        StringBuilder str=new StringBuilder();
+        
+        Set<Integer>adjecent[]=new HashSet[26];
+        for(int i=0;i<adjecent.length;i++){
+            adjecent[i]=new HashSet<>();
+        }
+        
+        for(int i=0;i<A.length;i++){
+            for(int j=0;j<A[i].length();j++){
+                int c=A[i].charAt(j)-'a';
+                set.add(c);
+            }
+        }
+        
+        
+        for(int i=1;i<A.length;i++){
+            String cur=A[i];
+            String pre=A[i-1];
+            int mn=Math.min(pre.length(),cur.length()); 
+            boolean stop=false;
+            for(int j=0;j<mn;j++){
+                int c1=pre.charAt(j)-'a';
+                int c2=cur.charAt(j)-'a';
+                if(c1==c2){
+                    
+                }
+                else{
+                    System.out.println(pre.charAt(j)+"   "+cur.charAt(j));
+                    if(!adjecent[c1].contains(c2)){
+                        in[c2]++;
+                        adjecent[c1].add(c2);
+                    }
+                    stop=true;
+                    break;
+                }
+            }
+            if(!stop){
+                if(pre.length()>cur.length())return "";
+            }
+            
+        }
+        
+        boolean visit[]=new boolean[26];
+        Queue<Integer>q=new LinkedList<>();
+        
+        for(int i=0;i<26;i++){
+            if(!set.contains(i))continue;
+            if(in[i]==0){
+                visit[i]=true;
+                q.add(i);
+            }
+        }
+
+        if(q.size()==0)return "";
+        
+        
+        
+        while(q.size()!=0){
+            int top=q.poll();
+            char cc=(char)(top+'a');
+            str.append(cc+"");
+            Set<Integer>next=adjecent[top];
+            for(int c:next){
+                if(visit[c])return "";
+                in[c]--;
+                if(in[c]==0){
+                    q.add(c);
+                    visit[c]=true;
+                }
+            }
+        }
+        
+        
+        if(str.length()!=set.size())return "";
+        return str.toString();
+    }
+}
