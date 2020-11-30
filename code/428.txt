@@ -1,0 +1,88 @@
+/*
+// Definition for a Node.
+class Node {
+    public int val;
+    public List<Node> children;
+
+    public Node() {}
+
+    public Node(int _val) {
+        val = _val;
+    }
+
+    public Node(int _val, List<Node> _children) {
+        val = _val;
+        children = _children;
+    }
+};
+*/
+
+public class Codec {
+
+    // Encodes a tree to a single string.
+    StringBuilder str=new StringBuilder();
+    public String serialize(Node root) {
+        if(root==null)return "";
+        dfs(root,0);
+        int len=str.length();
+        return str.toString().substring(0,len-1);
+    }
+    
+    public void dfs(Node root,int level){
+        if(root==null){
+            String encode="#"+"."+level;
+            str.append(encode+",");
+            return;
+        }
+        String encode=root.val+"."+level;
+        
+        str.append(encode+",");
+        
+        List<Node>children=root.children;
+        for(Node node:children){
+            dfs(node,level+1);
+        }
+    }
+
+    // Decodes your encoded data to tree.
+    public Node deserialize(String data) {
+        if(data.length()==0)return null;
+        String A[]=data.split(",");
+        
+        String first=A[0];
+        String a[]=first.split("\\.");
+
+        
+        Node root=new Node(Integer.parseInt(first.split("\\.")[0]),new ArrayList<>());
+        Stack<Pair>stack=new Stack<>();
+        stack.push(new Pair(root,0));
+        
+        for(int i=1;i<A.length;i++){
+            String arr[]=A[i].split("\\.");
+            int v=Integer.parseInt(arr[0]);;
+            int level=Integer.parseInt(arr[1]);
+
+            while(level<=stack.peek().level){
+                stack.pop();
+            }
+            Node node=new Node(v,new ArrayList<>());
+            stack.peek().node.children.add(node);
+            stack.push(new Pair(node,level));
+        }
+        return root;
+    }
+    
+    class Pair{
+        int level;
+        Node node;
+        public Pair(Node node,int level){
+            this.level=level;
+            this.node=node;
+        }
+    }
+  
+}
+
+// Your Codec object will be instantiated and called as such:
+// Codec codec = new Codec();
+// codec.deserialize(codec.serialize(root));
