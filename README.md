@@ -341,6 +341,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #235. [Lowest Common Ancestor of a Binary Search Tree  (E+) 1100](./code/235.txt) <br />
 #236. [Lowest Common Ancestor of a Binary Tree   (M-) 1400](./code/236.txt) <br />
 #257. [Binary Tree Paths (E) 1000](./code/257.txt) <br />
+#297. [Serialize and Deserialize Binary Tree (H-) 1700](./code/297.txt) <br />
 #404. [Sum of Left Leaves (E) 900](./code/404.txt) <br />
 #617. [Merge Binary Tree (E) 1000](./code/617.txt) <br />
 #623. [ Add One Row to Tree (M-) 1300](./code/623.txt) <br />
