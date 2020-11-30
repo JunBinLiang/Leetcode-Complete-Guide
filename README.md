@@ -190,6 +190,7 @@
 #94. [Binary Tree Inorder Traversal (M-) 1400](./code/94.txt) <br />
 #150. [Evaluate Reverse Polish Notation (M) 1500](./code/150.txt) <br />
 #316. [Remove Duplicate Letters (M+) 1600](./code/316.txt) <br />
+#402. [Remove K Digits (M) 1500](./code/402.txt) <br />
 #682. [Baseball Game (E+) 1100](./code/682.txt) <br />
 #735. [Asteroid Collision (M-) 1400](./code/735.txt) <br />
 #1003. [Check If Word Is Valid After Substitutions (M-) 1400](./code/1003.txt) <br />
