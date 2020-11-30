@@ -40,7 +40,7 @@
 |  253  |[Meeting RoomsII ](./code/253.txt)  | (M) 1500| |  256  | [Paint House](./code/256.txt) |  (M-) 1400|
 |  261  | [ Graph Valid Tree](./code/261.txt) |  (M-) 1400||  265  | [Paint House II](./code/265.txt) |  (H-) 1700|
 |  266  |[Palindrome Permutation](./code/266.txt) | (E) 900||  267  |[Palindrome Permutation II](./code/267.txt)  | (M) 1500|
-|  270  |[ Closest Binary Search Tree Value](./code/270.txt)  | (E) 1000|
+|  269  |[Alien Dictionary](./code/269.txt)  | (H-) 1700||  270  |[ Closest Binary Search Tree Value](./code/270.txt)  | (E) 1000|
 |  277  |[Find the Celebrity](./code/277.txt)  | (M) 1500||  286  |[Walls and Gates ](./code/286.txt) |(M-) 1400| 
 |  291  |[Word Pattern II ](./code/291.txt) |(H) 1800| 
 |  293  |[Flip Game ](./code/293.txt) |(E) 800| 
