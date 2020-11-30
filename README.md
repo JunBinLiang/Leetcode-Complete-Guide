@@ -48,7 +48,7 @@
 |  305  |[Number of Islands II](./code/305.txt) | (H-) 1700  ||  323  |[Number of Connected Components in an Undirected Graph](./code/323.txt) | (M-) 1500  |
 |  325  |[ Maximum Size Subarray Sum Equals k](./code/325.txt) | (M-) 1300  ||  339  |[ Nested List Weight Sum](./code/339.txt) | (E) 1000  |
 |  340  |[Longest Substring with At Most K Distinct Characters](./code/340.txt) | (H-) 1600  | 
-|  360  |[Sort Transformed Array ](./code/360.txt) |(E) 1000|
+|  360  |[Sort Transformed Array ](./code/360.txt) |(E) 1000||  366  |[Find Leaves of Binary Tree ](./code/366.txt) |(M-) 1400|
 |  370  |[Range Addition](./code/370.txt)| (M) 1500  ||  379  |[Design Phone Directory](./code/379.txt)| (M-) 1200  |
 |  411  |[Minimum Unique Word Abbreviation](./code/411.txt)| (H) 1800  ||  422  |[Valid Word Square](./code/422.txt)| (E) 1000  |
 |  425  |[Word Squares](./code/425.txt) | (H) 1800  ||  465  |[Optimal Account Balancing](./code/465.txt) | (H) 1800  |
