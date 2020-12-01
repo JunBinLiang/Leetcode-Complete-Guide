@@ -80,6 +80,7 @@
 |  1151  |[Minimum Swaps to Group All 1's Together](./code/1151.txt)  | (M-) 1200  ||  1167  |[Minimum Cost to Connect Sticks](./code/1167.txt)  | (M-) 1400  |
 |  1168  |[Optimize Water Distribution in a Village](./code/1168.txt)  | (H) 1800  ||  1180  |[Count Substrings with Only One Distinct Letter](./code/1180.txt)  | (E) 1000  |
 |  1196  | [How Many Apples Can You Put into the Basket](./code/1196.txt)  | (E) 800 ||  1183  |[Maximum Number of Ones](./code/1183.txt) |(H) 1800  |
+|  1213  |[Intersection of Three Sorted Arrays](./code/1213.txt) |(E+) 1100  |
 |  1216  |[Valid Palindrome III (区间dp)](./code/1216.txt)  |  (H-) 1700 ||  1229  |[Meeting Scheduler](./code/1229.txt) | (M-) 1400 |
 |  1243  |[Array Transformation ](./code/1243.txt) | (E) 900 ||  1244  |[Design A Leaderboard](./code/1244.txt)  | (M-) 1200 |
 |  1246  |[Palindrome Removal (区间dp)](./code/1246.txt) |(H) 1800  |  |  1251  |[Stepping Numbers (M-) 1400](./code/1251.txt) |(M-) 1400  |
