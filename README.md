@@ -164,6 +164,7 @@
 #216. [Combination Sum III (M-) 1400](./code/216.txt) <br />
 #301. [Remove Invalid Parentheses (H-) 1600](./code/301.txt) <br />
 #306. [Additive Number (M) 1500](./code/306.txt) <br />
+#386. [Lexicographical Numbers (M) 1500](./code/386.txt) <br />
 #417. [Pacific Atlantic Water Flow (M+) 1600](./code/417.txt) <br />
 #473. [Matchsticks to Square (M+) 1600](./code/473.txt) <br />
 #488. [Zuma Game (H) 1800](./code/488.txt) <br />
