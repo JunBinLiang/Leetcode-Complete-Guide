@@ -1,0 +1,101 @@
+There is a ball in a maze with empty spaces (represented as 0) and walls (represented as 1). The ball can go through the empty spaces by rolling up, down, left or right, but it won't stop rolling until hitting a wall. When the ball stops, it could choose the next direction.
+
+Given the maze, the ball's start position and the destination, where start = [startrow, startcol] and destination = [destinationrow, destinationcol], return true if the ball can stop at the destination, otherwise return false.
+
+You may assume that the borders of the maze are all walls (see examples).
+
+ 
+
+Example 1:
+
+
+Input: maze = [[0,0,1,0,0],[0,0,0,0,0],[0,0,0,1,0],[1,1,0,1,1],[0,0,0,0,0]], start = [0,4], destination = [4,4]
+Output: true
+Explanation: One possible way is : left -> down -> left -> down -> right -> down -> right.
+Example 2:
+
+
+Input: maze = [[0,0,1,0,0],[0,0,0,0,0],[0,0,0,1,0],[1,1,0,1,1],[0,0,0,0,0]], start = [0,4], destination = [3,2]
+Output: false
+Explanation: There is no way for the ball to stop at the destination. Notice that you can pass through the destination but you cannot stop there.
+Example 3:
+
+Input: maze = [[0,0,0,0,0],[1,1,0,0,1],[0,0,0,0,0],[0,1,0,0,1],[0,1,0,0,0]], start = [4,3], destination = [0,1]
+Output: false
+ 
+
+Constraints:
+
+1 <= maze.length, maze[i].length <= 100
+maze[i][j] is 0 or 1.
+start.length == 2
+destination.length == 2
+0 <= startrow, destinationrow <= maze.length
+0 <= startcol, destinationcol <= maze[i].length
+Both the ball and the destination exist on an empty space, and they will not be at the same position initially.
+The maze contains at least 2 empty spaces.
+
+
+
+
+
+
+
+
+
+
+
+class Solution {
+    public boolean hasPath(int[][] mat, int[] start, int[] det) {
+        boolean visit[][]=new boolean[mat.length][mat[0].length];
+        Queue<int[]>q=new LinkedList<>();
+        q.add(start);
+        visit[start[0]][start[1]]=true;
+        
+        while(q.size()!=0){
+            int pair[]=q.poll();
+            if(pair[0]==det[0]&&pair[1]==det[1])return true;
+            
+            int r=pair[0],c=pair[1];
+            
+            while(r<mat.length&&mat[r][c]==0){
+                r++;
+            }
+            if(r-1>=0&&!visit[r-1][c]){
+                visit[r-1][c]=true;
+                q.add(new int[]{r-1,c});
+            }
+            
+            r=pair[0];c=pair[1];
+            while(r>=0&&mat[r][c]==0){
+                r--;
+            }
+            if(r+1<mat.length&&!visit[r+1][c]){
+                visit[r+1][c]=true;
+                q.add(new int[]{r+1,c});
+            }
+            
+            
+            r=pair[0];c=pair[1];
+            while(c<mat[0].length&&mat[r][c]==0){
+                c++;
+            }
+            if(c-1>=0&&!visit[r][c-1]){
+                visit[r][c-1]=true;
+                q.add(new int[]{r,c-1});
+            }
+            
+            r=pair[0];c=pair[1];
+            while(c>=0&&mat[r][c]==0){
+                c--;
+            }
+            if(c+1<mat[0].length&&!visit[r][c+1]){
+                visit[r][c+1]=true;
+                q.add(new int[]{r,c+1});
+            }
+            
+        }
+        
+        return false;
+    }
+}
