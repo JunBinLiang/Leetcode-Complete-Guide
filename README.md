@@ -60,7 +60,7 @@
 |  568  |[Maximum Vacation Days ](./code/568.txt) | (H-) 1700  | |  582  |[Kill Process ](./code/582.txt) | (M-) 1400  |
 |  624  |[Maximum Distance in Arrays ](./code/624.txt) | (M-) 1400  ||  634  |[ Find the Derangement of An Array ](./code/634.txt) | (H) 1800  |
 |  644  |[Maximum Average Subarray II ](./code/644.txt) | (H) 1800 ||  651  |[4 Keys Keyboard](./code/651.txt) | (M+) 1600  |
-|  656  |[Coin Path](./code/656.txt) | (H-) 1700  |
+|  656  |[Coin Path](./code/656.txt) | (H-) 1700  ||  681  |[Next Closest Time](./code/681.txt) | (M) 1500  |
 |  683  |[ K Empty Slots ](./code/683.txt) | (H--) 1500  ||  702  |[Search in a Sorted Array of Unknown Size ](./code/702.txt)| (M-) 1200  |
 |  716  |[Max Stack ](./code/716.txt)| (E+) 1200  ||  750  |[ Number Of Corner Rectangles ](./code/750.txt)| (M) 1500  |
 |  755  |[Pour Water ](./code/755.txt)| (M-) 1400  |
