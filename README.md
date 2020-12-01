@@ -52,7 +52,7 @@
 |  370  |[Range Addition](./code/370.txt)| (M) 1500  ||  379  |[Design Phone Directory](./code/379.txt)| (M-) 1200  |
 |  411  |[Minimum Unique Word Abbreviation](./code/411.txt)| (H) 1800  ||  422  |[Valid Word Square](./code/422.txt)| (E) 1000  |
 |  425  |[Word Squares](./code/425.txt) | (H) 1800  ||  428  |[Serialize and Deserialize N-ary Tree](./code/428.txt) | (H-) 1700  |
-|  465  |[Optimal Account Balancing](./code/465.txt) | (H) 1800  |
+|  431  |[Encode N-ary Tree to Binary Tree](./code/431.txt) | (H-) 1700  ||  465  |[Optimal Account Balancing](./code/465.txt) | (H) 1800  |
 |  471  |[Encode String with Shortest Length (String + Interval DP)](./code/471.txt) | (H) 1900  ||  487  |[Max Consecutive Ones II](./code/487.txt)| (M-) 1300 |
 |  531  |[Lonely Pixel I](./code/531.txt) | (M-) 1400  ||  544  |[Output Contest Matches ](./code/544.txt) | (M) 1500  |
 |  545  |[Boundary of Binary Tree ](./code/545.txt) | (M) 1500  ||  548  |[Split Array with Equal Sum ](./code/548.txt) | (M) 1500  |
