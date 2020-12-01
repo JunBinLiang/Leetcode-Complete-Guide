@@ -1,0 +1,109 @@
+class FileSystem {
+    Map<String,Node>tree=new HashMap<>();
+    public FileSystem() {
+        
+    }
+    
+    public List<String> ls(String path) {
+        if(path.equals("/")){
+            List<String>res=new ArrayList<>();
+            for(String key:tree.keySet()){
+                res.add(key);
+            }
+            Collections.sort(res);
+            return res;
+        }
+        else{
+            List<String>res=new ArrayList<>();
+            String A[]=path.substring(1).split("/");
+            ls(A,0,tree,res);
+            Collections.sort(res);
+            return res;
+        }
+    }
+    
+    public void mkdir(String path) {
+        String A[]=path.substring(1).split("/");
+        add(A,0,tree);
+    }
+    
+    public void addContentToFile(String filePath, String content) {
+        String A[]=filePath.substring(1).split("/");
+        addContent(A,0,tree,content);
+    }
+    
+    public String readContentFromFile(String filePath) {
+        String A[]=filePath.substring(1).split("/");
+        return readCon(A,0,tree);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+     public void ls(String A[],int index,Map<String,Node>root,List<String>cur){
+        String s=A[index];
+        if(index==A.length-1){
+            Node node=root.get(s);
+            Map<String,Node>childs=node.childs;
+            for(String key:childs.keySet()){
+                cur.add(key);
+            }
+            if(node.s.length()!=0)cur.add(s);
+            return;
+        }
+         
+        ls(A,index+1,root.get(s).childs,cur);
+        
+    }
+    
+    public String readCon(String A[],int index,Map<String,Node>root){
+        String s=A[index];
+        if(index==A.length-1){
+            return root.get(s).s;
+        }
+        return readCon(A,index+1,root.get(s).childs);
+        
+    }
+    
+    public void add(String A[],int index,Map<String,Node>root){
+        if(index>=A.length)return;
+        String s=A[index];
+
+        
+        if(!root.containsKey(s)){
+            root.put(s,new Node());
+        }
+        add(A,index+1,root.get(A[index]).childs);
+    }
+    
+    public void addContent(String A[],int index,Map<String,Node> root,String content){
+        String s=A[index];
+
+        if(!root.containsKey(s)){
+            root.put(s,new Node());
+        }
+        if(index==A.length-1){
+            root.get(s).s+=content;
+            return;
+        }
+        addContent(A,index+1,root.get(s).childs,content);
+    }
+    
+    class Node{
+        String s="";//content
+        Map<String,Node>childs=new HashMap<>();
+    }
+}
+
+/**
+ * Your FileSystem object will be instantiated and called as such:
+ * FileSystem obj = new FileSystem();
+ * List<String> param_1 = obj.ls(path);
+ * obj.mkdir(path);
+ * obj.addContentToFile(filePath,content);
+ * String param_4 = obj.readContentFromFile(filePath);
+ */
