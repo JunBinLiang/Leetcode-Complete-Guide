@@ -38,7 +38,8 @@
 |  245  |[Shortest Word Distance III](./code/245.txt)   | (M-) 1300||  246  |[Strobogrammatic Number ](./code/246.txt)   | (E) 900|
 |  247  |[Strobogrammatic Number II ](./code/247.txt)   | (M) 1500||  248  |[Strobogrammatic Number III ](./code/248.txt)   | (H-) 1700|
 |  250  |[Count Univalue Subtrees ](./code/250.txt)   | (M-) 1300| |  252  |[Meeting Rooms ](./code/252.txt)  |(E) 900|
-|  253  |[Meeting RoomsII ](./code/253.txt)  | (M) 1500| |  256  | [Paint House](./code/256.txt) |  (M-) 1400|
+|  253  |[Meeting RoomsII ](./code/253.txt)  | (M) 1500| |  254  |[Factor Combinations ](./code/254.txt)  | (M-) 1400| 
+|  256  | [Paint House](./code/256.txt) |  (M-) 1400|
 |  261  | [ Graph Valid Tree](./code/261.txt) |  (M-) 1400||  265  | [Paint House II](./code/265.txt) |  (H-) 1700|
 |  266  |[Palindrome Permutation](./code/266.txt) | (E) 900||  267  |[Palindrome Permutation II](./code/267.txt)  | (M) 1500|
 |  269  |[Alien Dictionary](./code/269.txt)  | (H-) 1700||  270  |[ Closest Binary Search Tree Value](./code/270.txt)  | (E) 1000|
