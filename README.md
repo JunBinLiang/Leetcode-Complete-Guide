@@ -60,6 +60,7 @@
 |  505  |[The Maze II](./code/505.txt) | (M+) 1600  |
 |  531  |[Lonely Pixel I](./code/531.txt) | (M-) 1400  ||  544  |[Output Contest Matches ](./code/544.txt) | (M) 1500  |
 |  545  |[Boundary of Binary Tree ](./code/545.txt) | (M) 1500  ||  548  |[Split Array with Equal Sum ](./code/548.txt) | (M) 1500  |
+|  562  |[Longest Line of Consecutive One in Matrix ](./code/562.txt) | (M-) 1400  |
 |  568  |[Maximum Vacation Days ](./code/568.txt) | (H-) 1700  | |  582  |[Kill Process ](./code/582.txt) | (M-) 1400  |
 |  624  |[Maximum Distance in Arrays ](./code/624.txt) | (M-) 1400  ||  634  |[ Find the Derangement of An Array ](./code/634.txt) | (H) 1800  |
 |  644  |[Maximum Average Subarray II ](./code/644.txt) | (H) 1800 ||  651  |[4 Keys Keyboard](./code/651.txt) | (M+) 1600  |
