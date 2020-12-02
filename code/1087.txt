@@ -1,0 +1,63 @@
+class Solution {
+    List<List<String>>A=new ArrayList<>();
+    List<String>res=new ArrayList<>();
+    public String[] expand(String s) {
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            if(c=='{'){
+                int j=i+1;
+                List<String>list=new ArrayList<>();
+                while(j<s.length()&&s.charAt(j)!='}'){
+                    if(s.charAt(j)==','){
+                        j++;
+                        continue;
+                    }
+                    list.add(s.charAt(j)+"");
+                    j++;
+                }
+                i=j;
+                A.add(list);
+                 
+            }
+            else{
+                List<String>list=new ArrayList<>();
+                StringBuilder str=new StringBuilder(); 
+                int j=i;
+                while(j<s.length()&&s.charAt(j)!='{'){
+                    str.append(s.charAt(j)+"");
+                    j++;
+                }
+                i=j-1;
+                list.add(str.toString());
+                A.add(list);
+            }
+        }
+        
+        dfs(new ArrayList<>(),0);
+        
+        String ans[]=new String[res.size()];
+        for(int i=0;i<ans.length;i++){
+            ans[i]=res.get(i);
+        }
+        Arrays.sort(ans);
+        return ans;
+    }
+    
+    public void dfs(List<String>cur,int i){
+        if(i>=A.size()){
+            StringBuilder str=new StringBuilder();
+            for(String s:cur){
+                str.append(s);
+            }
+            res.add(str.toString());
+            return;
+        }
+        List<String>list=A.get(i);
+        for(String s:list){
+            cur.add(s);
+            dfs(cur,i+1);
+            cur.remove(cur.size()-1);
+        }
+        
+    }
+}
