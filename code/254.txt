@@ -1,0 +1,83 @@
+Numbers can be regarded as product of its factors. For example,
+
+8 = 2 x 2 x 2;
+  = 2 x 4.
+Write a function that takes an integer n and return all possible combinations of its factors.
+
+Note:
+
+You may assume that n is always positive.
+Factors should be greater than 1 and less than n.
+Example 1:
+
+Input: 1
+Output: []
+Example 2:
+
+Input: 37
+Output:[]
+Example 3:
+
+Input: 12
+Output:
+[
+  [2, 6],
+  [2, 2, 3],
+  [3, 4]
+]
+Example 4:
+
+Input: 32
+Output:
+[
+  [2, 16],
+  [2, 2, 8],
+  [2, 2, 2, 4],
+  [2, 2, 2, 2, 2],
+  [2, 4, 4],
+  [4, 8]
+]
+
+
+
+
+
+
+
+
+
+class Solution {
+    List<List<Integer>>res=new ArrayList<>();
+    List<Integer>fac=new ArrayList<>();
+    int n;
+    public List<List<Integer>> getFactors(int n) {
+        this.n=n;
+        for(int i=2;i*i<=n;i++){
+            if(n%i==0){
+                fac.add(i);
+                if(n/i!=i)fac.add(n/i);
+            }
+        }
+        
+        dfs(new ArrayList<>(),0,1);
+        return res;
+    }
+    
+    public void dfs(List<Integer>cur,int index,int pro){
+        if(pro>n)return;
+        if(pro==n){
+            if(cur.size()>0){
+                List<Integer>l=new ArrayList<>(cur);
+                res.add(l);
+            }
+            return;
+        }
+        
+        for(int i=index;i<fac.size();i++){
+            int v=fac.get(i);
+            cur.add(v);
+            dfs(cur,i,pro*v);
+            cur.remove(cur.size()-1);
+        }
+    }
+}
