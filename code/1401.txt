@@ -1,0 +1,34 @@
+3 种情况：
+1. 圆形在正方形里面
+2.圆形与正方形在一条正方形边那接触
+3.有相交 (去四个corner 的距离其中一个<=r)
+
+
+
+class Solution {
+    public boolean checkOverlap(int r, int cx, int cy, int x1, int y1, int x4, int y4) {
+        int x2=x4;int y2=y1;
+        int x3=x1;int y3=y4;
+        
+        int d1=(x1-cx)*(x1-cx)+(y1-cy)*(y1-cy);
+        int d2=(x2-cx)*(x2-cx)+(y2-cy)*(y2-cy);
+        int d3=(x3-cx)*(x3-cx)+(y3-cy)*(y3-cy);
+        int d4=(x4-cx)*(x4-cx)+(y4-cy)*(y4-cy);
+        
+        if(d1<=r*r||d2<=r*r||d3<=r*r||d4<=r*r)return true;
+        
+        if(cy>=y1&&cy<=y4){
+            if((cx-x1)*(cx-x1)<=r*r)return true;
+            if((cx-x4)*(cx-x4)<=r*r)return true;
+        }
+        
+        if(cx>=x1&&cx<=x4){
+            if((cy-y1)*(cy-y1)<=r*r)return true;
+            if((cy-y4)*(cy-y4)<=r*r)return true;
+        }
+        
+        if(cx>=x1&&cx<=x4&&cy>=y1&&cy<=y4)return true;
+        
+        return false;
+    }
+}
