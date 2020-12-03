@@ -1,0 +1,97 @@
+class Solution {
+    public boolean isRectangleCover(int[][] A) {
+        int xx1=Integer.MAX_VALUE,yy1=Integer.MAX_VALUE;
+        int xx2=-1,yy2=-1;int sum=0;
+        for(int pair[]:A){
+            xx1=Math.min(xx1,pair[0]);
+            yy1=Math.min(yy1,pair[1]);
+            xx2=Math.max(xx2,pair[2]);
+            yy2=Math.max(yy2,pair[3]);
+            sum=sum+(pair[2]-pair[0])*(pair[3]-pair[1]);
+        }
+        int area=(xx2-xx1)*(yy2-yy1);
+        if(area!=sum)return false;    
+
+        
+        //line sweep
+        List<int[]>list=new ArrayList<>();
+        for(int i=0;i<A.length;i++){
+            int x1=A[i][0];
+            int x2=A[i][2];
+            list.add(new int[]{x1,1,A[i][1],A[i][3]});
+            list.add(new int[]{x2,-1,A[i][1],A[i][3]});
+        }
+        Collections.sort(list,(a,b)->{
+            if(a[0]==b[0])return a[1]-b[1];
+           return a[0]-b[0]; 
+        });
+        
+        
+        TreeMap<Integer,Integer>treemap=new TreeMap<>();
+        for(int i=0;i<list.size();i++){
+            int tuple[]=list.get(i);
+            int y1=tuple[2];int y2=tuple[3];
+            if(tuple[1]>0){
+                Integer low=treemap.lowerKey(y1);
+                Integer ceil=treemap.ceilingKey(y1);
+                if(low!=null&&treemap.get(low)>y1){//check if there is y overlap
+                    return false;
+                }
+                if(ceil!=null&&ceil<y2){//check if there is y overlap
+                    return false;
+                }
+                treemap.put(y1,y2);
+            }
+            else{//remove
+                treemap.remove(y1);
+            }
+        }
+       
+        return true;
+    }
+}
+
+
+/*
+btute force => o(n^2)
+
+class Solution {
+    public boolean isRectangleCover(int[][] A) {
+        int x1=Integer.MAX_VALUE,y1=Integer.MAX_VALUE;
+        int x2=-1,y2=-1;int sum=0;
+        for(int pair[]:A){
+            x1=Math.min(x1,pair[0]);
+            y1=Math.min(y1,pair[1]);
+            x2=Math.max(x2,pair[2]);
+            y2=Math.max(y2,pair[3]);
+            sum=sum+(pair[2]-pair[0])*(pair[3]-pair[1]);
+        }
+        int area=(x2-x1)*(y2-y1);
+        if(area!=sum)return false;    
+        
+        for(int i=0;i<A.length;i++){
+            for(int j=i+1;j<A.length;j++){
+                if(isRectangleOverlap(A[i],A[j]))return false;
+            }
+        }
+        
+        return true;
+    }
+    
+    public boolean isRectangleOverlap(int[] rec1, int[] rec2) {
+        int r1=rec1[0];
+        int c1=rec1[1];
+        int r2=rec1[2];
+        int c2=rec1[3];
+       
+        int r3=rec2[0];
+        int c3=rec2[1];
+        int r4=rec2[2];
+        int c4=rec2[3];
+        if(r4<=r1||r3>=r2||c4<=c1||c3>=c2)return false;//no overlaping
+        
+        return true;
+    }
+}
+
+*/
