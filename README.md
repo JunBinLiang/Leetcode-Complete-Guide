@@ -514,6 +514,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1664. [Ways to Make a Fair Array (M) 1500](./code/1664.txt) <br />
 
 ### Geometry
+#1401. [  Circle and Rectangle Overlapping(M+) 1600](./code/1401.txt) <br />
 #1453. [ Maximum Number of Darts Inside of a Circular Dartboard(H+) 2100](./code/1453.txt) <br />
 #1610. [ Maximum Number of Visible Points(H) 1800](./code/1610.txt) <br />
 
