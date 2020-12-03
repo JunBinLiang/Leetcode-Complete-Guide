@@ -693,6 +693,10 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1606. [Find Servers That Handled Most Number of Requests(H) 1800](./code/1606.txt) <br />
 
 ---
+### Line Sweep
+#391. [Perfect Rectangle(H) 1800](./code/391.txt) <br />
+
+---
 ### SQL
 #175. [Combine Two Tables (E)](./sql/175.txt) <br />
 #177. [Nth Highest Salary (M)](./sql/177.txt) <br />
