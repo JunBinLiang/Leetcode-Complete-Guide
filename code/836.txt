@@ -1,11 +1,17 @@
 思路：
 1. 只要其中一个越过另一个那他们就不相交，否则相反
+2. 如果是线，肯定false
 
 
 代码：
 
 class Solution {
     public boolean isRectangleOverlap(int[] rec1, int[] rec2) {
+        if (rec1[0] == rec1[2] || rec1[1] == rec1[3] ||
+            rec2[0] == rec2[2] || rec2[1] == rec2[3]) {
+            return false;
+        }
+        
         int r1=rec1[0];
         int c1=rec1[1];
         int r2=rec1[2];
