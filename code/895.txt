@@ -1,0 +1,46 @@
+class FreqStack {
+    List<Stack<Integer>>stacks=new ArrayList<>();
+    Map<Integer,Integer>map=new HashMap<>();
+    int index=0;
+    public FreqStack() {
+        
+    }
+    
+    public void push(int x) {
+        if(!map.containsKey(x)){
+            map.put(x,0);
+        }
+        int fre=map.get(x)+1;
+        map.put(x,map.get(x)+1);
+        
+        if(stacks.size()<fre){
+            stacks.add(new Stack<>());
+        }
+        stacks.get(fre-1).push(x);
+        index=Math.max(index,fre-1);
+        
+    }
+    
+    public int pop() {
+        Stack<Integer>stack=stacks.get(index);
+        int top=stack.pop();
+        map.put(top,map.get(top)-1);
+        
+        if(stack.size()==0){
+            while(index>0){
+                index--;
+                if(stacks.get(index).size()!=0){
+                    break;
+                }
+            }
+        }
+        return top;
+    }
+}
+
+/**
+ * Your FreqStack object will be instantiated and called as such:
+ * FreqStack obj = new FreqStack();
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ */
