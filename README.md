@@ -881,7 +881,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  
  ---
  # :punch: CodeForce Contest
- 统计(1800+ 题量)： 107
+ 统计(1800+ 题量)： 109
  
   
   ### Beta Round #3 
@@ -1326,8 +1326,8 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    1442A. [Extreme Subtraction(1800) Greedy](./code/1442A.txt) <br />
    1442B. [Identify the Operations	(1800) Math+Observation+Dara Structure](./code/1442B.txt) <br />
   311E. [Biologist	(MIN CUT) (2300) ](./code/311E.txt) <br />
-  1454E. [Number of Simple Paths	(Graph+ Tarjan+Math)  ](./code/1454E.txt) <br />
-  1454F. [Array Partition	(Segment Tree)  ](./code/1454F.txt) <br />
+  1454E. [Number of Simple Paths	(Graph+ Tarjan+Math) (2000)  ](./code/1454E.txt) <br />
+  1454F. [Array Partition	(Segment Tree)  (2100)](./code/1454F.txt) <br />
   
   #  KickStart
   2020G3. [Combination Lock  ](./kick/2020G3.txt) <br />
