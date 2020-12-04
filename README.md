@@ -67,7 +67,7 @@
 |  656  |[Coin Path](./code/656.txt) | (H-) 1700  ||  681  |[Next Closest Time](./code/681.txt) | (M) 1500  |
 |  683  |[ K Empty Slots ](./code/683.txt) | (H--) 1500  ||  702  |[Search in a Sorted Array of Unknown Size ](./code/702.txt)| (M-) 1200  |
 |  716  |[Max Stack ](./code/716.txt)| (E+) 1200  ||  727  |[Minimum Window Subsequence ](./code/727.txt)| (H) 1800  |
-|  750  |[ Number Of Corner Rectangles ](./code/750.txt)| (M) 1500  |
+|  742  |[ Closest Leaf in a Binary Tree ](./code/742.txt)| (M-) 1400  ||  750  |[ Number Of Corner Rectangles ](./code/750.txt)| (M) 1500  |
 |  755  |[Pour Water ](./code/755.txt)| (M-) 1400  |
 |  759  |[Employee Free Time ](./code/759.txt)| (H-) 1600  ||  760  |[ Find Anagram Mappings ](./code/760.txt)| (E) 900  |
 |  774  |[Minimize Max Distance to Gas Station ](./code/774.txt)| (H-) 1700  ||  1004  |[Max Consecutive Ones III](./code/1004.txt)| (M-) 1300 |
