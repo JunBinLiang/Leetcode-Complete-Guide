@@ -1,0 +1,86 @@
+line sweep the width
+
+we can brute the height for finding those overlapping
+
+o(n^2logn)
+
+
+
+
+class Solution {
+    int mod=1000000007;
+    public int rectangleArea(int[][] A) {
+        long res=0;
+        List<int[]>list=new ArrayList<>();
+        for(int i=0;i<A.length;i++){
+            int pair[]=A[i];
+            int x1=pair[0],y1=pair[1];
+            int x2=pair[2],y2=pair[3];
+            list.add(new int[]{x1,1,y1,y2,i});
+            list.add(new int[]{x2,-1,y1,y2,i});
+        }
+        
+        Collections.sort(list,(a,b)->{
+            if(a[0]==b[0])return a[1]-b[1];
+            return a[0]-b[0];
+        });
+        
+        
+        int pre=0;
+        List<int[]>height=new ArrayList<>();
+        
+        for(int i=0;i<list.size();i++){
+            int pair[]=list.get(i);
+            
+            long w=pair[0]-pre;
+            long h=0;
+            
+            int p=-1;
+            for(int j=0;j<height.size();j++){
+                int s=height.get(j)[0];
+                int e=height.get(j)[1];
+                if(p>=s){
+                    if(e>p){
+                        h=h+(e-p);
+                        p=e;
+                    }
+                    
+                }
+                else{
+                    h=h+(e-s);
+                    p=e;
+                }
+            }
+            
+            
+            if(pair[1]>0){
+                height.add(new int[]{pair[2],pair[3],pair[4]});
+            }
+            else{//removing
+                int index=-1;
+                for(int j=0;j<height.size();j++){
+                    if(height.get(j)[2]==pair[4]){
+                        index=j;
+                        break;
+                    }
+                }
+                height.remove(index);
+            }
+            
+            
+            Collections.sort(height,(a,b)->{
+                if(a[0]==b[0])return b[1]-a[1];
+                return a[0]-b[0];
+            });
+            
+            
+            //update 
+            pre=pair[0];
+            res+=(w*h);
+            res%=mod;
+        }
+        
+        
+        return (int)(res);
+    }
+}
