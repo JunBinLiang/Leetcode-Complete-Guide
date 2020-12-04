@@ -226,14 +226,12 @@ Note: LinkedList can be used as stack or queue or deque<br/><br/>
 #86. [Partition List (M-) 1300](./code/86.txt) <br />
 #92. [Reverse LinkedList II (M) 1500](./code/92.txt) <br />
 #141. [Linked List Cycle (E) 141](./code/1000.txt) <br />
-#146. [LRU Cache (M+) 1600](./code/146.txt) <br />
 #147. [Insertion Sort List (M-) 1200](./code/147.txt) <br />
 #203. [Remove Linked List Elements (E) 900](./code/203.txt) <br />
 #237. [Delete Node in a Linked List(E) 1000](./code/237.txt) <br />
 #328. [Odd Even Linked List (M-) 1300](./code/328.txt) <br />
 #341. [Flatten Nested List Iterator (M-) 1400](./code/341.txt) <br />
 #430. [Flatten a Multilevel Doubly Linked List (M) 1500](./code/430.txt) <br />
-#460. [LFU (H) 1800](./code/460.txt) <br />
 #817. [Linked List Components (M-) 1300](./code/817.txt) <br />
 #876. [Middle of the Linked List (E) 900](./code/876.txt) <br />
 #950. [Reveal Cards In Increasing Order (M) 1500](./code/950.txt) <br />
@@ -699,6 +697,12 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1674. [ Minimum Moves to Make Array Complementary(H-) 1700](./code/1674.txt) <br />
 
 ---
+### Data Structure
+#146. [LRU Cache (M+) 1600](./code/146.txt) <br />
+#460. [LFU (H) 1800](./code/460.txt) <br />
+#895. [Maximum Frequency Stack (H-) 1700](./code/895.txt) <br />
+
+---
 ### SQL
 #175. [Combine Two Tables (E)](./sql/175.txt) <br />
 #177. [Nth Highest Salary (M)](./sql/177.txt) <br />
@@ -717,6 +721,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1303. [Find the Team Size (E)](./sql/1303.txt) <br />
 #1407. [ Top Travellers (E)](./sql/1407.txt) <br />
 #1565. [Unique Orders and Customers Per Month (E)](./sql/1565.txt) <br />
+
 
 
 
