@@ -480,6 +480,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #440. [ K-th Smallest in Lexicographical Order (H+) 1900](./code/440.txt) <br />
 #453. [Minimum Moves to Equal Array Elements (E+) 1100](./code/453.txt) <br />
 #463. [Island Perimeter (E) 900](./code/463.txt) <br />
+#504. [Base 7 (E) 800](./code/504.txt) <br />
 #553. [Optimal division (M-) 1300](./code/553.txt) <br />
 #598. [Range Addition II (E)) 900](./code/598.txt) <br />
 #799. [Champagne Tower(M) 1500](./code/799.txt) <br />
