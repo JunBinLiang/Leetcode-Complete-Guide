@@ -433,6 +433,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #926. [Flip String to Monotone Increasing(M-) 1400](./code/926.txt) <br />
 #940. [Distinct Subsequences II (H) 1800](./code/940.txt) <br />
 #943. [Find the Shortest Superstring (H) 1900](./code/943.txt) <br />
+#964. [Least Operators to Express Number (H) 1900](./code/964.txt) <br />
 #968. [Binary Tree Camera (H+) 2000](./code/968.txt) <br />
 #983. [Minimum Cost For Tickets (M) 1500](./code/983.txt) <br />
 #1000. [Minimum Cost to Merge Stones (H+) 2000](./code/1000.txt) <br />
