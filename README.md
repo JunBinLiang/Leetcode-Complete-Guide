@@ -85,6 +85,7 @@
 |  1136  |[Parallel Courses](./code/1136.txt)| (H-) 1600 ||  1150  |[Check If a Number Is Majority Element in a Sorted Array](./code/1150.txt)  | (E) 900  |
 |  1151  |[Minimum Swaps to Group All 1's Together](./code/1151.txt)  | (M-) 1200  ||  1167  |[Minimum Cost to Connect Sticks](./code/1167.txt)  | (M-) 1400  |
 |  1168  |[Optimize Water Distribution in a Village](./code/1168.txt)  | (H) 1800  ||  1180  |[Count Substrings with Only One Distinct Letter](./code/1180.txt)  | (E) 1000  |
+|  1181  |[Before and After Puzzle](./code/1181.txt)  | (M-) 1200  |
 |  1196  | [How Many Apples Can You Put into the Basket](./code/1196.txt)  | (E) 800 ||  1183  |[Maximum Number of Ones](./code/1183.txt) |(H) 1800  |
 |  1213  |[Intersection of Three Sorted Arrays](./code/1213.txt) |(E+) 1100  |
 |  1216  |[Valid Palindrome III (区间dp)](./code/1216.txt)  |  (H-) 1700 ||  1229  |[Meeting Scheduler](./code/1229.txt) | (M-) 1400 |
