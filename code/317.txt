@@ -1,0 +1,86 @@
+You want to build a house on an empty land which reaches all buildings in the shortest amount of distance. You can only move up, down, left and right. You are given a 2D grid of values 0, 1 or 2, where:
+
+Each 0 marks an empty land which you can pass by freely.
+Each 1 marks a building which you cannot pass through.
+Each 2 marks an obstacle which you cannot pass through.
+Example:
+
+Input: [[1,0,2,0,1],[0,0,0,0,0],[0,0,1,0,0]]
+
+1 - 0 - 2 - 0 - 1
+|   |   |   |   |
+0 - 0 - 0 - 0 - 0
+|   |   |   |   |
+0 - 0 - 1 - 0 - 0
+
+Output: 7 
+
+Explanation: Given three buildings at (0,0), (0,4), (2,2), and an obstacle at (0,2),
+             the point (1,2) is an ideal empty land to build a house, as the total 
+             travel distance of 3+3+1=7 is minimal. So return 7.
+Note:
+There will be at least one building. If it is not possible to build such house according to the above rules, return -1.
+
+
+
+
+
+
+
+
+
+
+
+class Solution {
+    public int shortestDistance(int[][] mat) {
+        int res=Integer.MAX_VALUE;
+        for(int i=0;i<mat.length;i++){
+            for(int j=0;j<mat[0].length;j++){
+                if(mat[i][j]==0){
+                    int val=bfs(mat,i,j);
+                    res=Math.min(res,val);
+                }
+            }
+        }
+        if(res==Integer.MAX_VALUE)return -1;
+        return res;
+    }
+    
+    public int bfs(int mat[][],int sr,int sc){
+        boolean visit[][]=new boolean[mat.length][mat[0].length];
+        int dis[][]=new int[mat.length][mat[0].length];
+        visit[sr][sc]=true;
+        Queue<int[]>q=new LinkedList<>();
+        q.add(new int[]{sr,sc});
+        while(q.size()!=0){
+            int pair[]=q.poll();
+            int r=pair[0],c=pair[1],d=dis[r][c];
+            if(mat[r][c]==1)continue;
+            
+            add(mat,q,visit,dis,r+1,c,d);
+            add(mat,q,visit,dis,r-1,c,d);
+            add(mat,q,visit,dis,r,c+1,d);
+            add(mat,q,visit,dis,r,c-1,d);
+        }
+        
+        int sum=0;
+        for(int i=0;i<dis.length;i++){
+            for(int j=0;j<dis[0].length;j++){
+                if(mat[i][j]==1){
+                    if(dis[i][j]==0)return Integer.MAX_VALUE;
+                    sum+=dis[i][j];
+                }
+            }
+        }
+        return sum;
+    
+    }
+    
+    public void add(int mat[][],Queue<int[]>q,boolean visit[][],int dis[][],int i,int j,int d){
+        if(i<0||j<0||i>=mat.length||j>=mat[0].length)return;
+        if(mat[i][j]==2||visit[i][j])return;
+        q.add(new int[]{i,j});
+        visit[i][j]=true;
+        dis[i][j]=d+1;
+    }
+}
