@@ -59,7 +59,7 @@
 |  431  |[Encode N-ary Tree to Binary Tree](./code/431.txt) | (H-) 1700  ||  465  |[Optimal Account Balancing](./code/465.txt) | (H) 1800  |
 |  471  |[Encode String with Shortest Length (String + Interval DP)](./code/471.txt) | (H) 1900  ||  487  |[Max Consecutive Ones II](./code/487.txt)| (M-) 1300 |
 |  490  |[The Maze](./code/490.txt) | (M) 1500  ||  499  |[The Maze III](./code/499.txt) | (H) 1800  |
-|  505  |[The Maze II](./code/505.txt) | (M+) 1600  |  510  |[Inorder Successor in BST II](./code/510.txt) | (M) 1500  |
+|  505  |[The Maze II](./code/505.txt) | (M+) 1600  |  |  510  |[ Inorder Successor in BST II](./code/505.txt) | (M) 1500  | 
 |  531  |[Lonely Pixel I](./code/531.txt) | (M-) 1400  ||  544  |[Output Contest Matches ](./code/544.txt) | (M) 1500  |
 |  545  |[Boundary of Binary Tree ](./code/545.txt) | (M) 1500  ||  548  |[Split Array with Equal Sum ](./code/548.txt) | (M) 1500  |
 |  562  |[Longest Line of Consecutive One in Matrix ](./code/562.txt) | (M-) 1400  |
