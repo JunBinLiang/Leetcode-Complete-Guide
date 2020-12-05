@@ -1,0 +1,37 @@
+/*
+// Definition for a Node.
+class Node {
+    public int val;
+    public Node left;
+    public Node right;
+    public Node parent;
+};
+*/
+
+class Solution {
+    public Node inorderSuccessor(Node node) {
+        Stack<Node>stack=new Stack<>();
+        Node root=node;
+        while(root.parent!=null){
+            root=root.parent;
+        }
+        
+        while(root!=null){
+            if(root.val<=node.val){
+                Node temp=root;
+                root=root.right;
+                temp.right=null;
+            }
+            else{
+                stack.push(root);
+                root=root.left;
+                stack.peek().left=null;
+            }
+        }
+        if(stack.size()==0)return null;
+        while(stack.peek().left!=null){
+            stack.push(stack.peek().left);
+        }
+        return stack.peek();
+    }
+}
