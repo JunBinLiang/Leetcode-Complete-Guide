@@ -253,8 +253,7 @@ Note: LinkedList can be used as stack or queue or deque<br/><br/>
 #556. [Next Greater Element III (M) 1500](./code/556.txt) <br />
 #630. [Course Schedule III (H-) 1700](./code/630.txt) <br />
 #699. [Falling Squares (H-) 1700](./code/699.txt) <br />
-#729. [My Calendar I (M) 1500](./code/729.txt) <br />
-#731. [My Calendar II (M+) 1600](./code/731.txt) <br />
+#738. [Monotone Increasing Digits (M) 1500](./code/738.txt) <br />
 #763. [Partition Labels (M) 1500](./code/763.txt) <br />
 #765. [Couple Holding Hands (H-) 1600](./code/765.txt) <br />
 #767. [Reorganize String (M) 1500](./code/767.txt) <br />
@@ -701,6 +700,8 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 ---
 ### Line Sweep
 #391. [Perfect Rectangle(H) 1800](./code/391.txt) <br />
+#729. [My Calendar I (M) 1500](./code/729.txt) <br />
+#731. [My Calendar II (M+) 1600](./code/731.txt) <br />
 #1674. [ Minimum Moves to Make Array Complementary(H-) 1700](./code/1674.txt) <br />
 
 ---
