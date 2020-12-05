@@ -412,6 +412,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #466. [Count Repetition (H) 1800](./code/466.txt) <br />
 #514. [Freedom Trail (H) 1800](./code/514.txt) <br />
 #518. [Coin Change 2 (M) 1500](./code/518.txt) <br />
+#673. [Number of Longest Increasing Subsequence (M) 1500](./code/673.txt) <br />
 #691. [Stickers to Spell Word (H) 1900](./code/691.txt) <br />
 #714. [Best Time to Buy and Sell Stock with Transaction Fee (M+) 1600](./code/714.txt) <br />
 #717. [1-bit and 2-bit Characters (E) 1000](./code/717.txt) <br />
