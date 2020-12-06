@@ -1,0 +1,68 @@
+class Solution {
+    int k;int n;int goal;
+    int dp[][];
+    List<Integer>bits=new ArrayList<>();
+    public int minimumIncompatibility(int[] A, int k) {
+        this.n=A.length;
+        this.k=k;
+        goal=n/k;
+        
+        Map<Integer,Integer>map=new HashMap<>();
+        for(int i:A){
+            if(!map.containsKey(i))map.put(i,0);
+            map.put(i,map.get(i)+1);
+            if(map.get(i)>k)return -1;
+        }
+        
+        
+        int state=(1<<n)-1;
+        for(int i=0;i<=state;i++){
+            if(Integer.bitCount(i)==goal)bits.add(i);
+        }
+        
+        dp=new int[1<<n][k];
+        for(int i=0;i<dp.length;i++){
+            Arrays.fill(dp[i],-1);
+        }
+        
+        return dfs(A,state,0);
+    }
+    
+    public int dfs(int A[],int state,int index){
+        if(index>=k){
+            return 0;
+        }
+        
+        int res=1000;
+        if(dp[state][index]!=-1)return dp[state][index];
+        for(int bit:bits){
+            if(Integer.bitCount(bit)==goal){
+                int newstate=state;
+                int mn=100,mx=-1;
+                boolean visit[]=new boolean[n+1];
+                boolean good=true;
+                for(int j=0;j<n;j++){
+                    if((bit&(1<<j))!=0){
+                        if(visit[A[j]]==true){
+                            good=false;
+                            break;
+                        }
+                        if((state&(1<<j))==0){
+                            good=false;
+                            break;
+                        }
+                        visit[A[j]]=true;
+                        newstate=newstate^(1<<j);
+                        mx=Math.max(mx,A[j]);
+                        mn=Math.min(mn,A[j]);
+                    }
+                }
+                if(good)res=Math.min(res,mx-mn+dfs(A,newstate,index+1));
+            }
+            
+        }
+        dp[state][index]=res;
+        return res;
+        
+    }
+}
