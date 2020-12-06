@@ -473,6 +473,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1655. [Distribute Repeating Integers(H) 1800](./code/1655.txt) <br />
 #1659. [Maximize Grid Happiness(H+) 2200](./code/1659.txt) <br />
 #1671. [Minimum Number of Removals to Make Mountain Array(H-) 1600](./code/1671.txt) <br />
+#1681. [Minimum Incompatibility (H) 1800](./code/1681.txt) <br />
 #LCP10. [二叉树任务调度 (H+) 2200](./code/LCP10.txt) <br />
 #LCP13. [寻宝 (H+) 2100](./code/LCP13.txt) <br />
 #LCP14. [切分数组 (H+) 2200](./code/LCP14.txt) <br />
