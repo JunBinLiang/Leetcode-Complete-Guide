@@ -1,0 +1,32 @@
+class Solution {
+public:
+    bool canPlaceFlowers(vector<int>& nums, int n) {
+        int res=0;
+        vector<int>A;
+        A.push_back(-1);
+        for(int i=0;i<nums.size();i++){
+            if(nums[i]==1){
+                A.push_back(i);
+            }
+        }
+        A.push_back(nums.size());
+        if(A.size()==2){
+            return (nums.size()+1)/2>=n;
+        }
+        
+        for(int i=1;i<A.size();i++){
+            int cnt=A[i]-A[i-1]-1;
+            if(i==1||i==A.size()-1){
+                cnt--;
+            }
+            else{
+                cnt-=2;
+            }
+            if(cnt<0)continue;
+            cnt++;
+            res+=(cnt/2);
+        }
+        
+        return res>=n;
+    }
+};
