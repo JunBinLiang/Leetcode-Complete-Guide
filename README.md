@@ -622,6 +622,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1446. [Consecutive Characters (E) 900](./code/1446.txt) <br />
 #1616. [Split Two Strings to Make Palindrome (M+) 1600](./code/1616.txt) <br />
 #1624. [Largest Substring Between Two Equal Characters (E) 900](./code/1624.txt) <br />
+#1678. [ Goal Parser Interpretation (E) 900](./code/1678.txt) <br />
 
 ---
 ### Game Theory
