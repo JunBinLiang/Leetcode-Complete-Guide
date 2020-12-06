@@ -1,0 +1,15 @@
+class Solution {
+    /*
+    The first person gets the first seat, then the nth person is guaranteed to get the nth seat. The probability of this situation is 1/n.
+The first person gets any other seat except the first one and the nth one, then the problem shrinks into a subproblem with size n-1. The probability of this situation is (n-2)/n.
+    
+    */
+    
+    public double nthPersonGetsNthSeat(int n) {
+        if(n==1)return 1;
+        
+        return 1.0/n+(n-2.0)/n*nthPersonGetsNthSeat(n-1);
+    }
+    
+   
+}
