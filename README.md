@@ -252,6 +252,7 @@ Note: LinkedList can be used as stack or queue or deque<br/><br/>
 #452. [Minimum Number of Arrows to Burst Balloonss (M) 1500](./code/452.txt) <br />
 #522. [Longest Uncommon Subsequence II (M-) 1300](./code/522.txt) <br />
 #556. [Next Greater Element III (M) 1500](./code/556.txt) <br />
+#605. [Can Place Flowers(E+) 1100](./code/605.txt) <br />
 #630. [Course Schedule III (H-) 1700](./code/630.txt) <br />
 #699. [Falling Squares (H-) 1700](./code/699.txt) <br />
 #738. [Monotone Increasing Digits (M) 1500](./code/738.txt) <br />
