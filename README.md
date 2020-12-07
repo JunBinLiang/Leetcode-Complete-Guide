@@ -895,7 +895,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  
  ---
  # :punch: CodeForce Contest
- 统计(1800+ 题量)： 109
+ 统计(1800+ 题量)： 110
  
   
   ### Beta Round #3 
@@ -1287,6 +1287,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   1077E. [Thematic Contests (Binary Search) ](./cf/1077E.txt) <br />
    1096D. [Easy Problem (DP) ](./cf/1096D.txt) <br />
    1154E. [Two Teams (TreeMap+Fenwick) ](./cf/1154E.txt) <br />
+   1326D2. [ Prefix-Suffix Palindrome (Hard version) (kmp) ](./cf/1326D2.txt) <br />
    ### 1900<br/>
   9D. [How many trees (Dp+Divide Conquer) ](./cf/9D.txt) <br />
   14D. [Two Path ](./cf/14D.txt) <br />
