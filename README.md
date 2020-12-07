@@ -208,6 +208,7 @@
 #402. [Remove K Digits (M) 1500](./code/402.txt) <br />
 #682. [Baseball Game (E+) 1100](./code/682.txt) <br />
 #735. [Asteroid Collision (M-) 1400](./code/735.txt) <br />
+#844. [Backspace String Compare (E) 900](./code/844.txt) <br />
 #1003. [Check If Word Is Valid After Substitutions (M-) 1400](./code/1003.txt) <br />
 #1047. [Remove All Adjacent Duplicates In String (E) 1000](./code/1047.txt) <br />
 #1063. [Number of Valid Subarrays (H-) 1700](./code/1063.txt) <br />
