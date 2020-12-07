@@ -1,0 +1,22 @@
+class Solution {
+    public int minTimeToVisitAllPoints(int[][] A) {
+        int res=0;
+        
+        for(int i=1;i<A.length;i++){
+            int x1=A[i-1][0];
+            int x2=A[i][0];
+           
+            
+            int y1=A[i-1][1];
+            int y2=A[i][1];
+            
+            int dif1=Math.abs(x2-x1);
+            int dif2=Math.abs(y2-y1);
+            
+            res+=Math.max(dif1,dif2);
+        }
+        
+        
+        return res;
+    }
+}
