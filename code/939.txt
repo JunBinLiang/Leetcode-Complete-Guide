@@ -1,0 +1,43 @@
+class Solution {
+    public int minAreaRect(int[][] A) {
+        int res=Integer.MAX_VALUE;  
+        Map<Integer,List<Integer>>map=new HashMap<>();//[x,y]
+        Map<String,List<Integer>>map1=new HashMap<>();//[x,y]
+        
+        for(int i=0;i<A.length;i++){
+            if(!map.containsKey(A[i][0]))map.put(A[i][0],new ArrayList<>());
+            map.get(A[i][0]).add(A[i][1]);
+        }
+        
+        for(Integer x:map.keySet()){
+            List<Integer>list=map.get(x);
+            Collections.sort(list);
+            for(int i=0;i<list.size();i++){
+                for(int j=i+1;j<list.size();j++){
+                    String s=list.get(i)+","+list.get(j);
+                    if(!map1.containsKey(s))map1.put(s,new ArrayList<>());
+                    map1.get(s).add(x);
+                }
+            }
+        }
+        
+       
+        
+        for(String s:map1.keySet()){
+            List<Integer>list=map1.get(s);
+            Collections.sort(list);
+            if(list.size()<2)continue;
+            String arr[]=s.split(",");
+            int height=Integer.parseInt(arr[1])-Integer.parseInt(arr[0]);
+            for(int i=1;i<list.size();i++){
+                int width=Math.abs(list.get(i)-list.get(i-1));
+                res=Math.min(res,width*height);
+            }
+        }
+        
+        
+        
+        if(res==Integer.MAX_VALUE)return 0;
+        return res;
+    }
+}
