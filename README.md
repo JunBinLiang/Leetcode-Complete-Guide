@@ -566,6 +566,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 ### Sliding Window
 #3. [Longest Substring Without Repeating Characters (M-) 1400](./code/3.txt) <br />
 #76. [Minimum Window Substring (M+) 1700](./code/76.txt) <br />
+#346. [ Moving Average from Data Stream (E) 900](./code/346.txt) <br />
 #395. [Longest Substring with At Least K Repeating Characters (M+) 1700](./code/395.txt) <br />
 #424. [Longest Repeating Character Replacement (M) 1500](./code/424.txt) <br />
 #713. [Subarray Product Less Than K (M) 1500](./code/713.txt) <br />
