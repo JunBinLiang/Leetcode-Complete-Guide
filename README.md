@@ -1255,6 +1255,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   1443B.[Saving the City (dp) ](./easy/1443B.txt) <br />
   
    ### 1400<br/>
+   335A.[Banana ](./easy/335A.txt) <br />
    205B.[Little Elephant and Sorting ](./easy/205B.txt) <br />
    1452B.[ Toy Blocks (Greedy) ](./easy/1452B.txt) <br />
    1453B.[ Suffix Operations ](./easy/1453B.txt) <br />
