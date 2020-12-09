@@ -1,0 +1,50 @@
+class Solution {
+    TreeSet<Integer>treeset=new TreeSet<>();
+    int MAX=1000000;
+    Map<String,Integer>map=new HashMap<>();
+    public int makeArrayIncreasing(int[] A, int[] B) {
+        for(int i=0;i<A.length;i++){
+            A[i]++;
+        }
+        
+        for(int i:B){
+            treeset.add(i+1);
+        }
+        
+        int res=dfs(A,0,0);
+        if(res>B.length)return -1;
+        return res;
+    }
+    
+    public int dfs(int A[],int pre,int i){
+        if(i>=A.length){
+            return 0;
+        }
+        String state=pre+","+i;
+        if(map.containsKey(state))return map.get(state);
+        
+        int res=MAX;
+        if(A[i]>pre){//swap or not
+             Integer high=treeset.higher(pre);
+            if(high==null){
+                
+            }
+            else{
+                res=Math.min(res,1+dfs(A,high,i+1));
+            }
+            res=Math.min(res,dfs(A,A[i],i+1));
+        }
+        else{//swap need
+            Integer high=treeset.higher(pre);
+            if(high==null){
+                
+            }
+            else{
+                res=Math.min(res,1+dfs(A,high,i+1));
+            }   
+        }
+        
+        map.put(state,res);
+        return res;
+    }
+}
