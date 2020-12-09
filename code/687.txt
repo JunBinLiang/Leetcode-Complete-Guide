@@ -1,0 +1,67 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    int res=1;
+    public int longestUnivaluePath(TreeNode root) {
+        if(root==null)return 0;
+        dfs(root);
+        return res-1;
+    }
+    
+    public int dfs(TreeNode root){
+        int ans=1;
+        if(root.left!=null&&root.right!=null){
+            int l=dfs(root.left);
+            int r=dfs(root.right);
+            
+            if(root.val==root.left.val&&root.val==root.right.val){
+                res=Math.max(res,ans+l+r);
+                return ans+Math.max(l,r);
+            }
+            else if(root.val==root.left.val){
+                res=Math.max(res,ans+l);
+                return ans+l;
+            }
+            else if(root.val==root.right.val){
+                res=Math.max(res,ans+r);
+                return ans+r;
+            }
+            else{
+                return ans;
+            }
+            
+        }   
+        else if(root.left!=null){
+            int l=dfs(root.left);
+            if(root.val==root.left.val){
+                ans+=l;
+            }
+            res=Math.max(res,ans);
+            return ans;
+        }
+        else if(root.right!=null){
+            int r=dfs(root.right);
+            if(root.val==root.right.val){
+                ans+=r;
+            }
+            res=Math.max(res,ans);
+            return ans;
+        }
+        else{
+            return 1;
+        }
+    }
+}
