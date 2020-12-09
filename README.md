@@ -456,6 +456,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1137. [N-th Tribonacci Number (E) 900](./code/1137.txt) <br />
 #1139. [Largest 1-Bordered Square (M) 1600](./code/1139.txt) <br />
 #1155. [Number of Dice Rolls With Target Sum (M+) 1600](./code/1155.txt) <br />
+#1187. [Make Array Strictly Increasing (H) 1800](./code/1187.txt) <br />
 #1125. [Smallest Sufficient Team (H) 1800](./code/1125.txt) <br />
 #1227. [Airplane Seat Assignment Probability (M+) 1600](./code/1227.txt) <br />
 #1259. [Handshakes That Don't Cross (H-) 1700](./code/1259.txt) <br />
