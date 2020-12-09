@@ -366,6 +366,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #623. [ Add One Row to Tree (M-) 1300](./code/623.txt) <br />
 #654. [Maximum Binary Tree (M-) 1400](./code/654.txt) <br />
 #669. [Trim a Binary Search Tree (M-) 1400](./code/669.txt) <br />
+#687. [Longest Univalue Path(M) 1500](./code/687.txt) <br />
 #783. [Minimum Distance Between BST Nodes (E) 900](./code/783.txt) <br />
 #814. [Binary Tree Pruning (M-) 1200](./code/814.txt) <br />
 #872. [Leaf-Similar Trees (E) 900](./code/872.txt) <br />
