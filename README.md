@@ -154,6 +154,7 @@
 #542. [01 Matrix (M) 1500](./code/542.txt) <br />
 #675. [Cut Off Trees for Golf Event (H-) 1700](./code/675.txt) <br />
 #766. [Toeplitz Matrix (M) 1400](./code/766.txt) <br />
+#838. [ Push Dominoes (M) 1500](./code/838.txt) <br />
 #847. [Shortest Path Visiting All Nodes (H) 1800](./code/847.txt) <br />
 #854. [K-Similar String (H) 1800](./code/854.txt) <br />
 #994. [Rotting Orange (M) 1400](./code/994.txt) <br />
@@ -184,7 +185,7 @@
 #565. [Array Nesting (M-) 1400](./code/565.txt) <br />
 #690. [Employee Importance (M-) 1200](./code/690.txt) <br />
 #761. [Special Binary String (H) 1800](./code/761.txt) <br />
-#838. [ Push Dominoes (M) 1500](./code/838.txt) <br />
+#841. [ Keys and Rooms (M) 1500](./code/841.txt) <br />
 #842. [ Split Array into Fibonacci Sequence(M+) 1600](./code/842.txt) <br />
 #967. [Numbers With Same Consecutive Differences (M) 1500](./code/967.txt) <br />
 #979. [Distribute Coins in Binary Tree (M+) 1600](./code/979.txt) <br />
