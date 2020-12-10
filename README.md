@@ -258,6 +258,7 @@ Note: LinkedList can be used as stack or queue or deque<br/><br/>
 #556. [Next Greater Element III (M) 1500](./code/556.txt) <br />
 #605. [Can Place Flowers(E+) 1100](./code/605.txt) <br />
 #630. [Course Schedule III (H-) 1700](./code/630.txt) <br />
+#659. [Split Array into Consecutive Subsequences (M) 1500](./code/659.txt) <br />
 #699. [Falling Squares (H-) 1700](./code/699.txt) <br />
 #738. [Monotone Increasing Digits (M) 1500](./code/738.txt) <br />
 #763. [Partition Labels (M) 1500](./code/763.txt) <br />
