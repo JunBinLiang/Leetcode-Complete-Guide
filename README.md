@@ -907,7 +907,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  
  ---
  # :punch: CodeForce Contest
- 统计(1800+ 题量)： 113
+ 统计(1800+ 题量)： 114
  
   
   ### Beta Round #3 
@@ -1338,6 +1338,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   23C. [Oranges and Apples (2500) Greedy ](./code/23C.txt) <br />
   324D. [Xenia and Dominoes (2100) DP+容斥原理 ](./code/324D.txt) <br />
   383C. [Propagating tree	(DIV 1) (2000) 树状区间线段树 ](./code/383C.txt) <br />
+  432C. [ Prime Swaps (Goldbach's conjecture) ](./cf/432C.txt) <br />
   757C. [Felicity is Coming!	(1900)  ](./code/757C.txt) <br />
   776D. [The Door Problem	(2000) 2 SAT + SCC ](./code/776D.txt) <br />
   803C. [Maximal GCD	(1900) (Math)  ](./code/803C.txt) <br />
