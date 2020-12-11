@@ -1,0 +1,64 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <set>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    vector<int>A;
+    set<int>hash1;
+    set<int>hash2;
+    for(int i=0;i<n;i++){
+        int a;cin>>a;
+        A.push_back(a);
+        hash1.insert(a);
+    }
+    
+    if(hash1.size()==0){
+        cout<<0<<endl;
+        return 0;
+    }
+    if(hash1.size()>3){
+        cout<<-1<<endl;
+        return 0;
+    }
+    
+    sort(A.begin(),A.end());
+    
+    for(int i=1;i<A.size();i++){
+        if(A[i]==A[i-1])continue;
+        hash2.insert(A[i]-A[i-1]);
+    }
+    
+    if(hash2.size()>1){
+        cout<<-1<<endl;
+        return 0;
+    }
+    
+    int res=*(hash2.begin());
+    
+    if(hash1.size()==2){
+        if(res%2==0){
+            cout<<res/2<<endl;
+        }
+        else{
+            cout<<res<<endl;
+        }
+    }
+    else{
+        cout<<res<<endl;
+    }
+    
+    return 0;
+}
