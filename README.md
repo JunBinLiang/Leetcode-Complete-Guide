@@ -1249,7 +1249,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   ### 1200<br/>
   18C.[Stripe ](./easy/18C.txt) <br />
   23A.[You're Given a String... ](./easy/23A.txt) <br />
-  
+  1154B.[Make Them Equal](./easy/1154B.txt) <br />
   
   ### 1300<br/>
   39F.[Pacifist frogs ](./easy/39F.txt) <br />
