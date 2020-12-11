@@ -1,0 +1,39 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    Map<Integer,Integer>map=new HashMap<>();
+    boolean res=true;
+    int x,y;
+    public boolean isCousins(TreeNode root, int x, int y) {
+        this.x=x;this.y=y;
+        dfs(root,0);
+        if(map.get(x)!=map.get(y))return false;
+        return res;
+    }
+    
+    public void dfs(TreeNode root,int level){
+        if(root==null)return;
+        
+        dfs(root.left,level+1);
+        dfs(root.right,level+1);
+        
+        map.put(root.val,level);
+        if(root.left!=null&&root.right!=null){
+            if((root.left.val==x&&root.right.val==y)||(root.left.val==y&&root.right.val==x))res=false;
+        }
+        
+    }
+}
