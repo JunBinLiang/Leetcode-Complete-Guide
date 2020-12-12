@@ -908,7 +908,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  
  ---
  # :punch: CodeForce Contest
- 统计(1800+ 题量)： 117
+ 统计(1800+ 题量)： 118
  
   
   ### Beta Round #3 
@@ -1317,6 +1317,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   61E. [Enemy is weak (BIT) ](./cf/61E.txt) <br />
   335B. [Palindrome (Dp + Pigeonhole principle) ](./cf/335B.txt) <br />
   448C. [Painting Fence (Divide Conquer+Greedy) ](./cf/448C.txt) <br />
+  883I. [Photo Processing (DP + Binary Search) ](./cf/883I.txt) <br />
   1060D. [Social Circles (Greedy) ](./cf/1060D.txt) <br />
   1178E. [ Archaeology (Greedy) ](./cf/1178E.txt) <br />
   1430E. [String Reversal (BIT) ](./cf/1430E.txt) <br />
