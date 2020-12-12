@@ -1,0 +1,78 @@
+A subsequence of a string s is considered a good palindromic subsequence if:
+
+It is a subsequence of s.
+It is a palindrome (has the same value if reversed).
+It has an even length.
+No two consecutive characters are equal, except the two middle ones.
+For example, if s = "abcabcabb", then "abba" is considered a good palindromic subsequence, while "bcb" (not even length) and "bbbb" (has equal consecutive characters) are not.
+
+Given a string s, return the length of the longest good palindromic subsequence in s.
+
+ 
+
+Example 1:
+
+Input: s = "bbabab"
+Output: 4
+Explanation: The longest good palindromic subsequence of s is "baab".
+Example 2:
+
+Input: s = "dcbccacdb"
+Output: 4
+Explanation: The longest good palindromic subsequence of s is "dccd".
+ 
+
+Constraints:
+
+1 <= s.length <= 250
+s consists of lowercase English letters.
+
+
+
+
+
+
+
+
+class Solution {
+    int dp[][][];
+    int ans=0;
+    public int longestPalindromeSubseq(String s) {
+        int n=s.length();
+        dp=new int[n][n][30];
+        
+        for(int i=0;i<dp.length;i++){
+            for(int j=0;j<dp[0].length;j++){
+                Arrays.fill(dp[i][j],-1);
+            }
+        }
+        
+        return dfs(s,0,s.length()-1,27);
+    }
+    
+    public int dfs(String s,int l,int r,int pre){
+        if(l>=r)return 0;
+        
+        
+        if(dp[l][r][pre]!=-1)return dp[l][r][pre];
+        int res=0;
+        if(s.charAt(l)==s.charAt(r)){
+            char c=s.charAt(l);
+            if(c-'a'==pre){
+                res=Math.max(res,dfs(s,l+1,r-1,pre));
+            }
+            else{
+                res=Math.max(res,2+dfs(s,l+1,r-1,(int)(c-'a')));
+                res=Math.max(res,dfs(s,l+1,r-1,pre));
+            }
+        }
+        else{
+            res=Math.max(res,dfs(s,l+1,r,pre));
+            res=Math.max(res,dfs(s,l,r-1,pre));
+        }
+        
+        
+        dp[l][r][pre]=res;
+        return res;
+    }
+}
