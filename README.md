@@ -654,6 +654,8 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #913. [Cat and Mouse (H+) 2400](./code/913.txt) <br />
 #1025. [Divisor Game (E+) 1100](./code/1025.txt) <br />
 #1140. [Stone Game II (M+) 1600](./code/1140.txt) <br />
+#1686. [Stone Game VI (M+) 1700](./code/1686.txt) <br />
+#1690. [Stone Game VII (M+) 1600](./code/1690.txt) <br />
 
 ---
 ### Implementation
