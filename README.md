@@ -457,6 +457,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1039. [Minimum Score Triangulation of Polygon (M+) 1700](./code/1039.txt) <br />
 #1066. [Campus Bike II (H-) 1700](./code/1066.txt) <br />
 #1092. [Shortest Common Supersequenceg (H) 1800](./code/1092.txt) <br />
+#1130. [Minimum Cost Tree From Leaf Values (M) 1500](./code/1130.txt) <br />
 #1137. [N-th Tribonacci Number (E) 900](./code/1137.txt) <br />
 #1139. [Largest 1-Bordered Square (M) 1600](./code/1139.txt) <br />
 #1155. [Number of Dice Rolls With Target Sum (M+) 1600](./code/1155.txt) <br />
