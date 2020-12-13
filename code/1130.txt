@@ -1,0 +1,35 @@
+class Solution {
+    int maxs[][];
+    int dp[][];
+    public int mctFromLeafValues(int[] A) {
+        int n=A.length;
+        maxs=new int[n][n];
+        for(int i=0;i<n;i++){
+            int mx=0;
+            for(int j=i;j<n;j++){
+                mx=Math.max(mx,A[j]);
+                maxs[i][j]=mx;
+            }
+        }
+        
+        dp=new int[n][n];
+        for(int i=0;i<n;i++){
+            Arrays.fill(dp[i],-1);
+        }
+        
+        
+        return dfs(A,0,n-1);
+    }
+    
+    public int dfs(int A[],int l,int r){
+        if(l==r)return 0;
+        if(dp[l][r]!=-1)return dp[l][r];
+        int res=Integer.MAX_VALUE;
+        for(int i=l;i<r;i++){
+            int cur=maxs[l][i]*maxs[i+1][r];
+            res=Math.min(res,cur+dfs(A,l,i)+dfs(A,i+1,r));
+        }
+        dp[l][r]=res;
+        return res;
+    }
+}
