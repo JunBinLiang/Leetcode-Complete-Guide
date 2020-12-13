@@ -1,0 +1,62 @@
+class Solution {
+    int A[];
+    int pre[];
+    int dp[][][];
+    int M=-10000000;
+    public int stoneGameVII(int[] A) {
+        this.A=A;
+        int n=A.length;
+        int sum=0;
+        pre=new int[n];
+        for(int i=0;i<A.length;i++){
+            sum+=A[i];
+            pre[i]=sum;
+        }
+        dp=new int[n][n][2];
+        
+        for(int i=0;i<dp.length;i++){
+            for(int j=0;j<dp[0].length;j++){
+                Arrays.fill(dp[i][j],M);
+            }
+        }
+        
+        return dfs(A,0,A.length-1,0);
+    }
+    
+    
+    public int dfs(int A[],int l,int r,int turn){//0:alice   1:bob
+        if(l>=r)return 0;
+        if(dp[l][r][turn]!=M)return dp[l][r][turn];
+        
+        int next=1;
+        if(turn==1)next=0;
+        else next=1;
+        
+        int res=0;
+        int s1=pre[r]-pre[l];//take left
+        int s2=get(pre,r-1)-get(pre,l-1);//take right
+        
+        
+        int v1=dfs(A,l+1,r,next);
+        int v2=dfs(A,l,r-1,next);
+        
+        if(turn==0){//alice
+
+            res=Math.max(s1-v1,s2-v2);
+        }
+        else{//bob
+            res=Math.max(s1-v1,s2-v2); 
+        }
+        
+        
+        dp[l][r][turn]=res;
+        return res;
+    }
+    
+    public int get(int A[],int i){
+        if(i<0)return 0;
+        return A[i];
+    }
+}
+
+
