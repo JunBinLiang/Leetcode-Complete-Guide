@@ -282,6 +282,7 @@ Note: LinkedList can be used as stack or queue or deque<br/><br/>
 #1400.[Construct K Palindrome Strings   (M) 1500](./code/1400.txt) <br />
 #1414.[Find the Minimum Number of Fibonacci Numbers Whose Sum Is K  (M+) 1600](./code/1414.txt) <br />
 #1432.[Max Difference You Can Get From Changing an Integer  (M-) 1400](./code/1432.txt) <br />
+#1433.[Check If a String Can Break Another String (M-) 1400](./code/1433.txt) <br />
 #1520.[Maximum Number of Non-Overlapping Substrings  (H) 1900](./code/1520.txt) <br />
 #1540.[Can Convert String in K Moves  (M) 1500](./code/1540.txt) <br />
 #1591.[Strange Printer II  (H) 1800](./code/1591.txt) <br />
