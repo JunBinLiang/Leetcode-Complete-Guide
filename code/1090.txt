@@ -1,0 +1,33 @@
+class Solution {
+    public int largestValsFromLabels(int[] values, int[] labels, int num_wanted, int use_limit) {
+        int res=0;
+        Map<Integer,Integer>map=new HashMap<>();
+        int cnt=num_wanted;
+        PriorityQueue<int[]>pq=new PriorityQueue<>((a,b)->{
+            return b[0]-a[0];
+        });
+        
+        
+        for(int i=0;i<values.length;i++){
+            pq.add(new int[]{values[i],labels[i]});
+        }
+        
+        while(cnt>0&&pq.size()>0){
+            int top[]=pq.poll();
+            if(!map.containsKey(top[1])){
+                map.put(top[1],1);
+                res+=top[0];
+                cnt--;
+            }
+            else{
+                int old=map.get(top[1]);
+                if(old==use_limit)continue;
+                
+                map.put(top[1],old+1);
+                res+=top[0];
+                cnt--;
+            }
+        }
+        return res;
+    }
+}
