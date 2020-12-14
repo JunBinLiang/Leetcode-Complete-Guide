@@ -271,6 +271,7 @@ Note: LinkedList can be used as stack or queue or deque<br/><br/>
 #910. [Smallest Range II (H-) 1700](./code/910.txt) <br />
 #1007. [Minimum Domino Rotations For Equal Row (M) 1500](./code/1007.txt) <br />
 #1029. [Two City Scheduling (M+) 1600](./code/1029.txt) <br />
+#1090. [Largest Values From Labels (M-) 1300](./code/1090.txt) <br />
 #1111. [ Maximum Nesting Depth of Two Valid Parentheses Strings (M+) 1600](./code/1111.txt) <br />
 #1121. [Divide Array Into Increasing Sequence (H-) 1700](./code/1121.txt) <br />
 #1199. [Minimum Time Building Block (H) 1800](./code/1199.txt) <br />
