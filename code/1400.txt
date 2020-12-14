@@ -1,0 +1,25 @@
+class Solution {
+    public boolean canConstruct(String s, int k) {
+        int t[]=new int[26];
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            t[c-'a']++;
+        }
+        
+        //each palindrom has at most 1 odd frequency
+        int odd=0;
+        for(int i=0;i<t.length;i++){
+            if(t[i]%2==1){
+                odd++;
+                t[i]--;
+            }
+        }
+        
+        if(odd>k)return false;
+        k-=odd;
+        int remain=s.length()-odd;
+        if(remain<k)return false;
+        
+        return true;
+    }
+}
