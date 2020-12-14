@@ -424,6 +424,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #446. [Arithmetic Slices II - Subsequence (H-) 1700](./code/446.txt) <br />
 #449. [Serialize and Deserialize BST (M) 1500](./code/449.txt) <br />
 #466. [Count Repetition (H) 1800](./code/466.txt) <br />
+#494. [Target Sum (M) 1500](./code/494.txt) <br />
 #514. [Freedom Trail (H) 1800](./code/514.txt) <br />
 #518. [Coin Change 2 (M) 1500](./code/518.txt) <br />
 #673. [Number of Longest Increasing Subsequence (M) 1500](./code/673.txt) <br />
