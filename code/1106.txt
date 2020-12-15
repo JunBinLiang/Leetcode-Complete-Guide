@@ -1,0 +1,59 @@
+class Solution {
+    public boolean parseBoolExpr(String s) {
+        if(s.equals("f"))return false;
+        if(s.equals("t"))return true;
+        
+        Stack<Character>op=new Stack<>();
+        Stack<Character>stack=new Stack<>();
+        
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            if(c=='!'||c=='|'||c=='&'){
+                op.push(c);
+            }
+            else{
+                if(c==',')continue;
+                if(c==')'){
+                    char mode=op.pop();
+                    if(mode=='!'){
+                        char peek=stack.pop();
+                        stack.pop();
+                        stack.push(convert1(!convert2(peek)));
+                    }
+                    else if(mode=='|'){
+                        boolean peek=false;
+                        while(stack.peek()!='('){
+                            peek=peek|(convert2(stack.pop()));
+                        }
+                        stack.pop();
+                        stack.push(convert1(peek));
+                    }
+                    else if(mode=='&'){
+                        boolean peek=true;
+                        while(stack.peek()!='('){
+                            peek=peek&(convert2(stack.pop()));
+                        }
+                        stack.pop();
+                        stack.push(convert1(peek));
+                    }
+                    
+                }
+                else{
+                    stack.push(c);
+                }
+            }
+        }
+        
+        return convert2(stack.peek());
+    }
+    
+    public char convert1(boolean b){
+        if(b)return 't';
+        else return 'f';
+    }
+
+    public boolean convert2(char c){
+        if(c=='t')return true;
+         else return false;
+    }
+}
