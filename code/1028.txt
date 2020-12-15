@@ -1,0 +1,67 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public TreeNode recoverFromPreorder(String s) {
+        Stack<Pair>stack=new Stack<>();
+        
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            int j=i;
+            int level=0;int val=0;
+            while(j<s.length()&&s.charAt(j)=='-'){
+                level++;
+                j++;
+            }
+            
+            while(j<s.length()&&s.charAt(j)!='-'){
+                int d=s.charAt(j)-'0';
+                val=val*10+d;
+                j++;
+            }
+            TreeNode node=new TreeNode(val);
+            
+            if(stack.size()==0){
+                stack.push(new Pair(node,level));
+            }
+            else{
+                while(stack.peek().level+1!=level){
+                    stack.pop();
+                }
+                
+                if(stack.peek().node.left==null){
+                    stack.peek().node.left=node;
+                }
+                else{
+                    stack.peek().node.right=node;
+                }
+                stack.push(new Pair(node,level));
+            }
+            i=j-1;
+        }
+        
+        while(stack.size()>1)stack.pop();
+        return stack.peek().node;
+    }
+    
+    class Pair{
+        TreeNode node;
+        int level;
+        public Pair(TreeNode node,int level){
+            this.node=node;
+            this.level=level;
+        }
+    }
+}
