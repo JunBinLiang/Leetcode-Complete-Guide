@@ -686,6 +686,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #784. [Letter Case Permutation (M) 1500](./code/784.txt) <br />
 #898. [Bitwise ORs of Subarrays (M+) 1600](./code/898.txt) <br />
 #1178. [Number of Valid Words for Each Puzzle (H-) 1700](./code/1178.txt) <br />
+#1238. [Circular Permutation in Binary Representation (M) 1500](./code/1238.txt) <br />
 #1290. [Convert Binary Number in a Linked List to Integer (E) 900](./code/1290.txt) <br />
 #1371. [ Find the Longest Substring Containing Vowels in Even Counts (M) 1500](./code/1371.txt) <br />
 #1318. [ Minimum Flips to Make a OR b Equal to c (M) 1500](./code/1318.txt) <br />
