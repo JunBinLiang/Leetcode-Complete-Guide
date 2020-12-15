@@ -117,6 +117,7 @@
 #54. [Spiral Matrix (M-) 1400](./code/54.txt) <br />
 #66. [Add one (E) 900](./code/66.txt) <br />
 #73. [Set Matrix Zeroes (M-) 1300](./code/73.txt) <br />
+#88. [Merge Array (E) 1000](./code/88.txt) <br />
 #134. [Gas Station (M-) 1400](./code/134.txt) <br />
 #189. [Rotate Array(M) 1500](./code/189.txt) <br />
 #228. [Summary Ranges(E) 1000](./code/228.txt) <br />
