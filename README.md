@@ -378,6 +378,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #872. [Leaf-Similar Trees (E) 900](./code/872.txt) <br />
 #993. [Cousins in Binary Tree (E) 900](./code/993.txt) <br />
 #1026. [Maximum Difference Between Node and Ancestor (M-) 1400](./code/1026.txt) <br />
+#1028. [Recover a Tree From Preorder Traversal (H-) 1700](./code/1028.txt) <br />
 #1038. [ Binary Search Tree to Greater Sum Tree (M-) 1400](./code/1038.txt) <br />
 #1080. [Insufficient Nodes in Root to Leaf Paths (M) 1500](./code/1080.txt) <br />
 #1110. [Delete Nodes And Return Forest (M-) 1400](./code/1110.txt) <br />
