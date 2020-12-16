@@ -380,6 +380,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #783. [Minimum Distance Between BST Nodes (E) 900](./code/783.txt) <br />
 #814. [Binary Tree Pruning (M-) 1200](./code/814.txt) <br />
 #872. [Leaf-Similar Trees (E) 900](./code/872.txt) <br />
+#971. [Flip Binary Tree To Match Preorder Traversal (M) 1500](./code/971.txt) <br />
 #993. [Cousins in Binary Tree (E) 900](./code/993.txt) <br />
 #1026. [Maximum Difference Between Node and Ancestor (M-) 1400](./code/1026.txt) <br />
 #1028. [Recover a Tree From Preorder Traversal (H-) 1700](./code/1028.txt) <br />
