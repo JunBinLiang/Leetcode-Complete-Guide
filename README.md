@@ -84,6 +84,7 @@
 |  1088  |[Confusing Number II](./code/1088.txt)| (H-) 1700 |
 |  1099  |[Two Sum Less Than K](./code/1099.txt)| (E) 800 |
 |  1100  |[Find K-Length Substrings With No Repeated Characters](./code/1100.txt)| (M-) 1200 ||  1101  |[The Earliest Moment When Everyone Become Friends](./code/1101.txt)| (M) 1500 
+|  1102  |[Path With Maximum Minimum Value](./code/1102.txt)| (M+) 1600 |
 |  1119  |[Remove Vowels from a String](./code/1119.txt)| (E-) 700 ||  1120  |[Maximum Average Subtree](./code/1120.txt)| (M-) 1200 |
 |  1121  |[Divide Array Into Increasing Sequences (Greedy)](./code/1121.txt)| (H-) 1700 ||  1133  |[ Largest Unique Number](./code/1133.txt)| (E) 800 |
 |  1134  |[Armstrong Numbert](./code/1134.txt)| (E) 800 ||  1135  |[Connecting Cities With Minimum Cost](./code/1135.txt)| (M-) 1400 |
