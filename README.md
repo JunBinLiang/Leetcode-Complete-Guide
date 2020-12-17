@@ -110,7 +110,7 @@
 |  1634  |[ Add Two Polynomials Represented as Linked Lists](./code/1634.txt) | (M-) 1400  ||  1644  |[  Lowest Common Ancestor of a Binary Tree II](./code/1644.txt) | (M-) 1400  |
 |  1650  |[ Lowest Common Ancestor of a Binary Tree III](./code/1650.txt) | (M-) 1400  ||  1660  |[ Correct a Binary Tree](./code/1660.txt) | (M-) 1400  |
 |  1666  |[ Change the Root of a Binary Tree](./code/1660.txt) | (M) 1500  ||  1676  |[ Lowest Common Ancestor of a Binary Tree IV](./code/1676.txt) | (M) 1500  |
-|  1682  |[ Longest Palindromic Subsequence II](./code/1682.txt) | (M+) 1600  |
+|  1682  |[ Longest Palindromic Subsequence II](./code/1682.txt) | (M+) 1600  ||  1692  |[ Count Ways to Distribute Candies](./code/1692.txt) | (H) 1800  |
 
 ---
 ### Array
