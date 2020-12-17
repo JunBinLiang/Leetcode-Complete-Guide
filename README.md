@@ -225,6 +225,7 @@
 #1209. [Remove All Adjacent Duplicates in String II (M-) 1400](./code/1209.txt) <br />
 #1249. [Minimum Remove to Make Valid Parentheses (M-) 1400](./code/1249.txt) <br />
 #1544. [Make The String Great (E+) 1100](./code/1544.txt) <br />
+#1597. [ Build Binary Expression Tree From Infix Expression (H-) 1700](./code/1597.txt) <br />
 #1614. [Maximum Nesting Depth of the Parentheses (E) 900](./code/1614.txt) <br />
 #1673. [Find the Most Competitive Subsequence (M-) 1400](./code/1673.txt) <br />
 
