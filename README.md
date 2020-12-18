@@ -100,6 +100,7 @@
 |  1246  |[Palindrome Removal (区间dp)](./code/1246.txt) |(H) 1800  |  |  1251  |[Stepping Numbers (M-) 1400](./code/1251.txt) |(M-) 1400  |
 |  1257  |[Smallest Common Region (LCA)](./code/1257.txt) |(M) 1500  ||  1273  |[Delete Tree Nodes](./code/1273.txt) |(M) 1500  |
 |  1259  |[Handshakes That Don't Cross ](./code/1259.txt) |(H-) 1700  ||  1426  |[Counting Elements ](./code/1426.txt) |(E) 900  |
+|  1427  |[Perform String Shifts ](./code/1427.txt) |(E) 1000  |
 |  1429  |[First Unique Number ](./code/1429.txt) |(M) 1500  ||  1469  |[Find All The Lonely Nodes](./code/1469.txt) |(E) 900  |
 |  1474  |[ Delete N Nodes After M Nodes of a Linked Lists](./code/1474.txt) |(E) 1000  ||  1485  |[Clone Binary Tree With Random Pointer](./code/1485.txt) |(M) 1500  |
 |  1506  |[Find Root of N-Ary Tree](./code/1506.txt) |(M-) 1300  ||  1522  |[Diameter of N-Ary Tree](./code/1522.txt) |(M-) 1300  |
