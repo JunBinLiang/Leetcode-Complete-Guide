@@ -1,0 +1,58 @@
+class Solution {
+    TreeMap<Integer,Queue<Integer>>treemap=new TreeMap<>();
+    int next[][];int n;
+    boolean dp[][][];
+    public int oddEvenJumps(int[] A) {
+        int res=0;
+        n=A.length;
+        next=new int[n][2];
+        dp=new boolean[n][2][2];
+        
+        for(int i=0;i<next.length;i++){
+            Arrays.fill(next[i],-1);
+        }
+        
+        for(int i=0;i<A.length;i++){
+            if(!treemap.containsKey(A[i])){
+                treemap.put(A[i],new LinkedList<>());
+            }
+            treemap.get(A[i]).add(i);
+        }
+        
+        for(int i=0;i<A.length;i++){
+            treemap.get(A[i]).poll();
+            if(treemap.get(A[i]).size()==0){
+                treemap.remove(A[i]);
+            }
+            
+            Integer ceil=treemap.ceilingKey(A[i]);
+            if(ceil!=null){
+                next[i][0]=treemap.get(ceil).peek();//even jump
+            }
+            
+            Integer floor=treemap.floorKey(A[i]);
+            if(floor!=null){
+                next[i][1]=treemap.get(floor).peek();//odd jump
+            }
+        }
+        for(int i=0;i<A.length;i++){
+            if(dfs(i,0))res++;
+        }
+        
+        return res;
+    }
+    
+    public boolean dfs(int i,int state){//even:0   odd:1
+        if(i==n-1){
+            return true;
+        }
+        if(dp[i][state][1])return dp[i][state][0];
+        if(next[i][state]==-1)return false;
+        
+        boolean res=dfs(next[i][state],(state+1)%2);
+        
+        dp[i][state][0]=res;
+        dp[i][state][1]=true;
+        return res;
+    }
+}
