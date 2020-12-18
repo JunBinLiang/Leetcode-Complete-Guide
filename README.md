@@ -1314,12 +1314,13 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   1455D. [Sequence and Swaps	 (Greedy+Sort) ](./cf/1455D.txt) <br />
   ### 1700<br/>
   18B. [Platforms (Math) ](./easy/18B.txt) <br />
-   29C. [Mail Stamps (Graph) ](./cf/29C.txt) <br />
-   76D. [Plus and xor (Bit) ](./cf/76D.txt) <br />
-   160C. [Find Pair (Math) ](./cf/160C.txt) <br />
-   627A. [XOR Equation (Bit + DP) ](./cf/627A.txt) <br />
-   1019A. [Elections (Greedy) ](./cf/1019A.txt) <br />
+  29C. [Mail Stamps (Graph) ](./cf/29C.txt) <br />
+  76D. [Plus and xor (Bit) ](./cf/76D.txt) <br />
+  160C. [Find Pair (Math) ](./cf/160C.txt) <br />
+  627A. [XOR Equation (Bit + DP) ](./cf/627A.txt) <br />
+  1019A. [Elections (Greedy) ](./cf/1019A.txt) <br />
   1430D. [String Deletion (Greedy) ](./cf/1430D.txt) <br />
+  1462E2. [Close Tuples (hard version) (Combination + Binary Search) ](./cf/1462E2.txt) <br />
   
   ### 1800<br/>
   38E. [Let's Go Rolling! (DP) ](./cf/38E.txt) <br />
