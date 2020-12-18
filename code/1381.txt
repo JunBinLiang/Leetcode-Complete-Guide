@@ -1,0 +1,43 @@
+class CustomStack {
+    int A[]=new int[1002];
+    int B[]=new int[1002];
+    int size=0;
+    int mx;
+    public CustomStack(int maxSize) {
+        mx=maxSize;
+    }
+    
+    public void push(int x) {
+        if(size==mx)return;
+        A[size]=x;
+        size++;
+    }
+    
+    public int pop() {
+        if(size==0)return -1;
+        int index=size-1;
+        int sum=B[index];
+        int res=A[index]+sum;
+        B[index]=0;
+        size--;
+        if(index-1>=0){
+            B[index-1]+=sum;
+        }
+        
+        return res;
+    }
+    
+    public void increment(int k, int val) {
+        if(size==0)return;
+        k=Math.min(k,size);
+        B[k-1]+=val;
+    }
+}
+
+/**
+ * Your CustomStack object will be instantiated and called as such:
+ * CustomStack obj = new CustomStack(maxSize);
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ * obj.increment(k,val);
+ */
