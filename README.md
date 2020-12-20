@@ -611,6 +611,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1208. [Get Equal Substrings Within Budget (M-) 1400](./code/1208.txt) <br />
 #1456. [Maximum Number of Vowels in a Substring of Given Length (M-) 1300](./code/1456.txt) <br />
 #1675. [Minimize Deviation in Array (H) 1800](./code/1675.txt) <br />
+#1695. [Maximum Erasure Value (M-) 1400](./code/1695.txt) <br />
 
 ---
 ### Two Pointer
@@ -663,6 +664,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1616. [Split Two Strings to Make Palindrome (M+) 1600](./code/1616.txt) <br />
 #1624. [Largest Substring Between Two Equal Characters (E) 900](./code/1624.txt) <br />
 #1678. [ Goal Parser Interpretation (E) 900](./code/1678.txt) <br />
+#1694. [ Reformat Phone Number (E) 900](./code/1694.txt) <br />
 
 ---
 ### Game Theory
@@ -740,6 +742,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1579. [Remove Max Number of Edges to Keep Graph Fully Traversable (H) 1900](./code/1579.txt) <br />
 #1584. [Min Cost to Connect All Points (M) 1500](./code/1584.txt) <br />
 #1627. [Graph Connectivity With Threshold (H) 1800](./code/1627.txt) <br />
+#1697. [Checking Existence of Edge Length Limited Paths (H) 1800](./code/1697.txt) <br />
 
 ---
 ### Ordered Map
