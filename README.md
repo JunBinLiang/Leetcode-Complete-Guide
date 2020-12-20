@@ -289,6 +289,7 @@ Note: LinkedList can be used as stack or queue or deque<br/><br/>
 #1296. [Divide Array in Sets of K Consecutive Numbers (M-) 1400](./code/1296.txt) <br />
 #1326.[Minimum Number of Taps to Open to Water a Garden   (H) 1800](./code/1326.txt) <br />
 #1328.[Break a Palindrome   (M-) 1300](./code/1328.txt) <br />
+#1338.[Reduce Array Size to The Half  (M-) 1300](./code/1338.txt) <br />
 #1383.[Maximum Performance of a Team   (H-) 1700](./code/1383.txt) <br />
 #1400.[Construct K Palindrome Strings   (M) 1500](./code/1400.txt) <br />
 #1414.[Find the Minimum Number of Fibonacci Numbers Whose Sum Is K  (M+) 1600](./code/1414.txt) <br />
