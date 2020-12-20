@@ -1,0 +1,48 @@
+class Solution {
+    public String reformatNumber(String s) {
+        StringBuilder str=new StringBuilder();
+        StringBuilder res=new StringBuilder();
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            if(c==' '||c=='-')continue;
+            str.append(c+"");
+        }
+        
+        s=str.toString();
+        
+        List<String>list=new ArrayList<>();
+        str=new StringBuilder();
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            str.append(c+"");
+            if(str.length()==3){
+                String a=str.toString();
+                list.add(a);
+                str=new StringBuilder();
+            }
+        }
+        
+        //System.out.println(str.toString());
+        
+        if(str.length()==1){
+            String last=list.get(list.size()-1);
+            for(int i=0;i<list.size()-1;i++){
+                res.append(list.get(i)+"-");
+            }
+            
+            last=last+str.toString();
+            
+            res.append(last.substring(0,2)+"-");
+            res.append(last.substring(2));
+        }
+        else{
+            for(String a:list){
+                res.append(a+"-");
+            }
+            
+            if(str.length()!=0)res.append(str.toString());
+            else return res.toString().substring(0,res.length()-1);
+        }
+        return res.toString();
+    }
+}
