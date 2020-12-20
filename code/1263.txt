@@ -1,0 +1,171 @@
+class Solution {
+    public int minPushBox(char[][] grid) {
+        int res=Integer.MAX_VALUE;
+        int bxr=-1,bxc=-1;
+        int pr=-1,pc=-1;
+        int tr=-1,tc=-1;
+        int dis[][][][]=new int[grid.length][grid[0].length][grid.length][grid[0].length];
+        Queue<int[]>q=new LinkedList<>();
+        
+        for(int i=0;i<dis.length;i++){
+            for(int j=0;j<dis[0].length;j++){
+                for(int k=0;k<dis[0][0].length;k++){
+                    Arrays.fill(dis[i][j][k],-1);
+                }
+            }
+        }
+        
+        
+        for(int i=0;i<grid.length;i++){
+            for(int j=0;j<grid[0].length;j++){
+                if(grid[i][j]=='B'){
+                    bxr=i;bxc=j;
+                }
+                if(grid[i][j]=='S'){
+                    pr=i;pc=j;
+                }
+                if(grid[i][j]=='T'){
+                    tr=i;tc=j;
+                }
+            }
+        }
+        
+        //left,right,up,down
+        boolean m1=personMove(grid,pr,pc,bxr,bxc-1,bxr,bxc);
+        boolean m2=personMove(grid,pr,pc,bxr,bxc+1,bxr,bxc);
+        boolean m3=personMove(grid,pr,pc,bxr+1,bxc,bxr,bxc);
+        boolean m4=personMove(grid,pr,pc,bxr-1,bxc,bxr,bxc);
+        
+        if(m1){//l
+            dis[bxr][bxc-1][bxr][bxc]=0;
+            q.add(new int[]{bxr,bxc-1,bxr,bxc,0});
+        }
+        if(m2){//r
+            dis[bxr][bxc+1][bxr][bxc]=0;
+            q.add(new int[]{bxr,bxc+1,bxr,bxc,1});
+        }
+        if(m3){//u
+            dis[bxr+1][bxc][bxr][bxc]=0;
+            q.add(new int[]{bxr+1,bxc,bxr,bxc,2});
+        }
+        if(m4){//d
+            dis[bxr-1][bxc][bxr][bxc]=0;
+            q.add(new int[]{bxr-1,bxc,bxr,bxc,3});
+        }
+        
+        
+        
+        while(q.size()!=0){
+            int pair[]=q.poll();
+            int a=pair[0],b=pair[1],c=pair[2],d=pair[3];
+            int dir=pair[4];
+            if(pair[2]==tr&&pair[3]==tc){
+                res=Math.min(res,dis[a][b][c][d]);
+                continue;
+            }
+            
+            if(dir==0){
+                if(push(grid,c,d+1)){
+                    if(dis[c][d][c][d+1]==-1){
+                        dis[c][d][c][d+1]=dis[a][b][c][d]+1;
+                        q.add(new int[]{c,d,c,d+1,dir});
+                    } 
+                }
+            }
+            if(dir==1){
+                if(push(grid,c,d-1)){
+                    if(dis[c][d][c][d-1]==-1){
+                        dis[c][d][c][d-1]=dis[a][b][c][d]+1;
+                        q.add(new int[]{c,d,c,d-1,dir});
+                    } 
+                }
+            }
+            if(dir==2){
+                if(push(grid,c-1,d)){
+                    if(dis[c][d][c-1][d]==-1){
+                        dis[c][d][c-1][d]=dis[a][b][c][d]+1;
+                        q.add(new int[]{c,d,c-1,d,dir});
+                    } 
+                }
+            }
+            if(dir==3){
+                if(push(grid,c+1,d)){
+                    if(dis[c][d][c+1][d]==-1){
+                        dis[c][d][c+1][d]=dis[a][b][c][d]+1;
+                        q.add(new int[]{c,d,c+1,d,dir});
+                    } 
+                }
+            }
+            
+            
+            boolean mm1=personMove(grid,a,b,c,d-1,c,d);
+            boolean mm2=personMove(grid,a,b,c,d+1,c,d);
+            boolean mm3=personMove(grid,a,b,c+1,d,c,d);
+            boolean mm4=personMove(grid,a,b,c-1,d,c,d);
+
+            if(mm1){//l
+                if(dis[c][d-1][c][d]==-1){
+                    dis[c][d-1][c][d]=dis[a][b][c][d];
+                    q.add(new int[]{c,d-1,c,d,0});
+                }
+                
+            }
+            if(mm2){//r
+                if(dis[c][d+1][c][d]==-1){
+                    dis[c][d+1][c][d]=dis[a][b][c][d];
+                    q.add(new int[]{c,d+1,c,d,1});
+                }
+            }
+            if(mm3){//u
+                if(dis[c+1][d][c][d]==-1){
+                    dis[c+1][d][c][d]=dis[a][b][c][d];
+                    q.add(new int[]{c+1,d,c,d,2});
+                }
+            }
+            if(mm4){//d
+                if(dis[c-1][d][c][d]==-1){
+                    dis[c-1][d][c][d]=dis[a][b][c][d];
+                    q.add(new int[]{c-1,d,c,d,3});
+                }
+            }
+            
+            
+        }
+        
+        if(res==Integer.MAX_VALUE)return -1;
+        return res;
+    }
+    
+    public boolean push(char grid[][],int r,int c){
+        if(r<0||r>=grid.length||c<0||c>=grid[0].length)return false;
+        if(grid[r][c]=='#')return false;
+        return true;
+    }
+    
+    
+    public boolean personMove(char grid[][],int sr,int sc,int tr,int tc,int bxr,int bxc){
+        if(tr<0||tc<0||tr>=grid.length||tc>=grid[0].length)return false;
+        boolean visit[][]=new boolean[grid.length][grid[0].length];
+        Queue<int[]>q=new LinkedList<>();
+        q.add(new int[]{sr,sc,0});
+        visit[sr][sc]=true;
+        while(q.size()!=0){
+            int pair[]=q.poll();
+            int r=pair[0],c=pair[1],level=pair[2];
+            if(r==tr&&c==tc)return true;
+            add(q,grid,visit,r+1,c,level,bxr,bxc);
+            add(q,grid,visit,r-1,c,level,bxr,bxc);
+            add(q,grid,visit,r,c+1,level,bxr,bxc);
+            add(q,grid,visit,r,c-1,level,bxr,bxc);
+        }
+        return false;
+    }
+    public void add(Queue<int[]>q,char grid[][],boolean visit[][],int r,int c,int level,int bxr,int bxc){
+        if(r<0||c<0||r>=grid.length||c>=grid[0].length)return;
+        if(visit[r][c])return;
+        if(r==bxr&&c==bxc)return;//have box
+        if(grid[r][c]=='#')return;
+        visit[r][c]=true;
+        q.add(new int[]{r,c,level+1});
+    }
+}
