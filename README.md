@@ -171,6 +171,7 @@
 #854. [K-Similar String (H) 1800](./code/854.txt) <br />
 #994. [Rotting Orange (M) 1400](./code/994.txt) <br />
 #1036. [Escape a Large Maze (H) 1800](./code/1036.txt) <br />
+#1263. [Minimum Moves to Move a Box to Their Target Location (H) 1900](./code/1263.txt) <br />
 #1298. [Maximum Candies You Can Get from Boxes (H-) 1700](./code/1298.txt) <br />
 #1329. [Sort the Matrix Diagonally (M) 1500](./code/1329.txt) <br />
 #1439. [Find the Kth Smallest Sum of a Matrix With Sorted Rows (H) 1800](./code/1439.txt) <br />
