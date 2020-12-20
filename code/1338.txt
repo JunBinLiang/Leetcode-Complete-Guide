@@ -1,0 +1,24 @@
+class Solution {
+    public int minSetSize(int[] A) {
+        Map<Integer,Integer>map=new HashMap<>();
+        PriorityQueue<Integer>pq=new PriorityQueue<>((a,b)->{return b-a;});
+        int sum=0,res=0;
+        for(int i:A){
+            if(!map.containsKey(i))map.put(i,0);
+            map.put(i,map.get(i)+1);
+        }
+        
+        
+        for(Integer key:map.keySet()){
+            pq.add(map.get(key));
+        }
+        
+        while(pq.size()>0){
+            res++;
+            sum+=pq.poll();
+            if(sum>=A.length/2)break;
+        }
+        
+        return res;
+    }
+}
