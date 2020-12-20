@@ -1,0 +1,23 @@
+class Solution {
+    public int maximumUniqueSubarray(int[] A) {
+        int res=0;
+        int sum=0;
+        Queue<Integer>q=new LinkedList<>();
+        Set<Integer>set=new HashSet<>();
+        for(int i=0;i<A.length;i++){
+            
+            while(set.contains(A[i])){
+                int f=q.poll();
+                sum-=f;
+                set.remove(f);
+            }
+            
+            q.add(A[i]);
+            set.add(A[i]);
+            sum+=A[i];
+            res=Math.max(res,sum);
+            
+        }
+        return res;
+    }
+}
