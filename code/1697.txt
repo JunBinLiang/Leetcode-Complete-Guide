@@ -1,0 +1,79 @@
+class Solution {
+    public boolean[] distanceLimitedPathsExist(int n, int[][] A, int[][] query) {
+        int arr[]=new int[n];
+        for(int i=0;i<arr.length;i++){
+            arr[i]=i;
+        }
+        
+        int cost=0;
+        int j=0;
+        boolean res[]=new boolean[query.length];
+        int q[][]=new int[query.length][4];
+        for(int i=0;i<query.length;i++){
+            q[i][0]=query[i][0];
+            q[i][1]=query[i][1];
+            q[i][2]=query[i][2];
+            q[i][3]=i;
+        }
+        
+        Arrays.sort(q,(a,b)->{
+            return a[2]-b[2];
+        });
+    
+        Arrays.sort(A,(a,b)->{
+            return a[2]-b[2];
+        });
+        
+        for(int i=0;i<A.length;i++){
+            int rr1=find(arr,A[i][0]);
+            int rr2=find(arr,A[i][1]);
+            cost=Math.max(cost,A[i][2]);
+           
+            while(j<q.length&&q[j][2]<=cost){
+                int r1=find(arr,q[j][0]);
+                int r2=find(arr,q[j][1]);
+                int index=q[j][3];
+                if(r1==r2){
+                    res[index]=true;
+                }
+                j++;
+            }
+            if(rr1==rr2)continue;
+            arr[rr1]=rr2;
+           
+        }
+        
+        
+        for(int i=j;i<q.length;i++){
+            if(q[i][2]>cost){
+                int r1=find(arr,q[i][0]);
+                int r2=find(arr,q[i][1]);
+                int index=q[i][3];
+                if(r1==r2){
+                    res[index]=true;
+                }
+            }
+        }
+        
+        
+        return res;
+    }
+    
+    
+    public int find(int nums[],int x){//union find => find method
+		if(nums[x]==x)return x;
+		int root=find(nums,nums[x]);
+		nums[x]=root;
+		return root;
+	}
+}
+
+/*
+13
+[[9,1,53],[3,2,66],[12,5,99],[9,7,26],[1,4,78],[11,1,62],[3,10,50],[12,1,71],[12,6,63],[1,10,63],[9,10,88],[9,11,59],[1,4,37],[4,2,63],[0,2,26],[6,12,98],[9,11,99],[4,5,40],[2,8,25],[4,2,35],[8,10,9],[11,9,25],[10,11,11],[7,6,89],[2,4,99],[10,4,63]]
+[[9,7,65],[9,6,1],[4,5,34],[10,8,43],[3,7,76],[4,2,15],[7,6,52],[2,0,50],[7,6,62],[1,0,81],[4,5,35],[0,11,86],[12,5,50],[11,2,2],[9,5,6],[12,0,95],[10,6,9],[9,4,73],[6,10,48],[12,0,91],[9,10,58],[9,8,73],[2,3,44],[7,11,83],[5,3,14],[6,2,33]]*/
+
+
+
+
+//[true,false,false,true,true,false,false,true,false,true,false,true,false,false,false,true,false,true,false,true,true,true,false,true,false,false]
