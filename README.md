@@ -526,7 +526,8 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #492. [Construct the Rectangle (E) 900](./code/492.txt) <br />
 #504. [Base 7 (E) 800](./code/504.txt) <br />
 #553. [Optimal division (M-) 1300](./code/553.txt) <br />
-#598. [Range Addition II (E)) 900](./code/598.txt) <br />
+#598. [Range Addition II (E) 900](./code/598.txt) <br />
+#660. [Remove 9 (M) 1500](./code/660.txt) <br />
 #799. [Champagne Tower(M) 1500](./code/799.txt) <br />
 #836. [Rectangle Overlap (E+) 1100](./code/836.txt) <br />
 #869. [Reordered Power of 2 (M-) 1300](./code/869.txt) <br />
