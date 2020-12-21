@@ -1,0 +1,41 @@
+class StringIterator {
+    List<int[]>list=new ArrayList<>();
+    int i=0,ith=0;
+    public StringIterator(String s) {
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            int j=i+1;
+            int cnt=0;
+            while(j<s.length()&&Character.isDigit(s.charAt(j))){
+                int d=s.charAt(j)-'0';
+                cnt=cnt*10+d;
+                j++;
+            }
+            i=j-1;
+            list.add(new int[]{(int)(c),cnt});
+        }
+    }
+    
+    public char next() {
+        if(i>=list.size())return ' ';
+        int pair[]=list.get(i);
+        char c=(char)(pair[0]);
+        ith++;
+        if(ith==pair[1]){
+            ith=0;
+            i++;
+        }
+        return c;
+    }
+    
+    public boolean hasNext() {
+        return i<list.size();
+    }
+}
+
+/**
+ * Your StringIterator object will be instantiated and called as such:
+ * StringIterator obj = new StringIterator(compressedString);
+ * char param_1 = obj.next();
+ * boolean param_2 = obj.hasNext();
+ */
