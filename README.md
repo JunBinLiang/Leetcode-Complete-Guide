@@ -768,6 +768,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #460. [LFU (H) 1800](./code/460.txt) <br />
 #860. [Rectangle Area II (H) 1800](./code/860.txt) <br />
 #895. [Maximum Frequency Stack (H-) 1700](./code/895.txt) <br />
+#1172. [Dinner Plate Stacks (H) 1800](./code/1172.txt) <br />
 
 ---
 ### SQL
