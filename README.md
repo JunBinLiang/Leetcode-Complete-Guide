@@ -444,6 +444,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #494. [Target Sum (M) 1500](./code/494.txt) <br />
 #514. [Freedom Trail (H) 1800](./code/514.txt) <br />
 #518. [Coin Change 2 (M) 1500](./code/518.txt) <br />
+#583. [Delete Operation for Two Strings (M) 1500](./code/583.txt) <br />
 #673. [Number of Longest Increasing Subsequence (M) 1500](./code/673.txt) <br />
 #691. [Stickers to Spell Word (H) 1900](./code/691.txt) <br />
 #714. [Best Time to Buy and Sell Stock with Transaction Fee (M+) 1600](./code/714.txt) <br />
