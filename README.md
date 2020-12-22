@@ -1312,6 +1312,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    1452B.[ Toy Blocks (Greedy) ](./easy/1452B.txt) <br />
    1453B.[ Suffix Operations ](./easy/1453B.txt) <br />
    1462D.[ Add to Neighbour and Remove ](./easy/1462D.txt) <br />
+   1463B.[Find The Array (Bit + Greedy) ](./easy/1463B.txt) <br />
   
    ### 1500<br/>
    53D.[Physical Education! (Sort) ](./easy/53D.txt) <br />
