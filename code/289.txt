@@ -1,0 +1,57 @@
+class Solution {
+    public void gameOfLife(int[][] A) {
+        
+        for(int i=0;i<A.length;i++){
+            for(int j=0;j<A[0].length;j++){
+                if(A[i][j]<0)A[i][j]=-1;
+            }
+        }
+        
+        for(int i=0;i<A.length;i++){
+            for(int j=0;j<A[0].length;j++){
+                int sum=get(A,i+1,j)+get(A,i-1,j);
+                sum+=get(A,i,j+1)+get(A,i,j-1);
+                sum+=get(A,i+1,j+1)+get(A,i+1,j-1);
+                sum+=get(A,i-1,j+1)+get(A,i-1,j-1);
+                
+                if(A[i][j]==0){
+                    A[i][j]=-sum;
+                }
+                else{
+                    if(sum==0)sum=1;
+                    A[i][j]=sum;
+                }
+            }
+        }
+        
+        for(int i=0;i<A.length;i++){
+            for(int j=0;j<A[0].length;j++){
+                if(A[i][j]<0){
+                    if(A[i][j]==-3){
+                        A[i][j]=1;
+                    }
+                    else{
+                        A[i][j]=0;
+                    }
+                }
+                else{
+                    if(A[i][j]==2||A[i][j]==3){
+                        A[i][j]=1;
+                    }
+                    else{
+                        A[i][j]=0;
+                    }
+                }
+            }
+        }
+        
+       
+    }
+    
+    public int get(int A[][],int i,int j){
+        if(i<0||j<0||i>=A.length||j>=A[0].length)return 0;
+        if(A[i][j]>0)return 1;
+        return 0;
+    }
+}
+
