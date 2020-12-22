@@ -1,7 +1,7 @@
  ## [C++ Crash Course](./cpp) <br/><br/>
  
   ## [Algorithm SAT Course](./teach) <br/><br/>
-
+ 
  <img src="images/LeetCode_logo.png" width=30% align=right />  
  
  # LeetCode 题解 + 报告 :memo:
@@ -118,776 +118,680 @@
 |  1682  |[ Longest Palindromic Subsequence II](./code/1682.txt) | (M+) 1600  ||  1692  |[ Count Ways to Distribute Candies](./code/1692.txt) | (H) 1800  |
 
 ---
-<details><summary>Array</summary>
-<p>
-#27. <a href="./code/27.txt">Remove Element (E) 800</a> <br />
-#41. <a href="./code/41.txt">First Missing Positive (H-) 1600</a> <br />
-#54. <a href="./code/54.txt">Spiral Matrix (M-) 1400</a> <br />
-#66. <a href="./code/66.txt">Add one (E) 900</a> <br />
-#73. <a href="./code/73.txt">Set Matrix Zeroes (M-) 1300</a> <br />
-#88. <a href="./code/88.txt">Merge Array (E) 1000</a> <br />
-#134. <a href="./code/134.txt">Gas Station (M-) 1400</a> <br />
-#189. <a href="./code/189.txt">Rotate Array(M) 1500</a> <br />
-#228. <a href="./code/228.txt">Summary Ranges(E) 1000</a> <br />
-#268. <a href="./code/268.txt">Missing Number(E) 900</a> <br />
-#349. <a href="./code/349.txt">Intersection of Two Arrays(E) 900</a> <br />
-#350. <a href="./code/350.txt">Intersection of Two Arrays II(E) 900</a> <br />
-#414. <a href="./code/414.txt">Third Maximum Number (E) 900</a> <br />
-#419. <a href="./code/419.txt">Battleships in a Board(M-) 1300</a> <br />
-#442. <a href="./code/442.txt">Find All Duplicates in an Array (M-) 1400</a> <br />
-#448. <a href="./code/448.txt">Find All Numbers Disappeared in an Array(E) 1000</a> <br />
-#495. <a href="./code/495.txt">Teemo Attacking (M-) 1200</a> <br />
-#599. <a href="./code/599.txt">Minimum Index Sum of Two Lists (E) 900</a>  <br />
-#622. <a href="./code/622.txt">Design Circular Queue (M-) 1400</a> <br />
-#665. <a href="./code/665.txt">Non-decreasing Array (E+) 1200</a> <br />
-#795. <a href="./code/795.txt">Number of Subarrays with Bounded Maximum (M) 1500</a> <br />
-#797. <a href="./code/797.txt">All Paths From Source to Target (M) 1500</a> <br />
-#849. <a href="./code/849.txt">Maximize Distance to Closest Person (M-) 1400</a> <br />
-#852. <a href="./code/852.txt">Peak Index in a Mountain Array (E) 800</a> <br />
-#867. <a href="./code/867.txt">Transpose Matrix (E) 900</a> <br />
-#905. <a href="./code/905.txt">Sort Array By Parity (E) 800</a> <br />
-#941. <a href="./code/941.txt">Valid Mountain Array (E) 900</a> <br />
-#944. <a href="./code/944.txt">Delete Columns to Make Sorted (E) 900</a> <br />
-#1144. <a href="./code/1144.txt">Decrease Elements To Make Array Zigzag (M) 1500</a> <br />
-#1331. <a href="./code/1331.txt">Rank Transform of an Array (E) 1000</a> <br />
-#1352. <a href="./code/1352.txt">Product of the Last K Numbers (M-) 1400</a> <br />
-#1380. <a href="./code/1380.txt">Lucky Numbers in a Matrix (E) 900</a> <br />
-#1381. <a href="./code/1381.txt">Design a Stack With Increment Operation (M) 1500</a> <br />
-#1572. <a href="./code/1572.txt">Matrix Diagonal Sum (E) 800</a> <br />
-#1582. <a href="./code/1582.txt">Special Positions in a Binary Matrix(E) 900</a> <br />
-#1588. <a href="./code/1588.txt">Sum of All Odd Length Subarrays(E) 800</a> <br />
-#1589. <a href="./code/1589.txt">Maximum Sum Obtained of Any Permutation (M) 1500</a> <br />
-#1646. <a href="./code/1646.txt">Get Maximum in Generated Array (E) 800</a> <br />
-#1652. <a href="./code/1652.txt">Defuse the Bomb (E) 900</a> <br />
-</p>
-</details>
+### Array
+#27. [Remove Element (E) 800](./code/27.txt) <br />
+#41. [First Missing Positive (H-) 1600](./code/41.txt) <br />
+#54. [Spiral Matrix (M-) 1400](./code/54.txt) <br />
+#66. [Add one (E) 900](./code/66.txt) <br />
+#73. [Set Matrix Zeroes (M-) 1300](./code/73.txt) <br />
+#88. [Merge Array (E) 1000](./code/88.txt) <br />
+#134. [Gas Station (M-) 1400](./code/134.txt) <br />
+#189. [Rotate Array(M) 1500](./code/189.txt) <br />
+#228. [Summary Ranges(E) 1000](./code/228.txt) <br />
+#268. [Missing Number(E) 900](./code/268.txt) <br />
+#349. [ Intersection of Two Arrays(E) 900](./code/349.txt) <br />
+#350. [ Intersection of Two Arrays II(E) 900](./code/350.txt) <br />
+#414. [Third Maximum Number (E) 900](./code/414.txt) <br />
+#419. [Battleships in a Board(M-) 1300](./code/419.txt) <br />
+#442. [Find All Duplicates in an Array (M-) 1400](./code/442.txt) <br />
+#448. [Find All Numbers Disappeared in an Array(E) 1000](./code/448.txt) <br />
+#495. [Teemo Attacking (M-) 1200](./code/495.txt) <br />
+#599. [Minimum Index Sum of Two Lists (E) 900](./code/599.txt) <br />
+#622. [ Design Circular Queue (M-) 1400](./code/622.txt) <br />
+#665. [ Non-decreasing Array (E+) 1200](./code/665.txt) <br />
+#795. [Number of Subarrays with Bounded Maximum (M) 1500](./code/795.txt) <br />
+#797. [All Paths From Source to Target (M) 1500](./code/797.txt) <br />
+#849. [Maximize Distance to Closest Person (M-) 1400](./code/849.txt) <br />
+#852. [Peak Index in a Mountain Array (E) 800](./code/852.txt) <br />
+#867. [Transpose Matrix (E) 900](./code/867.txt) <br />
+#905. [Sort Array By Parity (E) 800](./code/905.txt) <br />
+#941. [Valid Mountain Array (E) 900](./code/941.txt) <br />
+#944. [Delete Columns to Make Sorted (E) 900](./code/944.txt) <br />
+#1144. [Decrease Elements To Make Array Zigzag (M) 1500](./code/1144.txt) <br />
+#1331. [ Rank Transform of an Array (E) 1000](./code/1331.txt) <br />
+#1352. [ Product of the Last K Numbers (M-) 1400](./code/1352.txt) <br />
+#1380. [Lucky Numbers in a Matrix (E) 900](./code/1380.txt) <br />
+#1381. [Design a Stack With Increment Operation (M) 1500](./code/1381.txt) <br />
+#1572. [Matrix Diagonal Sum (E) 800](./code/1572.txt) <br />
+#1582. [Special Positions in a Binary Matrix(E) 900](./code/1582.txt) <br />
+#1588. [Sum of All Odd Length Subarrays(E) 800](./code/1588.txt) <br />
+#1589. [ Maximum Sum Obtained of Any Permutation (M) 1500](./code/1589.txt) <br />
+#1646. [ Get Maximum in Generated Array (E) 800](./code/1646.txt) <br />
+#1652. [ Defuse the Bomb (E) 900](./code/1652.txt) <br />
 
-<details><summary>LinkedList</summary>
-<br/>
+
+---
+### BFS
+#117. [Populating Next Right Pointers in Each Node II (M) 1400](./code/117.txt) <br />
+#310. [Minimum Height Tree (M+) 1600](./code/310.txt) <br />
+#433. [Minimum Genetic Mutation (M) 1500](./code/433.txt) <br />
+#542. [01 Matrix (M) 1500](./code/542.txt) <br />
+#675. [Cut Off Trees for Golf Event (H-) 1700](./code/675.txt) <br />
+#766. [Toeplitz Matrix (M) 1400](./code/766.txt) <br />
+#838. [ Push Dominoes (M) 1500](./code/838.txt) <br />
+#847. [Shortest Path Visiting All Nodes (H) 1800](./code/847.txt) <br />
+#854. [K-Similar String (H) 1800](./code/854.txt) <br />
+#994. [Rotting Orange (M) 1400](./code/994.txt) <br />
+#1036. [Escape a Large Maze (H) 1800](./code/1036.txt) <br />
+#1263. [Minimum Moves to Move a Box to Their Target Location (H) 1900](./code/1263.txt) <br />
+#1298. [Maximum Candies You Can Get from Boxes (H-) 1700](./code/1298.txt) <br />
+#1329. [Sort the Matrix Diagonally (M) 1500](./code/1329.txt) <br />
+#1439. [Find the Kth Smallest Sum of a Matrix With Sorted Rows (H) 1800](./code/1439.txt) <br />
+#1625. [Lexicographically Smallest String After Applying Operations (M) 1500](./code/1625.txt) <br />
+#1631. [Path With Minimum Effort (M) 1500](./code/1631.txt) <br />
+#1654. [Minimum Jumps to Reach Home(M+) 1600](./code/1654.txt) <br />
+#LCP 09. [最小跳跃次数 (H) 1800](./code/LCP09.txt) <br />
+
+---
+### DFS
+#17. [Letter Combinations of a Phone Number (M-) 1400](./code/17.txt) <br />
+#39. [Combination Sum (M-) 1400](./code/39.txt) <br />
+#40. [Combination Sum II (M-) 1400](./code/40.txt) <br />
+#130. [ Surrounded Regions (M-) 1400](./code/130.txt) <br />
+#131. [Palindrome Partitioning (M) 1500](./code/131.txt) <br />
+#216. [Combination Sum III (M-) 1400](./code/216.txt) <br />
+#301. [Remove Invalid Parentheses (H-) 1600](./code/301.txt) <br />
+#306. [Additive Number (M) 1500](./code/306.txt) <br />
+#386. [Lexicographical Numbers (M) 1500](./code/386.txt) <br />
+#417. [Pacific Atlantic Water Flow (M+) 1600](./code/417.txt) <br />
+#473. [Matchsticks to Square (M+) 1600](./code/473.txt) <br />
+#488. [Zuma Game (H) 1800](./code/488.txt) <br />
+#491. [Increasing Subsequences (M) 1500](./code/491.txt) <br />
+#547. [Friend Circles (M-) 1400](./code/547.txt) <br />
+#565. [Array Nesting (M-) 1400](./code/565.txt) <br />
+#690. [Employee Importance (M-) 1200](./code/690.txt) <br />
+#761. [Special Binary String (H) 1800](./code/761.txt) <br />
+#841. [ Keys and Rooms (M) 1500](./code/841.txt) <br />
+#842. [ Split Array into Fibonacci Sequence(M+) 1600](./code/842.txt) <br />
+#967. [Numbers With Same Consecutive Differences (M) 1500](./code/967.txt) <br />
+#979. [Distribute Coins in Binary Tree (M+) 1600](./code/979.txt) <br />
+#988. [  Smallest String Starting From Leaf (M) 1500](./code/988.txt) <br />
+#1020. [Number of Enclaves (M-) 1400](./code/1020.txt) <br />
+#1239. [Maximum Length of a Concatenated String with Unique Characters (M) 1500](./code/1239.txt) <br />
+#1240. [Tiling a Rectangle with the Fewest Squares (H+) 2000](./1240.txt) <br />
+#1255. [Maximum Score Words Formed by Letters (H-) 1700](./code/1255.txt) <br />
+#1377. [Frog Position After T Seconds (M+) 1600](./code/1377.txt) <br />
+#1559. [Detect Cycles in 2D Grid (H-) 1700](./code/1559.txt) <br />
+#1601. [Maximum Number of Achievable Transfer Requests (H-) 1700](./code/1601.txt) <br />
+#LCP7. [传递信息 (M) 1400](./code/LCP7.txt) <br />
+
+---
+### Stack
+#56. [Merge Intervals (M-) 1400](./code/56.txt) <br />
+#57. [Insert Interval(M-) 1400](./code/57.txt) <br />
+#84. [Largest Rectangle in Histogram (H-) 1700](./code/84.txt) <br />
+#94. [Binary Tree Inorder Traversal (M-) 1400](./code/94.txt) <br />
+#150. [Evaluate Reverse Polish Notation (M) 1500](./code/150.txt) <br />
+#316. [Remove Duplicate Letters (M+) 1600](./code/316.txt) <br />
+#402. [Remove K Digits (M) 1500](./code/402.txt) <br />
+#682. [Baseball Game (E+) 1100](./code/682.txt) <br />
+#735. [Asteroid Collision (M-) 1400](./code/735.txt) <br />
+#844. [Backspace String Compare (E) 900](./code/844.txt) <br />
+#1003. [Check If Word Is Valid After Substitutions (M-) 1400](./code/1003.txt) <br />
+#1047. [Remove All Adjacent Duplicates In String (E) 1000](./code/1047.txt) <br />
+#1063. [Number of Valid Subarrays (H-) 1700](./code/1063.txt) <br />
+#1081. [Smallest Subsequence of Distinct Characters (M+) 1600](./code/1081.txt) <br />
+#1190. [Reverse Substrings Between Each Pair of Parentheses (M-) 1400](./code/1190.txt) <br />
+#1209. [Remove All Adjacent Duplicates in String II (M-) 1400](./code/1209.txt) <br />
+#1249. [Minimum Remove to Make Valid Parentheses (M-) 1400](./code/1249.txt) <br />
+#1544. [Make The String Great (E+) 1100](./code/1544.txt) <br />
+#1597. [ Build Binary Expression Tree From Infix Expression (H-) 1700](./code/1597.txt) <br />
+#1614. [Maximum Nesting Depth of the Parentheses (E) 900](./code/1614.txt) <br />
+#1673. [Find the Most Competitive Subsequence (M-) 1400](./code/1673.txt) <br />
+
+---
+### LinkedList
 Note: LinkedList can be used as stack or queue or deque<br/><br/>
-<p>
-#2. <a href="./code/2.txt">Add Two Numbers (M-) 1300</a> <br />
-#19. <a href="./code/19.txt">Remove Nth Node From End of List (M-) 1400</a> <br />
-#24. <a href="./code/24.txt">Swap Nodes in Pairs (M) 1500</a> <br />
-#25. <a href="./code/25.txt">Reverse Nodes in k-Group (H-) 1700</a> <br />
-#82. <a href="./code/82.txt">Remove Duplicates from Sorted List II (M-) 1300</a> <br />
-#83. <a href="./code/83.txt">Remove Duplicates from Sorted List (E) 1000</a> <br />
-#86. <a href="./code/86.txt">Partition List (M-) 1300</a> <br />
-#92. <a href="./code/92.txt">Reverse LinkedList II (M) 1500</a> <br />
-#141. <a href="./code/1000.txt">Linked List Cycle (E) 141</a> <br />
-#147. <a href="./code/147.txt">Insertion Sort List (M-) 1200</a> <br />
-#203. <a href="./code/203.txt">Remove Linked List Elements (E) 900</a> <br />
-#237. <a href="./code/237.txt">Delete Node in a Linked List(E) 1000</a> <br />
-#328. <a href="./code/328.txt">Odd Even Linked List (M-) 1300</a> <br />
-#341. <a href="./code/341.txt">Flatten Nested List Iterator (M-) 1400</a> <br />
-#430. <a href="./code/430.txt">Flatten a Multilevel Doubly Linked List (M) 1500</a> <br />
-#817. <a href="./code/817.txt">Linked List Components (M-) 1300</a> <br />
-#876. <a href="./code/876.txt">Middle of the Linked List (E) 900</a> <br />
-#950. <a href="./code/950.txt">Reveal Cards In Increasing Order (M) 1500</a> <br />
-#1669. <a href="./code/1669.txt">Merge In Between Linked Lists (E) 1000</a> <br />
-</p>
-</details>
+#2. [Add Two Numbers (M-) 1300](./code/2.txt) <br />
+#19. [ Remove Nth Node From End of List (M-) 1400](./code/19.txt) <br />
+#24. [ Swap Nodes in Pairs (M) 1500](./code/24.txt) <br />
+#25. [ Reverse Nodes in k-Group (H-) 1700](./code/25.txt) <br />
+#82. [Remove Duplicates from Sorted List II (M-) 1300](./code/82.txt) <br />
+#83. [Remove Duplicates from Sorted List (E) 1000](./code/83.txt) <br />
+#86. [Partition List (M-) 1300](./code/86.txt) <br />
+#92. [Reverse LinkedList II (M) 1500](./code/92.txt) <br />
+#141. [Linked List Cycle (E) 141](./code/1000.txt) <br />
+#147. [Insertion Sort List (M-) 1200](./code/147.txt) <br />
+#203. [Remove Linked List Elements (E) 900](./code/203.txt) <br />
+#237. [Delete Node in a Linked List(E) 1000](./code/237.txt) <br />
+#328. [Odd Even Linked List (M-) 1300](./code/328.txt) <br />
+#341. [Flatten Nested List Iterator (M-) 1400](./code/341.txt) <br />
+#430. [Flatten a Multilevel Doubly Linked List (M) 1500](./code/430.txt) <br />
+#817. [Linked List Components (M-) 1300](./code/817.txt) <br />
+#876. [Middle of the Linked List (E) 900](./code/876.txt) <br />
+#950. [Reveal Cards In Increasing Order (M) 1500](./code/950.txt) <br />
+#1669. [Merge In Between Linked Lists (E) 1000](./code/1669.txt) <br />
 
-<details><summary>String</summary>
-<p>
-#6. <a href="./code/6.txt">ZigZag Conversion (M-) 1300</a> <br />
-#9. <a href="./code/9.txt">Palindrom Number (E) 900</a> <br />
-#28. <a href="./code/28.txt">Implement strStr(M) 1500 (KMP)</a> <br />
-#49. <a href="./code/49.txt">Group Anagrams (M-) 1300</a> <br />
-#151. <a href="./code/151.txt">Reverse Words in a String (M-) 1300</a> <br />
-#214. <a href="./code/214.txt">Shortest Palindromem (H-) (KMP) 1700</a> <br />
-#242. <a href="./code/242.txt">Valid Anagram (E) 900</a> <br />
-#290. <a href="./code/290.txt">Word Pattern (E) 1000</a> <br />
-#336. <a href="./code/336.txt">Palindrome Pairs (H) 1800</a> <br />
-#696. <a href="./code/696.txt">Count Binary Substrings (E) 1000</a> <br />
-#833. <a href="./code/833.txt">Find And Replace in String (M) 1500</a><br />
-#811. <a href="./code/811.txt">Subdomain Visit Count (E) 800</a> <br />
-#859. <a href="./code/859.txt">Buddy Strings (E) 1000</a> <br />
-#906. <a href="./code/906.txt">Super Palindrom (H) 1800</a> <br />
-#936. <a href="./code/936.txt">Stamping The Sequence (H+) 2300</a> <br />
-#953. <a href="./code/953.txt">Verifying an Alien Dictionary (E) 1000</a> <br />
-#1106. <a href="./code/1106.txt">Parsing A Boolean Expression (H-) 1700</a> <br />
-#1163. <a href="./code/1163.txt">Last Substring in Lexicographical Order (H-) 1700</a> <br />
-#1370. <a href="./code/1370.txt">Increasing Decreasing String (E) 900</a> <br />
-#1446. <a href="./code/1446.txt">Consecutive Characters (E) 900</a> <br />
-#1616. <a href="./code/1616.txt">Split Two Strings to Make Palindrome (M+) 1600</a> <br />
-#1624. <a href="./code/1624.txt">Largest Substring Between Two Equal Characters (E) 900</a> <br />
-#1678. <a href="./code/1678.txt">Goal Parser Interpretation (E) 900</a> <br />
-#1694. <a href="./code/1694.txt">Reformat Phone Number (E) 900</a> <br />
-</p>
-</details>
+---
+### Greedy
+#45. [Jump Game II (H-) 1600](./code/45.txt) <br />
+#135. [Candy (H-) 1700](./code/135.txt) <br />
+#218. [Skyline Problem (H) 1800](./code/218.txt) <br />
+#253. [Meeting Room II (M) 1500](./code/253.txt) <br />
+#406. [Queue Reconstruction by Height (M) 1500](./code/406.txt) <br />
+#435. [Non-overlapping Intervals (M) 1500](./code/435.txt) <br />
+#452. [Minimum Number of Arrows to Burst Balloonss (M) 1500](./code/452.txt) <br />
+#522. [Longest Uncommon Subsequence II (M-) 1300](./code/522.txt) <br />
+#556. [Next Greater Element III (M) 1500](./code/556.txt) <br />
+#605. [Can Place Flowers(E+) 1100](./code/605.txt) <br />
+#630. [Course Schedule III (H-) 1700](./code/630.txt) <br />
+#659. [Split Array into Consecutive Subsequences (M) 1500](./code/659.txt) <br />
+#699. [Falling Squares (H-) 1700](./code/699.txt) <br />
+#738. [Monotone Increasing Digits (M) 1500](./code/738.txt) <br />
+#763. [Partition Labels (M) 1500](./code/763.txt) <br />
+#765. [Couple Holding Hands (H-) 1600](./code/765.txt) <br />
+#767. [Reorganize String (M) 1500](./code/767.txt) <br />
+#857. [Minimum Cost to Hire K Workers (H) 1800](./code/857.txt) <br />
+#861. [Score After Flipping Matrix (M) 1500](./code/861.txt) <br />
+#870. [ Advantage Shuffle (M) 1500 (sort+2 pointer)](./code/870.txt) <br />
+#910. [Smallest Range II (H-) 1700](./code/910.txt) <br />
+#1007. [Minimum Domino Rotations For Equal Row (M) 1500](./code/1007.txt) <br />
+#1029. [Two City Scheduling (M+) 1600](./code/1029.txt) <br />
+#1090. [Largest Values From Labels (M-) 1300](./code/1090.txt) <br />
+#1111. [ Maximum Nesting Depth of Two Valid Parentheses Strings (M+) 1600](./code/1111.txt) <br />
+#1121. [Divide Array Into Increasing Sequence (H-) 1700](./code/1121.txt) <br />
+#1199. [Minimum Time Building Block (H) 1800](./code/1199.txt) <br />
+#1288. [Remove Covered Intervals (M-) 1400](./code/1288.txt) <br />
+#1296. [Divide Array in Sets of K Consecutive Numbers (M-) 1400](./code/1296.txt) <br />
+#1326.[Minimum Number of Taps to Open to Water a Garden   (H) 1800](./code/1326.txt) <br />
+#1328.[Break a Palindrome   (M-) 1300](./code/1328.txt) <br />
+#1338.[Reduce Array Size to The Half  (M-) 1300](./code/1338.txt) <br />
+#1383.[Maximum Performance of a Team   (H-) 1700](./code/1383.txt) <br />
+#1400.[Construct K Palindrome Strings   (M) 1500](./code/1400.txt) <br />
+#1414.[Find the Minimum Number of Fibonacci Numbers Whose Sum Is K  (M+) 1600](./code/1414.txt) <br />
+#1432.[Max Difference You Can Get From Changing an Integer  (M-) 1400](./code/1432.txt) <br />
+#1433.[Check If a String Can Break Another String (M-) 1400](./code/1433.txt) <br />
+#1520.[Maximum Number of Non-Overlapping Substrings  (H) 1900](./code/1520.txt) <br />
+#1540.[Can Convert String in K Moves  (M) 1500](./code/1540.txt) <br />
+#1591.[Strange Printer II  (H) 1800](./code/1591.txt) <br />
+#1605.[Find Valid Matrix Given Row and Column Sums  (M+) 1700](./code/1605.txt) <br />
+#1632.[Rank Transform of a Matrix (H+) 2000](./code/1632.txt) <br />
+#1642.[Furthest Building You Can Reach (M+) 1600](./code/1642.txt) <br />
+#1663.[Smallest String With A Given Numeric Value (M-) 1400](./code/1663.txt) <br />
+#1665. [Minimum Initial Energy to Finish Tasks (H-) 1700](./code/1665.txt) <br />
+#LCP 06. [拿硬币 (E) 800](./code/LCP06.txt) <br />
 
+---
+### Graph
+#126. [Word Ladder II(H) 1900](./code/126.txt) <br />
+#133. [Clone Graph(M) 1500](./code/133.txt) <br />
+#785. [Is Graph Bipartite?(M) 1500](./code/785.txt) <br />
+#802. [Find Eventual Safe States(M+) 1700](./code/802.txt) <br />
+#863. [All Nodes Distance K in Binary Tree(M) 1500](./code/863.txt) <br />
+#886. [Possible Bipartition(M) 1500](./code/886.txt) <br />
+#1042. [Flower Planting With No Adjacent(E+) 1300](./code/1042.txt) <br />
+#1153. [String Transform into another String (H-) 1700](./code/1153.txt) <br />
+#1192. [Critical Connection (H) 1900](./code/1192.txt) <br />
+#1245. [Tree Diameter (M-) 1400](./code/1245.txt) <br />
+#1334. [Find the City With the Smallest Number of Neighbors at a Threshold Distance (M) 1500 (Floyd-Warshall)](./code/1334.txt) <br />
+#1361. [Validate Binary Tree Nodes (M) 1500](./code/1361.txt) <br />
+#1522. [Diameter of N-Ary Tree (M-) 1300](./code/1522.txt) <br />
+#1568. [Minimum Number of Days to Disconnect Island (H-) 1700](./code/1568.txt) <br />
+#1615. [Maximal Network Rank (M) 1500](./code/1615.txt) <br />
 
-<details><summary>Tree</summary>
-<p>
-#95. <a href="./code/95.txt">Unique Binary Search Trees II(M+) 1600</a> <br />
-#96. <a href="./code/96.txt">Unique Binary Search Trees (M+) 1600</a> <br />
-#98. <a href="./code/98.txt">Validate Binary Search Tree (M) 1500</a> <br />
-#101. <a href="./code/101.txt">Symmetric Tree (M-) 1300</a> <br />
-#110. <a href="./code/110.txt">Balanced Binary Tree  (E) 900</a> <br />
-#173. <a href="./code/173.txt">Binary Search Tree Iterator  (M) 1500</a> <br />
-#222. <a href="./code/222.txt">Count Complete Tree Nodes  (M) 1500</a> <br />
-#235. <a href="./code/235.txt">Lowest Common Ancestor of a Binary Search Tree  (E+) 1100</a> <br />
-#236. <a href="./code/236.txt">Lowest Common Ancestor of a Binary Tree   (M-) 1400</a> <br />
-#257. <a href="./code/257.txt">Binary Tree Paths (E) 1000</a> <br />
-#297. <a href="./code/297.txt">Serialize and Deserialize Binary Tree (H-) 1700</a> <br />
-#404. <a href="./code/404.txt">Sum of Left Leaves (E) 900</a> <br />
-#437. <a href="./code/437.txt">Path Sum III(M-) 1400</a> <br />
-#606. <a href="./code/606.txt">Construct String from Binary Tree (E+) 1100</a> <br />
-#617. <a href="./code/617.txt">Merge Binary Tree (E) 1000</a> <br />
-#623. <a href="./code/623.txt">Add One Row to Tree (M-) 1300</a> <br />
-#654. <a href="./code/654.txt">Maximum Binary Tree (M-) 1400</a> <br />
-#669. <a href="./code/669.txt">Trim a Binary Search Tree (M-) 1400</a> <br />
-#687. <a href="./code/687.txt">Longest Univalue Path(M) 1500</a>  <br />
-#783. <a href="./code/783.txt">Minimum Distance Between BST Nodes (E) 900</a> <br />
-#814. <a href="./code/814.txt">Binary Tree Pruning (M-) 1200</a> <br />
-#872. <a href="./code/872.txt">Leaf-Similar Trees (E) 900</a> <br />
-#971. <a href="./code/971.txt">Flip Binary Tree To Match Preorder Traversal (M) 1500</a> <br />
-#993. <a href="./code/993.txt">Cousins in Binary Tree (E) 900</a> <br />
-#1026. <a href="./code/1026.txt">Maximum Difference Between Node and Ancestor (M-) 1400</a> <br />
-#1028. <a href="./code/1028.txt">Recover a Tree From Preorder Traversal (H-) 1700</a> <br />
-#1038. <a href="./code/1038.txt">Binary Search Tree to Greater Sum Tree (M-) 1400</a> <br />
-#1080. <a href="./code/1080.txt">Insufficient Nodes in Root to Leaf Paths (M) 1500</a> <br />
-#1110. <a href="./code/1110.txt">Delete Nodes And Return Forest (M-) 1400</a> <br />
-#1123. <a href="./code/1123.txt">Lowest Common Ancestor of Deepest Leaves (M) 1500</a> <br />
-#1339. <a href="./code/1339.txt">Maximum Product of Splitted Binary Tree (M) 1500</a> <br />
-#1372. <a href="./code/1372.txt">Longest ZigZag Path in a Binary Tree (M) 1500</a> <br />
-#1457. <a href="./code/1457.txt">Pseudo-Palindromic Paths in a Binary Tree (M-) 1300</a> <br />
-#1490. <a href="./code/1490.txt">Clone N-tree (M-) 1300</a> <br />
-#1516. <a href="./code/1516.txt">Move Sub-Tree of N-Ary Tree (H-) 1700</a> <br />
-#1617. <a href="./code/1617.txt">Count Subtrees With Max Distance Between Cities (H) 1800</a> <br />
-</p>
-</details>
-
-
-<details><summary>BFS</summary>
-<p>
-#117. <a href="./code/117.txt">Populating Next Right Pointers in Each Node II (M) 1400</a> <br />
-#310. <a href="./code/310.txt">Minimum Height Tree (M+) 1600</a> <br />
-#433. <a href="./code/433.txt">Minimum Genetic Mutation (M) 1500</a> <br />
-#542. <a href="./code/542.txt">01 Matrix (M) 1500</a> <br />
-#675. <a href="./code/675.txt">Cut Off Trees for Golf Event (H-) 1700</a> <br />
-#766. <a href="./code/766.txt">Toeplitz Matrix (M) 1400</a> <br />
-#838. <a href="./code/838.txt">Push Dominoes (M) 1500</a> <br />
-#847. <a href="./code/847.txt">Shortest Path Visiting All Nodes (H) 1800</a> <br />
-#854. <a href="./code/854.txt">K-Similar String (H) 1800</a> <br />
-#994. <a href="./code/994.txt">Rotting Orange (M) 1400</a> <br />
-#1036. <a href="./code/1036.txt">Escape a Large Maze (H) 1800</a> <br />
-#1263. <a href="./code/1263.txt">Minimum Moves to Move a Box to Their Target Location (H) 1900</a> <br />
-#1298. <a href="./code/1298.txt">Maximum Candies You Can Get from Boxes (H-) 1700</a> <br />
-#1329. <a href="./code/1329.txt">Sort the Matrix Diagonally (M) 1500</a> <br />
-#1439. <a href="./code/1439.txt">Find the Kth Smallest Sum of a Matrix With Sorted Rows (H) 1800</a> <br />
-#1625. <a href="./code/1625.txt">Lexicographically Smallest String After Applying Operations (M) 1500</a> <br />
-#1631. <a href="./code/1631.txt">Path With Minimum Effort (M) 1500</a> <br />
-#1654. <a href="./code/1654.txt">Minimum Jumps to Reach Home(M+) 1600</a> <br />
-#LCP 09. <a href="./code/LCP09.txt">最小跳跃次数 (H) 1800</a> <br />
-</p>
-</details>
-
-
-<details><summary>DFS</summary>
-<p>
-#17. <a href="./code/17.txt">Letter Combinations of a Phone Number (M-) 1400</a> <br />
-#39. <a href="./code/39.txt">Combination Sum (M-) 1400</a> <br />
-#40. <a href="./code/40.txt">Combination Sum II (M-) 1400</a> <br />
-#130. <a href="./code/130.txt">Surrounded Regions (M-) 1400</a> <br />
-#131. <a href="./code/131.txt">Palindrome Partitioning (M) 1500</a> <br />
-#216. <a href="./code/216.txt">Combination Sum III (M-) 1400</a> <br />
-#301. <a href="./code/301.txt">Remove Invalid Parentheses (H-) 1600</a> <br />
-#306. <a href="./code/306.txt">Additive Number (M) 1500</a> <br />
-#386. <a href="./code/386.txt">Lexicographical Numbers (M) 1500</a> <br />
-#417. <a href="./code/417.txt">Pacific Atlantic Water Flow (M+) 1600</a> <br />
-#473. <a href="./code/473.txt">Matchsticks to Square (M+) 1600</a> <br />
-#488. <a href="./code/488.txt">Zuma Game (H) 1800</a> <br />
-#491. <a href="./code/491.txt">Increasing Subsequences (M) 1500</a> <br />
-#547. <a href="./code/547.txt">Friend Circles (M-) 1400</a> <br />
-#565. <a href="./code/565.txt">Array Nesting (M-) 1400</a> <br />
-#690. <a href="./code/690.txt">Employee Importance (M-) 1200</a> <br />
-#761. <a href="./code/761.txt">Special Binary String (H) 1800</a> <br />
-#841. <a href="./code/841.txt">Keys and Rooms (M) 1500</a> <br />
-#842. <a href="./code/842.txt">Split Array into Fibonacci Sequence(M+) 1600</a> <br />
-#967. <a href="./code/967.txt">Numbers With Same Consecutive Differences (M) 1500</a> <br />
-#979. <a href="./code/979.txt">Distribute Coins in Binary Tree (M+) 1600</a> <br />
-#988. <a href="./code/988.txt">Smallest String Starting From Leaf (M) 1500</a> <br />
-#1020. <a href="./code/1020.txt">Number of Enclaves (M-) 1400</a> <br />
-#1239. <a href="./code/1239.txt">Maximum Length of a Concatenated String with Unique Characters (M) 1500</a> <br />
-#1240. <a href="./code/1240.txt">Tiling a Rectangle with the Fewest Squares (H+) 2000</a> <br />
-#1255. <a href="./code/1255.txt">Maximum Score Words Formed by Letters (H-) 1700</a> <br />
-#1377. <a href="./code/1377.txt">Frog Position After T Seconds (M+) 1600</a> <br />
-#1559. <a href="./code/1559.txt">Detect Cycles in 2D Grid (H-) 1700</a> <br />
-#1601. <a href="./code/1601.txt">Maximum Number of Achievable Transfer Requests (H-) 1700</a> <br />
-#LCP7. <a href="./code/LCP7.txt">传递信息 (M) 1400</a> <br />
-</p>
-</details>
-
-
-<details><summary>Graph</summary>
-<p>
-#126. <a href="./code/126.txt">Word Ladder II(H) 1900</a> <br />
-#133. <a href="./code/133.txt">Clone Graph(M) 1500</a> <br />
-#785. <a href="./code/785.txt">Is Graph Bipartite?(M) 1500</a> <br />
-#802. <a href="./code/802.txt">Find Eventual Safe States(M+) 1700</a> <br />
-#863. <a href="./code/863.txt">All Nodes Distance K in Binary Tree(M) 1500</a> <br />
-#886. <a href="./code/886.txt">Possible Bipartition(M) 1500</a> <br />
-#1042. <a href="./code/1042.txt">Flower Planting With No Adjacent(E+) 1300</a> <br />
-#1153. <a href="./code/1153.txt">String Transform into another String (H-) 1700</a> <br />
-#1192. <a href="./code/1192.txt">Critical Connection (H) 1900</a> <br />
-#1245. <a href="./code/1245.txt">Tree Diameter (M-) 1400</a> <br />
-#1334. <a href="./code/1334.txt">Find the City With the Smallest Number of Neighbors at a Threshold Distance (M) 1500 (Floyd-Warshall)</a> <br />
-#1361. <a href="./code/1361.txt">Validate Binary Tree Nodes (M) 1500</a> <br />
-#1522. <a href="./code/1522.txt">Diameter of N-Ary Tree (M-) 1300</a> <br />
-#1568. <a href="./code/1568.txt">Minimum Number of Days to Disconnect Island (H-) 1700</a> <br />
-#1615. <a href="./code/1615.txt">Maximal Network Rank (M) 1500</a> <br />
-</p>
-</details>
-
-<details><summary>Binary Search</summary>
-<p>
-#34. <a href="./code/34.txt">Find First and Last Position of Element in Sorted Array (M-) 1300</a> <br />
-#35. <a href="./code/35.txt">Search Insert Position (E) 1000</a> <br />
-#69. <a href="./code/69.txt">Sqrt(x) (E+) 1100</a> <br />
-#153. <a href="./code/153.txt">Find Minimum in Rotated Sorted Array (M+) 1600</a> <br />
-#154. <a href="./code/154.txt">Find Minimum in Rotated Sorted Array II (H-) 1700</a> <br />
-#275. <a href="./code/275.txt">H Index II (M-) 1400</a> <br />
-#302. <a href="./code/302.txt">包含全部黑色像素的最小矩形 (H-) 1700</a> <br />
-#352. <a href="./code/352.txt">Data Stream as Disjoint Intervals (H-) 1700</a> <br />
-#373. <a href="./code/373.txt">Find K Pairs with Smallest Sums (M) 1500</a> <br />
-#374. <a href="./code/374.txt">Guess Number Higher or Lower (E) 800</a> <br />
-#436. <a href="./code/436.txt">Find Right Interval (M) 1500</a> <br />
-#475. <a href="./code/475.txt">Heaters (M) 1500</a> <br />
-#483. <a href="./code/483.txt">Smallest Good Base (H) 1800</a> <br />
-#540. <a href="./code/540.txt">Single Element in a Sorted Array (M-) 1400</a> <br />
-#704. <a href="./code/704.txt">Binary Search(E) 900</a> <br />
-#744. <a href="./code/744.txt">Find Smallest Letter Greater Than Target (M-) 1200</a> <br />
-#786. <a href="./code/786.txt">K-th Smallest Prime Fraction (H) 1800</a> <br />
-#792. <a href="./code/792.txt">Number of Matching Subsequences (M+) 1600</a> <br />
-#911. <a href="./code/911.txt">Online Election(M) 1500</a> <br />
-#1095. <a href="./code/1095.txt">Find in Mountain Array (H-) 1700</a> <br />
-#1292. <a href="./code/1292.txt">Maximum Side Length of a Square with Sum Less than or Equal to Threshold (M+) 1600</a> <br />
-#1533. <a href="./code/1533.txt">Find the Index of the Large Integer (M) 1500</a> <br />
-#1552. <a href="./code/1552.txt">Magnetic Force Between Two Balls (M+) 1600</a> <br />
-#1574. <a href="./code/1574.txt">Shortest Subarray to be Removed to Make Array Sorted (M+) 1600</a> <br />
-#LCP08. <a href="./code/LCP08.txt">剧情触发时间 (M) 1600</a> <br />
-#LCP12. <a href="./code/LCP12.txt">小张刷题计划 (M) 1500</a> <br />
-</p>
-</details>
-
-
-<details><summary>Stack</summary>
-<p>
-#56. <a href="./code/56.txt">Merge Intervals (M-) 1400</a> <br />
-#57. <a href="./code/57.txt">Insert Interval(M-) 1400</a> <br />
-#84. <a href="./code/84.txt">Largest Rectangle in Histogram (H-) 1700</a> <br />
-#94. <a href="./code/94.txt">Binary Tree Inorder Traversal (M-) 1400</a> <br />
-#150. <a href="./code/150.txt">Evaluate Reverse Polish Notation (M) 1500</a> <br />
-#316. <a href="./code/316.txt">Remove Duplicate Letters (M+) 1600</a> <br />
-#402. <a href="./code/402.txt">Remove K Digits (M) 1500</a> <br />
-#682. <a href="./code/682.txt">Baseball Game (E+) 1100</a> <br />
-#735. <a href="./code/735.txt">Asteroid Collision (M-) 1400</a> <br />
-#844. <a href="./code844.txt">Backspace String Compare (E) 900</a> <br />
-#1003. <a href="./code/1003.txt">Check If Word Is Valid After Substitutions (M-) 1400</a> <br />
-#1047. <a href="./code/1047.txt">Remove All Adjacent Duplicates In String (E) 1000</a> <br />
-#1063. <a href="./code/1063.txt">Number of Valid Subarrays (H-) 1700</a> <br />
-#1081. <a href="./code/1081.txt">Smallest Subsequence of Distinct Characters (M+) 1600</a> <br />
-#1190. <a href="./code/1190.txt">Reverse Substrings Between Each Pair of Parentheses (M-) 1400</a> <br />
-#1209. <a href="./code/1209.txt">Remove All Adjacent Duplicates in String II (M-) 1400</a> <br />
-#1249. <a href="./code/1249.txt">Minimum Remove to Make Valid Parentheses (M-) 1400</a> <br />
-#1544. <a href="./code/1544.txt">Make The String Great (E+) 1100</a> <br />
-#1597. <a href="./code/1597.txt">Build Binary Expression Tree From Infix Expression (H-) 1700</a> <br />
-#1614. <a href="./code/1614.txt">Maximum Nesting Depth of the Parentheses (E) 900</a> <br />
-#1673. <a href="./code/1673.txt">Find the Most Competitive Subsequence (M-) 1400</a> <br />
-</p>
-</details>
-
-
-
-
-
-<details><summary>Greedy</summary>
-<p>
-#45. <a href="./code/45.txt">Jump Game II (H-) 1600</a> <br />
-#135. <a href="./code/135.txt">Candy (H-) 1700</a> <br />
-#218. <a href="./code/218.txt">Skyline Problem (H) 1800</a> <br />
-#253. <a href="./code/253.txt">Meeting Room II (M) 1500</a> <br />
-#406. <a href="./code/406.txt">Queue Reconstruction by Height (M) 1500</a> <br />
-#435. <a href="./code/435.txt">Non-overlapping Intervals (M) 1500</a> <br />
-#452. <a href="./code/452.txt">Minimum Number of Arrows to Burst Balloonss (M) 1500</a> <br />
-#522. <a href="./code/522.txt">Longest Uncommon Subsequence II (M-) 1300</a> <br />
-#556. <a href="./code/556.txt">Next Greater Element III (M) 1500</a> <br />
-#605. <a href="./code/605.txt">Can Place Flowers(E+) 1100</a> <br />
-#630. <a href="./code/630.txt">Course Schedule III (H-) 1700</a> <br />
-#659. <a href="./code/669.txt">Split Array into Consecutive Subsequences (M) 1500</a>  <br />
-#699. <a href="./code/699.txt">Falling Squares (H-) 1700</a> <br />
-#738. <a href="./code/738.txt">Monotone Increasing Digits (M) 1500</a> <br />
-#763. <a href="./code/763.txt">Partition Labels (M) 1500</a> <br />
-#765. <a href="./code/765.txt">Couple Holding Hands (H-) 1600</a> <br />
-#767. <a href="./code/767.txt">Reorganize String (M) 1500</a> <br />
-#857. <a href="./code/857.txt">Minimum Cost to Hire K Workers (H) 1800</a> <br />
-#861. <a href="./code/861.txt">Score After Flipping Matrix (M) 1500</a> <br />
-#870. <a href="./code/870.txt">Advantage Shuffle (M) 1500 (sort+2 pointer)</a> <br />
-#910. <a href="./code/910.txt">Smallest Range II (H-) 1700</a> <br />
-#1007. <a href="./code/1007.txt">Minimum Domino Rotations For Equal Row (M) 1500</a> <br />
-#1029. <a href="./code/1029.txt">Two City Scheduling (M+) 1600</a> <br />
-#1111. <a href="./code/1111.txt">Maximum Nesting Depth of Two Valid Parentheses Strings (M+) 1600</a> <br />
-#1121. <a href="./code/1121.txt">Divide Array Into Increasing Sequence (H-) 1700</a> <br />
-#1199. <a href="./code/1199.txt">Minimum Time Building Block (H) 1800</a> <br />
-#1288. <a href="./code/1288.txt">Remove Covered Intervals (M-) 1400</a> <br />
-#1296. <a href="./code/1296.txt">Divide Array in Sets of K Consecutive Numbers (M-) 1400</a> <br />
-#1326. <a href="./code/1326.txt">Minimum Number of Taps to Open to Water a Garden   (H) 1800</a> <br />
-#1328. <a href="./code/1328.txt">Break a Palindrome   (M-) 1300</a> <br />
-#1338. <a href="./code/1338.txt">Reduce Array Size to The Half  (M-) 1300</a> <br />
-#1383. <a href="./code/1383.txt">Maximum Performance of a Team   (H-) 1700</a> <br />
-#1400. <a href="./code/1400.txt">Construct K Palindrome Strings   (M) 1500</a> <br />
-#1414. <a href="./code/1414.txt">Find the Minimum Number of Fibonacci Numbers Whose Sum Is K  (M+) 1600</a> <br />
-#1432. <a href="./code/1432.txt">Max Difference You Can Get From Changing an Integer  (M-) 1400</a> <br />
-#1433.<a href="./code/1433.txt">Check If a String Can Break Another String (M-) 1400</a> <br />
-#1520. <a href="./code/1520.txt">Maximum Number of Non-Overlapping Substrings  (H) 1900</a> <br />
-#1540. <a href="./code/1540.txt">Can Convert String in K Moves  (M) 1500</a> <br />
-#1591. <a href="./code/1591.txt">Strange Printer II  (H) 1800</a> <br />
-#1605. <a href="./code/1605.txt">Find Valid Matrix Given Row and Column Sums  (M+) 1700</a> <br />
-#1632. <a href="./code/1632.txt">Rank Transform of a Matrix (H+) 2000</a> <br />
-#1642. <a href="./code/1642.txt">Furthest Building You Can Reach (M+) 1600</a> <br />
-#1663. <a href="./code/1663.txt">Smallest String With A Given Numeric Value (M-) 1400</a> <br />
-#1665. <a href="./code/1665.txt">Minimum Initial Energy to Finish Tasks (H-) 1700</a> <br />
-#LCP 06. <a href="./code/LCP06.txt">拿硬币 (E) 800</a> <br />
-</p>
-</details>
-
-
-<details><summary>DP</summary>
-<p>
-#10. <a href="./code/10.txt">Regular Expression Matching (H) 1900</a> <br />
-#44. <a href="./code/44.txt">Wildcard Matching (H-) 1700</a> <br />
-#70. <a href="./code/70.txt">Climbing Stairs (E) 900</a> <br />
-#85. <a href="./code/85.txt">Maximal Rectangle (H-) 1700</a> <br />
-#91. <a href="./code/91.txt">Decode Way (M+) 1700</a> <br />
-#97. <a href="./code/97.txt">Interleaving String (H-) 1700</a> <br />
-#118. <a href="./code/118.txt">Pascal's Triangle (E) 900</a> <br />
-#119. <a href="./code/119.txt">Pascal's Triangle II (E) 1000</a> <br />
-#120. <a href="./code/120.txt">Triangle (M-) 1300</a> <br />
-#123. <a href="./code/123.txt">Best Time to Buy and Sell Stock III (H-) 1700</a> <br />
-#132. <a href="./code/132.txt">Palindrome Partitioning II (H-) 1700</a> <br />
-#139. <a href="./code/139.txt">Word Break (M) 1500</a> <br />
-#140. <a href="./code/140.txt">Word Break II (H) 1800</a> <br />
-#188. <a href="./code/188.txt">Best Time to Buy and Sell Stock IV (H) 1800</a> <br />
-#198. <a href="./code/198.txt">House Robber (M) 1400</a> <br />
-#213. <a href="./code/213.txt">House Robber II (M) 1500</a> <br />
-#279. <a href="./code/279.txt">Perfect Square(M-) 1300</a> <br />
-#309. <a href="./code/309.txt">Best Time to Buy and Sell Stock with Cooldown (M) 1500</a> <br />
-#312. <a href="./code/312.txt">Burst Balloons (H) 1800</a> <br />
-#322. <a href="./code/322.txt">Coin Change (M-) 1400</a> <br />
-#363. <a href="./code/363.txt">Max Sum of Rectangle No Larger Than K (M) 1800</a> <br />
-#403. <a href="./code/403.txt">Frog Jump (H-) 1700</a> <br />
-#413. <a href="./code/413.txt">Arithmetic Slices (M) 1500</a> <br />
-#446. <a href="./code/446.txt">Arithmetic Slices II - Subsequence (H-) 1700</a> <br />
-#449. <a href="./code/449.txt">Serialize and Deserialize BST (M) 1500</a> <br />
-#466. <a href="./code/466.txt">Count Repetition (H) 1800</a> <br />
-#494. <a href="./code/494.txt">Target Sum (M) 1500</a> <br />
-#514. <a href="./code/514.txt">Freedom Trail (H) 1800</a> <br />
-#518. <a href="./code/518.txt">Coin Change 2 (M) 1500</a> <br />
-#583. <a href="./code/583.txt">Delete Operation for Two Strings (M) 1500</a> <br />
-#673. <a href="./code/673.txt">Number of Longest Increasing Subsequence (M) 1500</a> <br />
-#691. <a href="./code/691.txt">Stickers to Spell Word (H) 1900</a> <br />
-#714. <a href="./code/714.txt">Best Time to Buy and Sell Stock with Transaction Fee (M+) 1600</a> <br />
-#717. <a href="./code/717.txt">1-bit and 2-bit Characters (E) 1000</a> <br />
-#718. <a href="./code/718.txt">Maximum Length of Repeated Subarray (M) 1500</a> <br />
-#727. <a href="./code/727.txt">Minimum Window Subsequence (H) 1800</a> <br />
-#730. <a href="./code/730.txt">Count Different Palindromic Subsequences (H) 1800</a> <br />
-#740. <a href="./code/740.txt">Delete and Earn (M) 1500</a> <br />
-#741. <a href="./code/741.txt">Cherry Pickup (H) 1800</a> <br />
-#764. <a href="./code/764.txt">Largest Plus Sign (M) 1500</a> <br />
-#790. <a href="./code/790.txt">Domino and Tromino Tiling(M+) 1700</a> <br />
-#798. <a href="./code/798.txt">Smallest Rotation with Highest Score (H) 1900</a> <br />
-#801. <a href="./code/801.txt">Minimum Swaps To Make Sequences Increasing (M+) 1600</a> <br />
-#805. <a href="./code/805.txt">Split Array With Same Average (H) 1800</a> <br />
-#823. <a href="./code/823.txt">Binary Trees With Factors (M) 1500</a> <br />
-#828. <a href="./code/828.txt">Count Unique Characters of All Substrings of a Given String (H) 1900</a> <br />
-#837. <a href="./code/837.txt">New 21 Game (M+) 1600</a> <br />
-#887. <a href="./code/887.txt">Supper Egg drop (H) 1800</a> <br />
-#902. <a href="./code/902.txt">Numbers At Most N Given Digit Set (H) 1800</a> <br />
-#903. <a href="./code/903.txt">Valid Permutations for DI Sequence (H) 1800</a> <br />
-#918. <a href="./code/918.txt">Maximum Sum Circular Subarray (M) 1500</a> <br />
-#920. <a href="./code/920.txt">Number of Music Playlists (H) 1800</a> <br />
-#926. <a href="./code/926.txt">Flip String to Monotone Increasing(M-) 1400</a> <br />
-#940. <a href="./code/940.txt">Distinct Subsequences II (H) 1800</a> <br />
-#943. <a href="./code/943.txt">Find the Shortest Superstring (H) 1900</a> <br />
-#964. <a href="./code/964.txt">Least Operators to Express Number (H) 1900</a>) <br />
-#968. <a href="./code/968.txt">Binary Tree Camera (H+) 2000</a> <br />
-#975. <a href="./code/975.txt">Odd Even Jump (H-) 1700</a> <br />
-#978. <a href="./code/978.txt">Longest Turbulent Subarray (M) 1500</a> <br />
-#983. <a href="./code/983.txt">Minimum Cost For Tickets (M) 1500</a> <br />
-#1000. <a href="./code/1000.txt">Minimum Cost to Merge Stones (H+) 2000</a> <br />
-#1012. <a href="./code/1012.txt">Numbers With Repeated Digits (H) 1800</a> <br />
-#1027. <a href="./code/1027.txt">Longest Arithmetic Subsequence (M) 1500</a> <br />
-#1029. <a href="./code/1029.txt">Two City Scheduling (M) 1500</a> <br />
-#1039. <a href="./code/1039.txt">Minimum Score Triangulation of Polygon (M+) 1700</a> <br />
-#1066. <a href="./code/1066.txt">Campus Bike II (H-) 1700</a> <br />
-#1092. <a href="./code/1092.txt">Shortest Common Supersequenceg (H) 1800</a> <br />
-#1130. <a href="./code/1130.txt">Minimum Cost Tree From Leaf Values (M) 1500</a> <br />
-#1137. <a href="./code/1137.txt">N-th Tribonacci Number (E) 900</a> <br />
-#1139. <a href="./code/1139.txt">Largest 1-Bordered Square (M) 1600</a> <br />
-#1155. <a href="./code/1155.txt">Number of Dice Rolls With Target Sum (M+) 1600</a> <br />
-#1187. <a href="./code/1187.txt">Make Array Strictly Increasing (H) 1800</a> <br />
-#1125. <a href="./code/1125.txt">Smallest Sufficient Team (H) 1800</a> <br />
-#1227. <a href="./code/1227.txt">Airplane Seat Assignment Probability (M+) 1600</a> <br />
-#1259. <a href="./code/1259.txt">Handshakes That Don't Cross (H-) 1700</a> <br />
-#1277. <a href="./code/1277.txt">Count Square Submatrices with All Ones (M) 1500</a> <br />
-#1359. <a href="./code/1359.txt">Count All Valid Pickup and Delivery Options (H-) 1700</a> <br />
-#1388. <a href="./code/1388.txt">Pizza With 3n Slices (H) 1800</a> <br />
-#1402. <a href="./code/1402.txt">Reducing Dishes (H-) 1600</a> <br />
-#1420.<a href="./code/1420.txt">Build Array Where You Can Find The Maximum Exactly K Comparisons(H) 1800</a> <br />
-#1458. <a href="./code/1458.txt">Max Dot Product of Two Subsequences (H-) 1600</a> <br />
-#1473. <a href="./code/1473.txt">Paint House III (H) 1800</a> <br />
-#1478. <a href="./code/1478.txt">Allocate Mailboxes (H) 1900</a> <br />
-#1546. <a href="./code/1546.txt">Maximum Number of Non-Overlapping Subarrays With Sum Equals Target (M+) 1600</a> <br />
-#1548. <a href="./code/1548.txt">The Most Similar Path in a Graph  (H) 1800</a> <br />
-#1563. <a href="./code/1563.txt">Stone Game V (H-) 1700</a> <br />
-#1569. <a href="./code/1569.txt">Number of Ways to Reorder Array to Get Same BST (H) 1900</a> <br />
-#1575. <a href="./code/1575.txt">Count All Possible Routes (H) 1800</a> <br />
-#1621. <a href="./code/1621.txt">Number of Sets of K Non-Overlapping Line Segments (M+) 1700</a> <br />
-#1639. <a href="./code/1639.txt">Number of Ways to Form a Target String Given a Dictionary (H) 1800</a> <br />
-#1641. <a href="./code/1641.txt">Count Sorted Vowel Strings (M-) 1400</a> <br />
-#1653. <a href="./code/1653.txt">Minimum Deletions to Make String Balanced (M) 1500</a> <br />
-#1655. <a href="./code/1655.txt">Distribute Repeating Integers(H) 1800</a> <br />
-#1659. <a href="./code/1659.txt">Maximize Grid Happiness(H+) 2200</a> <br />
-#1671. <a href="./code/1671.txt">Minimum Number of Removals to Make Mountain Array(H-) 1600</a> <br />
-#1681. <a href="./code/1681.txt">Minimum Incompatibility (H) 1800</a> <br />
-#1687. <a href="./code/1687.txt">Delivering Boxes from Storage to Ports (H+) 2000</a>  <br />
-#1691. <a href="./code/1691.txt">Maximum Height by Stacking Cuboids   (H) 1800</a>  <br />
-#1696. <a href="./code/1696.txt">Jump Game VI (M+) 1600</a>  <br />
-#LCP10. <a href="./code/LCP10.txt">二叉树任务调度 (H+) 2200</a> <br />
-#LCP13. <a href="./code/LCP13.txt">寻宝 (H+) 2100</a> <br />
-#LCP14. <a href="./code/LCP14.txt">切分数组 (H+) 2200</a> <br />
-</p>
-</details>
-
-
-<details><summary>Math</summary>
-<p>
-#60. <a href="./code/60.txt">Permutation Sequence (M+) 1600</a> <br />
-#172. <a href="./code/172.txt">Factorial Trailing Zeroes (M-) 1400</a> <br />
-#233. <a href="./code/233.txt">Number of Digit One (H) 1900</a> <br />
-#396. <a href="./code/396.txt">Rotate Function (M-) 1400</a> <br />
-#440. <a href="./code/440.txt">K-th Smallest in Lexicographical Order (H+) 1900</a> <br />
-#453. <a href="./code/453.txt">Minimum Moves to Equal Array Elements (E+) 1100</a> <br />
-#463. <a href="./code/463.txt">Island Perimeter (E) 900</a> <br />
-#492. <a href="./code/492.txt">Construct the Rectangle (E) 900</a> <br />
-#504. <a href="./code/504.txt">Base 7 (E) 800</a> <br />
-#553. <a href="./code/553.txt">Optimal division (M-) 1300</a> <br />
-#598. <a href="./code/598.txt">Range Addition II (E) 900</a> <br />
-#660. [<a href="./code/660.txt">Remove 9 (M) 1500</a> <br />
-#799. <a href="./code/799.txt">Champagne Tower(M) 1500</a> <br />
-#836. <a href="./code/836.txt">Rectangle Overlap (E+) 1100</a> <br />
-#869. <a href="./code/869.txt">Reordered Power of 2 (M-) 1300</a> <br />
-#880. <a href="./code/880.txt">Decoded String at Index (M+) 1600</a> <br />
-#891. <a href="./code/891.txt">Sum of Subsequence Widths (H) 1800</a> <br />
-#888. <a href="./code/888.txt">Fair Candy Swap (E) 1000</a> <br />
-#908. <a href="./code/908.txt">Smallest Range I (E+) 1100</a> <br />
-#957. <a href="./code/957.txt">Prison Cells After N Days (M) 1500</a> <br />
-#976. <a href="./code/976.txt">Largest Perimeter Triangle (E) 900</a> <br />
-#1006. <a href="./code/1006.txt">Clumsy Factorial (M) 1500</a> <br />
-#1018. <a href="./code/1018.txt">Binary Prefix Divisible By 5 (E) 1000</a> <br />
-#1024. <a href="./code/1024.txt">Vedio Stichting (M) 1600</a> <br />
-#1041. <a href="./code/1041.txt">Robot Bounded In Circle (M) 1500</a> <br />
-#1103. <a href="./code/1103.txt">Distribute Candies to People(E+) 1300</a> <br />
-#1128. <a href="./code/1128.txt">Number of Equivalent Domino Pairs (E) 1000</a> <br />
-#1131. <a href="./code/1131.txt">Maximum of Absolute Value Expression (M+) 1600</a> <br />
-#1237. <a href="./code/1237.txt">Find Positive Integer Solution for a Given Equation (E) 1000</a> <br />
-#1266. <a href="./code/1266.txt">Minimum Time Visiting All Points (E) 1000</a> <br />
-#1415. <a href="./code/1415.txt">The k-th Lexicographical String of All Happy Strings of Length n (M+) 1600</a> <br />
-#1465. <a href="./code/1465.txt">Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts (M-) 1200</a> <br />
-#1498. <a href="./code/1498.txt">Number of Subsequences That Satisfy the Given Sum Condition (M+) 1600</a> <br />
-#1551. <a href="./code/1551.txt">Minimum Operations to Make Array Equal (M-) 1200</a> <br />
-#1573. <a href="./code/1573.txt">Number of Ways to Split a String (M) 1500</a> <br />
-#1622. <a href="./code/1622.txt">Fancy Sequence (H+) 2000</a> <br />
-#1643. <a href="./code/1643.txt">Kth Smallest Instructions (H) 1800</a> <br />
-#1648. <a href="./code/1648.txt">Sell Diminishing-Valued Colored Balls (M+) 1600</a> <br />
-#LCP3. <a href="./code/LCP3.txt">机器人大冒险 (M) 1500</a> <br />
-#LCP11. <a href="./code/LCP11.txt">期望个数统计 (M-) 1400</a> <br />
-</p>
-</details>
-
-<details><summary>Prefix Sum</summary>
-<p>
-#1664. <a href="./code/1664.txt">Ways to Make a Fair Array (M) 1500</a> <br />
-</p>
-</details>
-
-
-<details><summary>Maxflow - Bipartite Matching (二分图匹配)</summary>
-<br/>
+---
+### Maxflow - Bipartite Matching (二分图匹配)
 1. The size of a maximum flow in the resulting graph equals the size of a maximum matching in the original graph.<br/>
 2. Size of a minimum node cover always equals the size of a maximum matching. <br/>
 3. The complement of a maximum independent set is a minimum vertex cover(MAX Flow).<br/>
 Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/maximum-independent-set-in-bipartite-graphs.html<br/>
-最大流: https://blog.csdn.net/chinacoy/article/details/45040897 <br/><br/>
-<p>
-#1349. <a href="./code/1349.txt">Maximum Students Taking Exam (H+) 2000</a> <br />
-#LCP04. <a href="./code/LCP04.txt">覆盖 (H+) 2000</a> <br />
-</p>
-</details>
+最大流: https://blog.csdn.net/chinacoy/article/details/45040897 <br/>
+
+#1349. [Maximum Students Taking Exam (H+) 2000](./code/1349.txt) <br />
+#LCP04. [覆盖 (H+) 2000](./code/LCP04.txt) <br />
+
+---
+### Binary Search
+#34. [Find First and Last Position of Element in Sorted Array (M-) 1300](./code/34.txt) <br />
+#35. [Search Insert Position (E) 1000](./code/35.txt) <br />
+#69. [Sqrt(x) (E+) 1100](./code/69.txt) <br />
+#153. [Find Minimum in Rotated Sorted Array (M+) 1600](./code/153.txt) <br />
+#154. [Find Minimum in Rotated Sorted Array II (H-) 1700](./code/154.txt) <br />
+#275. [H Index II (M-) 1400](./code/275.txt) <br />
+#302. [包含全部黑色像素的最小矩形 (H-) 1700](./code/302.txt) <br />
+#352. [ Data Stream as Disjoint Intervals (H-) 1700](./code/352.txt) <br />
+#373. [Find K Pairs with Smallest Sums (M) 1500](./code/373.txt) <br />
+#374. [Guess Number Higher or Lower (E) 800](./code/374.txt) <br />
+#436. [ Find Right Interval (M) 1500](./code/436.txt) <br />
+#475. [Heaters (M) 1500](./code/475.txt) <br />
+#483. [Smallest Good Base (H) 1800](./code/483.txt) <br />
+#540. [Single Element in a Sorted Array (M-) 1400](./code/540.txt) <br />
+#704. [Binary Search(E) 900](./code/704.txt) <br />
+#744. [Find Smallest Letter Greater Than Target (M-) 1200](./code/744.txt) <br />
+#786. [K-th Smallest Prime Fraction (H) 1800](./code/786.txt) <br />
+#792. [Number of Matching Subsequences (M+) 1600](./code/792.txt) <br />
+#911. [Online Election(M) 1500](./code/911.txt) <br />
+#1095. [Find in Mountain Array (H-) 1700](./code/1095.txt) <br />
+#1292. [Maximum Side Length of a Square with Sum Less than or Equal to Threshold (M+) 1600](./code/1292.txt) <br />
+#1533. [Find the Index of the Large Integer (M) 1500](./code/1533.txt) <br />
+#1552. [Magnetic Force Between Two Balls (M+) 1600](./code/1552.txt) <br />
+#1574. [ Shortest Subarray to be Removed to Make Array Sorted (M+) 1600](./code/1574.txt) <br />
+#LCP08. [剧情触发时间 (M) 1600](./code/LCP08.txt) <br />
+#LCP12. [小张刷题计划 (M) 1500](./code/LCP12.txt) <br />
+
+---
+### Tree
+#95. [ Unique Binary Search Trees II(M+) 1600](./code/95.txt) <br />
+#96. [ Unique Binary Search Trees (M+) 1600](./code/96.txt) <br />
+#98. [Validate Binary Search Tree (M) 1500](./code/98.txt) <br />
+#101. [Symmetric Tree (M-) 1300](./code/101.txt) <br />
+#110. [Balanced Binary Tree  (E) 900](./code/110.txt) <br />
+#173. [Binary Search Tree Iterator  (M) 1500](./code/173.txt) <br />
+#222. [ Count Complete Tree Nodes  (M) 1500](./code/222.txt) <br />
+#235. [Lowest Common Ancestor of a Binary Search Tree  (E+) 1100](./code/235.txt) <br />
+#236. [Lowest Common Ancestor of a Binary Tree   (M-) 1400](./code/236.txt) <br />
+#257. [Binary Tree Paths (E) 1000](./code/257.txt) <br />
+#297. [Serialize and Deserialize Binary Tree (H-) 1700](./code/297.txt) <br />
+#404. [Sum of Left Leaves (E) 900](./code/404.txt) <br />
+#437. [Path Sum III(M-) 1400](./code/437.txt) <br />
+#606. [Construct String from Binary Tree (E+) 1100](./code/606.txt) <br />
+#617. [Merge Binary Tree (E) 1000](./code/617.txt) <br />
+#623. [ Add One Row to Tree (M-) 1300](./code/623.txt) <br />
+#654. [Maximum Binary Tree (M-) 1400](./code/654.txt) <br />
+#669. [Trim a Binary Search Tree (M-) 1400](./code/669.txt) <br />
+#687. [Longest Univalue Path(M) 1500](./code/687.txt) <br />
+#783. [Minimum Distance Between BST Nodes (E) 900](./code/783.txt) <br />
+#814. [Binary Tree Pruning (M-) 1200](./code/814.txt) <br />
+#872. [Leaf-Similar Trees (E) 900](./code/872.txt) <br />
+#971. [Flip Binary Tree To Match Preorder Traversal (M) 1500](./code/971.txt) <br />
+#993. [Cousins in Binary Tree (E) 900](./code/993.txt) <br />
+#1026. [Maximum Difference Between Node and Ancestor (M-) 1400](./code/1026.txt) <br />
+#1028. [Recover a Tree From Preorder Traversal (H-) 1700](./code/1028.txt) <br />
+#1038. [ Binary Search Tree to Greater Sum Tree (M-) 1400](./code/1038.txt) <br />
+#1080. [Insufficient Nodes in Root to Leaf Paths (M) 1500](./code/1080.txt) <br />
+#1110. [Delete Nodes And Return Forest (M-) 1400](./code/1110.txt) <br />
+#1123. [Lowest Common Ancestor of Deepest Leaves (M) 1500](./code/1123.txt) <br />
+#1339. [Maximum Product of Splitted Binary Tree (M) 1500](./code/1339.txt) <br />
+#1372. [Longest ZigZag Path in a Binary Tree (M) 1500](./code/1372.txt) <br />
+#1457. [Pseudo-Palindromic Paths in a Binary Tree (M-) 1300](./code/1457.txt) <br />
+#1490. [Clone N-tree (M-) 1300](./code/1490.txt) <br />
+#1516. [Move Sub-Tree of N-Ary Tree (H-) 1700](./code/1516.txt) <br />
+#1617. [Count Subtrees With Max Distance Between Cities (H) 1800](./code/1617.txt) <br />
+
+---
+### Trie
+#208. [Implement Trie (Prefix Tree) (M) 1500](./code/208.txt) <br />
+#211. [Design Add and Search Words Data Structure (M) 1500](./code/211.txt) <br />
+#421. [Maximum XOR of Two Numbers in an Array (M+) 1600](./code/421.txt) <br />
+#588. [Design In-Memory File System (H) 1800](./code/588.txt) <br />
+
+---
+### DP
+#10. [Regular Expression Matching (H) 1900](./code/10.txt) <br />
+#44. [Wildcard Matching (H-) 1700](./code/44.txt) <br />
+#70. [Climbing Stairs (E) 900](./code/70.txt) <br />
+#85. [Maximal Rectangle (H-) 1700](./code/85.txt) <br />
+#91. [Decode Way (M+) 1700](./code/91.txt) <br />
+#97. [Interleaving String (H-) 1700](./code/97.txt) <br />
+#118. [Pascal's Triangle (E) 900](./code/118.txt) <br />
+#119. [Pascal's Triangle II (E) 1000](./code/119.txt) <br />
+#120. [Triangle (M-) 1300](./code/120.txt) <br />
+#123. [Best Time to Buy and Sell Stock III (H-) 1700](./code/123.txt) <br />
+#132. [Palindrome Partitioning II (H-) 1700](./code/132.txt) <br />
+#139. [Word Break (M) 1500](./code/139.txt) <br />
+#140. [Word Break II (H) 1800](./code/140.txt) <br />
+#188. [Best Time to Buy and Sell Stock IV (H) 1800](./code/188.txt) <br />
+#198. [House Robber (M) 1400](./code/198.txt) <br />
+#213. [House Robber II (M) 1500](./code/213.txt) <br />
+#279. [Perfect Square(M-) 1300](./code/279.txt) <br />
+#309. [Best Time to Buy and Sell Stock with Cooldown (M) 1500](./code/309.txt) <br />
+#312. [ Burst Balloons (H) 1800](./code/312.txt) <br />
+#322. [Coin Change (M-) 1400](./code/322.txt) <br />
+#363. [Max Sum of Rectangle No Larger Than K (M) 1800](./code/363.txt) <br />
+#403. [Frog Jump (H-) 1700](./code/403.txt) <br />
+#413. [Arithmetic Slices (M) 1500](./code/413.txt) <br />
+#446. [Arithmetic Slices II - Subsequence (H-) 1700](./code/446.txt) <br />
+#449. [Serialize and Deserialize BST (M) 1500](./code/449.txt) <br />
+#466. [Count Repetition (H) 1800](./code/466.txt) <br />
+#494. [Target Sum (M) 1500](./code/494.txt) <br />
+#514. [Freedom Trail (H) 1800](./code/514.txt) <br />
+#518. [Coin Change 2 (M) 1500](./code/518.txt) <br />
+#583. [Delete Operation for Two Strings (M) 1500](./code/583.txt) <br />
+#673. [Number of Longest Increasing Subsequence (M) 1500](./code/673.txt) <br />
+#691. [Stickers to Spell Word (H) 1900](./code/691.txt) <br />
+#714. [Best Time to Buy and Sell Stock with Transaction Fee (M+) 1600](./code/714.txt) <br />
+#717. [1-bit and 2-bit Characters (E) 1000](./code/717.txt) <br />
+#718. [Maximum Length of Repeated Subarray (M) 1500](./code/718.txt) <br />
+#727. [Minimum Window Subsequence (H) 1800](./code/727.txt) <br />
+#730. [Count Different Palindromic Subsequences (H) 1800](./code/730.txt) <br />
+#740. [Delete and Earn (M) 1500](./code/740.txt) <br />
+#741. [Cherry Pickup (H) 1800](./code/741.txt) <br />
+#764. [Largest Plus Sign (M) 1500](./code/764.txt) <br />
+#790. [Domino and Tromino Tiling(M+) 1700](./code/790.txt) <br />
+#798. [Smallest Rotation with Highest Score (H) 1900](./code/798.txt) <br />
+#801. [Minimum Swaps To Make Sequences Increasing (M+) 1600](./code/801.txt) <br />
+#805. [Split Array With Same Average (H) 1800](./code/805.txt) <br />
+#823. [Binary Trees With Factors (M) 1500](./code/823.txt) <br />
+#828. [Count Unique Characters of All Substrings of a Given String (H) 1900](./code/828.txt) <br />
+#837. [New 21 Game (M+) 1600](./code/823.txt) <br />
+#887. [Supper Egg drop (H) 1800](./code/887.txt) <br />
+#902. [Numbers At Most N Given Digit Set (H) 1800](./code/902.txt) <br />
+#903. [Valid Permutations for DI Sequence (H) 1800](./code/903.txt) <br />
+#918. [Maximum Sum Circular Subarray (M) 1500](./code/918.txt) <br />
+#920. [Number of Music Playlists (H) 1800](./code/920.txt) <br />
+#926. [Flip String to Monotone Increasing(M-) 1400](./code/926.txt) <br />
+#940. [Distinct Subsequences II (H) 1800](./code/940.txt) <br />
+#943. [Find the Shortest Superstring (H) 1900](./code/943.txt) <br />
+#964. [Least Operators to Express Number (H) 1900](./code/964.txt) <br />
+#968. [Binary Tree Camera (H+) 2000](./code/968.txt) <br />
+#975. [Odd Even Jump (H-) 1700](./code/975.txt) <br />
+#978. [Longest Turbulent Subarray (M) 1500](./code/978.txt) <br />
+#983. [Minimum Cost For Tickets (M) 1500](./code/983.txt) <br />
+#1000. [Minimum Cost to Merge Stones (H+) 2000](./code/1000.txt) <br />
+#1012. [Numbers With Repeated Digits (H) 1800](./code/1012.txt) <br />
+#1027. [Longest Arithmetic Subsequence (M) 1500](./code/1027.txt) <br />
+#1029. [Two City Scheduling (M) 1500](./code/1029.txt) <br />
+#1039. [Minimum Score Triangulation of Polygon (M+) 1700](./code/1039.txt) <br />
+#1066. [Campus Bike II (H-) 1700](./code/1066.txt) <br />
+#1092. [Shortest Common Supersequenceg (H) 1800](./code/1092.txt) <br />
+#1130. [Minimum Cost Tree From Leaf Values (M) 1500](./code/1130.txt) <br />
+#1137. [N-th Tribonacci Number (E) 900](./code/1137.txt) <br />
+#1139. [Largest 1-Bordered Square (M) 1600](./code/1139.txt) <br />
+#1155. [Number of Dice Rolls With Target Sum (M+) 1600](./code/1155.txt) <br />
+#1187. [Make Array Strictly Increasing (H) 1800](./code/1187.txt) <br />
+#1125. [Smallest Sufficient Team (H) 1800](./code/1125.txt) <br />
+#1227. [Airplane Seat Assignment Probability (M+) 1600](./code/1227.txt) <br />
+#1259. [Handshakes That Don't Cross (H-) 1700](./code/1259.txt) <br />
+#1277. [Count Square Submatrices with All Ones (M) 1500](./code/1277.txt) <br />
+#1359. [Count All Valid Pickup and Delivery Options (H-) 1700](./code/1359.txt) <br />
+#1388. [Pizza With 3n Slices (H) 1800](./code/1388.txt) <br />
+#1402. [Reducing Dishes (H-) 1600](./code/1402.txt) <br />
+#1420. [Build Array Where You Can Find The Maximum Exactly K Comparisons(H) 1800](./code/1420.txt) <br />
+#1458. [Max Dot Product of Two Subsequences (H-) 1600](./code/1458.txt) <br />
+#1473. [Paint House III (H) 1800](./code/1473.txt) <br />
+#1478. [Allocate Mailboxes (H) 1900](./code/1478.txt) <br />
+#1546. [Maximum Number of Non-Overlapping Subarrays With Sum Equals Target (M+) 1600](./code/1546.txt) <br />
+#1548. [The Most Similar Path in a Graph  (H) 1800](./code/1548.txt) <br />
+#1563. [Stone Game V (H-) 1700](./code/1563.txt) <br />
+#1563. [Number of Ways to Reorder Array to Get Same BST (H) 1900](./code/1569.txt) <br />
+#1575. [Count All Possible Routes (H) 1800](./code/1575.txt) <br />
+#1621. [Number of Sets of K Non-Overlapping Line Segments (M+) 1700](./code/1621.txt) <br />
+#1639. [Number of Ways to Form a Target String Given a Dictionary (H) 1800](./code/1639.txt) <br />
+#1641. [Count Sorted Vowel Strings (M-) 1400](./code/1641.txt) <br />
+#1653. [Minimum Deletions to Make String Balanced (M) 1500](./code/1653.txt) <br />
+#1655. [Distribute Repeating Integers(H) 1800](./code/1655.txt) <br />
+#1659. [Maximize Grid Happiness(H+) 2200](./code/1659.txt) <br />
+#1671. [Minimum Number of Removals to Make Mountain Array(H-) 1600](./code/1671.txt) <br />
+#1681. [Minimum Incompatibility (H) 1800](./code/1681.txt) <br />
+#1687. [Delivering Boxes from Storage to Ports (H+) 2000](./code/1687.txt) <br />
+#1691. [Maximum Height by Stacking Cuboids   (H) 1800](./code/1691.txt) <br />
+#1696. [Jump Game VI (M+) 1600](./code/1696.txt) <br />
+#LCP10. [二叉树任务调度 (H+) 2200](./code/LCP10.txt) <br />
+#LCP13. [寻宝 (H+) 2100](./code/LCP13.txt) <br />
+#LCP14. [切分数组 (H+) 2200](./code/LCP14.txt) <br />
+
+---
+### Math
+#60. [Permutation Sequence (M+) 1600](./code/60.txt) <br />
+#172. [Factorial Trailing Zeroes (M-) 1400](./code/172.txt) <br />
+#233. [Number of Digit One (H) 1900](./code/233.txt) <br />
+#396. [Rotate Function (M-) 1400](./code/396.txt) <br />
+#440. [ K-th Smallest in Lexicographical Order (H+) 1900](./code/440.txt) <br />
+#453. [Minimum Moves to Equal Array Elements (E+) 1100](./code/453.txt) <br />
+#463. [Island Perimeter (E) 900](./code/463.txt) <br />
+#492. [Construct the Rectangle (E) 900](./code/492.txt) <br />
+#504. [Base 7 (E) 800](./code/504.txt) <br />
+#553. [Optimal division (M-) 1300](./code/553.txt) <br />
+#598. [Range Addition II (E) 900](./code/598.txt) <br />
+#660. [Remove 9 (M) 1500](./code/660.txt) <br />
+#799. [Champagne Tower(M) 1500](./code/799.txt) <br />
+#836. [Rectangle Overlap (E+) 1100](./code/836.txt) <br />
+#869. [Reordered Power of 2 (M-) 1300](./code/869.txt) <br />
+#880. [Decoded String at Index (M+) 1600](./code/880.txt) <br />
+#891. [Sum of Subsequence Widths (H) 1800](./code/891.txt) <br />
+#888. [Fair Candy Swap (E) 1000](./code/888.txt) <br />
+#908. [Smallest Range I (E+) 1100](./code/908.txt) <br />
+#957. [Prison Cells After N Days (M) 1500](./code/957.txt) <br />
+#976. [Largest Perimeter Triangle (E) 900](./code/976.txt) <br />
+#1006. [ Clumsy Factorial (M) 1500](./code/1006.txt) <br />
+#1018. [ Binary Prefix Divisible By 5 (E) 1000](./code/1018.txt) <br />
+#1024. [Vedio Stichting (M) 1600](./code/1024.txt) <br />
+#1041. [Robot Bounded In Circle (M) 1500](./code/1041.txt) <br />
+#1103. [ Distribute Candies to People(E+) 1300](./code/1103.txt) <br />
+#1128. [Number of Equivalent Domino Pairs (E) 1000](./code/1128.txt) <br />
+#1131. [Maximum of Absolute Value Expression (M+) 1600](./code/1131.txt) <br />
+#1237. [ Find Positive Integer Solution for a Given Equation (E) 1000](./code/1237.txt) <br />
+#1266. [ Minimum Time Visiting All Points (E) 1000](./code/1266.txt) <br />
+#1415. [ The k-th Lexicographical String of All Happy Strings of Length n (M+) 1600](./code/1415.txt) <br />
+#1465. [Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts (M-) 1200](./code/1465.txt) <br />
+#1498. [Number of Subsequences That Satisfy the Given Sum Condition (M+) 1600](./code/1498.txt) <br />
+#1551. [Minimum Operations to Make Array Equal (M-) 1200](./code/1551.txt) <br />
+#1573. [Number of Ways to Split a String (M) 1500](./code/1573.txt) <br />
+#1622. [Fancy Sequence (H+) 2000](./code/1622.txt) <br />
+#1643. [Kth Smallest Instructions (H) 1800](./code/1643.txt) <br />
+#1648. [Sell Diminishing-Valued Colored Balls (M+) 1600](./code/1648.txt) <br />
+#LCP3. [机器人大冒险 (M) 1500](./code/LCP3.txt) <br />
+#LCP11. [期望个数统计 (M-) 1400](./code/LCP11.txt) <br />
+
+### Prefix Sum
+#1664. [Ways to Make a Fair Array (M) 1500](./code/1664.txt) <br />
+
+### Geometry
+#963. [ Minimum Area Rectangle II (M+) 1700](./code/963.txt) <br />
+#1401. [  Circle and Rectangle Overlapping(M+) 1600](./code/1401.txt) <br />
+#1453. [ Maximum Number of Darts Inside of a Circular Dartboard(H+) 2100](./code/1453.txt) <br />
+#1610. [ Maximum Number of Visible Points(H) 1800](./code/1610.txt) <br />
+
+---
+### Moore's Voting
+#169. [Majority Element (M-) 1200](./code/169.txt) <br />
+#229. [Majority Element (M) 1500](./code/229.txt) <br />
+
+---
+### Segment Tree
+#308. [Range Sum Query 2D - Mutable (2D Segment Tree) (H) 2100](./code/308.txt) <br />
+#715. [Range Module (H) 1900](./code/715.txt) <br />
+#1505. [Minimum Possible Integer After at Most K Adjacent Swaps On Digits (BIT) (H) 1900](./code/1505.txt) <br />
+#1585. [Check If String Is Transformable With Substring Sort Operations (Segment Tree) (H+) 2400](./code/1585.txt) <br />
+#1649. [Create Sorted Array through Instructions (BIT) (H) 1800](./code/1649.txt) <br />
+#LCP5. [发leetcoin (H+) 2300](./code/LCP5.txt) <br />
+#b857. [Delete Integers In Ascending Order (BIT) (H) 1800](./code/b857.txt) <br />
+
+---
+### Sparse Table
+#1310. [XOR Queries of a Subarray (M) 1500](./code/1310.txt) <br />
+#1483. [Kth Ancestor of a Tree Node (H) 1800](./code/1483.txt) <br />
+
+---
+### Observation
+#667. [Beautiful Arrangement II (M) 1500](./code/667.txt) <br />
+#777. [Swap Adjacent in LR String (M+) 1600](./code/777.txt) <br />
+#899. [Orderly Queue (H-) 1700](./code/899.txt) <br />
+#1109. [Corporate Flight Bookings (M) 1500](./code/1109.txt) <br />
+#1538. [Guess the Majority in a Hidden Array (M+) 1700](./code/1538.txt) <br />
 
 
 
-<details><summary>Trie</summary>
-<p>
-#208. <a href="./code/208.txt">Implement Trie (Prefix Tree) (M) 1500</a> <br />
-#211. <a href="./code/211.txt">Design Add and Search Words Data Structure (M) 1500</a> <br />
-#421. <a href="./code/421.txt">Maximum XOR of Two Numbers in an Array (M+) 1600</a> <br />
-#588. <a href="./code/588.txt">Design In-Memory File System (H) 1800</a> <br />
-</p>
-</details>
 
-<details><summary>Geometry</summary>
-<p>
-#963. <a href="./code/963.txt">Minimum Area Rectangle II (M+) 1700</a> <br />
-#1401. <a href="./code/1401.txt">Circle and Rectangle Overlapping(M+) 1600</a> <br />
-#1453. <a href="./code/1453.txt">Maximum Number of Darts Inside of a Circular Dartboard(H+) 2100</a> <br />
-#1610. <a href="./code/1610.txt">Maximum Number of Visible Points(H) 1800</a> <br />
-</p>
-</details>
+---
+### Sliding Window
+#3. [Longest Substring Without Repeating Characters (M-) 1400](./code/3.txt) <br />
+#76. [Minimum Window Substring (M+) 1700](./code/76.txt) <br />
+#346. [ Moving Average from Data Stream (E) 900](./code/346.txt) <br />
+#395. [Longest Substring with At Least K Repeating Characters (M+) 1700](./code/395.txt) <br />
+#424. [Longest Repeating Character Replacement (M) 1500](./code/424.txt) <br />
+#713. [Subarray Product Less Than K (M) 1500](./code/713.txt) <br />
+#904. [Fruit Into Baskets (M-) 1300](./code/904.txt) <br />
+#933. [Number of recent call (E) 1000](./code/933.txt) <br />
+#992. [Subarrays with K Different Integers (H) 1800](./code/992.txt) <br />
+#1040. [Moving Stones Until Consecutive II (M+) 1600](./code/1040.txt) <br />
+#1052. [Grumpy Bookstore Owner (M) 1500](./code/1052.txt) <br />
+#1156. [Swap For Longest Repeated Character Substring (M) 1500](./code/1156.txt) <br />
+#1208. [Get Equal Substrings Within Budget (M-) 1400](./code/1208.txt) <br />
+#1456. [Maximum Number of Vowels in a Substring of Given Length (M-) 1300](./code/1456.txt) <br />
+#1675. [Minimize Deviation in Array (H) 1800](./code/1675.txt) <br />
+#1695. [Maximum Erasure Value (M-) 1400](./code/1695.txt) <br />
 
+---
+### Two Pointer
+#80. [Remove Duplicates from Sorted Array II (M-) 1400](./code/80.txt) <br />
+#455. [Assign Cookies (E) 1000](./code/455.txt) <br />
+#524. [Longest Word in Dictionary through Deleting (M-) 1400](./code/524.txt) <br />
+#632. [Smallest Range Covering Elements from K Lists (H) 1800](./code/632.txt) <br />
+#881. [Boats to Save People (M-) 1400](./code/881.txt) <br />
+#923. [ 3Sum With Multiplicity (M+) 1600](./code/923.txt) <br />
+#925. [ Long Pressed Name (E) 1000](./code/925.txt) <br />
+#986. [Interval List Intersections (M) 1500](./code/986.txt) <br />
 
-<details><summary>Moore's Voting</summary>
-<p>
-#169. <a href="./code/169.txt">Majority Element (M-) 1200</a> <br />
-#229. <a href="./code/229.txt">Majority Element (M) 1500</a> <br />
-</p>
-</details>
+---
+### Sort
+#179. [Largest Number (M) 1500](./code/179.txt) <br />
+#215. [Kth Largest Element in an Array (Quick Select) (M) 1500](./code/215.txt) <br />
+#252. [Meeting Room (E) 1000](./code/252.txt) <br />
+#295. [Find Median from Data Stream (H-) 1600](./code/295.txt) <br />
+#581. [Shortest Unsorted Continuous Subarray (E) 1000](./code/581.txt) <br />
+#703. [ Kth Largest Element in a Stream (E) 1000](./code/703.txt) <br />
+#791. [Custom Sort String (M-) 1300](./code/791.txt) <br />
+#955. [Delete Columns to Make Sorted II (M+) 1600](./code/955.txt) <br />
+#1030. [Matrix Cells in Distance Order (E) 900](./code/1030.txt) <br />
+#1366. [Rank Teams by Votes (M+) 1600](./code/1366.txt) <br />
+#1629. [Slowest Key (E) 900](./code/1629.txt) <br />
+#1636. [Sort Array by Increasing Frequency (E+) 1100](./code/1636.txt) <br />
 
+---
+### String
+#6. [ZigZag Conversion (M-) 1300](./code/6.txt) <br />
+#9. [Palindrom Number (E) 900](./code/9.txt) <br />
+#28. [Implement strStr(M) 1500 (KMP)](./code/28.txt) <br />
+#49. [ Group Anagrams (M-) 1300](./code/49.txt) <br />
+#151. [ Reverse Words in a String (M-) 1300](./code/151.txt) <br />
+#214. [Shortest Palindromem (H-) (KMP) 1700](./code/214.txt) <br />
+#242. [Valid Anagram (E) 900](./code/242.txt) <br />
+#290. [Word Pattern (E) 1000](./code/290.txt) <br />
+#336. [Palindrome Pairs (H) 1800](./code/336.txt) <br />
+#696. [Count Binary Substrings (E) 1000](./code/696.txt) <br />
+#833. [Find And Replace in String (M) 1500](./code/833.txt) <br />
+#811. [Subdomain Visit Count (E) 800](./code/811.txt) <br />
+#859. [ Buddy Strings (E) 1000](./code/859.txt) <br />
+#906. [Super Palindrom (H) 1800](./code/906.txt) <br />
+#936. [Stamping The Sequence (H+) 2300](./code/936.txt) <br />
+#953. [Verifying an Alien Dictionary (E) 1000](./code/953.txt) <br />
+#1106. [Parsing A Boolean Expression (H-) 1700](./code/1106.txt) <br />
+#1163. [Last Substring in Lexicographical Order (H-) 1700](./code/1163.txt) <br />
+#1370. [Increasing Decreasing String (E) 900](./code/1370.txt) <br />
+#1446. [Consecutive Characters (E) 900](./code/1446.txt) <br />
+#1616. [Split Two Strings to Make Palindrome (M+) 1600](./code/1616.txt) <br />
+#1624. [Largest Substring Between Two Equal Characters (E) 900](./code/1624.txt) <br />
+#1678. [ Goal Parser Interpretation (E) 900](./code/1678.txt) <br />
+#1694. [ Reformat Phone Number (E) 900](./code/1694.txt) <br />
 
-<details><summary>Segment Tree</summary>
-<p>
-#308. <a href="./code/308.txt">Range Sum Query 2D - Mutable (2D Segment Tree) (H) 2100</a> <br />
-#715. <a href="./code/715.txt">Range Module (H) 1900</a> <br />
-#1505. <a href="./code/1505.txt">Minimum Possible Integer After at Most K Adjacent Swaps On Digits (BIT) (H) 1900</a> <br />
-#1585. <a href="./code/1585.txt">Check If String Is Transformable With Substring Sort Operations (Segment Tree) (H+) 2400</a> <br />
-#1649. <a href="./code/1649.txt">Create Sorted Array through Instructions (BIT) (H) 1800</a> <br />
-#LCP5. <a href="./code/CP5.txt">发leetcoin (H+) 2300</a> <br />
-#b857. <a href="./code/b857.txt">Delete Integers In Ascending Order (BIT) (H) 1800</a> <br />
-</p>
-</details>
+---
+### Game Theory
+#292. [Nime Game (M-) 1400](./code/292.txt) <br />
+#365. [Water and Jug Problem (M+) 1600](./code/365.txt) <br />
+#375. [Guess Number Higher or Lower II (M+) 1600](./code/375.txt) <br />
+#486. [Predict the Winner (M) 1500](./code/486.txt) <br />
+#521. [ Longest Uncommon Subsequence I (E) 800](./code/521.txt) <br />
+#789. [ Escape The Ghosts (M-) 1400](./code/789.txt) <br />
+#843. [Guess The World (H-) 1700](./code/843.txt) <br />
+#877. [Stone Game (M+) 1600](./code/877.txt) <br />
+#913. [Cat and Mouse (H+) 2400](./code/913.txt) <br />
+#1025. [Divisor Game (E+) 1100](./code/1025.txt) <br />
+#1140. [Stone Game II (M+) 1600](./code/1140.txt) <br />
+#1686. [Stone Game VI (M+) 1700](./code/1686.txt) <br />
+#1690. [Stone Game VII (M+) 1600](./code/1690.txt) <br />
 
+---
+### Implementation
+#7. [Reverse Integer (E) 900](./code/7.txt) <br />
+#26. [Remove Duplicates from Sorted Array (E) 800](./code/26.txt) <br />
+#68. [Text Justification (H) 1800](./code/68.txt) <br />
+#202. [Happy Number (E) 800](./code/202.txt) <br />
+#258. [Add Digits (E) 800](./code/258.txt) <br />
+#747. [Largest Number At Least Twice of Others (E) 900](./code/747.txt) <br />
+#806. [Number of Lines To Write String (E) 900](./code/806.txt) <br />
+#1071. [Greatest Common Divisor of Strings (E) 900](./code/1071.txt) <br />
+#1550. [Three Consecutive Odds (E-) 700](./code/1550.txt) <br />
+#1640. [Check Array Formation Through Concatenation (E) 1000](./code/1640.txt) <br />
+#1662. [Check If Two String Arrays are Equivalent (E) 800](./code/1662.txt) <br />
 
-<details><summary>Sparse Table</summary>
-<p>
-#1310. <a href="./code/1310.txt">XOR Queries of a Subarray (M) 1500</a> <br />
-#1483. <a href="./code/1483.txt">Kth Ancestor of a Tree Node (H) 1800</a> <br />
-</p>
-</details>
+---
+### Bit
+#201. [Bitwise AND of Numbers Range (M+) 1600](./code/201.txt) <br />
+#318. [Maximum Product of Word Lengths (M) 1500](./code/318.txt) <br />
+#784. [Letter Case Permutation (M) 1500](./code/784.txt) <br />
+#898. [Bitwise ORs of Subarrays (M+) 1600](./code/898.txt) <br />
+#1178. [Number of Valid Words for Each Puzzle (H-) 1700](./code/1178.txt) <br />
+#1238. [Circular Permutation in Binary Representation (M) 1500](./code/1238.txt) <br />
+#1290. [Convert Binary Number in a Linked List to Integer (E) 900](./code/1290.txt) <br />
+#1371. [ Find the Longest Substring Containing Vowels in Even Counts (M) 1500](./code/1371.txt) <br />
+#1318. [ Minimum Flips to Make a OR b Equal to c (M) 1500](./code/1318.txt) <br />
+#1404. [ Number of Steps to Reduce a Number in Binary Representation to One (M+) 1600](./code/1404.txt) <br />
+#1611. [ Minimum One Bit Operations to Make Integers Zero (H) 1800](./code/1611.txt) <br />
 
+---
+### Hash
+#30. [Substring with Concatenation of All Words(H-) 1700](./code/30.txt) <br />
+#219. [Contains Duplicate II (E) 800](./code/219.txt) <br />
+#220. [Contains Duplicate III (M) 1500](./code/220.txt) <br />
+#409. [Longest Palindrom (E) 900](./code/409.txt) <br />
+#594. [Longest Harmonious Subsequence (E) 1000](./code/594.txt) <br />
+#804. [Unique Morse Code Words (E) 800](./code/804.txt) <br />
+#825. [Friends Of Appropriate Ages(M-) 1300](./code/825.txt) <br />
+#893. [ Groups of Special-Equivalent Strings (E) 1000](./code/893.txt) <br />
+#939. [ Minimum Area Rectangle(M) 1500](./code/939.txt) <br />
+#954. [Array of Doubled Pairs(M-) 1400](./code/954.txt) <br />
+#1001. [Grid Illumination(H-) 1700](./code/1001.txt) <br />
+#1267. [Count Servers that Communicate (M-) 1300](./code/1267.txt) <br />
+#1282. [Group the People Given the Group Size They Belong To (M-) 1300](./code/1282.txt) <br />
+#1396. [Design Underground System (M) 1500](./code/1396.txt) <br />
 
-<details><summary>Observation</summary>
-<p>
-#667. <a href="./code/667.txt">Beautiful Arrangement II (M) 1500</a> <br />
-#777. <a href="./code/777.txt">Swap Adjacent in LR String (M+) 1600</a> <br />
-#899. <a href="./code/899.txt">Orderly Queue (H-) 1700</a> <br />
-#1109. <a href="./code/1109.txt">Corporate Flight Bookings (M) 1500</a> <br />
-#1538. <a href="./code/1538.txt">Guess the Majority in a Hidden Array (M+) 1700</a> <br />
-</p>
-</details>
+---
+### Divide Conquer
+#315. [Count of Smaller Numbers After Self(H-) 1700](./code/315.txt) <br />
+#327. [Count of Range Sum(H) 1800](./code/327.txt) <br />
+#454. [4 sum II (M-) 1400](./code/454.txt) <br />
+#932. [Beautiful Array (M+) 1700](./code/932.txt) <br />
 
+---
+### Union Find
+#947. [Most Stones Removed with Same Row or Column (M) 1500](./code/947.txt) <br />
+#990. [Satisfiability of Equality Equations (M) 1500](./code/990.txt) <br />
+#1202. [Smallest String With Swaps (M+) 1600](./code/1202.txt) <br />
+#1579. [Remove Max Number of Edges to Keep Graph Fully Traversable (H) 1900](./code/1579.txt) <br />
+#1584. [Min Cost to Connect All Points (M) 1500](./code/1584.txt) <br />
+#1627. [Graph Connectivity With Threshold (H) 1800](./code/1627.txt) <br />
+#1697. [Checking Existence of Edge Length Limited Paths (H) 1800](./code/1697.txt) <br />
 
-<details><summary>Sliding Window</summary>
-<p>
-#3. <a href="./code/3.txt">Longest Substring Without Repeating Characters (M-) 1400</a> <br />
-#76. <a href="./code/76.txt">Minimum Window Substring (M+) 1700</a> <br />
-#346. <a href="./code/346.txt">Moving Average from Data Stream (E) 900</a> <br />
-#395. <a href="./code/395.txt">Longest Substring with At Least K Repeating Characters (M+) 1700</a> <br />
-#424. <a href="./code/424.txt">Longest Repeating Character Replacement (M) 1500</a> <br />
-#713. <a href="./code/713.txt">Subarray Product Less Than K (M) 1500</a> <br />
-#904. <a href="./code/904.txt">Fruit Into Baskets (M-) 1300</a> <br />
-#933. <a href="./code/933.txt">Number of recent call (E) 1000</a> <br />
-#992. <a href="./code/992.txt">Subarrays with K Different Integers (H) 1800</a> <br />
-#1040. <a href="./code/1040.txt">Moving Stones Until Consecutive II (M+) 1600</a> <br />
-#1052. <a href="./code/1052.txt">Grumpy Bookstore Owner (M) 1500</a> <br />
-#1156. <a href="./code/1156.txt">Swap For Longest Repeated Character Substring (M) 1500</a> <br />
-#1208. <a href="./code/1208.txt">Get Equal Substrings Within Budget (M-) 1400</a> <br />
-#1456. <a href="./code/1456.txt">Maximum Number of Vowels in a Substring of Given Length (M-) 1300</a> <br />
-#1675. <a href="./code/1675.txt">Minimize Deviation in Array (H) 1800</a> <br />
-#1695. <a href="./code/1695.txt">Maximum Erasure Value (M-) 1400</a> <br />
-</p>
-</details>
+---
+### Ordered Map
+#1606. [Find Servers That Handled Most Number of Requests(H) 1800](./code/1606.txt) <br />
 
+---
+### Line Sweep
+#391. [Perfect Rectangle(H) 1800](./code/391.txt) <br />
+#729. [My Calendar I (M) 1500](./code/729.txt) <br />
+#731. [My Calendar II (M+) 1600](./code/731.txt) <br />
+#1674. [ Minimum Moves to Make Array Complementary(H-) 1700](./code/1674.txt) <br />
 
-<details><summary>Two Pointer</summary>
-<p>
-#80. <a href="./code/80.txt">Remove Duplicates from Sorted Array II (M-) 1400</a> <br />
-#455. <a href="./code/455.txt">Assign Cookies (E) 1000</a> <br />
-#524. <a href="./code/524.txt">Longest Word in Dictionary through Deleting (M-) 1400</a> <br />
-#632. <a href="./code/632.txt">Smallest Range Covering Elements from K Lists (H) 1800</a> <br />
-#881. <a href="./code/881.txt">Boats to Save People (M-) 1400</a> <br />
-#923. <a href="./code/923.txt">3Sum With Multiplicity (M+) 1600</a> <br />
-#925. <a href="./code/925.txt">Long Pressed Name (E) 1000</a> <br />
-#986. <a href="./code/986.txt">Interval List Intersections (M) 1500</a> <br />
-</p>
-</details>
+---
+### Data Structure
+#146. [LRU Cache (M+) 1600](./code/146.txt) <br />
+#460. [LFU (H) 1800](./code/460.txt) <br />
+#860. [Rectangle Area II (H) 1800](./code/860.txt) <br />
+#895. [Maximum Frequency Stack (H-) 1700](./code/895.txt) <br />
+#1172. [Dinner Plate Stacks (H) 1800](./code/1172.txt) <br />
 
+---
+### SQL
+#175. [Combine Two Tables (E)](./sql/175.txt) <br />
+#177. [Nth Highest Salary (M)](./sql/177.txt) <br />
+#180. [ Consecutive Numbers (M)](./sql/180.txt) <br />
+#181. [Employees Earning More Than Their Managers (E)](./sql/181.txt) <br />
+#182. [Duplicate Emails (E)](./sql/182.txt) <br />
+#183. [Customers Who Never Order (E)](./sql/183.txt) <br />
+#184. [Department Highest Salary (M)](./sql/184.txt) <br />
+#197. [Rising Temperature (E)](./sql/197.txt) <br />
+#511. [Game Play Analysis I (E)](./sql/511.txt) <br />
+#595. [Big Countries (E)](./sql/595.txt) <br />
+#596. [Classes More Than 5 Students (E)](./sql/596.txt) <br />
+#607. [Sales Person (E)](./sql/607.txt) <br />
+#620. [Not Boring Movie (E)](./sql/620.txt) <br />
+#1082. [Sales Analysis I (E)](./sql/1082.txt) <br />
+#1303. [Find the Team Size (E)](./sql/1303.txt) <br />
+#1407. [ Top Travellers (E)](./sql/1407.txt) <br />
+#1565. [Unique Orders and Customers Per Month (E)](./sql/1565.txt) <br />
 
-<details><summary>Sort</summary>
-<p>
-#179. <a href="./code/179.txt">Largest Number (M) 1500</a> <br />
-#215. <a href="./code/215.txt">Kth Largest Element in an Array (Quick Select) (M) 1500</a> <br />
-#252. <a href="./code/252.txt">Meeting Room (E) 1000</a> <br />
-#295. <a href="./code/295.txt">Find Median from Data Stream (H-) 1600</a> <br />
-#581. <a href="./code/581.txt">Shortest Unsorted Continuous Subarray (E) 1000</a> <br />
-#703. <a href="./code/703.txt">Kth Largest Element in a Stream (E) 1000</a> <br />
-#791. <a href="./code/791.txt">Custom Sort String (M-) 1300</a> <br />
-#955. <a href="./code/955.txt">Delete Columns to Make Sorted II (M+) 1600</a> <br />
-#1030. <a href="./code/1030.txt">Matrix Cells in Distance Order (E) 900</a> <br />
-#1366. <a href="./code/1366.txt">Rank Teams by Votes (M+) 1600</a> <br />
-#1629. <a href="./code/1629.txt">Slowest Key (E) 900</a> <br />
-#1636. <a href="./code/1636.txt">Sort Array by Increasing Frequency (E+) 1100</a> <br />
-</p>
-</details>
-
-
-
-<details><summary>Game Theory</summary>
-<p>
-#292. <a href="./code/292.txt">Nime Game (M-) 1400</a> <br />
-#365. <a href="./code/365.txt">Water and Jug Problem (M+) 1600</a> <br />
-#375. <a href="./code/375.txt">Guess Number Higher or Lower II (M+) 1600</a> <br />
-#486. <a href="./code/486.txt">Predict the Winner (M) 1500</a> <br />
-#521. <a href="./code/521.txt">Longest Uncommon Subsequence I (E) 800</a> <br />
-#789. <a href="./code/789.txt">Escape The Ghosts (M-) 1400</a> <br />
-#843. <a href="./code/843.txt">Guess The World (H-) 1700</a> <br />
-#877. <a href="./code/877.txt">Stone Game (M+) 1600</a> <br />
-#913. <a href="./code/913.txt">Cat and Mouse (H+) 2400</a> <br />
-#1025. <a href="./code/1025.txt">Divisor Game (E+) 1100</a> <br />
-#1140. <a href="./code/1140.txt">Stone Game II (M+) 1600</a> <br />
-#1686. <a href="./code/1686.txt">Stone Game VI (M+) 1700</a> <br />
-#1690. <a href="./code/1690.txt">Stone Game VII (M+) 1600</a> <br />
-</p>
-</details>
-
-
-<details><summary>Implementation</summary>
-<p>
-#7. <a href="./code/7.txt">Reverse Integer (E) 900</a> <br />
-#26. <a href="./code/26.txt">Remove Duplicates from Sorted Array (E) 800</a> <br />
-#68. <a href="./code/68.txt">Text Justification (H) 1800</a> <br />
-#202. <a href="./code/202.txt">Happy Number (E) 800</a> <br />
-#258. <a href="./code/258.txt">Add Digits (E) 800</a> <br />
-#747. <a href="./code/747.txt">Largest Number At Least Twice of Others (E) 900</a> <br />
-#806. <a href="./code/806.txt">Number of Lines To Write String (E) 900</a> <br />
-#1071. <a href="./code/1071.txt">Greatest Common Divisor of Strings (E) 900</a> <br />
-#1550. <a href="./code/1550.txt">Three Consecutive Odds (E-) 700</a> <br />
-#1640. <a href="./code/1640.txt">Check Array Formation Through Concatenation (E) 1000</a> <br />
-#1662. <a href="./code/1662.txt">Check If Two String Arrays are Equivalent (E) 800</a> <br />
-</p>
-</details>
-
-
-<details><summary>Bit</summary>
-<p>
-#201. <a href="./code/201.txt">Bitwise AND of Numbers Range (M+) 1600</a> <br />
-#318. <a href="./code/318.txt">Maximum Product of Word Lengths (M) 1500</a> <br />
-#784. <a href="./code/784.txt">Letter Case Permutation (M) 1500</a> <br />
-#898. <a href="./code/898.txt">Bitwise ORs of Subarrays (M+) 1600</a> <br />
-#1178. <a href="./code/1178.txt">Number of Valid Words for Each Puzzle (H-) 1700</a> <br />
-#1238. <a href="./code/1238.txt">Circular Permutation in Binary Representation (M) 1500</a> <br />
-#1290. <a href="./code/1290.txt">Convert Binary Number in a Linked List to Integer (E) 900</a> <br />
-#1371. <a href="./code/1371.txt">Find the Longest Substring Containing Vowels in Even Counts (M) 1500</a> <br />
-#1318. <a href="./code/1318.txt">Minimum Flips to Make a OR b Equal to c (M) 1500</a> <br />
-#1404. <a href="./code/1404.txt">Number of Steps to Reduce a Number in Binary Representation to One (M+) 1600</a> <br />
-#1611. <a href="./code/1611.txt">Minimum One Bit Operations to Make Integers Zero (H) 1800</a> <br />
-</p>
-</details>
-
-
-<details><summary>Hash</summary>
-<p>
-#30. <a href="./code/30.txt">Substring with Concatenation of All Words(H-) 1700</a> <br />
-#219. <a href="./code/219.txt">Contains Duplicate II (E) 800</a> <br />
-#220. <a href="./code/220.txt">Contains Duplicate III (M) 1500</a> <br />
-#409. <a href="./code/409.txt">Longest Palindrom (E) 900</a> <br />
-#594. <a href="./code/594.txt">Longest Harmonious Subsequence (E) 1000</a> <br />
-#804. <a href="./code/804.txt">Unique Morse Code Words (E) 800</a> <br />
-#825. <a href="./code/825.txt">Friends Of Appropriate Ages(M-) 1300</a> <br />
-#893. <a href="./code/893.txt">Groups of Special-Equivalent Strings (E) 1000</a> <br />
-#939. <a href="./code/939.txt">Minimum Area Rectangle(M) 1500</a> <br />
-#954. <a href="./code/954.txt">Array of Doubled Pairs(M-) 1400</a> <br />
-#1001. <a href="./code/1001.txt">Grid Illumination(H-) 1700</a> <br />
-#1267. <a href="./code/1267.txt">Count Servers that Communicate (M-) 1300</a> <br />
-#1282. <a href="./code/1282.txt">Group the People Given the Group Size They Belong To (M-) 1300</a> <br />
-#1396. <a href="./code/1396.txt">Design Underground System (M) 1500</a> <br />
-</p>
-</details>
-
-
-<details><summary>Divide Conquer</summary>
-<p>
-#315. <a href="./code/315.txt">Count of Smaller Numbers After Self(H-) 1700</a> <br />
-#327. <a href="./code/327.txt">Count of Range Sum(H) 1800</a> <br />
-#454. <a href="./code/454.txt">4 sum II (M-) 1400</a> <br />
-#932. <a href="./code/932.txt">Beautiful Array (M+) 1700</a> <br />
-</p>
-</details>
-
-
-<details><summary>Union Find</summary>
-<p>
-#947. <a href="./code/947.txt">Most Stones Removed with Same Row or Column (M) 1500</a> <br />
-#990. <a href="./code/990.txt">Satisfiability of Equality Equations (M) 1500</a> <br />
-#1202. <a href="./code/1202.txt">Smallest String With Swaps (M+) 1600</a> <br />
-#1579. <a href="./code/1579.txt">Remove Max Number of Edges to Keep Graph Fully Traversable (H) 1900]</a> <br />
-#1584. <a href="./code/1584.txt">Min Cost to Connect All Points (M) 1500</a> <br />
-#1627. <a href="./code/1627.txt">Graph Connectivity With Threshold (H) 1800</a> <br />
-#1697. <a href="./code/1697.txt">Checking Existence of Edge Length Limited Paths (H) 1800</a> <br />
-</p>
-</details>
-
-
-<details><summary>Ordered Map</summary>
-<p>
-#1606. <a href="./code/1606.txt">Find Servers That Handled Most Number of Requests(H) 1800</a> <br />
-</p>
-</details>
-
-
-<details><summary>Line Sweep</summary>
-<p>
-#391. <a href="./code/391.txt">Perfect Rectangle(H) 1800</a> <br />
-#729. <a href="./code/729.txt">My Calendar I (M) 1500</a> <br />
-#731. <a href="./code/731.txt">My Calendar II (M+) 1600</a> <br />
-#1674. <a href="./code/1674.txt">Minimum Moves to Make Array Complementary(H-) 1700</a> <br />
-</p>
-</details>
-
-
-<details><summary>Data Structure</summary>
-<p>
-#146. <a href="./code/146.txt">LRU Cache (M+) 1600</a> <br />
-#460. <a href="./code/460.txt">LFU (H) 1800</a> <br />
-#860. <a href="./code/860.txt">Rectangle Area II (H) 1800</a> <br />
-#895. <a href="./code/895.txt">Maximum Frequency Stack (H-) 1700</a> <br />
-#1172. <a href="./code/1172.txt">Dinner Plate Stacks (H) 1800</a>) <br />
-</p>
-</details>
-
-
-<details><summary>SQL</summary>
-<p>
-#175. <a href="./sql/175.txt">Combine Two Tables (E)</a> <br />
-#177. <a href="./sql/177.txt">Nth Highest Salary (M)</a> <br />
-#180. <a href="./sql/180.txt">Consecutive Numbers (M)</a> <br />
-#181. <a href="./sql/181.txt">Employees Earning More Than Their Managers (E)</a> <br />
-#182. <a href="./sql/182.txt">Duplicate Emails (E)</a> <br />
-#183. <a href="./sql/183.txt">Customers Who Never Order (E)</a>) <br />
-#184. <a href="./sql/184.txt">Department Highest Salary (M)</a> <br />
-#197. <a href="./sql/197.txt">Rising Temperature (E)</a> <br />
-#511. <a href="./sql/511.txt">Game Play Analysis I (E)</a> <br />
-#595. <a href="./sql/595.txt">Big Countries (E)</a> <br />
-#596. <a href="./sql/596.txt">Classes More Than 5 Students (E)</a> <br />
-#607. <a href="./sql/607.txt">Sales Person (E)</a> <br />
-#620. <a href="./sql/620.txt">Not Boring Movie (E)</a> <br />
-#1082. <a href="./sql/1082.txt">Sales Analysis I (E)</a> <br />
-#1303. <a href="./sql/1303.txt">Find the Team Size (E)</a> <br />
-#1407. <a href="./sql/1407.txt">Top Travellers (E)</a> <br />
-#1565. <a href="./sql/1565.txt">Unique Orders and Customers Per Month (E)</a> <br />
-</p>
-</details>
 
 
 
@@ -1527,4 +1431,3 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   https://cp-algorithms.com/graph/2SAT.html#toc-tgt-2
 
   
-
