@@ -1,0 +1,33 @@
+class Solution {
+    public int[] shortestToChar(String s, char T) {
+        int res[]=new int[s.length()];
+        int pre=-1000000;
+        int post=-1;
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)==T){
+                post=i;
+                break;
+            }
+        }
+        
+        for(int i=0;i<s.length();i++){
+            if(i==post){
+                pre=post;
+                int j=i+1;
+                while(j<s.length()&&s.charAt(j)!=T){
+                    j++;
+                }
+                if(j>=s.length()){
+                    post=1000000;
+                }else{
+                    post=j;
+                }
+                
+            }
+            else{
+                res[i]=Math.min(Math.abs(i-pre),Math.abs(post-i));
+            }
+        }
+        return res;
+    }
+}
