@@ -1,0 +1,120 @@
+Sort 后 用Trie 找最长的前缀
+
+
+Given an array of n distinct non-empty strings, you need to generate minimal possible abbreviations for every word following rules below.
+
+Begin with the first character and then the number of characters abbreviated, which followed by the last character.
+If there are any conflict, that is more than one words share the same abbreviation, a longer prefix is used instead of only the first character until making the map from word to abbreviation become unique. In other words, a final abbreviation cannot map to more than one original words.
+If the abbreviation doesn't make the word shorter, then keep it as original.
+Example:
+Input: ["like", "god", "internal", "me", "internet", "interval", "intension", "face", "intrusion"]
+Output: ["l2e","god","internal","me","i6t","interval","inte4n","f2e","intr4n"]
+Note:
+Both n and the length of each word will not exceed 400.
+The length of each word is greater than 1.
+The words consist of lowercase English letters only.
+The return answers should be in the same order as the original array.
+
+
+
+
+
+
+
+
+
+class Solution {
+    Map<String,Integer>id=new HashMap<>();
+    String res[];
+    public List<String> wordsAbbreviation(List<String> dict) {
+        Map<Integer,List<String>>map=new HashMap<>();
+        res=new String[dict.size()];
+        
+        for(int i=0;i<dict.size();i++){
+            String s=dict.get(i);
+            int n=s.length();
+            id.put(s,i);
+            if(!map.containsKey(n))map.put(n,new ArrayList<>());
+            map.get(n).add(s);
+        }
+        
+        
+        for(Integer key:map.keySet()){
+            List<String>list=map.get(key);
+            subpro1(list);
+        }
+        
+        
+        List<String>ans=new ArrayList<>();
+        for(String s:res){
+            ans.add(s);
+        }
+        return ans;
+    }
+    
+    public void subpro1(List<String>A){
+        Map<String,List<String>>map=new HashMap<>();
+        for(String s:A){
+            String key=s.charAt(0)+""+s.charAt(s.length()-1);
+            if(!map.containsKey(key))map.put(key,new ArrayList<>());
+            map.get(key).add(s);
+        }
+        
+        for(String key:map.keySet()){
+            List<String>list=map.get(key);
+            subpro2(list);
+        }
+    }
+    
+    public void subpro2(List<String>A){
+        Trie trie[]=new Trie[26];
+        for(String s:A){
+            insert(trie,s,0);
+        }
+        
+        for(String s:A){
+            int index=id.get(s);
+            if(s.length()<=3){
+                res[index]=s;
+            }
+            else{
+                int pre=search(trie,s,0,1);
+                int n=s.length();
+                String t=s.substring(0,pre);
+                
+                int num=n-t.length()-1;
+                if(num==1||num==0){
+                    t=s;
+                }
+                else{
+                    t=t+num+s.charAt(n-1);
+                }
+                res[index]=t;
+            }
+        }
+    }
+    
+    public int search(Trie trie[],String word,int index,int level){
+        int i=word.charAt(index)-'a';
+        if(trie[i].cnt==1){
+            return level;
+        }
+        else{
+            return search(trie[i].childs,word,index+1,level+1);
+        }
+    }
+    
+    public void insert(Trie trie[],String word,int index){
+        if(index>=word.length())return;
+        int i=word.charAt(index)-'a';
+        if(trie[i]==null)trie[i]=new Trie();
+        trie[i].cnt++;
+        insert(trie[i].childs,word,index+1);
+    }
+    
+    class Trie{
+        Trie childs[]=new Trie[26];
+        char c=' ';
+        int cnt=0;
+    }
+}
