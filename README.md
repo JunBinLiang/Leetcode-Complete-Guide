@@ -162,6 +162,103 @@
 </p>
 </details>
 
+<details><summary>LinkedList</summary>
+<br/>
+Note: LinkedList can be used as stack or queue or deque<br/><br/>
+<p>
+#2. <a href="./code/2.txt">Add Two Numbers (M-) 1300</a> <br />
+#19. <a href="./code/19.txt">Remove Nth Node From End of List (M-) 1400</a> <br />
+#24. <a href="./code/24.txt">Swap Nodes in Pairs (M) 1500</a> <br />
+#25. <a href="./code/25.txt">Reverse Nodes in k-Group (H-) 1700</a> <br />
+#82. <a href="./code/82.txt">Remove Duplicates from Sorted List II (M-) 1300</a> <br />
+#83. <a href="./code/83.txt">Remove Duplicates from Sorted List (E) 1000</a> <br />
+#86. <a href="./code/86.txt">Partition List (M-) 1300</a> <br />
+#92. <a href="./code/92.txt">Reverse LinkedList II (M) 1500</a> <br />
+#141. <a href="./code/1000.txt">Linked List Cycle (E) 141</a> <br />
+#147. <a href="./code/147.txt">Insertion Sort List (M-) 1200</a> <br />
+#203. <a href="./code/203.txt">Remove Linked List Elements (E) 900</a> <br />
+#237. <a href="./code/237.txt">Delete Node in a Linked List(E) 1000</a> <br />
+#328. <a href="./code/328.txt">Odd Even Linked List (M-) 1300</a> <br />
+#341. <a href="./code/341.txt">Flatten Nested List Iterator (M-) 1400</a> <br />
+#430. <a href="./code/430.txt">Flatten a Multilevel Doubly Linked List (M) 1500</a> <br />
+#817. <a href="./code/817.txt">Linked List Components (M-) 1300</a> <br />
+#876. <a href="./code/876.txt">Middle of the Linked List (E) 900</a> <br />
+#950. <a href="./code/950.txt">Reveal Cards In Increasing Order (M) 1500</a> <br />
+#1669. <a href="./code/1669.txt">Merge In Between Linked Lists (E) 1000</a> <br />
+</p>
+</details>
+
+<details><summary>String</summary>
+<p>
+#6. <a href="./code/6.txt">ZigZag Conversion (M-) 1300</a> <br />
+#9. <a href="./code/9.txt">Palindrom Number (E) 900</a> <br />
+#28. <a href="./code/28.txt">Implement strStr(M) 1500 (KMP)</a> <br />
+#49. <a href="./code/49.txt">Group Anagrams (M-) 1300</a> <br />
+#151. <a href="./code/151.txt">Reverse Words in a String (M-) 1300</a> <br />
+#214. <a href="./code/214.txt">Shortest Palindromem (H-) (KMP) 1700</a> <br />
+#242. <a href="./code/242.txt">Valid Anagram (E) 900</a> <br />
+#290. <a href="./code/290.txt">Word Pattern (E) 1000</a> <br />
+#336. <a href="./code/336.txt">Palindrome Pairs (H) 1800</a> <br />
+#696. <a href="./code/696.txt">Count Binary Substrings (E) 1000</a> <br />
+#833. <a href="./code/833.txt">Find And Replace in String (M) 1500</a><br />
+#811. <a href="./code/811.txt">Subdomain Visit Count (E) 800</a> <br />
+#859. <a href="./code/859.txt">Buddy Strings (E) 1000</a> <br />
+#906. <a href="./code/906.txt">Super Palindrom (H) 1800</a> <br />
+#936. <a href="./code/936.txt">Stamping The Sequence (H+) 2300</a> <br />
+#953. <a href="./code/953.txt">Verifying an Alien Dictionary (E) 1000</a> <br />
+#1106. <a href="./code/1106.txt">Parsing A Boolean Expression (H-) 1700</a> <br />
+#1163. <a href="./code/1163.txt">Last Substring in Lexicographical Order (H-) 1700</a> <br />
+#1370. <a href="./code/1370.txt">Increasing Decreasing String (E) 900</a> <br />
+#1446. <a href="./code/1446.txt">Consecutive Characters (E) 900</a> <br />
+#1616. <a href="./code/1616.txt">Split Two Strings to Make Palindrome (M+) 1600</a> <br />
+#1624. <a href="./code/1624.txt">Largest Substring Between Two Equal Characters (E) 900</a> <br />
+#1678. <a href="./code/1678.txt">Goal Parser Interpretation (E) 900</a> <br />
+#1694. <a href="./code/1694.txt">Reformat Phone Number (E) 900</a> <br />
+</p>
+</details>
+
+
+<details><summary>Tree</summary>
+<p>
+#95. <a href="./code/95.txt">Unique Binary Search Trees II(M+) 1600</a> <br />
+#96. <a href="./code/96.txt">Unique Binary Search Trees (M+) 1600</a> <br />
+#98. <a href="./code/98.txt">Validate Binary Search Tree (M) 1500</a> <br />
+#101. <a href="./code/101.txt">Symmetric Tree (M-) 1300</a> <br />
+#110. <a href="./code/110.txt">Balanced Binary Tree  (E) 900</a> <br />
+#173. <a href="./code/173.txt">Binary Search Tree Iterator  (M) 1500</a> <br />
+#222. <a href="./code/222.txt">Count Complete Tree Nodes  (M) 1500</a> <br />
+#235. <a href="./code/235.txt">Lowest Common Ancestor of a Binary Search Tree  (E+) 1100</a> <br />
+#236. <a href="./code/236.txt">Lowest Common Ancestor of a Binary Tree   (M-) 1400</a> <br />
+#257. <a href="./code/257.txt">Binary Tree Paths (E) 1000</a> <br />
+#297. <a href="./code/297.txt">Serialize and Deserialize Binary Tree (H-) 1700</a> <br />
+#404. <a href="./code/404.txt">Sum of Left Leaves (E) 900</a> <br />
+#437. <a href="./code/437.txt">Path Sum III(M-) 1400</a> <br />
+#606. <a href="./code/606.txt">Construct String from Binary Tree (E+) 1100</a> <br />
+#617. <a href="./code/617.txt">Merge Binary Tree (E) 1000</a> <br />
+#623. <a href="./code/623.txt">Add One Row to Tree (M-) 1300</a> <br />
+#654. <a href="./code/654.txt">Maximum Binary Tree (M-) 1400</a> <br />
+#669. <a href="./code/669.txt">Trim a Binary Search Tree (M-) 1400</a> <br />
+#687. <a href="./code/687.txt">Longest Univalue Path(M) 1500</a>  <br />
+#783. <a href="./code/783.txt">Minimum Distance Between BST Nodes (E) 900</a> <br />
+#814. <a href="./code/814.txt">Binary Tree Pruning (M-) 1200</a> <br />
+#872. <a href="./code/872.txt">Leaf-Similar Trees (E) 900</a> <br />
+#971. <a href="./code/971.txt">Flip Binary Tree To Match Preorder Traversal (M) 1500</a> <br />
+#993. <a href="./code/993.txt">Cousins in Binary Tree (E) 900</a> <br />
+#1026. <a href="./code/1026.txt">Maximum Difference Between Node and Ancestor (M-) 1400</a> <br />
+#1028. <a href="./code/1028.txt">Recover a Tree From Preorder Traversal (H-) 1700</a> <br />
+#1038. <a href="./code/1038.txt">Binary Search Tree to Greater Sum Tree (M-) 1400</a> <br />
+#1080. <a href="./code/1080.txt">Insufficient Nodes in Root to Leaf Paths (M) 1500</a> <br />
+#1110. <a href="./code/1110.txt">Delete Nodes And Return Forest (M-) 1400</a> <br />
+#1123. <a href="./code/1123.txt">Lowest Common Ancestor of Deepest Leaves (M) 1500</a> <br />
+#1339. <a href="./code/1339.txt">Maximum Product of Splitted Binary Tree (M) 1500</a> <br />
+#1372. <a href="./code/1372.txt">Longest ZigZag Path in a Binary Tree (M) 1500</a> <br />
+#1457. <a href="./code/1457.txt">Pseudo-Palindromic Paths in a Binary Tree (M-) 1300</a> <br />
+#1490. <a href="./code/1490.txt">Clone N-tree (M-) 1300</a> <br />
+#1516. <a href="./code/1516.txt">Move Sub-Tree of N-Ary Tree (H-) 1700</a> <br />
+#1617. <a href="./code/1617.txt">Count Subtrees With Max Distance Between Cities (H) 1800</a> <br />
+</p>
+</details>
+
 
 <details><summary>BFS</summary>
 <p>
@@ -224,6 +321,58 @@
 </details>
 
 
+<details><summary>Graph</summary>
+<p>
+#126. <a href="./code/126.txt">Word Ladder II(H) 1900</a> <br />
+#133. <a href="./code/133.txt">Clone Graph(M) 1500</a> <br />
+#785. <a href="./code/785.txt">Is Graph Bipartite?(M) 1500</a> <br />
+#802. <a href="./code/802.txt">Find Eventual Safe States(M+) 1700</a> <br />
+#863. <a href="./code/863.txt">All Nodes Distance K in Binary Tree(M) 1500</a> <br />
+#886. <a href="./code/886.txt">Possible Bipartition(M) 1500</a> <br />
+#1042. <a href="./code/1042.txt">Flower Planting With No Adjacent(E+) 1300</a> <br />
+#1153. <a href="./code/1153.txt">String Transform into another String (H-) 1700</a> <br />
+#1192. <a href="./code/1192.txt">Critical Connection (H) 1900</a> <br />
+#1245. <a href="./code/1245.txt">Tree Diameter (M-) 1400</a> <br />
+#1334. <a href="./code/1334.txt">Find the City With the Smallest Number of Neighbors at a Threshold Distance (M) 1500 (Floyd-Warshall)</a> <br />
+#1361. <a href="./code/1361.txt">Validate Binary Tree Nodes (M) 1500</a> <br />
+#1522. <a href="./code/1522.txt">Diameter of N-Ary Tree (M-) 1300</a> <br />
+#1568. <a href="./code/1568.txt">Minimum Number of Days to Disconnect Island (H-) 1700</a> <br />
+#1615. <a href="./code/1615.txt">Maximal Network Rank (M) 1500</a> <br />
+</p>
+</details>
+
+<details><summary>Binary Search</summary>
+<p>
+#34. <a href="./code/34.txt">Find First and Last Position of Element in Sorted Array (M-) 1300</a> <br />
+#35. <a href="./code/35.txt">Search Insert Position (E) 1000</a> <br />
+#69. <a href="./code/69.txt">Sqrt(x) (E+) 1100</a> <br />
+#153. <a href="./code/153.txt">Find Minimum in Rotated Sorted Array (M+) 1600</a> <br />
+#154. <a href="./code/154.txt">Find Minimum in Rotated Sorted Array II (H-) 1700</a> <br />
+#275. <a href="./code/275.txt">H Index II (M-) 1400</a> <br />
+#302. <a href="./code/302.txt">包含全部黑色像素的最小矩形 (H-) 1700</a> <br />
+#352. <a href="./code/352.txt">Data Stream as Disjoint Intervals (H-) 1700</a> <br />
+#373. <a href="./code/373.txt">Find K Pairs with Smallest Sums (M) 1500</a> <br />
+#374. <a href="./code/374.txt">Guess Number Higher or Lower (E) 800</a> <br />
+#436. <a href="./code/436.txt">Find Right Interval (M) 1500</a> <br />
+#475. <a href="./code/475.txt">Heaters (M) 1500</a> <br />
+#483. <a href="./code/483.txt">Smallest Good Base (H) 1800</a> <br />
+#540. <a href="./code/540.txt">Single Element in a Sorted Array (M-) 1400</a> <br />
+#704. <a href="./code/704.txt">Binary Search(E) 900</a> <br />
+#744. <a href="./code/744.txt">Find Smallest Letter Greater Than Target (M-) 1200</a> <br />
+#786. <a href="./code/786.txt">K-th Smallest Prime Fraction (H) 1800</a> <br />
+#792. <a href="./code/792.txt">Number of Matching Subsequences (M+) 1600</a> <br />
+#911. <a href="./code/911.txt">Online Election(M) 1500</a> <br />
+#1095. <a href="./code/1095.txt">Find in Mountain Array (H-) 1700</a> <br />
+#1292. <a href="./code/1292.txt">Maximum Side Length of a Square with Sum Less than or Equal to Threshold (M+) 1600</a> <br />
+#1533. <a href="./code/1533.txt">Find the Index of the Large Integer (M) 1500</a> <br />
+#1552. <a href="./code/1552.txt">Magnetic Force Between Two Balls (M+) 1600</a> <br />
+#1574. <a href="./code/1574.txt">Shortest Subarray to be Removed to Make Array Sorted (M+) 1600</a> <br />
+#LCP08. <a href="./code/LCP08.txt">剧情触发时间 (M) 1600</a> <br />
+#LCP12. <a href="./code/LCP12.txt">小张刷题计划 (M) 1500</a> <br />
+</p>
+</details>
+
+
 <details><summary>Stack</summary>
 <p>
 #56. <a href="./code/56.txt">Merge Intervals (M-) 1400</a> <br />
@@ -251,31 +400,7 @@
 </details>
 
 
-<details><summary>LinkedList</summary>
-<br/>
-Note: LinkedList can be used as stack or queue or deque<br/><br/>
-<p>
-#2. <a href="./code/2.txt">Add Two Numbers (M-) 1300</a> <br />
-#19. <a href="./code/19.txt">Remove Nth Node From End of List (M-) 1400</a> <br />
-#24. <a href="./code/24.txt">Swap Nodes in Pairs (M) 1500</a> <br />
-#25. <a href="./code/25.txt">Reverse Nodes in k-Group (H-) 1700</a> <br />
-#82. <a href="./code/82.txt">Remove Duplicates from Sorted List II (M-) 1300</a> <br />
-#83. <a href="./code/83.txt">Remove Duplicates from Sorted List (E) 1000</a> <br />
-#86. <a href="./code/86.txt">Partition List (M-) 1300</a> <br />
-#92. <a href="./code/92.txt">Reverse LinkedList II (M) 1500</a> <br />
-#141. <a href="./code/1000.txt">Linked List Cycle (E) 141</a> <br />
-#147. <a href="./code/147.txt">Insertion Sort List (M-) 1200</a> <br />
-#203. <a href="./code/203.txt">Remove Linked List Elements (E) 900</a> <br />
-#237. <a href="./code/237.txt">Delete Node in a Linked List(E) 1000</a> <br />
-#328. <a href="./code/328.txt">Odd Even Linked List (M-) 1300</a> <br />
-#341. <a href="./code/341.txt">Flatten Nested List Iterator (M-) 1400</a> <br />
-#430. <a href="./code/430.txt">Flatten a Multilevel Doubly Linked List (M) 1500</a> <br />
-#817. <a href="./code/817.txt">Linked List Components (M-) 1300</a> <br />
-#876. <a href="./code/876.txt">Middle of the Linked List (E) 900</a> <br />
-#950. <a href="./code/950.txt">Reveal Cards In Increasing Order (M) 1500</a> <br />
-#1669. <a href="./code/1669.txt">Merge In Between Linked Lists (E) 1000</a> <br />
-</p>
-</details>
+
 
 
 <details><summary>Greedy</summary>
@@ -325,125 +450,6 @@ Note: LinkedList can be used as stack or queue or deque<br/><br/>
 #1663. <a href="./code/1663.txt">Smallest String With A Given Numeric Value (M-) 1400</a> <br />
 #1665. <a href="./code/1665.txt">Minimum Initial Energy to Finish Tasks (H-) 1700</a> <br />
 #LCP 06. <a href="./code/LCP06.txt">拿硬币 (E) 800</a> <br />
-</p>
-</details>
-
-
-<details><summary>Graph</summary>
-<p>
-#126. <a href="./code/126.txt">Word Ladder II(H) 1900</a> <br />
-#133. <a href="./code/133.txt">Clone Graph(M) 1500</a> <br />
-#785. <a href="./code/785.txt">Is Graph Bipartite?(M) 1500</a> <br />
-#802. <a href="./code/802.txt">Find Eventual Safe States(M+) 1700</a> <br />
-#863. <a href="./code/863.txt">All Nodes Distance K in Binary Tree(M) 1500</a> <br />
-#886. <a href="./code/886.txt">Possible Bipartition(M) 1500</a> <br />
-#1042. <a href="./code/1042.txt">Flower Planting With No Adjacent(E+) 1300</a> <br />
-#1153. <a href="./code/1153.txt">String Transform into another String (H-) 1700</a> <br />
-#1192. <a href="./code/1192.txt">Critical Connection (H) 1900</a> <br />
-#1245. <a href="./code/1245.txt">Tree Diameter (M-) 1400</a> <br />
-#1334. <a href="./code/1334.txt">Find the City With the Smallest Number of Neighbors at a Threshold Distance (M) 1500 (Floyd-Warshall)</a> <br />
-#1361. <a href="./code/1361.txt">Validate Binary Tree Nodes (M) 1500</a> <br />
-#1522. <a href="./code/1522.txt">Diameter of N-Ary Tree (M-) 1300</a> <br />
-#1568. <a href="./code/1568.txt">Minimum Number of Days to Disconnect Island (H-) 1700</a> <br />
-#1615. <a href="./code/1615.txt">Maximal Network Rank (M) 1500</a> <br />
-</p>
-</details>
-
-
-<details><summary>Maxflow - Bipartite Matching (二分图匹配)</summary>
-<br/>
-1. The size of a maximum flow in the resulting graph equals the size of a maximum matching in the original graph.<br/>
-2. Size of a minimum node cover always equals the size of a maximum matching. <br/>
-3. The complement of a maximum independent set is a minimum vertex cover(MAX Flow).<br/>
-Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/maximum-independent-set-in-bipartite-graphs.html<br/>
-最大流: https://blog.csdn.net/chinacoy/article/details/45040897 <br/><br/>
-<p>
-#1349. <a href="./code/1349.txt">Maximum Students Taking Exam (H+) 2000</a> <br />
-#LCP04. <a href="./code/LCP04.txt">覆盖 (H+) 2000</a> <br />
-</p>
-</details>
-
-
-<details><summary>Binary Search</summary>
-<p>
-#34. <a href="./code/34.txt">Find First and Last Position of Element in Sorted Array (M-) 1300</a> <br />
-#35. <a href="./code/35.txt">Search Insert Position (E) 1000</a> <br />
-#69. <a href="./code/69.txt">Sqrt(x) (E+) 1100</a> <br />
-#153. <a href="./code/153.txt">Find Minimum in Rotated Sorted Array (M+) 1600</a> <br />
-#154. <a href="./code/154.txt">Find Minimum in Rotated Sorted Array II (H-) 1700</a> <br />
-#275. <a href="./code/275.txt">H Index II (M-) 1400</a> <br />
-#302. <a href="./code/302.txt">包含全部黑色像素的最小矩形 (H-) 1700</a> <br />
-#352. <a href="./code/352.txt">Data Stream as Disjoint Intervals (H-) 1700</a> <br />
-#373. <a href="./code/373.txt">Find K Pairs with Smallest Sums (M) 1500</a> <br />
-#374. <a href="./code/374.txt">Guess Number Higher or Lower (E) 800</a> <br />
-#436. <a href="./code/436.txt">Find Right Interval (M) 1500</a> <br />
-#475. <a href="./code/475.txt">Heaters (M) 1500</a> <br />
-#483. <a href="./code/483.txt">Smallest Good Base (H) 1800</a> <br />
-#540. <a href="./code/540.txt">Single Element in a Sorted Array (M-) 1400</a> <br />
-#704. <a href="./code/704.txt">Binary Search(E) 900</a> <br />
-#744. <a href="./code/744.txt">Find Smallest Letter Greater Than Target (M-) 1200</a> <br />
-#786. <a href="./code/786.txt">K-th Smallest Prime Fraction (H) 1800</a> <br />
-#792. <a href="./code/792.txt">Number of Matching Subsequences (M+) 1600</a> <br />
-#911. <a href="./code/911.txt">Online Election(M) 1500</a> <br />
-#1095. <a href="./code/1095.txt">Find in Mountain Array (H-) 1700</a> <br />
-#1292. <a href="./code/1292.txt">Maximum Side Length of a Square with Sum Less than or Equal to Threshold (M+) 1600</a> <br />
-#1533. <a href="./code/1533.txt">Find the Index of the Large Integer (M) 1500</a> <br />
-#1552. <a href="./code/1552.txt">Magnetic Force Between Two Balls (M+) 1600</a> <br />
-#1574. <a href="./code/1574.txt">Shortest Subarray to be Removed to Make Array Sorted (M+) 1600</a> <br />
-#LCP08. <a href="./code/LCP08.txt">剧情触发时间 (M) 1600</a> <br />
-#LCP12. <a href="./code/LCP12.txt">小张刷题计划 (M) 1500</a> <br />
-</p>
-</details>
-
-
-<details><summary>Tree</summary>
-<p>
-#95. <a href="./code/95.txt">Unique Binary Search Trees II(M+) 1600</a> <br />
-#96. <a href="./code/96.txt">Unique Binary Search Trees (M+) 1600</a> <br />
-#98. <a href="./code/98.txt">Validate Binary Search Tree (M) 1500</a> <br />
-#101. <a href="./code/101.txt">Symmetric Tree (M-) 1300</a> <br />
-#110. <a href="./code/110.txt">Balanced Binary Tree  (E) 900</a> <br />
-#173. <a href="./code/173.txt">Binary Search Tree Iterator  (M) 1500</a> <br />
-#222. <a href="./code/222.txt">Count Complete Tree Nodes  (M) 1500</a> <br />
-#235. <a href="./code/235.txt">Lowest Common Ancestor of a Binary Search Tree  (E+) 1100</a> <br />
-#236. <a href="./code/236.txt">Lowest Common Ancestor of a Binary Tree   (M-) 1400</a> <br />
-#257. <a href="./code/257.txt">Binary Tree Paths (E) 1000</a> <br />
-#297. <a href="./code/297.txt">Serialize and Deserialize Binary Tree (H-) 1700</a> <br />
-#404. <a href="./code/404.txt">Sum of Left Leaves (E) 900</a> <br />
-#437. <a href="./code/437.txt">Path Sum III(M-) 1400</a> <br />
-#606. <a href="./code/606.txt">Construct String from Binary Tree (E+) 1100</a> <br />
-#617. <a href="./code/617.txt">Merge Binary Tree (E) 1000</a> <br />
-#623. <a href="./code/623.txt">Add One Row to Tree (M-) 1300</a> <br />
-#654. <a href="./code/654.txt">Maximum Binary Tree (M-) 1400</a> <br />
-#669. <a href="./code/669.txt">Trim a Binary Search Tree (M-) 1400</a> <br />
-#687. <a href="./code/687.txt">Longest Univalue Path(M) 1500</a>  <br />
-#783. <a href="./code/783.txt">Minimum Distance Between BST Nodes (E) 900</a> <br />
-#814. <a href="./code/814.txt">Binary Tree Pruning (M-) 1200</a> <br />
-#872. <a href="./code/872.txt">Leaf-Similar Trees (E) 900</a> <br />
-#971. <a href="./code/971.txt">Flip Binary Tree To Match Preorder Traversal (M) 1500</a> <br />
-#993. <a href="./code/993.txt">Cousins in Binary Tree (E) 900</a> <br />
-#1026. <a href="./code/1026.txt">Maximum Difference Between Node and Ancestor (M-) 1400</a> <br />
-#1028. <a href="./code/1028.txt">Recover a Tree From Preorder Traversal (H-) 1700</a> <br />
-#1038. <a href="./code/1038.txt">Binary Search Tree to Greater Sum Tree (M-) 1400</a> <br />
-#1080. <a href="./code/1080.txt">Insufficient Nodes in Root to Leaf Paths (M) 1500</a> <br />
-#1110. <a href="./code/1110.txt">Delete Nodes And Return Forest (M-) 1400</a> <br />
-#1123. <a href="./code/1123.txt">Lowest Common Ancestor of Deepest Leaves (M) 1500</a> <br />
-#1339. <a href="./code/1339.txt">Maximum Product of Splitted Binary Tree (M) 1500</a> <br />
-#1372. <a href="./code/1372.txt">Longest ZigZag Path in a Binary Tree (M) 1500</a> <br />
-#1457. <a href="./code/1457.txt">Pseudo-Palindromic Paths in a Binary Tree (M-) 1300</a> <br />
-#1490. <a href="./code/1490.txt">Clone N-tree (M-) 1300</a> <br />
-#1516. <a href="./code/1516.txt">Move Sub-Tree of N-Ary Tree (H-) 1700</a> <br />
-#1617. <a href="./code/1617.txt">Count Subtrees With Max Distance Between Cities (H) 1800</a> <br />
-</p>
-</details>
-
-
-<details><summary>Trie</summary>
-<p>
-#208. <a href="./code/208.txt">Implement Trie (Prefix Tree) (M) 1500</a> <br />
-#211. <a href="./code/211.txt">Design Add and Search Words Data Structure (M) 1500</a> <br />
-#421. <a href="./code/421.txt">Maximum XOR of Two Numbers in an Array (M+) 1600</a> <br />
-#588. <a href="./code/588.txt">Design In-Memory File System (H) 1800</a> <br />
 </p>
 </details>
 
@@ -607,6 +613,31 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 </p>
 </details>
 
+
+<details><summary>Maxflow - Bipartite Matching (二分图匹配)</summary>
+<br/>
+1. The size of a maximum flow in the resulting graph equals the size of a maximum matching in the original graph.<br/>
+2. Size of a minimum node cover always equals the size of a maximum matching. <br/>
+3. The complement of a maximum independent set is a minimum vertex cover(MAX Flow).<br/>
+Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/maximum-independent-set-in-bipartite-graphs.html<br/>
+最大流: https://blog.csdn.net/chinacoy/article/details/45040897 <br/><br/>
+<p>
+#1349. <a href="./code/1349.txt">Maximum Students Taking Exam (H+) 2000</a> <br />
+#LCP04. <a href="./code/LCP04.txt">覆盖 (H+) 2000</a> <br />
+</p>
+</details>
+
+
+
+<details><summary>Trie</summary>
+<p>
+#208. <a href="./code/208.txt">Implement Trie (Prefix Tree) (M) 1500</a> <br />
+#211. <a href="./code/211.txt">Design Add and Search Words Data Structure (M) 1500</a> <br />
+#421. <a href="./code/421.txt">Maximum XOR of Two Numbers in an Array (M+) 1600</a> <br />
+#588. <a href="./code/588.txt">Design In-Memory File System (H) 1800</a> <br />
+</p>
+</details>
+
 <details><summary>Geometry</summary>
 <p>
 #963. <a href="./code/963.txt">Minimum Area Rectangle II (M+) 1700</a> <br />
@@ -710,35 +741,6 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 </p>
 </details>
 
-
-<details><summary>String</summary>
-<p>
-#6. <a href="./code/6.txt">ZigZag Conversion (M-) 1300</a> <br />
-#9. <a href="./code/9.txt">Palindrom Number (E) 900</a> <br />
-#28. <a href="./code/28.txt">Implement strStr(M) 1500 (KMP)</a> <br />
-#49. <a href="./code/49.txt">Group Anagrams (M-) 1300</a> <br />
-#151. <a href="./code/151.txt">Reverse Words in a String (M-) 1300</a> <br />
-#214. <a href="./code/214.txt">Shortest Palindromem (H-) (KMP) 1700</a> <br />
-#242. <a href="./code/242.txt">Valid Anagram (E) 900</a> <br />
-#290. <a href="./code/290.txt">Word Pattern (E) 1000</a> <br />
-#336. <a href="./code/336.txt">Palindrome Pairs (H) 1800</a> <br />
-#696. <a href="./code/696.txt">Count Binary Substrings (E) 1000</a> <br />
-#833. <a href="./code/833.txt">Find And Replace in String (M) 1500</a><br />
-#811. <a href="./code/811.txt">Subdomain Visit Count (E) 800</a> <br />
-#859. <a href="./code/859.txt">Buddy Strings (E) 1000</a> <br />
-#906. <a href="./code/906.txt">Super Palindrom (H) 1800</a> <br />
-#936. <a href="./code/936.txt">Stamping The Sequence (H+) 2300</a> <br />
-#953. <a href="./code/953.txt">Verifying an Alien Dictionary (E) 1000</a> <br />
-#1106. <a href="./code/1106.txt">Parsing A Boolean Expression (H-) 1700</a> <br />
-#1163. <a href="./code/1163.txt">Last Substring in Lexicographical Order (H-) 1700</a> <br />
-#1370. <a href="./code/1370.txt">Increasing Decreasing String (E) 900</a> <br />
-#1446. <a href="./code/1446.txt">Consecutive Characters (E) 900</a> <br />
-#1616. <a href="./code/1616.txt">Split Two Strings to Make Palindrome (M+) 1600</a> <br />
-#1624. <a href="./code/1624.txt">Largest Substring Between Two Equal Characters (E) 900</a> <br />
-#1678. <a href="./code/1678.txt">Goal Parser Interpretation (E) 900</a> <br />
-#1694. <a href="./code/1694.txt">Reformat Phone Number (E) 900</a> <br />
-</p>
-</details>
 
 
 <details><summary>Game Theory</summary>
