@@ -1,0 +1,50 @@
+// Don't place your source in a package
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.math.*; 
+
+public class Main {
+	static Scanner in = new Scanner(System.in);
+	public static void main (String[] args) throws java.lang.Exception {
+	    int T=Int();
+		for(int t=0;t<T;t++){
+			int n=Int();
+			int A[]=new int[n];
+			
+			for(int i=0;i<n;i++){
+				A[i]=Int();
+			}
+			
+			Solution sol=new Solution();
+			sol.solution(A);
+			
+		}
+		
+	}
+	
+	
+	
+	public static long Long(){
+		return in.nextLong();
+	}
+	public static int Int(){
+		return in.nextInt();
+	}
+	public static String Str(){
+		return in.next();
+	}
+}
+ 
+class Solution{
+	public void solution(int A[]){
+		
+	}
+}
+ 
+
+ 
+ 
+ 
+ 
+	
