@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
  
-int solve(vector<int>&A){
+void solve(vector<int>&A){
 
 }
  
@@ -16,8 +16,7 @@ int main()
             int a;cin>>a;
             A.push_back(a);
         }
-        int res=solve(A);
-        cout<<res<<endl;
+        solve(A);
     }
  
     return 0;
