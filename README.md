@@ -69,7 +69,7 @@
 |  568  |[Maximum Vacation Days ](./code/568.txt) | (H-) 1700  | |  582  |[Kill Process ](./code/582.txt) | (M-) 1400  |
 |  604  |[ Design Compressed String Iterator ](./code/604.txt) | (E) 1000  |
 |  624  |[Maximum Distance in Arrays ](./code/624.txt) | (M-) 1400  ||  625  |[Minimum Factorization ](./code/625.txt) | (M-) 1400  |
-|  634  |[ Find the Derangement of An Array ](./code/634.txt) | (H) 1800  |
+|  634  |[ Find the Derangement of An Array ](./code/634.txt) | (H) 1800  ||  642  |[Design Search Autocomplete System ](./code/642.txt) | (H) 1800 |
 |  644  |[Maximum Average Subarray II ](./code/644.txt) | (H) 1800 ||  651  |[4 Keys Keyboard](./code/651.txt) | (M+) 1600  |
 |  656  |[Coin Path](./code/656.txt) | (H-) 1700  ||  660  |[ Remove 9](./code/660.txt) | (M) 1500  |
 |  663  |[Equal Tree Partition](./code/663.txt) | (M-) 1400  |
