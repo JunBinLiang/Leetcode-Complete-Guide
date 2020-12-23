@@ -1,0 +1,65 @@
+Given a positive integer a, find the smallest positive integer b whose multiplication of each digit equals to a.
+
+If there is no answer or the answer is not fit in 32-bit signed integer, then return 0.
+
+Example 1
+Input:
+
+48 
+Output:
+68
+Example 2
+Input:
+
+15
+Output:
+35
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Solution {
+    boolean good=true;
+    public int smallestFactorization(int n) {
+        if(n<10)return n;
+        int d=-1;
+        for(int i=9;i>=2;i--){
+            if(n%i==0){
+                d=i;
+                break;
+            }
+        }
+        long res=dfs(n);
+        if(!good||res<0)return 0;
+        return (int)(res);
+    }
+    
+    public long dfs(int n){
+        if(n<10)return n;
+        int d=-1;
+        for(int i=9;i>=2;i--){
+            if(n%i==0){
+                d=i;
+                break;
+            }
+        }
+        if(d==-1){
+            good=false;
+            return 0;
+        }
+        long res= dfs(n/d)*10+d;
+        if(res>Integer.MAX_VALUE){
+            good=false;
+        }
+        return res;
+    }
+}
