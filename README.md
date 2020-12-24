@@ -142,6 +142,7 @@
 #495. [Teemo Attacking (M-) 1200](./code/495.txt) <br />
 #599. [Minimum Index Sum of Two Lists (E) 900](./code/599.txt) <br />
 #622. [ Design Circular Queue (M-) 1400](./code/622.txt) <br />
+#611. [Image Smoother (E) 800](./code/611.txt) <br />
 #665. [ Non-decreasing Array (E+) 1200](./code/665.txt) <br />
 #795. [Number of Subarrays with Bounded Maximum (M) 1500](./code/795.txt) <br />
 #797. [All Paths From Source to Target (M) 1500](./code/797.txt) <br />
