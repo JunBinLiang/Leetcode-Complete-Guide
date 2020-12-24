@@ -1,0 +1,37 @@
+class Solution {
+    int res=0;
+    Node trie[]=new Node[26];
+    public int countDistinct(String s) {
+        for(int i=0;i<s.length();i++){
+            insert(trie,s,i);
+        }
+        
+        for(int i=0;i<s.length();i++){
+            find(trie,s,i);
+        }
+        
+        return res;
+    }
+    
+    public void insert(Node trie[],String s,int index){
+		if(index>=s.length())return;
+		int i=s.charAt(index)-'a';
+		if(trie[i]==null)trie[i]=new Node();
+		insert(trie[i].childs,s,index+1);
+	}
+	
+	public void find(Node trie[],String s,int index){
+		if(index>=s.length())return;
+		int i=s.charAt(index)-'a';
+		trie[i].cnt++;
+		if(trie[i].cnt==1){
+			this.res++;
+		}
+		find(trie[i].childs,s,index+1);
+	}
+    
+    class Node{
+        Node childs[]=new Node[26];
+        int cnt=0;
+    }
+}
