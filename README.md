@@ -676,6 +676,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #953. [Verifying an Alien Dictionary (E) 1000](./code/953.txt) <br />
 #1106. [Parsing A Boolean Expression (H-) 1700](./code/1106.txt) <br />
 #1163. [Last Substring in Lexicographical Order (H-) 1700](./code/1163.txt) <br />
+#1309. [Decrypt String from Alphabet to Integer Mapping (E) 1000](./code/1309.txt) <br />
 #1370. [Increasing Decreasing String (E) 900](./code/1370.txt) <br />
 #1446. [Consecutive Characters (E) 900](./code/1446.txt) <br />
 #1616. [Split Two Strings to Make Palindrome (M+) 1600](./code/1616.txt) <br />
