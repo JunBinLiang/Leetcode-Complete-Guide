@@ -959,7 +959,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
  
  ---
  # :punch: CodeForce Contest
- 统计(1800+ 题量)： 120
+ 统计(1800+ 题量)： 121
  
   
   ### Beta Round #3 
@@ -1388,6 +1388,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   371E. [Subway Innovation (Prefix Sum+Math) ](./cf/371E.txt) <br />
   1060E. [Sergey and Subway (Tree + DP) ](./cf/1060E.txt) <br />
   1288D. [Minimax Problem (Binary Search+Greedy+Bit) ](./cf/1288D.txt) <br />
+  1294F. [Three Paths on a Tree (Tree) ](./cf/1294F.txt) <br />
   1288E. [Messenger Simulator (Fenwick Tree) ](./cf/1288E.txt) <br />
   1438C. [Engineer Artem ](./cf/1438C.txt) <br />
   ### 2100<br/>
