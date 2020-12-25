@@ -1320,6 +1320,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    205B.[Little Elephant and Sorting ](./easy/205B.txt) <br />
    1452B.[ Toy Blocks (Greedy) ](./easy/1452B.txt) <br />
    1453B.[ Suffix Operations ](./easy/1453B.txt) <br />
+   1461B.[Find the Spruce (DP) ](./easy/1461B.txt) <br />
    1462D.[ Add to Neighbour and Remove ](./easy/1462D.txt) <br />
    1463B.[Find The Array (Bit + Greedy) ](./easy/1463B.txt) <br />
   
