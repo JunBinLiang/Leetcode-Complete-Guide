@@ -628,6 +628,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1456. [Maximum Number of Vowels in a Substring of Given Length (M-) 1300](./code/1456.txt) <br />
 #1675. [Minimize Deviation in Array (H) 1800](./code/1675.txt) <br />
 #1695. [Maximum Erasure Value (M-) 1400](./code/1695.txt) <br />
+#1703. [Minimum Adjacent Swaps for K Consecutive Ones (H) 1800](./code/1703.txt) <br />
 
 ---
 ### Two Pointer
