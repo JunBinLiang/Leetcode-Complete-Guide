@@ -1340,6 +1340,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   1060C. [Maximum Subrectangle (Brute Force) ](./cf/1060C.txt) <br />
   1077D. [Cutting Out (Binary Search) ](./cf/1077D.txt) <br />
   1288C. [Two Array (Dp) ](./cf/1288C.txt) <br />
+  1294D. [MEX maximizing (Math+Sort) ](./cf/1294D.txt) <br />
   1389B. [Array Walk	 (Dp + Greedy) ](./cf/1389B.txt) <br />
   1452D. [Radio Towers	 (Dp + Mod Inverse) ](./cf/1452D.txt) <br />
   1455D. [Sequence and Swaps	 (Greedy+Sort) ](./cf/1455D.txt) <br />
