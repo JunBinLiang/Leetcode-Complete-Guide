@@ -315,6 +315,7 @@ Note: LinkedList can be used as stack or queue or deque<br/><br/>
 #1642.[Furthest Building You Can Reach (M+) 1600](./code/1642.txt) <br />
 #1663.[Smallest String With A Given Numeric Value (M-) 1400](./code/1663.txt) <br />
 #1665. [Minimum Initial Energy to Finish Tasks (H-) 1700](./code/1665.txt) <br />
+#1702. [Maximum Binary String After Change (M) 1500](./code/1702.txt) <br />
 #LCP 06. [拿硬币 (E) 800](./code/LCP06.txt) <br />
 
 ---
