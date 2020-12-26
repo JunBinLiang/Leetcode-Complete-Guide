@@ -9,3 +9,6 @@ We have 3 stages to solve the problem:<br/><br/>
 [96. Unique Binary Search Trees (M)   ](./code/96.md) <br/>
 [95. Unique Binary Search Trees II (M)   ](./code/95.md) <br/>
 
+## Additional Topic
+Quick Select
+
