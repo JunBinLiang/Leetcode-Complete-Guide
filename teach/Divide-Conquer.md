@@ -1,4 +1,4 @@
-# Divide and Conquer
+# Divide and Conquer  (2020/12/26)
 We have 3 stages to solve the problem:<br/><br/>
 1.Divide the problems into subproblem<br/>
 2.Solve each subproblem<br/>
