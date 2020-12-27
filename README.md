@@ -686,6 +686,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1624. [Largest Substring Between Two Equal Characters (E) 900](./code/1624.txt) <br />
 #1678. [ Goal Parser Interpretation (E) 900](./code/1678.txt) <br />
 #1694. [ Reformat Phone Number (E) 900](./code/1694.txt) <br />
+#1704. [ Determine if String Halves Are Alike (E) 800](./code/1704.txt) <br />
 
 ---
 ### Game Theory
