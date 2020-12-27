@@ -1,0 +1,40 @@
+class Solution {
+    public int[] findBall(int[][] A) {    
+        int n=A.length;
+        int m=A[0].length;
+        int res[]=new int[m];
+        Arrays.fill(res,-1);
+        
+        for(int col=0;col<m;col++){
+            int c=col;
+            int r=0;
+            boolean good=true;
+            while(r<A.length){
+                if(A[r][c]==1){
+                    if(c+1>=m||A[r][c+1]==-1){
+                        good=false;
+                        break;
+                    }
+                    else{
+                        r++;
+                        c++;
+                    }
+                }
+                else{
+                    if(c-1<0||A[r][c-1]==1){
+                        good=false;
+                        break;
+                    }
+                    else{
+                        c--;
+                        r++;
+                    }
+                }
+                
+            }
+            if(!good)continue;
+            res[col]=c;
+        }
+        return res;
+    }
+}
