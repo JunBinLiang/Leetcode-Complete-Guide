@@ -716,6 +716,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1550. [Three Consecutive Odds (E-) 700](./code/1550.txt) <br />
 #1640. [Check Array Formation Through Concatenation (E) 1000](./code/1640.txt) <br />
 #1662. [Check If Two String Arrays are Equivalent (E) 800](./code/1662.txt) <br />
+#1706. [Where Will the Ball Fall (M+) 1600](./code/1706.txt) <br />
 
 ---
 ### Bit
