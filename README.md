@@ -654,6 +654,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #581. [Shortest Unsorted Continuous Subarray (E) 1000](./code/581.txt) <br />
 #703. [ Kth Largest Element in a Stream (E) 1000](./code/703.txt) <br />
 #791. [Custom Sort String (M-) 1300](./code/791.txt) <br />
+#912. [Sort an Array (M-) 1300](./code/912.txt) <br />
 #955. [Delete Columns to Make Sorted II (M+) 1600](./code/955.txt) <br />
 #1030. [Matrix Cells in Distance Order (E) 900](./code/1030.txt) <br />
 #1366. [Rank Teams by Votes (M+) 1600](./code/1366.txt) <br />
