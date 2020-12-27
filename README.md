@@ -422,6 +422,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #211. [Design Add and Search Words Data Structure (M) 1500](./code/211.txt) <br />
 #421. [Maximum XOR of Two Numbers in an Array (M+) 1600](./code/421.txt) <br />
 #588. [Design In-Memory File System (H) 1800](./code/588.txt) <br />
+#1707. [Maximum XOR With an Element From Array (H) 1800](./code/1707.txt) <br />
 
 ---
 ### DP
