@@ -1,0 +1,27 @@
+class Solution {
+    public int magicalString(int n) {
+        int cnt=0;
+        int l=2;
+        List<Integer>A=new ArrayList<>();
+        A.add(1);
+        A.add(2);A.add(2);
+        
+        
+        while(A.size()<n){
+            int rep=A.get(l++);
+            int last=A.get(A.size()-1);
+            int cur=0;
+            if(last==1)cur=2;
+            else cur=1;
+            for(int i=0;i<rep;i++){
+                A.add(cur);
+            }
+        }
+        
+        
+        for(int i=0;i<n;i++){
+            if(A.get(i)==1)cnt++;
+        }
+        return cnt;
+    }
+}
