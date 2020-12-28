@@ -718,6 +718,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #747. [Largest Number At Least Twice of Others (E) 900](./code/747.txt) <br />
 #806. [Number of Lines To Write String (E) 900](./code/806.txt) <br />
 #1071. [Greatest Common Divisor of Strings (E) 900](./code/1071.txt) <br />
+#1170. [Compare Strings by Frequency of the Smallest Character (E) 900](./code/1170.txt) <br />
 #1550. [Three Consecutive Odds (E-) 700](./code/1550.txt) <br />
 #1640. [Check Array Formation Through Concatenation (E) 1000](./code/1640.txt) <br />
 #1662. [Check If Two String Arrays are Equivalent (E) 800](./code/1662.txt) <br />
