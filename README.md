@@ -66,7 +66,8 @@
 |  531  |[Lonely Pixel I](./code/531.txt) | (M-) 1400  ||  544  |[Output Contest Matches ](./code/544.txt) | (M) 1500  |
 |  545  |[Boundary of Binary Tree ](./code/545.txt) | (M) 1500  ||  548  |[Split Array with Equal Sum ](./code/548.txt) | (M) 1500  |
 |  562  |[Longest Line of Consecutive One in Matrix ](./code/562.txt) | (M-) 1400  |
-|  568  |[Maximum Vacation Days ](./code/568.txt) | (H-) 1700  | |  582  |[Kill Process ](./code/582.txt) | (M-) 1400  |
+|  568  |[Maximum Vacation Days ](./code/568.txt) | (H-) 1700  | |  573  |[Squirrel Simulation](./code/573.txt) | (M) 1500  | 
+|  582  |[Kill Process ](./code/582.txt) | (M-) 1400  |
 |  604  |[ Design Compressed String Iterator ](./code/604.txt) | (E) 1000  |
 |  624  |[Maximum Distance in Arrays ](./code/624.txt) | (M-) 1400  ||  625  |[Minimum Factorization ](./code/625.txt) | (M-) 1400  |
 |  634  |[ Find the Derangement of An Array ](./code/634.txt) | (H) 1800  ||  642  |[Design Search Autocomplete System ](./code/642.txt) | (H) 1800 |
@@ -170,6 +171,7 @@
 #117. [Populating Next Right Pointers in Each Node II (M) 1400](./code/117.txt) <br />
 #310. [Minimum Height Tree (M+) 1600](./code/310.txt) <br />
 #433. [Minimum Genetic Mutation (M) 1500](./code/433.txt) <br />
+#513. [Find Bottom Left Tree Value (M-) 1300](./code/513.txt) <br />
 #542. [01 Matrix (M) 1500](./code/542.txt) <br />
 #675. [Cut Off Trees for Golf Event (H-) 1700](./code/675.txt) <br />
 #766. [Toeplitz Matrix (M) 1400](./code/766.txt) <br />
@@ -263,6 +265,7 @@ Note: LinkedList can be used as stack or queue or deque<br/><br/>
 #328. [Odd Even Linked List (M-) 1300](./code/328.txt) <br />
 #341. [Flatten Nested List Iterator (M-) 1400](./code/341.txt) <br />
 #430. [Flatten a Multilevel Doubly Linked List (M) 1500](./code/430.txt) <br />
+#707. [Design Linked List (M-) 1400](./code/707.txt) <br />
 #817. [Linked List Components (M-) 1300](./code/817.txt) <br />
 #876. [Middle of the Linked List (E) 900](./code/876.txt) <br />
 #950. [Reveal Cards In Increasing Order (M) 1500](./code/950.txt) <br />
@@ -315,6 +318,7 @@ Note: LinkedList can be used as stack or queue or deque<br/><br/>
 #1642.[Furthest Building You Can Reach (M+) 1600](./code/1642.txt) <br />
 #1663.[Smallest String With A Given Numeric Value (M-) 1400](./code/1663.txt) <br />
 #1665. [Minimum Initial Energy to Finish Tasks (H-) 1700](./code/1665.txt) <br />
+#1702. [Maximum Binary String After Change (M) 1500](./code/1702.txt) <br />
 #LCP 06. [拿硬币 (E) 800](./code/LCP06.txt) <br />
 
 ---
@@ -421,6 +425,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #211. [Design Add and Search Words Data Structure (M) 1500](./code/211.txt) <br />
 #421. [Maximum XOR of Two Numbers in an Array (M+) 1600](./code/421.txt) <br />
 #588. [Design In-Memory File System (H) 1800](./code/588.txt) <br />
+#1707. [Maximum XOR With an Element From Array (H) 1800](./code/1707.txt) <br />
 
 ---
 ### DP
@@ -628,6 +633,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1456. [Maximum Number of Vowels in a Substring of Given Length (M-) 1300](./code/1456.txt) <br />
 #1675. [Minimize Deviation in Array (H) 1800](./code/1675.txt) <br />
 #1695. [Maximum Erasure Value (M-) 1400](./code/1695.txt) <br />
+#1703. [Minimum Adjacent Swaps for K Consecutive Ones (H) 1800](./code/1703.txt) <br />
 
 ---
 ### Two Pointer
@@ -650,6 +656,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #581. [Shortest Unsorted Continuous Subarray (E) 1000](./code/581.txt) <br />
 #703. [ Kth Largest Element in a Stream (E) 1000](./code/703.txt) <br />
 #791. [Custom Sort String (M-) 1300](./code/791.txt) <br />
+#912. [Sort an Array (M-) 1300](./code/912.txt) <br />
 #955. [Delete Columns to Make Sorted II (M+) 1600](./code/955.txt) <br />
 #1030. [Matrix Cells in Distance Order (E) 900](./code/1030.txt) <br />
 #1366. [Rank Teams by Votes (M+) 1600](./code/1366.txt) <br />
@@ -667,9 +674,11 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #242. [Valid Anagram (E) 900](./code/242.txt) <br />
 #290. [Word Pattern (E) 1000](./code/290.txt) <br />
 #336. [Palindrome Pairs (H) 1800](./code/336.txt) <br />
+#481. [Magical String (M) 1500](./code/481.txt) <br />
 #696. [Count Binary Substrings (E) 1000](./code/696.txt) <br />
 #833. [Find And Replace in String (M) 1500](./code/833.txt) <br />
 #811. [Subdomain Visit Count (E) 800](./code/811.txt) <br />
+#824. [Goat Latin (E) 900](./code/824.txt) <br />
 #859. [ Buddy Strings (E) 1000](./code/859.txt) <br />
 #906. [Super Palindrom (H) 1800](./code/906.txt) <br />
 #936. [Stamping The Sequence (H+) 2300](./code/936.txt) <br />
@@ -683,6 +692,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1624. [Largest Substring Between Two Equal Characters (E) 900](./code/1624.txt) <br />
 #1678. [ Goal Parser Interpretation (E) 900](./code/1678.txt) <br />
 #1694. [ Reformat Phone Number (E) 900](./code/1694.txt) <br />
+#1704. [ Determine if String Halves Are Alike (E) 800](./code/1704.txt) <br />
 
 ---
 ### Game Theory
@@ -710,9 +720,11 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #747. [Largest Number At Least Twice of Others (E) 900](./code/747.txt) <br />
 #806. [Number of Lines To Write String (E) 900](./code/806.txt) <br />
 #1071. [Greatest Common Divisor of Strings (E) 900](./code/1071.txt) <br />
+#1170. [Compare Strings by Frequency of the Smallest Character (E) 900](./code/1170.txt) <br />
 #1550. [Three Consecutive Odds (E-) 700](./code/1550.txt) <br />
 #1640. [Check Array Formation Through Concatenation (E) 1000](./code/1640.txt) <br />
 #1662. [Check If Two String Arrays are Equivalent (E) 800](./code/1662.txt) <br />
+#1706. [Where Will the Ball Fall (M+) 1600](./code/1706.txt) <br />
 
 ---
 ### Bit

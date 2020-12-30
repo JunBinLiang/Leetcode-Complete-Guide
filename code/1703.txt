@@ -1,0 +1,68 @@
+class Solution {
+    long res=Integer.MAX_VALUE;
+    public int minMoves(int[] nums, int k) {
+        long sum=0;
+        Queue<Integer>q=new LinkedList<>();
+        List<Integer>A=new ArrayList<>();
+       
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==1)A.add(i);
+        }
+        long pre[]=new long[A.size()];
+        for(int i=0;i<A.size();i++){
+            sum+=A.get(i);
+            pre[i]=sum;
+        }
+    
+        
+        for(int i=0;i<A.size();i++){
+            q.add(i);
+            if(q.size()<k)continue;
+            
+            if(k%2==0){
+                int half=k/2-1;
+                int mid2=A.get(k/2+q.peek());
+                int mid1=A.get(k/2-1+q.peek());
+                
+                long l1=mid1-half;
+                long r1=mid1+half+1;
+                long a1=(l1+mid1-1)*(half)/2;
+                long b1=(mid1+1+r1)*(half+1)/2;
+                long p1=psum(pre,q.peek(),k/2-1+q.peek()-1);
+                long p2=psum(pre,k/2-1+q.peek()+1,i);
+                res=Math.min(res,a1-p1+p2-b1);
+                
+                
+                long l2=mid2-half-1;
+                long r2=mid2+half;
+                long a2=(l2+mid2-1)*(half+1)/2;
+                long b2=(mid2+1+r2)*(half)/2;
+                long p3=psum(pre,q.peek(),k/2+q.peek()-1);
+                long p4=psum(pre,k/2+q.peek()+1,i);
+                res=Math.min(res,a2-p3+p4-b2);
+                
+            }
+            else{
+                long mid=A.get((k/2)+q.peek());
+                long l=mid-k/2;
+                long r=mid+k/2;
+                long a=(l+mid-1)*(k/2)/2;
+                long b=(mid+1+r)*(k/2)/2;
+                long p1=psum(pre,q.peek(),(k/2)+q.peek()-1);
+                long p2=psum(pre,(k/2)+q.peek()+1,i);
+                res=Math.min(res,a-p1+p2-b); 
+            }
+            q.poll();
+        }
+        if(res==Integer.MAX_VALUE)return 0;
+        return (int)(res);
+    }
+    
+    
+    
+    public long psum(long A[],int i,int j){
+        if(j<0)return 0;
+        if(i==0)return A[j];
+        return A[j]-A[i-1];
+    }
+}

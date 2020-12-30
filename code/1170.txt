@@ -1,0 +1,35 @@
+class Solution {
+    public int[] numSmallerByFrequency(String[] queries, String[] words) {
+        int W[]=new int[words.length];
+        int res[]=new int[queries.length];
+        for(int i=0;i<words.length;i++){
+            W[i]=cal(words[i]);
+        }
+        Arrays.sort(W);
+        
+        
+        for(int i=0;i<queries.length;i++){
+            int cnt=0;
+            
+            for(int j:W){
+                if(j>cal(queries[i]))cnt++;
+            }
+            res[i]=cnt;
+        }
+        
+        return res;
+        
+    }
+    
+    public int cal(String s){
+        char A[]=s.toCharArray();
+        Arrays.sort(A);
+        int j=0;
+        int cnt=0;
+        while(j<A.length&&A[j]==A[0]){
+            cnt++;
+            j++;
+        }
+        return cnt;
+    }
+}

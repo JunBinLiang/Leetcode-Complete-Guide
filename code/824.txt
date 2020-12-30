@@ -1,0 +1,28 @@
+class Solution {
+    public String toGoatLatin(String s) {
+        Set<Character>set=new HashSet<>(Arrays.asList('a','e','i','o','u','A','E','I','O','U'));
+        StringBuilder str=new StringBuilder();
+        String A[]=s.split(" ");
+        
+        
+        for(int i=0;i<A.length;i++){
+            char c=A[i].charAt(0);
+            if(set.contains(c)){
+                A[i]+="ma";
+            }
+            else{
+                A[i]=A[i].substring(1)+c+"ma";
+            }
+            
+            char a[]=new char[i+1];
+            Arrays.fill(a,'a');
+            A[i]=A[i]+(new String(a));
+        }
+        
+        
+        for(String w:A){
+            str.append(w+" ");
+        }
+        return str.toString().substring(0,str.length()-1);
+    }
+}
