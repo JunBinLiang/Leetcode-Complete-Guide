@@ -1,13 +1,8 @@
- ## [C++ Crash Course](./cpp) <br/><br/>
+<img src="images/LeetCode_logo.png" width=30% align=right />  
  
-  ## [Algorithm SAT Course](./teach) <br/><br/>
- 
- <img src="images/LeetCode_logo.png" width=30% align=right />  
- 
- # LeetCode 题解 + 报告 :memo:
+# LeetCode 题解 + 报告 + 课程 :memo:
 
 题目会有我给予的相对难度评价 :heavy_plus_sign: CF的估测难度对应分数<br>
-
 
 ## CF 分目测评估：
 :green_book: **800-1100** 对应  Easy  **(E)** <br />
@@ -16,6 +11,9 @@
 
 ***(代码以 C++ 和 Java 进行题解)***<br/><br/>
 
+## :trophy:Crash Courses: 
+- [**C++ Crash Course**](./cpp)
+- [**Algorithm SAT Course**](./lectures) 
 
 
 ## 程序员面试经典 (Wait for Update...)
