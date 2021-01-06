@@ -1287,6 +1287,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
      [ Min Seg ](./template/seg1.txt) <br />
      [ Lazy Seg ](./template/Lazyseg1.txt) <br />
      [ Double Linkedlist ](./template/dd.txt) <br />
+     [ Infix to Postfix Expression ](./template/inToPost.txt) <br />
   
   #  CodeForce 日常水题 ( 小于1500分 )
   ### 800<br/>
