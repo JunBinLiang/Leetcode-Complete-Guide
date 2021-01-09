@@ -417,6 +417,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1490. [Clone N-tree (M-) 1300](./code/1490.txt) <br />
 #1516. [Move Sub-Tree of N-Ary Tree (H-) 1700](./code/1516.txt) <br />
 #1617. [Count Subtrees With Max Distance Between Cities (H) 1800](./code/1617.txt) <br />
+#1719. [Number Of Ways To Reconstruct A Tree (H+) 2100](./code/1719.txt) <br />
 
 ---
 ### Trie
