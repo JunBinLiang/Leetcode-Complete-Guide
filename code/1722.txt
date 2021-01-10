@@ -1,0 +1,80 @@
+class Solution {
+    
+    public int minimumHammingDistance(int[] A, int[] B, int[][] steps) {
+        int res=0;
+        int n=A.length;
+        int nums[]=new int[n];
+        for(int i=0;i<nums.length;i++){
+            nums[i]=i;
+        }
+        
+        for(int pair[]:steps){
+            int v1=pair[0],v2=pair[1];
+            int r1=find(nums,v1);
+            int r2=find(nums,v2);
+            if(r1!=r2){
+                nums[r1]=r2;
+            }
+        }
+        
+        
+        int roots[]=new int[n];
+        for(int i=0;i<n;i++){
+            int r=find(nums,i);
+            //System.out.println(r);
+            roots[i]=r;
+        }
+        
+        Map<Integer,List<Integer>>map=new HashMap<>();
+        for(int i=0;i<n;i++){
+            int r=roots[i];
+            if(!map.containsKey(r))map.put(r,new ArrayList<>());
+            map.get(r).add(i);
+        }
+        
+        
+        for(Integer root:map.keySet()){
+            List<Integer>list=map.get(root);
+            res+=get(A,B,list);//common
+        }
+        
+        
+        
+        return n-res;
+    }
+    
+    
+    
+    
+    public int get(int A[],int B[],List<Integer>list){
+        Map<Integer,Integer>map1=new HashMap<>();
+        Map<Integer,Integer>map2=new HashMap<>();
+        int cnt=0;
+        for(int index:list){
+            if(!map1.containsKey(A[index]))map1.put(A[index],0);
+            if(!map2.containsKey(B[index]))map2.put(B[index],0);
+            map1.put(A[index],map1.get(A[index])+1);
+            map2.put(B[index],map2.get(B[index])+1);
+        }
+        
+        
+        //System.out.println(list);
+        
+        for(Integer key:map1.keySet()){
+            if(map2.containsKey(key)){
+                int mn=Math.min(map1.get(key),map2.get(key));
+                cnt+=mn;
+            }
+        }
+        
+        return cnt;
+    }
+    
+    
+    public int find(int nums[],int x){//union find => find method
+		if(nums[x]==x)return x;
+		int root=find(nums,nums[x]);
+		nums[x]=root;
+		return root;
+	}
+}
