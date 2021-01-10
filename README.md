@@ -528,6 +528,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1687. [Delivering Boxes from Storage to Ports (H+) 2000](./code/1687.txt) <br />
 #1691. [Maximum Height by Stacking Cuboids   (H) 1800](./code/1691.txt) <br />
 #1696. [Jump Game VI (M+) 1600](./code/1696.txt) <br />
+#1723. [Find Minimum Time to Finish All Jobs (H) 1800](./code/1723.txt) <br />
 #LCP10. [二叉树任务调度 (H+) 2200](./code/LCP10.txt) <br />
 #LCP13. [寻宝 (H+) 2100](./code/LCP13.txt) <br />
 #LCP14. [切分数组 (H+) 2200](./code/LCP14.txt) <br />
