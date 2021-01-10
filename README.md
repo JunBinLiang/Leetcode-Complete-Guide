@@ -774,6 +774,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
 #1584. [Min Cost to Connect All Points (M) 1500](./code/1584.txt) <br />
 #1627. [Graph Connectivity With Threshold (H) 1800](./code/1627.txt) <br />
 #1697. [Checking Existence of Edge Length Limited Paths (H) 1800](./code/1697.txt) <br />
+#1722. [Minimize Hamming Distance After Swap Operations (M) 1500](./code/1722.txt) <br />
 
 ---
 ### Ordered Map
