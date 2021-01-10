@@ -1,0 +1,45 @@
+class Solution {
+    int dp[][];
+    int k;int n;
+    int A[];
+    public int minimumTimeRequired(int[] A, int k) {
+        this.A=A;
+        n=A.length;
+        this.k=k;
+        int state=(1<<n)-1;
+        dp=new int[k][state+10];
+        for(int i=0;i<dp.length;i++){
+            Arrays.fill(dp[i],-1);
+        }
+        int res=dfs(0,state);
+        return res;
+    }
+    
+    
+    public int dfs(int index,int state){
+        if(index>=k){
+            if(state==0)return 0;
+            else return 100000000;
+        }
+        if(state==0)return 0;
+        if(dp[index][state]!=-1)return dp[index][state]; 
+        int res=Integer.MAX_VALUE;
+        
+        for(int i=1;i<=(state);i++){
+            if(((i&state)!=i)||(i|state)!=state)continue;
+            int sum=0;
+            int newstate=state;
+            for(int j=0;j<n;j++){
+                if((i&(1<<j))!=0){
+                    sum+=A[j];
+                    newstate=newstate^(1<<j);
+                }
+            }
+            if(sum<=res){
+                res=Math.min(res,Math.max(sum,dfs(index+1,newstate)));
+            }   
+        }
+        dp[index][state]=res;
+        return res;
+    }
+}
