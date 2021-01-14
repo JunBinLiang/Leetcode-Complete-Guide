@@ -1,0 +1,48 @@
+class ConvexHullTrick
+{
+    int size=0;
+    Line hull[]=new Line[100010];
+    
+
+    public boolean isBad(int l1,int l2,int l3)
+    {
+        double left=1.0*(hull[l3].b-hull[l1].b)/(hull[l1].m-hull[l3].m);
+        double right=1.0*(hull[l1].b-hull[l2].b)/(hull[l2].m-hull[l1].m);
+        return left<right;
+    }
+    
+    public void add(Line line)
+    {
+        hull[size++]=line;
+        while(size>2&&isBad(size-3,size-2,size-1))
+        {
+            hull[size-2]=hull[size-1];
+            --size;
+        }
+    }
+    public long query(long x)
+    {
+        int l=0,r=size-1;
+        while(l<r)
+        {
+            int m=(l+r)/2;
+            if(hull[m].get(x)<=hull[m+1].get(x))
+                l=m+1;
+            else
+                r=m;
+        }
+        return hull[l].get(x);
+    }
+}
+
+class Line{
+    long m,b;
+    public Line(long m,long b){
+        this.m=m;
+        this.b=b;
+    }
+
+    public long get(long x){
+        return m*x+b;
+    }
+}
