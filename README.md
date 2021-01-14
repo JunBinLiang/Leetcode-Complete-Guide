@@ -1277,22 +1277,6 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    383A. [ Milking cows (1600)  ](./code/383A.txt)<br />
    1098A. [ Sum in the tree (1600)  ](./code/1098A.txt)<br />
    
- 
-  #  Algorithm Template 
-  [Suffix Array (后缀数组 (nlog^2 n))](./template/suffixArray.txt) <br />
-  [Combination C(n,k) in mod ](./template/Combination.txt) <br />
-  [Max Flow Dinic  ](./template/maxflow.txt) <br />
-  [Shortest Path ](./template/dijkstra.txt) <br />
-  [2 SAT ](./code/776D.txt) <br />
-  [ Kosaraju ](./template/Kosaraju.txt) <br />
-   [ Fenwick Tree ](./template/BIT.txt) <br />
-   [ Hopcroft  (Solving Maximum matching Cardinality for Bipartile Graph)  O(sqrt(n)*m)](./template/Hopcroft.txt) <br />
-     [ Min Seg ](./template/seg1.txt) <br />
-     [ Lazy Seg ](./template/Lazyseg1.txt) <br />
-     [ Double Linkedlist ](./template/dd.txt) <br />
-     [ Infix to Postfix Expression ](./template/inToPost.txt) <br />
-     [ Manacher ](./template/Manacher.txt) <br />
-     [ Convex Hull Trick ](./template/convexthulltrick.txt) <br />
   
   #  CodeForce 日常水题 ( 小于1500分 )
   ### 800<br/>
@@ -1452,6 +1436,24 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   #  KickStart
   2020G3. [Combination Lock  ](./kick/2020G3.txt) <br />
   2020G4. [Merge Cards  ](./kick/2020G4.txt) <br />
+  
+  
+   
+  #  Algorithm Template 
+  [Suffix Array (后缀数组 (nlog^2 n))](./template/suffixArray.txt) <br />
+  [Combination C(n,k) in mod ](./template/Combination.txt) <br />
+  [Max Flow Dinic  ](./template/maxflow.txt) <br />
+  [Shortest Path ](./template/dijkstra.txt) <br />
+  [2 SAT ](./code/776D.txt) <br />
+  [ Kosaraju ](./template/Kosaraju.txt) <br />
+   [ Fenwick Tree ](./template/BIT.txt) <br />
+   [ Hopcroft  (Solving Maximum matching Cardinality for Bipartile Graph)  O(sqrt(n)*m)](./template/Hopcroft.txt) <br />
+     [ Min Seg ](./template/seg1.txt) <br />
+     [ Lazy Seg ](./template/Lazyseg1.txt) <br />
+     [ Double Linkedlist ](./template/dd.txt) <br />
+     [ Infix to Postfix Expression ](./template/inToPost.txt) <br />
+     [ Manacher ](./template/Manacher.txt) <br />
+     [ Convex Hull Trick ](./template/convexthulltrick.txt) <br />
   
    #  参考
    1. 最大权闭合子图 (https://www.cnblogs.com/TreeDream/p/5942354.html#_labelTop)  (强顶)<br/>
