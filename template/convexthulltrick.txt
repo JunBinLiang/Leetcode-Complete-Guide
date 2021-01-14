@@ -46,3 +46,39 @@ class Line{
         return m*x+b;
     }
 }
+
+
+
+class ConvexHullTrickMin{
+    int cp=0;
+    ArrayList<Line>cht=new ArrayList<>();
+    
+    public double intersect(Line A, Line B) {
+        return (double)(B.b - A.b) / (A.m - B.m);
+    }
+
+    public void add(Line l) {
+        int n = cht.size();
+        while (n >= 2 &&
+            intersect(cht.get(n-1), cht.get(n-2)) >= intersect(cht.get(n-1), l)) {
+            cht.remove(cht.size()-1);
+            n = cht.size();
+        }
+        cht.add(l);
+        cp = Math.min(cp, (int)cht.size()-1);
+    }
+
+    public long query(long x) {
+        int l=0,r=cht.size()-1;
+        while(l<r)
+        {
+            int m=(l+r)/2;
+            if(cht.get(m).get(x)>=cht.get(m+1).get(x))
+                l=m+1;
+            else
+                r=m;
+        }
+        return cht.get(l).get(x);
+    }
+
+}
