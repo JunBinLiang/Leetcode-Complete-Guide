@@ -64,3 +64,83 @@ class Solution {
         return A[i][j];
     }
 }
+
+
+
+================================= C++ ========================================
+
+class Solution {
+public:
+    int largest1BorderedSquare(vector<vector<int>>& grid) {
+        //vecot<vector<int>> vector名字 （多少row， vector<int> （多少column)）；
+        //vecot<vector<int>> vector名字 （多少row， vector<int> （多少column, 原始数字)）；
+        vector<vector<int>> leftToRight(grid.size(), vector<int> (grid[0].size()));
+        vector<vector<int>> topToBottom(grid.size(), vector<int> (grid[0].size()));
+                                        
+        // 横着走 第一次 row 0 的时候每一个col 都走过去， row 1 的时候每一个column 也走过去。。。                             
+        for(int row = 0; row<grid.size(); row++){
+            // 新的row 都重新算
+            int step =0;
+            for(int col = 0; col < grid[0].size(); col++){
+                if(grid[row][col]==1){
+                    step++;
+                    leftToRight[row][col] = step;
+                }
+                else{
+                    //一旦有0 就重新算
+                    step = 0;
+                }
+            }
+        }
+        //竖着走 column 0 然后走row 0， row 1 竖着走
+                    //所以col 在上面 row 在下面
+        for(int col = 0; col < grid[0].size(); col++){
+             // 新的col 都重新算
+            int step =0;
+            for(int row = 0; row<grid.size();row++){
+                if(grid[row][col]==1){ //注意 还是row 然后col [row][col]
+                    step++;
+                    topToBottom[row][col] = step;
+                }
+                else{
+                    step = 0;
+                }
+            }
+        }
+                          
+        // 如果grid 是3x5 我们取3 这个数字 因为只能3x3 不能5x5
+        int MAX_SQUARE_LENGTH = min(grid.size(), grid[0].size());                           
+        int result = 0;                           
+                             
+        for(int row = 0; row<grid.size(); row++){
+            for(int col = 0; col < grid[0].size(); col++){
+                 if(grid[row][col]==1){
+                    for(int len = 1; len <= MAX_SQUARE_LENGTH; len++ ){ // 从length 1 到max 都试一下
+                 
+                        if(leftToRight[row][col] >= len && topToBottom[row][col] >=len){
+                            // 我们可以找p2r 和 p2c 和 p1r p1c
+                            
+                            // (未知)-----? -----[p2r][p2r]
+                            //     |                   |
+                            //     |                   |
+                            //    ?                  len
+                            //     |                   |
+                            //     |                   |
+                            // [p1r][p1c] --len ------[row][col]
+                     
+                                int p1r = row;
+                                int p1c = col-len+1;
+                                int p2r = row-len+1;
+                                int p2c = col;
+                        
+                                if(leftToRight[p2r][p2c] >=len && topToBottom[p1r][p1c]>=len){
+                                    result = max(result, len);
+                                }
+                        }
+                    }
+                }
+            }
+        }
+        return result*result;                                 
+    }
+};
