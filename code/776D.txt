@@ -97,7 +97,7 @@ class Solution{
 			List<Integer>switchs=rooms[i];
 			int u=switchs.get(0);
 			int v=switchs.get(1);
-			if(A[i]==1){//lock   (v,!u)  (u,!v)
+			if(A[i]==1){//unlock   (v,!u)  (u,!v)
 				add(v+M,u+M);
 				add(u,v);
 				add(u+M,v+M);
