@@ -102,7 +102,7 @@ class Solution{
 				add(u,v);
 				add(u+M,v+M);
 				add(v,u);
-			}else{//unlock       (v,u)  (!v,!u)
+			}else{//lock       (v,u)  (!v,!u)
 				add(v+M,u);
 				add(u+M,v);
 				add(v,u+M);
