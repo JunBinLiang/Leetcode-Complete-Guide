@@ -1450,6 +1450,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    [ Hopcroft  (Solving Maximum matching Cardinality for Bipartile Graph)  O(sqrt(n)*m)](./template/Hopcroft.txt) <br />
      [ Min Seg ](./template/seg1.txt) <br />
      [ Lazy Seg ](./template/Lazyseg1.txt) <br />
+     [ 2D Seg ](./template/2Dseg.txt) <br />
      [ Double Linkedlist ](./template/dd.txt) <br />
      [ Infix to Postfix Expression ](./template/inToPost.txt) <br />
      [ Manacher ](./template/Manacher.txt) <br />
