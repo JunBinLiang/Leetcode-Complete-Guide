@@ -1470,7 +1470,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   
   
    #  每周周赛题解
-   1. [ 232 Weekly   ](./contest/232.md) <br />
+   1. [ 232 Weekly   ](./lccontest/232.md) <br />
    
   
   
