@@ -1465,5 +1465,15 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
   2. 2-SAT Template: <br/>
   https://github.com/JunBinLiang/Competitive-Coding/blob/master/2-SAT.cpp<br/>
   https://cp-algorithms.com/graph/2SAT.html#toc-tgt-2
+  
+  <br/>
+  
+  
+   #  每周周赛题解
+    [ Weekly232  ](./contest/232.md) <br />
+   
+  
+  
+  
 
   
