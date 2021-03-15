@@ -13,16 +13,6 @@
 
 ## :trophy:Crash Courses: 
 - [**C++ Crash Course**](./cpp)
-- [**Algorithm SAT Course**](./lectures) 
-
-
-## 程序员面试经典 (Wait for Update...)
-|  #  | Title           |    Difficulty  |
-|-----|---------------- | --------------- | 
-|  1  | [判定字符是否唯一](./interview/01.txt)         | (E) 800  |
-|  2  | [ 判定是否互为字符重排](./interview/02.txt)        |  (E) 800 |
-| 3  | [ URL化 ](./interview/03.txt)     | (E) 800 |
-|  4  | [ 回文排列 ](./interview/04.txt)    |(E) 900|
 
 
 
