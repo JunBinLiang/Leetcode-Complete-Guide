@@ -1,0 +1,57 @@
+class Catalan {
+    static final int maxn = 200100;
+    static int[] prime = new int[maxn];
+    static boolean[] f = new boolean[maxn];
+    static int k;
+
+    static void init() {
+        for (int i = 0; i < maxn; i++)
+            f[i] = false;
+        f[1] = true;
+        k = 0;
+        for (int i = 2; i < maxn; i++) {
+            if (f[i] == false)
+                prime[k++] = i;
+            for (int j = 0; j < k & prime[j] * i < maxn; j++) {
+                f[prime[j] * i] = true;
+                if (i % prime[j] == 0) break;
+            }
+        }
+    }
+
+    static BigInteger qpow(int x, int b) {
+        BigInteger a = BigInteger.valueOf(x);
+        BigInteger ret = BigInteger.valueOf(1);
+        while (b != 0) {
+            if (b % 2 == 1) ret = ret.multiply(a);
+            a = a.multiply(a);
+            b >>= 1;
+        }
+        return ret;
+    }
+
+    static BigInteger get(int n) {
+        init();
+        BigInteger ans = BigInteger.valueOf(1);
+        int p, v;
+        int cnt = 0;
+        for (int i = 0; i < k && prime[i] <= n * 2; i++) {
+            cnt = 0;
+            p = prime[i];
+            v = n * 2;
+            while (v > 0) {
+                cnt += v / p;
+                v /= p;
+            }
+            v = n;
+            while (v > 0) {
+                cnt -= v / p * 2;
+                v /= p;
+            }
+            ans = ans.multiply(qpow(p, cnt));
+        }
+        BigInteger x = BigInteger.valueOf(n + 1);
+        ans = ans.divide(x);
+        return ans;
+    }
+}
