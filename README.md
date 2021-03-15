@@ -1447,6 +1447,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
      [ Convex Hull Trick ](./template/convexthulltrick.txt) <br />
      [UF](./template/UFMAP.txt) <br />
      [Matrix Exp](./template/matrix.txt) <br />
+     [Catalan Number](./template/catalan.txt) <br />
   
    #  参考
    1. 最大权闭合子图 (https://www.cnblogs.com/TreeDream/p/5942354.html#_labelTop)  (强顶)<br/>
