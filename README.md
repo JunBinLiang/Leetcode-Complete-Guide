@@ -1463,6 +1463,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    1. [ Chinese Remainder Theory   ](./select/1.md) <br />
    2. [ Catalan Number  ](http://blog.miskcoo.com/2015/07/catalan-number) <br />
    3. [ 约分  ](./select/3.md) <br />
+   4. [ 倍增LCA  ](https://greenhathg.github.io/2019/07/27/%E5%80%8D%E5%A2%9E%E6%B1%82LCA/) <br />
    <br/>
   
   
