@@ -1474,7 +1474,8 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    1. [ 228 Weekly   ](./lccontest/228.md) <br />
    2. [ 232 Weekly   ](./lccontest/232.md) <br />
    
-  
+   #  其它
+   1. [ Codeforce Contest 531 (Div3)   ](./lccontest/cf531.md) <br />
   
   
 
