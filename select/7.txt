@@ -9,7 +9,6 @@ General Idea:
 reference : https://cp-algorithms.com/data_structures/deleting_in_log_n.html
  
 problem : cf1140F (2600)  : https://codeforces.com/contest/1140/problem/F
-
 (https://blog.csdn.net/weixin_30758821/article/details/98331339?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-5&spm=1001.2101.3001.4242)
 
 
