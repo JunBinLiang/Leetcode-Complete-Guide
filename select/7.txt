@@ -177,7 +177,7 @@ class Solution{
         }
 
 
-        //leaf
+        //leaf => the A[i] query
         if(root.left==null&&root.right==null){
             res[root.l]=cnt;
         }
@@ -186,7 +186,7 @@ class Solution{
             dfs(root.right);
         }
 
-        //roll back
+        //roll back =>backtack the change
         while(sta.size()>0){
             int p[]=sta.pop();
             int r1=p[0],r2=p[1],state=p[2];
