@@ -1477,7 +1477,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    2. [ 232 Weekly   ](./lccontest/232.md) <br />
    3. [ 48 Bi-Weekly   ](./lccontest/bi48.md) <br />
    4. [ 233 Weekly   ](./lccontest/233.md) <br />
-  
+   5. [ 234 Weekly (会补上)   ](./lccontest/234.md) <br />
   
 
   
