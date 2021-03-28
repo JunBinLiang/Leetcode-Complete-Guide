@@ -55,16 +55,15 @@
 /* 我们可以用以下来表达状态变化的简单的递归模式 */
 
 public int play(int A[],int l,int r,int player){ 
-	if (l > r) {                   //如果都取完了的情况 
+	if (l > r) {                   // 如果都取完了的情况 
 		return 0；
 	}
 	int nextPlayer = (player + 1) % 2;
 	int score = 0;
 
-	score = Math.max(score, A[l] + play(A,l+1,r,nextPlayer )); //如果取第一个数字
-	score = Math.max(score, A[r] + play(A,l,r-1,nextPlayer )); //如果取最后一个数字
-
-    	return score;
+	score = Math.max(score, A[l] + play(A,l+1,r,nextPlayer )); // 如果取第一个数字
+	score = Math.max(score, A[r] + play(A,l,r-1,nextPlayer )); // 如果取最后一个数字
+	return score;
 } 
 ```
 
@@ -109,11 +108,11 @@ class Solution {
         int nextPlayer = (player + 1) % 2;   // 下一个player是谁？我们用0代表小六，1代表小丁 
         int score = 0;  
   
-        if(player == 0){  /***** 小六：对于返回的分数，我要取最大的那一个 ******/
+        if(player == 0){                      /* 小六：对于返回的分数，我要取最大的那一个 */
             score=Math.max(score,A[l]+play(A,l+1,r,nextPlayer));  
             score=Math.max(score,A[r]+play(A,l,r-1,nextPlayer));  
         }  
-        else{   /******小丁：hmm，为了不让小六赢，我得返回一个最小的数字给小六 *****/
+        else{                                /* 小丁：hmm，为了不让小六赢，我得返回一个最小的数字给小六 */
             score=Math.min(play(A,l+1,r,nextPlayer),play(A,l,r-1,nextPlayer));  
         }  
   
@@ -174,7 +173,7 @@ class Solution {
 
 >题意：给你一组数组 **``A=[1,2,3,7]``** 同样还是小六(先手)和小丁轮流从里面取数字，**_但_** ，两人这次只能从左边拿数字，一次可以拿 **1 ~ 3** 个，
 >取完之后这数字会从 **``A``** 中移除，**问谁是最后的赢家如果两个人每次都采取对自己最有利的方案。分数最多者为胜利者**。>br/>
->从例子来看，无论小六怎么拿，**小丁都能获胜，因为她能拿到最后一个 ``7`` **
+>从例子来看，无论小六怎么拿，**小丁都能获胜，因为她能拿到最后一个 ``7``**
 
 
 #### :bulb: 分析： 
@@ -247,7 +246,7 @@ class Solution {
 
 **:high_brightness: 接下来是我们的 ``BottomUp``了:**
 
- - 首先我们的状态是以**``dp[l][player]``** 表示的，**``l``** 表示当前所剩下的石头的最左边(别忘了我们只能从左边开始取)，**``player``** 表示当前是谁
+ - 首先我们的状态是以 **``dp[l][player]``** 表示的，**``l``** 表示当前所剩下的石头的最左边(别忘了我们只能从左边开始取)，**``player``** 表示当前是谁
  - 我们只需要将上面递归的转换一下就可以了
 
 
