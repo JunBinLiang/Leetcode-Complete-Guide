@@ -219,3 +219,63 @@ class Solution {
     }
 };
 ```
+<br/>
+
+接下来是我们的**BottomUp** 了
+
+ - 首先我们的状态是以**dp[l][player]** 表示的，**l**表示当前所剩下的石头的最左边(别忘了我们只能从左边开始取)，**player** 表示当前是谁
+ - 我们只需要将上面递归的转换一下就可以了
+
+   
+	 
+
+**完整代码 2**<br/>
+
+```
+class Solution {
+    public:
+    string stoneGameIII(vector<int>& A) {
+        vector<vector<int>> dp(A.size(), vector<int>(2, INT_MIN));
+        int sum = 0;
+        for (int x : A) {
+            sum += x;
+        }
+
+        for (int l = A.size() - 1; l >= 0; l--) {
+            int mn = INT_MAX;
+            int mx = INT_MIN;
+            int score = 0;
+            for (int j = 0; j < 3; j++) {//player0 的三种选择
+                if (l + j < A.size()) {//注意outbound
+                    score += A[l + j];
+                }
+                if (l + j + 1 < A.size()) {
+                    mx = max(mx, score + dp[l + j + 1][1]);
+                } else {
+                    mx = max(mx, score);
+                }
+            }
+
+            for (int j = 0; j < 3; j++) {//player0 的三种选择
+                if (l + j + 1 < A.size()) {
+                    mn = min(mn, dp[l + j + 1][0]);
+                } else {
+                    mn = min(mn, 0);
+                }
+            }
+            dp[l][0] = mx;
+            dp[l][1] = mn;
+        }
+
+        int maxScore = dp[0][0];
+
+        if (maxScore * 2 > sum) {
+            return "Alice";
+        } else if (maxScore * 2 < sum) {
+            return "Bob";
+        } else {
+            return "Tie";
+        }
+    }
+};
+```
