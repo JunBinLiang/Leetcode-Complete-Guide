@@ -168,7 +168,7 @@ class Solution {
 
 ---
 
-<h1 id="stone-game-3" align="center"><b> Stone Game III </b><h1>
+<h1 id="stone-game-3" align="center"><b> Stone Game III </b></h1>
 
 学会了**石子游戏 I** 之后，让我们来乘胜追击，一起来攻破一下难度是 **HARD** 的**石子游戏 III**！(为了方便读者，这次会使用 **C++**  进行实现) <br/>
 
