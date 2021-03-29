@@ -1,10 +1,16 @@
 # <h1 align="center"><b>石子游戏系列:</b><br><h1>
 	
 ## 主题：
-今天我们将学习 Leetcode 里的 **Stone Game 系列:** [Stone Game I](#stone-game-1) 和 [Stone Game III](#stone-game-3)  。 我们的目的是将通过学习这一系列的问题使我们对 **``Dynamic Programming``**, 
+今天我们将学习 Leetcode 里的 **Stone Game 系列:** 。 我们的目的是将通过学习这一系列的问题使我们对 **``Dynamic Programming``**, 
 也就是我们熟悉的 **``DP(动态规划)``** 有一个更好的了解！<br/>
 
 **:star:我们将会使用 ``Top Down`` 和 ``Bottom Up`` 两种方式去理解 `DP`:star:**
+- [Stone Game I](#stone-game-1)
+	- [Stone Game I: Top Down](#stone-game-1-topdown) 
+	- [Stone Game I: Bottom Up](#stone-game-1-bottomup) 
+- [Stone Game III](#stone-game-3) 
+	- [Stone Game III: Top Down](#stone-game-3-topdown) 
+	- [Stone Game III: Bottom Up](#stone-game-3-bottomup) 
 
 #### :question: 动态规划是什么 (DP)？
  - 它是一种算法上的优化
@@ -24,17 +30,15 @@
  :high_brightness: 从以上我们可以看出，两个人的``猜``在不停的进行博弈，在这过程中都希望选出一个对自己最有利 (``OPTIMAL``) 的方案 <br/>
 
 
----
-
-# <h1 id="stone-game-1" align="center"><b> Stone Game I </b><h1>
+# <h2 id="stone-game-1" align="center"><b> Stone Game I </b><h2>
 
 ### 题意：
 >给你一组数组 **``A=[5,3,4,5]``** 小六 _(先手)_ 和小丁轮流从里面取数字，**``但``**，两人只能拿第一个或者最后一个数字，
 >取完之后这数字会从 **``A``** 中移除，问谁是最后的赢家如果两个人每次都采取对自己最有利的方案。**分数最多者为胜利者**。<br/>
 
-# <h3  align="center"><b> Top Down </b><h3>
+<h3 id="stone-game-1-topdown" align="center">Top Down<h3>
 	
-#### :bulb: 分析：
+### :bulb: 分析：
 
  - 对于每个 _player_ 来说，他都有**两种选择** (以**第一轮**为例):
  	1. 如果小六选了 `A[0]` , 那么他会留下 **``[3,4,5]``**  给小丁做选择
@@ -119,10 +123,11 @@ class Solution {
       }  
 }
 ```
----
 
-# <h3  align="center"><b> Bottom Up </b><h3>
-	
+
+ <h3 id="stone-game-1-bottomup" align="center"> Bottom Up<h3>
+
+### :bulb: 分析：
 :high_brightness: 以上是 ``Top Down`` 的 DP 方式，非常的好实现，并且从时间空间复杂度来说与 ``Bottom Up`` 并没有什么区别。但是它的问题是因为用的是递归，所以会对 ``runtime stack`` 有很大的要求。我们再来看``BottomUp`` 是怎么写的，我们可以透过 ``Top Down`` 已经写好了的关系来进行一点简单的改变就行了。
 
 **我们已知：**
@@ -134,7 +139,7 @@ class Solution {
  - 我们会按 ``(0,0),(1,1),(2,2)  ... (n,n), (0,1),(1,2),(2,3) ... (0,2),(1,3),(2,4)...`` 这样的顺序打表。<br/>
 
 
-#### :triangular_flag_on_post: 完整代码 2
+### :triangular_flag_on_post: 完整代码 2
 ```java
 class Solution {  
     public boolean stoneGame(int[] A) {  
@@ -162,22 +167,21 @@ class Solution {
 }
 ```
 
----
 
 
 
-# <h1 id="stone-game-3" align="center"><b> Stone Game III </b><br><h1>
+# <h2 id="stone-game-3" align="center"><b> Stone Game III </b><br><h2>
 
 学会了**石子游戏 I** 之后，让我们来乘胜追击，一起来攻破一下难度是 **HARD** 的**石子游戏 III**！(为了方便读者，这次会使用 **C++**  进行实现) <br/>
 
-#### 题意：
+### 题意：
 >给你一组数组 **``A=[1,2,3,7]``** 同样还是小六(先手)和小丁轮流从里面取数字，**_但_** ，两人这次只能从左边拿数字，一次可以拿 **1~3** 个，
 >取完之后这数字会从 **``A``** 中移除，**问谁是最后的赢家如果两个人每次都采取对自己最有利的方案。分数最多者为胜利者**。<br/>
 >从例子来看，无论小六怎么拿，**小丁都能获胜，因为她能拿到最后一个 ``7``**
 
-# <h3  align="center"><b> Top Down </b><h3>
+<h3  id="stone-game-3-topdown" align="center">Top Down<h3>
 	
-#### :bulb: 分析： 
+### :bulb: 分析： 
  - 我们可以像**石子游戏 I** 一样定义同样的 **``play``** 函数，返回的值是**小六**得到的分数。**如果最终小六的分数大于一半，小六获胜，反之平手或者小丁获胜**
  - 从**策略**来说，**石子游戏III** 与**石子游戏 I** 是一样的。每个 _player_ 都有 **2 种选择**。
  	- **小六**想拿一个使他总分更大的选择，**小丁**反之想返回给**小六**一个使他分数更小的选择
@@ -245,17 +249,15 @@ class Solution {
 ```
 <br/>
 
----
 
-# <h3  align="center"><b> Bottom Up </b><h3>
+<h3 id="stone-game-3-bottomup" align="center"> Bottom Up <h3>
 
-**:high_brightness: 接下来是我们的 ``Bottom Up``了:**
-
+### :bulb: 分析：
  - 首先我们的状态是以 **``dp[l][player]``** 表示的，**``l``** 表示当前所剩下的石头的最左边(别忘了我们只能从左边开始取)，**``player``** 表示当前是谁
  - 我们只需要将上面递归的转换一下就可以了
 
 
-#### :triangular_flag_on_post: 完整代码 2
+### :triangular_flag_on_post: 完整代码 2
 ```c++
 class Solution {
     public:
