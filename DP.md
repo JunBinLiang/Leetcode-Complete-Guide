@@ -38,9 +38,9 @@
 >给你一组数组 **``A=[5,3,4,5]``** 小六 _(先手)_ 和小丁轮流从里面取数字，**``但``**，两人只能拿第一个或者最后一个数字，
 >取完之后这数字会从 **``A``** 中移除，问谁是最后的赢家如果两个人每次都采取对自己最有利的方案。**分数最多者为胜利者**。<br/>
 
-<h3 id="stone-game-1-topdown" >:high_brightness: Approach 1: Top Down<h3>
+<h3 id="stone-game-1-topdown" >:bulb: Approach 1: Top Down<h3>
 	
-### :bulb: 分析：
+###  分析：
 
  - 对于每个 _player_ 来说，他都有**两种选择** (以**第一轮**为例):
  	1. 如果小六选了 `A[0]` , 那么他会留下 **``[3,4,5]``**  给小丁做选择
@@ -124,9 +124,9 @@ class Solution {
 ```
 
 
- <h3 id="stone-game-1-bottomup" >:high_brightness: Approach 2: Bottom Up<h3>
+ <h3 id="stone-game-1-bottomup" >:bulb: Approach 2: Bottom Up<h3>
 
-### :bulb: 分析：
+###  分析：
 以上是 ``Top Down`` 的 DP 方式，非常的好实现，并且从时间空间复杂度来说与 ``Bottom Up`` 并没有什么区别。但是它的问题是因为用的是递归，所以会对 ``runtime stack`` 有很大的要求。我们再来看``BottomUp`` 是怎么写的，我们可以透过 ``Top Down`` 已经写好了的关系来进行一点简单的改变就行了。
 
 **我们已知：**
@@ -177,9 +177,9 @@ class Solution {
 >取完之后这数字会从 **``A``** 中移除，**问谁是最后的赢家如果两个人每次都采取对自己最有利的方案。分数最多者为胜利者**。<br/>
 >从例子来看，无论小六怎么拿，**小丁都能获胜，因为她能拿到最后一个 ``7``**
 
-<h3  id="stone-game-3-topdown">:high_brightness: Approach 1: Top Down<h3>
+<h3  id="stone-game-3-topdown">:bulb: Approach 1: Top Down<h3>
 
-### :bulb: 分析： 
+### 分析： 
  - 我们可以像**石子游戏 I** 一样定义同样的 **``play``** 函数，返回的值是**小六**得到的分数。**如果最终小六的分数大于一半，小六获胜，反之平手或者小丁获胜**
  - 从**策略**来说，**石子游戏III** 与**石子游戏 I** 是一样的。每个 _player_ 都有 **2 种选择**。
  	- **小六**想拿一个使他总分更大的选择，**小丁**反之想返回给**小六**一个使他分数更小的选择
@@ -248,9 +248,9 @@ class Solution {
 <br/>
 
 
-<h3 id="stone-game-3-bottomup">:high_brightness: Approach 2: Bottom Up <h3>
+<h3 id="stone-game-3-bottomup">:bulb: Approach 2: Bottom Up <h3>
 
-### :bulb: 分析：
+###  分析：
  - 首先我们的状态是以 **``dp[l][player]``** 表示的，**``l``** 表示当前所剩下的石头的最左边(别忘了我们只能从左边开始取)，**``player``** 表示当前是谁
  - 我们只需要将上面递归的转换一下就可以了
 
