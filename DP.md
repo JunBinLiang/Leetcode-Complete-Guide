@@ -55,61 +55,62 @@
 
 
  1. **下面是我们使用``递归``的暴力代码**
-```java
-public int f(int n) {
-	if(n <= 2){
-		return n;
+	```java
+	public int f(int n) {
+	     if(n <= 2){
+       	         return n;
+	      }
+	      return f(n - 2) + f(n - 1);
 	}
-	return f(n - 2) + f(n - 1);
-}
-```
-我们如果把 ``n`` 打印一下的话，我们可以发现有很多个 ``n`` 被重复访问了。因为 **``f(n)``** 的值是不变的，所以我们对于重复访问可以不去做重复的计算，而是把它的值在第一次访问完后给记录下来。 <br/>
+	```
+	
+	我们如果把 ``n`` 打印一下的话，我们可以发现有很多个 ``n`` 被重复访问了。因为 **``f(n)``** 的值是不变的，所以我们对于重复访问可以不去做重复的计算，而是把它的值在第一次访问完后给记录下来。 <br/>
 
 
 2. **从``递归``转换到 ``Top Down``**
- ```java
-class Solution {
+	 ```java
+	class Solution {
 
-	int dp[]=new int[100]; //假设 n 在100以内
+		int dp[]=new int[100]; //假设 n 在100以内
 
-	public int f(int n) {
-	  if(n <= 2){//base case
-	      return n;
-	  }
+		public int f(int n) {
+		  if(n <= 2){//base case
+		      return n;
+		  }
 
-	  if(dp[n] != 0 ){//非第一次访问，值已被记录，可直接返回
-	      return dp[n];
-	  }
+		  if(dp[n] != 0 ){//非第一次访问，值已被记录，可直接返回
+		      return dp[n];
+		  }
 
-	  dp[n] = f(n - 2) + f(n - 1); //第一次访问并记录f(n)的值
-	  return dp[n];
+		  dp[n] = f(n - 2) + f(n - 1); //第一次访问并记录f(n)的值
+		  return dp[n];
+		}
 	}
-}
-```
-我们可以看出 **``Top Down``** 跟递归是非常相似的，我们只是加多了去记录重复的这一步。我们从 **``f(n)``** 开始一层一层往下走，最终到达 **``f(1)``**，最后把最下面的值回传上来。
+	```
+	我们可以看出 **``Top Down``** 跟递归是非常相似的，我们只是加多了去记录重复的这一步。我们从 **``f(n)``** 开始一层一层往下走，最终到达 **``f(1)``**，最后把最下面的值回传上来。
 
 <br/>
 
 3. **BottomUp**
-```java
-public int climbStairs(int n) {
-	if(n <= 2){
-	   return n;
-	}
-	// 对basecase 的初始化
-	int first = 1;
-	int second = 2;
+	```java
+	public int climbStairs(int n) {
+		if(n <= 2){
+		   return n;
+		}
+		// 对basecase 的初始化
+		int first = 1;
+		int second = 2;
 
-	for(int i = 2; i < n; i++){
-	  int temp = second;
-	  second = first + second;
-	  first = temp;
+		for(int i = 2; i < n; i++){
+		  int temp = second;
+		  second = first + second;
+		  first = temp;
+		}
+		return second;
 	}
-	return second;
-}
-```
+	```
   
-**``Bottom Up``** 其实就是对关系式的表达。我们的关系式是 **``f(n)=f(n-1)+f(n-2)``**。但与 **``Top Down``** 不同的是我们需要先 _initialize_ **Base Case**, 这里的 **Base** 就是 ``n=1`` 和 ``n=2`` 的时候，也就是我们的``first``和``second``。 然后我们根据 **Base** 一层一层的往上面建立，从 **``f(1)``** 建立到 **``f(n)``**。
+	**``Bottom Up``** 其实就是对关系式的表达。我们的关系式是 **``f(n)=f(n-1)+f(n-2)``**。但与 **``Top Down``** 不同的是我们需要先 _initialize_ **Base Case**, 这里的 **Base** 就是 ``n=1`` 和 ``n=2`` 的时候，也就是我们的``first``和``second``。 然后我们根据 **Base** 一层一层的往上面建立，从 **``f(1)``** 建立到 **``f(n)``**。
 <br/><br/>
 
 **Top Down 和 Bottom Up 的区别：**<br/>
@@ -142,22 +143,22 @@ public int climbStairs(int n) {
 
 **表达状态转移的代码。代码非完整:heavy_exclamation_mark:，我们还需要对每个人采用的 ``决策 (博弈)`` 进行分析**
 
-	```java
+```java
 
-	// 我们可以用以下来表达状态变化的简单的递归模式 
+// 我们可以用以下来表达状态变化的简单的递归模式 
 
-	 public int play(int A[],int l,int r,int player){ 
-		if (l == r) {// 如果只剩一个，直接取这一个
-			return A[l]；
-	    }
-		int nextPlayer = (player + 1) % 2;
-	    int score = 0;
+ public int play(int A[],int l,int r,int player){ 
+	if (l == r) {// 如果只剩一个，直接取这一个
+		return A[l]；
+    }
+	int nextPlayer = (player + 1) % 2;
+    int score = 0;
 
-		score = Math.max(score, A[l] + play(A,l+1,r,nextPlayer )); // 如果取第一个数字
-		score = Math.max(score, A[r] + play(A,l,r-1,nextPlayer )); // 如果取最后一个数字
-		return score;
-	} 
-	```
+	score = Math.max(score, A[l] + play(A,l+1,r,nextPlayer )); // 如果取第一个数字
+	score = Math.max(score, A[r] + play(A,l,r-1,nextPlayer )); // 如果取最后一个数字
+	return score;
+} 
+```
 
 #### 分析:
 
@@ -231,26 +232,19 @@ class Solution {
  - 在这里我们的 **Base Case** 是 **``l==r``** 的时候，**``l==r``** 就是只剩下一个石子的时候，如果这个回合是小六，他能得到所有的分数，如果是小丁，她得到的是**0分**（还记得 **``play``** 函数是指小六的分数而不是小丁的吗）
  
 **DP 关系转移**:
-    
-```
-小六：
-我们用dp[l][r][0] 去表示当前是 小六的回合，他能拿的数组[l:r]的数
-
-1. 如果小六拿第一个，区间会变成[l+1:r],下一个player是1，那就是A[l]+dp[l+1][r][1]
-2. 如果小六拿最后一个，区间会变成[l:r-1],下一个player是1，那就是A[r]+dp[l][r-1][1]
-3. 小六要取最大的那一个，综上，关系式就是 dp[l][r][0]=Math.max(A[l]+dp[l+1][r][1],A[r]+dp[l][r-1][1])
-```
+- **小六：**   
+	我们用``dp[l][r][0]`` 去表示当前是 小六的回合，他能拿的数组``[l:r]``的数
+	1. 如果小六拿第一个，区间会变成``[l+1:r]``,下一个``player``是 `1`，那就是`A[l]+dp[l+1][r][1]`
+	2. 如果小六拿最后一个，区间会变成`[l:r-1]`,下一个`player`是 `1`，那就是`A[r]+dp[l][r-1][1]` 
+	3. 小六要取最大的那一个，综上，关系式就是 ``dp[l][r][0]=Math.max(A[l]+dp[l+1][r][1],A[r]+dp[l][r-1][1])``
 
 <br/>
 
-```
-小丁：
-我们用dp[l][r][1] 去表示当前是 小丁的回合，她能拿的数组[l:r]的数。(小丁的分数不计入play函数里面)
-
-1. 如果小丁拿第一个，区间会变成[l+1:r],下一个player是0，那就是dp[l+1][r][0]
-2. 如果小丁拿最后一个，区间会变成[l:r-1],下一个player是0，那就是dp[l][r-1][0]
-3. 小丁要取最小的那一个，综上，关系式就是 dp[l][r][1]=Math.min(dp[l+1][r][0],dp[l][r-1][0])
-```
+- **小丁：**  
+	我们用``dp[l][r][1]`` 去表示当前是 小丁的回合，她能拿的数组``[l:r]``的数。(小丁的分数不计入`play`函数里面)
+	1. 如果小丁拿第一个，区间会变成``[l+1:r]``,下一个`player`是 `0`，那就是`dp[l+1][r][0]`
+	2. 如果小丁拿最后一个，区间会变成``[l:r-1]``,下一个`player`是 `0`，那就是`dp[l][r-1][0]`
+	3. 小丁要取最小的那一个，综上，关系式就是 ``dp[l][r][1]=Math.min(dp[l+1][r][0],dp[l][r-1][0])``
  
  
 **下一步：**
@@ -293,8 +287,8 @@ class Solution {
  - 这里的关系式我们可以从 **``Top Down``** 那里看的出来，做 **DP** 的时候建议先 **``Top Down``** 再 **``Bottom UP``** 会比较容易<br/><br/>
  - 需要注意打表的顺序，保证 **求当前的状态时，之前的状态已经是记录好了的**.<br/><br/>
  - 时间和空间复杂度跟 **``Top Down``** 是一样的
- 	- 空间复杂度：**``O(n^2)``** 
- 	- 时间复杂度：**``O(n^2)``**
+ 	- 空间复杂度：**O(N^2)** 
+ 	- 时间复杂度：**O(N^2)**
 
 <br/><br/>
 <h1 id="stone-game-3" align="center"><b> Stone Game III </b></h1>
@@ -405,28 +399,26 @@ class Solution {
  - 同理，我们要先对 **Base Case** 进行 initialize。这里的**Base Case** 是都取完outbound的时候，所以可以不用进行特别的初始化 <br/><br/>
  
 **DP 关系转移:**
-```
-小六：
-我们用dp[l][0] 去表示当前是 小六的回合，他能拿的数组[l:A.size()-1]的数
+- **小六：**
+	我们用`dp[l][0]` 去表示当前是 小六的回合，他能拿的数组`[l:A.size()-1]`的数
 
-1. 如果小六拿第一个，区间会变成[l+1],下一个player是1，那就是A[l]+dp[l+1][1]
-2. 如果小六拿第前两个，区间会变成[l+2],下一个player是1，那就是A[l]+A[l+1]+dp[l+2][1]
-3. 如果小六拿第前三个，区间会变成[l+3],下一个player是1，那就是A[l]+A[l+1]+A[l+2]+dp[l+3][1]
-4. 综上，关系式就是dp[l][0]=max(A[l]+dp[l+1][1],A[l]+A[l+1]+dp[l+2][1],A[l]+A[l+1]+A[l+2]+dp[l+3][1]) 可能会有outbound的情况，我们可以用if statement做特殊处理
-```
+	1. 如果小六拿第一个，区间会变成`[l+1]`,下一个`player`是 `1`，那就是`A[l]+dp[l+1][1]`
+	2. 如果小六拿第前两个，区间会变成`[l+2]`,下一个`player`是 `1`，那就是`A[l]+A[l+1]+dp[l+2][1]`
+	3. 如果小六拿第前三个，区间会变成`[l+3]`,下一个`player`是 `1`，那就是`A[l]+A[l+1]+A[l+2]+dp[l+3][1]`
+	4. 综上，关系式就是`dp[l][0]=max(A[l]+dp[l+1][1],A[l]+A[l+1]+dp[l+2][1],A[l]+A[l+1]+A[l+2]+dp[l+3][1])` 可能会有 **outbound** 的情况，我们可以用 **if statement** 做特殊处理
+
 
 <br/>
 
-```
-小丁：
-我们用dp[l][1] 去表示当前是 小丁的回合，她能拿的数组[l:A.size()-1]的数。(小丁的分数不计入play函数里面)
 
-1. 如果小丁拿第一个，区间会变成[l+1],下一个player是1，那就是A[l]+dp[l+1][1]
-2. 如果小丁拿第前两个，区间会变成[l+2],下一个player是1，那就是A[l]+A[l+1]+dp[l+2][1]
-3. 如果小丁拿第前三个，区间会变成[l+3],下一个player是1，那就是A[l]+A[l+1]+A[l+2]+dp[l+3][1]
-4. 综上，关系式就是dp[l][1]=min(dp[l+1][0],dp[l+2][0],dp[l+3][0]) 可能会有outbound的情况，这种情况dp[outbound][0]=0
+- **小丁：**
+	我们用`dp[l][1]` 去表示当前是 小丁的回合，她能拿的数组`[l:A.size()-1]`的数。(小丁的分数不计入`play`函数里面)
 
-```
+	1. 如果小丁拿第一个，区间会变成`[l+1]`,下一个`player`是 `1`，那就是`A[l]+dp[l+1][1]`
+	2. 如果小丁拿第前两个，区间会变成`[l+2]`,下一个`player`是 `1`，那就是`A[l]+A[l+1]+dp[l+2][1]`
+	3. 如果小丁拿第前三个，区间会变成`[l+3]`,下一个`player`是 `1`，那就是`A[l]+A[l+1]+A[l+2]+dp[l+3][1]`
+	4. 综上，关系式就是`dp[l][1]=min(dp[l+1][0],dp[l+2][0],dp[l+3][0])` 可能会有 **outbound** 的情况，这种情况`dp[outbound][0]=0`
+
 
 **下一步：**
  - 我们需要注意的只剩下 dp 填表的顺序。**我们需要保证求当前的状态时，之前的状态已经是记录好了的**<br/><br/>
@@ -487,7 +479,7 @@ class Solution {
 	
 
  - 和 **Strone Game** 一样非常类似，如果我们一开始不知道怎么推理关系式，我们可以先从 **``Top Down``** 或者暴力开始 <br/><br/>
- - 知道关系之后我们就可以打表了，先初始化**Base Case**， 然后**只要保证求当前的状态时，之前的状态已经是记录好了的就没问题**<br/><br/>
+ - 知道关系之后我们就可以打表了，先初始化 **Base Case**， 然后**只要保证求当前的状态时，之前的状态已经是记录好了的就没问题**<br/><br/>
 
 
 <br/><br/>
