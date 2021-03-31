@@ -282,7 +282,7 @@ class Solution {
              }  
         }  
         
-	    //dp[0][A.length-1][0] 代表小六能从数组区间[0,len(A)-1]能拿到的最大分数 
+	//dp[0][A.length-1][0] 代表小六能从数组区间[0,len(A)-1]能拿到的最大分数 
         return dp[0][A.length - 1][0] * 2 > sum;  
      }  
 }
@@ -347,7 +347,7 @@ class Solution {
 
         int maxScore = dfs(dp, A, 0, 0);  // 小六能拿到最大的分数
 		
-	    // 根据分数有三种情况
+	// 根据分数有三种情况
 	
         if (maxScore * 2 > sum) {
             return "Alice";
@@ -448,8 +448,8 @@ class Solution {
             int mn = INT_MAX;
             int mx = INT_MIN;
             int score = 0;
-            for (int j = 0; j < 3; j++) {       // player0 的三种选择
-                if (l + j < A.size()) {         // 注意outbound
+            for (int j = 0; j < 3; j++) { // player0 的三种选择
+                if (l + j < A.size()) { // 注意outbound
                     score += A[l + j];
                 }
                 if (l + j + 1 < A.size()) {
@@ -459,7 +459,7 @@ class Solution {
                 }
             }
 
-            for (int j = 0; j < 3; j++) {        // player0 的三种选择
+            for (int j = 0; j < 3; j++) { // player0 的三种选择
                 if (l + j + 1 < A.size()) {
                     mn = min(mn, dp[l + j + 1][0]);
                 } else {
@@ -472,7 +472,7 @@ class Solution {
 
         int maxScore = dp[0][0];
 		
-		//三种情况
+	//三种情况
         if (maxScore * 2 > sum) {
             return "Alice";
         } else if (maxScore * 2 < sum) {
