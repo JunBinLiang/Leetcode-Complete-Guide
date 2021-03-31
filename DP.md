@@ -148,7 +148,7 @@ public int climbStairs(int n) {
 /* 我们可以用以下来表达状态变化的简单的递归模式 */
 
 public int play(int A[],int l,int r,int player){ 
-	if (l == r) {                   // 如果只剩一个，直接取这一个
+	if (l == r) {// 如果只剩一个，直接取这一个
 		return A[l]；
 	}
 	int nextPlayer = (player + 1) % 2;
@@ -193,14 +193,14 @@ class Solution {
             return A[l];  
         }  
         
-        if(dp[l][r][player]!=0){   // 如果是已经访问过的状态，我们不需要再重新计算  
+        if(dp[l][r][player]!=0){ // 如果是已经访问过的状态，我们不需要再重新计算  
             return dp[l][r][player];  
         }  
   
-        int nextPlayer = (player + 1) % 2;   // 下一个player是谁？我们用0代表小六，1代表小丁 
+        int nextPlayer = (player + 1) % 2; // 下一个player是谁？我们用0代表小六，1代表小丁 
         int score = 0;  
 	  
-		   //我们可以从递归这里推导出关系式，从而转换成BottomUp
+		//我们可以从递归这里推导出关系式，从而转换成BottomUp
         if(player == 0){ // 小六：对于返回的分数，我要取最大的那一个 
             score=Math.max(score,A[l]+play(A,l+1,r,nextPlayer));  
             score=Math.max(score,A[r]+play(A,l,r-1,nextPlayer));  
@@ -347,7 +347,7 @@ class Solution {
 
         int maxScore = dfs(dp, A, 0, 0);  // 小六能拿到最大的分数
 		
-	/*** 根据分数有三种情况 ******/
+	    // 根据分数有三种情况
 	
         if (maxScore * 2 > sum) {
             return "Alice";
@@ -359,11 +359,11 @@ class Solution {
     }
 
     int dfs(vector<vector<int>>& dp, vector<int>& A, int l, int player) {
-        if (l >= A.size()) {            // 所有数被取完的情况
+        if (l >= A.size()) { // 所有数被取完的情况
             return 0;
         }
 
-        if (dp[l][player] != INT_MIN) {    // 如果是已经访问过的状态，我们不需要再重新计算  
+        if (dp[l][player] != INT_MIN) { // 如果是已经访问过的状态，我们不需要再重新计算  
             return dp[l][player];
         }
 
