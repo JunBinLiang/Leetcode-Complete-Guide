@@ -111,7 +111,7 @@ public int climbStairs(int n) {
 从时间负责度和空间负责度来说**TopDown**和 **BottomUp** 并没有太大区别。但是**TopDown**需要用到递归的关系，对 **Runtime Stack**的要求比较高。
 
 <br/><br/>
-**如何区分两者**
+**如何区分两者**<br/>
 **TopDown**， **BottomUp** 两个听起来好像不太好记，但其实不然。一个是从上到下，一个是从下到上，这里我们只要记住 **Base Case** 是下就行了。做**TopDown**的时候，**Base Case**是最后被访问的。而**BottomUp**则相反，我们会先initialize **Base Case**
 
 
