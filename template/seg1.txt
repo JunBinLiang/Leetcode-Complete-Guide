@@ -52,7 +52,7 @@
         class Seg{
         int l,r;
         int max=0;
-        Sol.Seg left=null,right=null;
+        Seg left=null,right=null;
         public Seg(int l,int r){
             this.l=l;
             this.r=r;
