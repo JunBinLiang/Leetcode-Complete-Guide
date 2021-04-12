@@ -1,0 +1,84 @@
+https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/
+
+class Solution {
+    public int networkDelayTime(int[][] edges, int n, int k) {
+        List<int[]>g[]=new ArrayList[n];
+        int dis[]=new int[n];
+        Arrays.fill(dis,1000000);
+        dis[k-1]=0;
+        
+        for(int i=1;i<n;i++){
+            for(int e[]:edges){
+                int u=e[0]-1,v=e[1]-1,w=e[2];
+                if(dis[u]+w<dis[v]){
+                    dis[v]=dis[u]+w;
+                }
+            }    
+        }
+        
+        
+        int res=Integer.MIN_VALUE;
+        for(int i:dis){
+            res=Math.max(res,i);
+        }
+        if(res==1000000)return -1;
+        return res;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://binarysearch.com/problems/Best-Currency-Path
+import java.util.*;
+
+class Solution {
+    public double solve(String source, String target, String[] A, String[] B, double[] rates) {
+        int id=0;
+        Map<String,Integer>f=new HashMap<>();
+        f.put(source,id++);
+        f.put(target,id++);
+        int n=A.length;
+        for(int i=0;i<n;i++){
+            String s1=A[i];
+            String s2=B[i];
+            if(!f.containsKey(s1))f.put(s1,id++);
+            if(!f.containsKey(s2))f.put(s2,id++);
+        }
+
+        double dis[]=new double[f.size()];
+        Arrays.fill(dis,0);
+        dis[f.get(source)]=1.0;
+        for(int i=0;i<f.size()-1;i++){
+            for(int j=0;j<n;j++){
+                int u=f.get(A[j]),v=f.get(B[j]);
+                double w=rates[j];
+                if(dis[u]*w>dis[v]){
+                    dis[v]=dis[u]*w;
+                }
+            }
+        }
+
+        for(int i=0;i<n;i++){
+            int u=f.get(A[i]),v=f.get(B[i]);
+            double w=rates[i];
+            if(dis[u]*w>dis[v]){
+                return -1;    
+            }
+        }
+
+        
+        return dis[f.get(target)];
+
+    }
+}
