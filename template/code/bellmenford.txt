@@ -1,0 +1,27 @@
+https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/
+
+class Solution {
+    public int networkDelayTime(int[][] edges, int n, int k) {
+        List<int[]>g[]=new ArrayList[n];
+        int dis[]=new int[n];
+        Arrays.fill(dis,1000000);
+        dis[k-1]=0;
+        
+        for(int i=1;i<n;i++){
+            for(int e[]:edges){
+                int u=e[0]-1,v=e[1]-1,w=e[2];
+                if(dis[u]+w<dis[v]){
+                    dis[v]=dis[u]+w;
+                }
+            }    
+        }
+        
+        
+        int res=Integer.MIN_VALUE;
+        for(int i:dis){
+            res=Math.max(res,i);
+        }
+        if(res==1000000)return -1;
+        return res;
+    }
+}
