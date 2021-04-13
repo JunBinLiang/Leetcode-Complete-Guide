@@ -144,10 +144,13 @@
         int n = A.length;
         int maxProfit = 0;
 
-        int dp[] = new int[n];//dp[i] 代表 prices[i:n] 能得到的最大一次交易利润
+		//dp[i] 代表 prices[i:n] 能得到的最大一次交易利润，也就是我们的第二次操作
+		
+        int dp[] = new int[n];
         int maxSell = A[n - 1];
 
         for (int i = n - 2; i >= 0; i--) {
+	        //maxSell-A[i] 代表如果我们在i这天进行购买的话的最大利润
             dp[i] = Math.max(dp[i + 1], maxSell - A[i]);
             maxSell = Math.max(maxSell, A[i]);
             maxProfit = Math.max(maxProfit, dp[i]);
@@ -155,6 +158,8 @@
 
         int minBuy = A[0];
         for (int i = 1; i < A.length - 1; i++) {
+	        //假设我们第一次卖发生在i,买得发生在prices[0:i-1]
+	        //第二次操作发生在prices[i+1 : n]，dp[i+1]表示prices[i+1 : n]这段区间进行一次操作的最大值
             maxProfit = Math.max(maxProfit, dp[i + 1] + (A[i] - minBuy));
             minBuy = Math.min(minBuy, A[i]);
         }
