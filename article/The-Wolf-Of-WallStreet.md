@@ -57,3 +57,40 @@
 #### 空间复杂度和时间复杂度：
   - 时间复杂度：O(N^2) 
   - 空间复杂度：O(1)
+<br/><br/>
+
+### 题解2：
+
+ - 如果我们在第 i 天进行买的操作，那么卖的操作一定还是得发生在 **prices[i+1 : n]** 这个定理是不变的
+ - 换句话说，对于每个买的操作，**prices[i]**，我们只需要找到 **prices[i+1 : n]** 里最大的数即可
+ - 我们可以用一个dp array 去记录，**dp[i]** 表示 **max(prices[i:n])** 
+ - 如果我们在 i 这天进行买的操作，他最大的收益就是 **dp[i+1] - prices[i]** (这里我们要注意outbound)
+```
+    public int maxProfit(int[] prices) {
+        int maxProfit = 0;
+        int n = prices.length;
+        int dp[] = new int[n]; 
+
+
+        dp[n - 1] = prices[n - 1];
+        for (int i = n - 2; i >= 0; i--) {
+            dp[i] = Math.max(prices[i], dp[i + 1]);
+        }
+        
+
+        for (int i = 0; i < n - 1; i++) {
+            maxProfit = Math.max(maxProfit, dp[i + 1] - prices[i]);
+        }
+
+        return maxProfit;
+    }
+```
+
+#### 代码总结：
+
+ - 如果我们在 i 进行买的操作，卖就发生在  **[i+1 : n]** 里。比起去生成所有的pair，我们只需要知道**prices[i+1 : n]** 的最大值即可，我们可以用一个 **dp** array 去把我们所需要的提前给计算好。**dp[i]** 代表 **prices[i:n]** 的最大值
+
+#### 空间复杂度和时间复杂度：
+  - 时间复杂度：O(N) 
+  - 空间复杂度：O(N)
+<br/><br/>
