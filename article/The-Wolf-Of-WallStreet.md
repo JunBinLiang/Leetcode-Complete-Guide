@@ -101,24 +101,24 @@
 
 ### :bulb:题解3：
 
- - 我们其实可以把空间压缩到 **O(1)**，只要把顺序改改就行
- - 如果我们在 i 天卖，同理，买得发生在 **[0 : i-1]**, 我们这次只需要找  **prices[0 : i-1]** 里最小的即可，我们可以一边走loop一边记录
+ - 我们其实可以把空间压缩到 **O(1)**，只要一边走一边记录就可以了
 
 ```
     public int maxProfit(int[] prices) {
-        int minBuy = prices[0];
+        int n = prices.length;
+        int maxSell = prices[n - 1];
         int maxProfit = 0;
 
-        for (int i = 1; i < prices.length; i++) {
-            maxProfit = Math.max(maxProfit, prices[i] - minBuy);
-            minBuy = Math.min(minBuy, prices[i]);
+        for (int i = n - 2; i >= 0; i--) {
+            maxProfit = Math.max(maxProfit, maxSell - prices[i]);
+            maxSell = Math.max(maxSell, prices[i]);
         }
         return maxProfit;
     }
-   ```
+```
 #### 代码总结：
 
- - 同样的思路，我们把顺序调换一下就可以做的更好。我们设计算法的时候应该从多个方向和维度进行思考
+ - 同理，枚举买，如果在**i**进行买，卖就发生在**prices[i+1 : n]**，找到**prices[i+1 : n]**最大的即可，我们可以一边走一边记录最大的从而省略掉array
 
 #### 空间复杂度和时间复杂度：
   - 时间复杂度：O(N) 
