@@ -192,11 +192,10 @@
 
 ### 问题分析 ：
 
- - 与之前的问题一样，我们可以试着枚举**买**或者**卖**，这一题我们会枚举**卖**，如果我们在**i**天就行卖的操作，其对应的买的操作一定发生在**prices[0 : i-1]**
- - 但是因为这次不只是只有一次操作这么简单，如果我们在 **j** 天进行购买和**i** 天进行卖 (j<i), **prices[0 : j-1]** 可能还存在着其它的买卖
+ - 与之前的问题一样，我们可以试着枚举**买**或者**卖**, 但是因为这次不只是只有一次操作这么简单，如果我们在 **j** 天进行购买和**i** 天进行卖 (j<i), **prices[0 : j-1]** 可能还存在着其它的买卖
  - 我们试着像第一题的题解1一样先从暴力入手，去试着枚举 **（买，卖）** pair。如果我们在**i**天进行卖和**j**天进行买，他的单次交易 **(singleTransaction)** 能得到的利益是 **prices[i]-prices[j]-fee**。但我们别忘了，我们**prices[0 : j-1]** 还可以进行其它的交易，所以我们可以用一个**dp** 去记录，**dp[i]** 表示 **prices[0:i]** 能得到的最大收益
  - 所以如果我们在 **i**天卖和在**j** 天买，他能得到的最大收益就是 **prices[i]-prices[j]-fee+dp[j-1]**
- - 
+ - 现在我们剩下的问题就是如何去define **dp[i]**，如果我们在**i** 天进行交易，那么**dp[i]=max(prices[i] - prices[j]-fee + dp[j-1])**。但是我们别忘了一件事，我们在**i** 这天也可以不进行**卖**的操作，所以还要跟**dp[i-1]**进行比较
 
  
 
@@ -204,12 +203,13 @@
 ```
  public int maxProfit(int[] prices, int fee) {
    int n = prices.length;
-   int dp[] = new int[n];
+   int dp[] = new int[n];//dp[i]表示 [0:i]的最大收益
 
-   for (int i = 1; i < n; i++) {
+   for (int i = 1; i < n; i++) {//枚举i,i是卖的天数
      dp[i] = dp[i - 1];
-     for (int j = i - 1; j >= 0; j--) {
+     for (int j = i - 1; j >= 0; j--) {//j 是买的天数，j<i
        int singleTransaction = Math.max(0, prices[i] - prices[j] - fee);
+       //注意outbound
        if (j - 1 >= 0) {
          dp[i] = Math.max(dp[i], singleTransaction + dp[j - 1]);
        } else {
@@ -233,6 +233,6 @@
 ### :bulb:题解2 ：优化DP
 
  - 我们可以从**dp**的关系转移中进行优化
- - 从**题解1**我们可以看出 **dp[i]=max(prices[i] - prices[j]-fee + dp[j-1])**，从这转移式中我们可以发现 **i**是一个不变量，而 **j**是变量
+ - 从**题解1**我们可以看出 **dp[i]=max(dp[i-1], max(prices[i] - prices[j]-fee + dp[j-1]))**，从这转移式中我们可以发现 **i**是一个不变量，而 **j**是变量
 
 ## 总结
