@@ -193,11 +193,28 @@
 ### 问题分析 ：
 
  - 与之前的问题一样，我们可以试着枚举**买**或者**卖**，这一题我们会枚举**卖**，如果我们在**i**天就行卖的操作，其对应的买的操作一定发生在**prices[0 : i-1]**
- - 
+ - 但是因为这次不只是只有一次操作这么简单，如果我们在 **j** 天进行购买和**i** 天进行卖 (j<i), **prices[0 : j-1]** 可能还存在着其它的买卖
+ 
 
 ### :bulb:题解1 ：暴力DP
 ```
+ public int maxProfit(int[] prices, int fee) {
+   int n = prices.length;
+   int dp[] = new int[n];
 
+   for (int i = 1; i < n; i++) {
+     dp[i] = dp[i - 1];
+     for (int j = i - 1; j >= 0; j--) {
+       int singleTransaction = Math.max(0, prices[i] - prices[j] - fee);
+       if (j - 1 >= 0) {
+         dp[i] = Math.max(dp[i], singleTransaction + dp[j - 1]);
+       } else {
+         dp[i] = Math.max(dp[i], singleTransaction);
+       }
+     }
+   }
+   return dp[n - 1];
+ }
 ```
 
 #### 代码总结：
