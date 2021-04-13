@@ -102,12 +102,12 @@
 
 ```
     public int maxProfit(int[] prices) {
-        int minSell = prices[0];
+        int minBuy = prices[0];
         int maxProfit = 0;
 
         for (int i = 1; i < prices.length; i++) {
-            maxProfit = Math.max(maxProfit, prices[i] - minSell);
-            minSell = Math.min(minSell, prices[i]);
+            maxProfit = Math.max(maxProfit, prices[i] - minBuy);
+            minBuy = Math.min(minBuy, prices[i]);
         }
         return maxProfit;
     }
