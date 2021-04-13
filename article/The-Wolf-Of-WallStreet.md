@@ -101,7 +101,7 @@
  - 如果我们在 i 天卖，同理，买得发生在 **[0 : i-1]**, 我们这次只需要找  **prices[0 : i-1]** 里最小的即可，我们可以一边走loop一边记录
 
 ```
-	public int maxProfit(int[] prices) {
+    public int maxProfit(int[] prices) {
         int minSell = prices[0];
         int maxProfit = 0;
 
