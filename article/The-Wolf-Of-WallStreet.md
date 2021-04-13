@@ -140,5 +140,41 @@
 
 ### :bulb:题解1：
 ```
+    public int maxProfit(int[] A) {
+        int n = A.length;
+        int maxProfit = 0;
 
+        int dp[] = new int[n];//dp[i] 代表 prices[i:n] 能得到的最大一次交易利润
+        int maxSell = A[n - 1];
+
+        for (int i = n - 2; i >= 0; i--) {
+            dp[i] = Math.max(dp[i + 1], maxSell - A[i]);
+            maxSell = Math.max(maxSell, A[i]);
+            maxProfit = Math.max(maxProfit, dp[i]);
+        }
+
+        int minBuy = A[0];
+        for (int i = 1; i < A.length - 1; i++) {
+            maxProfit = Math.max(maxProfit, dp[i + 1] + (A[i] - minBuy));
+            minBuy = Math.min(minBuy, A[i]);
+        }
+
+        return maxProfit;
+    }
 ```
+
+#### 代码总结：
+
+ - 
+
+#### 空间复杂度和时间复杂度：
+  - 时间复杂度：O(N) 
+  - 空间复杂度：O(N)
+<br/><br/>
+
+
+## 3. Best Time to Buy and Sell Stock with Transaction Fee && Best Time to Buy and Sell Stock II 
+
+
+#### 题意：
+>同样还是给你一组数组代表每一天的股价，
