@@ -20,7 +20,7 @@
 
 
 
-## Best Time to Buy and Sell Stock
+## 1. Best Time to Buy and Sell Stock
 
 #### 题意：
 
@@ -63,7 +63,7 @@
 
  - 如果我们在第 i 天进行买的操作，那么卖的操作一定还是得发生在 **prices[i+1 : n]** 这个定理是不变的
  - 换句话说，对于每个买的操作，**prices[i]**，我们只需要找到 **prices[i+1 : n]** 里最大的数即可
- - 我们可以用一个dp array 去记录，**dp[i]** 表示 **max(prices[i:n])** 
+ - 我们可以用一个dp array 去记录，**dp[i]** 表示 **max(prices[i : n])** 
  - 如果我们在 i 这天进行买的操作，他最大的收益就是 **dp[i+1] - prices[i]** (这里我们要注意outbound)
 ```
     public int maxProfit(int[] prices) {
@@ -88,9 +88,35 @@
 
 #### 代码总结：
 
- - 如果我们在 i 进行买的操作，卖就发生在  **[i+1 : n]** 里。比起去生成所有的pair，我们只需要知道**prices[i+1 : n]** 的最大值即可，我们可以用一个 **dp** array 去把我们所需要的提前给计算好。**dp[i]** 代表 **prices[i:n]** 的最大值
+ - 如果我们在 i 进行买的操作，卖就发生在  **[i+1 : n]** 里。比起去生成所有的pair，我们只需要知道**prices[i+1 : n]** 的最大值即可，我们可以用一个 **dp** array 去把我们所需要的提前给计算好。**dp[i]** 代表 **prices[i : n]** 的最大值
 
 #### 空间复杂度和时间复杂度：
   - 时间复杂度：O(N) 
   - 空间复杂度：O(N)
+<br/><br/>
+
+### 题解3：
+
+ - 我们其实可以把空间压缩到 **O(1)**，只要把顺序改改就行
+ - 如果我们在 i 天卖，同理，买得发生在 **[0 : i-1]**, 我们这次只需要找  **prices[0 : i-1]** 里最小的即可，我们可以一边走loop一边记录
+
+```
+	public int maxProfit(int[] prices) {
+        int minSell = prices[0];
+        int maxProfit = 0;
+
+        for (int i = 1; i < prices.length; i++) {
+            maxProfit = Math.max(maxProfit, prices[i] - minSell);
+            minSell = Math.min(minSell, prices[i]);
+        }
+        return maxProfit;
+    }
+   ```
+#### 代码总结：
+
+ - 同样的思路，我们把顺序调换一下就可以做的更好。我们设计算法的时候应该从多个方向和维度进行思考
+
+#### 空间复杂度和时间复杂度：
+  - 时间复杂度：O(N) 
+  - 空间复杂度：O(1)
 <br/><br/>
