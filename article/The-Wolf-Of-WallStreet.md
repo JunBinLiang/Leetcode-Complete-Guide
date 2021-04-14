@@ -262,4 +262,15 @@ public int maxProfit(int[] A, int fee) {
   - 空间复杂度：O(N)
 <br/><br/>
 
+
+## 4. Best Time to Buy and Sell Stock with Cooldown
+#### 题意：
+>给你一个数组prices = [1,2,3,0,2]，你可以进行多次交易，但每完成一次交易得有一个cooldown，不能连续做交易 <br/><br/>
+>按照以上的数据，如果我们按这样的操作[buy, sell, cooldown, buy, sell]
+>我们能够得到利益 (2 - 1) + (2 - 0) =3，这是我们能够得到的最大利益
+
+### 问题分析 ：
+
+ - 如果你会了第三题的解法，你会发现这题与上一题其实是异曲同工
+
 ## 总结
