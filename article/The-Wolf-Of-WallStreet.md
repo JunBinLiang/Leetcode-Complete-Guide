@@ -234,6 +234,8 @@
 
  - 我们可以从**dp**的关系转移中进行优化<br/><br/>
  - 从**题解1**我们可以看出 **dp[i]=max(dp[i-1], max(prices[i] - prices[j]-fee + dp[j-1]))**，从这转移式中我们可以发现 **i**是一个不变量，而 **j**是变量<br/><br/>
+ - 首先，我们设**dp[i]=dp[i-1]**。 我们再仔细的观察一下这个式子 **prices[i] - prices[j]-fee + dp[j-1]**，当我们枚举 **i** 的时候，我们会发现**prices[i] - fee** 是个常数！我们如果把式子重新整理一下，拿他就是 **(prices[i] - fee) - (prices[j] - dp[j-1])**。我们要是想整个式子的值越大，变量部分**prices[j] - dp[j-1]** 就得越小 <br/><br/>
+ 
 
 ```
 public int maxProfit(int[] A, int fee) {
