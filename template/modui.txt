@@ -1,0 +1,204 @@
+// Don't place your source in a package
+import java.lang.reflect.Array;
+import java.text.DecimalFormat;
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.math.*;
+import java.util.stream.Stream;
+
+
+// Please name your class Main
+public class Main {
+    static FastScanner fs=new FastScanner();
+    static class FastScanner {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st=new StringTokenizer("");
+        public String next() {
+            while (!st.hasMoreElements())
+                try {
+                    st=new StringTokenizer(br.readLine());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            return st.nextToken();
+        }
+        int Int() {
+            return Integer.parseInt(next());
+        }
+
+        long Long() {
+            return Long.parseLong(next());
+        }
+
+        String Str(){
+            return next();
+        }
+    }
+
+
+    public static void main (String[] args) throws java.lang.Exception {
+        PrintWriter out = new PrintWriter(System.out);
+
+        int T=1;
+        for(int t=0;t<T;t++){
+            int n=Int();int m=Int();
+            int A[]=new int[n];
+            for(int i=0;i<n;i++){
+                A[i]=Int();
+            }
+            int q[][]=new int[m][2];
+
+            for(int i=0;i<m;i++){
+                q[i][0]=Int()-1;
+                q[i][1]=Int()-1;
+            }
+
+
+            Solution sol=new Solution(out);
+            sol.solution(A,q);
+        }
+        out.flush();
+
+    }
+
+
+    public static int Int(){
+        return fs.Int();
+    }
+    public static long Long(){
+        return fs.Long();
+    }
+    public static String Str(){
+        return fs.Str();
+    }
+
+}
+
+
+
+
+
+
+class Solution{
+    PrintWriter out;
+    public Solution(PrintWriter out){
+        this.out=out;
+    }
+
+
+
+    long sum=0;
+    int cnt[]=new int[1000010];
+    int A[];
+    public void solution(int A[],int q[][]){
+        this.A=A;
+        int n=A.length;
+        int BLOCK=(int)(Math.sqrt(n));
+        long res[]=new long[q.length];
+        List<Query>list=new ArrayList<>();
+        for(int i=0;i<q.length;i++){
+            list.add(new Query(q[i][0],q[i][1],i));
+        }
+
+
+        Collections.sort(list,(q1,q2)->{
+            if(q1.l/BLOCK!=q2.l/BLOCK){
+                return (q1.l/BLOCK)-(q2.l/BLOCK);
+            }
+            else{
+                return q1.r-q2.r;
+            }
+        });
+
+        int l=0,r=0;
+        sum+=A[0];
+        cnt[A[0]]=1;
+        for(Query query:list){
+            int ll=query.l;
+            int rr=query.r;
+
+            while( l < ll )
+                del(l++);
+            while( l > ll )
+                add(--l);
+            while( r < rr )
+                add(++r);
+            while( r > rr )
+                del(r--);
+            res[query.i]=sum;
+        }
+
+
+
+
+
+        for(long i:res){
+            out.print(i+" ");
+        }
+    }
+
+
+
+    public void add(int i){
+        long old=cnt[A[i]];
+        cnt[A[i]]++;
+        sum=sum-(A[i])*(old*old)+(A[i])*((old+1)*(old+1));
+    }
+
+    public void del(int i){
+        long old=cnt[A[i]];
+        cnt[A[i]]--;
+        sum=sum-(A[i])*(old*old)+(A[i])*((old-1)*(old-1));
+    }
+
+
+    class Query{
+        int l,r,i;
+        public Query(int l,int r,int i){
+            this.l=l;
+            this.r=r;
+            this.i=i;
+        }
+    }
+
+
+
+
+
+}
+
+
+
+/*
+                             ;\
+                            |' \
+         _                  ; : ;
+        / `-.              /: : |
+       |  ,-.`-.          ,': : |
+       \  :  `. `.       ,'-. : |
+        \ ;    ;  `-.__,'    `-.|
+         \ ;   ;  :::  ,::'`:.  `.
+          \ `-. :  `    :.    `.  \
+           \   \    ,   ;   ,:    (\
+            \   :., :.    ,'o)): ` `-.
+           ,/,' ;' ,::"'`.`---'   `.  `-._
+         ,/  :  ; '"      `;'          ,--`.
+        ;/   :; ;             ,:'     (   ,:)
+          ,.,:.    ; ,:.,  ,-._ `.     \""'/
+          '::'     `:'`  ,'(  \`._____.-'"'
+             ;,   ;  `.  `. `._`-.  \\
+             ;:.  ;:       `-._`-.\  \`.
+              '`:. :        |' `. `\  ) \
+      -hrr-      ` ;:       |    `--\__,'
+                   '`      ,'
+                        ,-'
+
+
+                      free bug dog
+*/
+
+
+
+
+
