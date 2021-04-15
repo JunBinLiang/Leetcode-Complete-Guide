@@ -1,0 +1,77 @@
+1. 普通莫队 https://xiekeyi98.com/f2a41e6f.html
+
+
+
+#include<bits/stdc++.h>
+using namespace std ;
+const int maxn = 300000 + 100 ;
+const int maxm = 1000000 + 10 ;
+int a[maxn];
+int cnt[maxm];
+int ans = 0 ; 
+int BLOCK = 0 ;
+ 
+inline void add( int pos ) 
+{
+    cnt[ a[pos] ]++;
+    if( cnt[ a[pos] ] == 1 )
+        ans++;
+}
+ 
+inline void remov( int pos )
+{
+    cnt[ a[pos] ]--;
+    if( cnt[ a[pos] ] == 0 )
+        ans--;
+}
+ 
+struct QUERY
+{
+    int l , r , num ;
+}Q[maxn];
+ 
+int ANS[maxn];
+inline bool cmp( const QUERY &a , const QUERY &b )
+{
+    if( a.l / BLOCK != b.l / BLOCK )
+        return a.l / BLOCK < b.l / BLOCK ;
+    else
+        return a.r < b.r ;
+}
+ 
+int main()
+{
+    int n ;
+    cin >> n ;
+    for( int i = 1 ; i <= n ; i++)
+        scanf("%d",&a[i]);
+    int q;
+    scanf("%d",&q);
+ 
+    for( int i = 1 ; i <= q ; i++)
+    {
+        int l , r ;
+        scanf("%d%d",&l,&r);
+        Q[i].l = l , Q[i].r = r , Q[i].num = i ;
+    }
+    BLOCK = sqrt(n);
+    sort( Q + 1 , Q + 1 + q , cmp ) ;
+    int l = 0  , r = 0 ; 
+    for( int i = 1 ; i <= q ; i++)
+    {
+        int ll = Q[i].l  , rr = Q[i].r;
+        while( l < ll )
+            remov(l++);
+        while( l > ll )
+            add(--l);
+        while( r < rr )
+            add(++r);
+        while( r > rr )
+            remov(r--);
+        ANS[Q[i].num] = ans ; 
+    }
+ 
+    for( int i = 1 ; i <= q ; i++)
+        printf("%d\n",ANS[i]);
+    return 0 ;
+}
