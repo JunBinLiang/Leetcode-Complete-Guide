@@ -46,3 +46,10 @@
 		long binverse=B.modInverse(BigInteger.valueOf(mod)).longValue();
 		return ((a)*(binverse%mod))%mod;
 	}
+	
+	
+	 public long divide(long a,long b){
+        BigInteger B= BigInteger.valueOf(b);
+        long binverse=B.modInverse(BigInteger.valueOf(mod)).longValue();
+        return ((a)*(binverse%mod))%mod;
+    }
