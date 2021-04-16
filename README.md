@@ -1477,7 +1477,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    7. [ Dynamic Connectivity (UF with Delete) (Segment Tree need) ](./select/7.txt) <br />
    8. [ 最小割入门, 参考LCP38 ](./select/8.txt) <br />
    9. [ 莫队,可修莫队 ](./select/9.txt) <br />
-   10. [Minumum Cost MaxFlow ](https://github.com/JunBinLiang/CF/blob/main/code/237E.txt) <br />
+   10. [Minumum Cost Max Flow (最小费用最大流) ](https://github.com/JunBinLiang/CF/blob/main/code/237E.txt) <br />
    <br/>
    
   
