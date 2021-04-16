@@ -1454,6 +1454,8 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
     [莫队 ](./template/modui.txt) <br />
     [可修莫队 CF940F ](https://github.com/JunBinLiang/CF/blob/main/code/940F.txt) <br />
     [mcmf ](./template/mcmf.txt) <br />
+    [Java Templates ](https://sites.google.com/site/indy256/algo/min_cost_flow_simple) <br />
+    
   
    #  参考
    1. 最大权闭合子图 (https://www.cnblogs.com/TreeDream/p/5942354.html#_labelTop)  (强顶)<br/>
