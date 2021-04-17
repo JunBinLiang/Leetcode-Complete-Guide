@@ -1,0 +1,51 @@
+import java.math.BigInteger;
+class Solution {
+    int mod=1000000007;
+    long res=0;
+    public int makeStringSorted(String s) {
+        long f[]=new long[s.length()+10];
+        char A[]=s.toCharArray();
+        f[0]=f[1]=1;
+        for(int i=2;i<f.length;i++){
+            f[i]=f[i-1]*i;
+            f[i]%=mod;
+        }
+        
+        int cnt[]=new int[26];
+        cnt[A[A.length-1]-'a']++;
+        int mn=A[A.length-1];
+        
+        for(int i=A.length-2;i>=0;i--){
+            
+            if(mn<A[i]){
+                long a=f[A.length-i-1];
+                int large=0;
+                for(int j=0;j<26;j++){
+                    if(A[i]-'a'>j){
+                        large+=cnt[j];
+                    }
+                    if(cnt[j]>0){
+                        a=divide(a,f[cnt[j]]);
+                    }
+                }
+                
+                a=a*large;
+                a%=mod;
+                a=divide(a,cnt[A[i]-'a']+1);
+                res+=a;
+                res%=mod;
+            }
+            cnt[A[i]-'a']++;
+            mn=Math.min(mn,A[i]);
+        }
+        
+        return (int)(res);
+    }
+    
+    
+    public long divide(long a,long b){
+        BigInteger B= BigInteger.valueOf(b);
+        long binverse=B.modInverse(BigInteger.valueOf(mod)).longValue();
+        return ((a)*(binverse%mod))%mod;
+    }
+}
