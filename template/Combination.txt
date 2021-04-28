@@ -53,3 +53,27 @@
         long binverse=B.modInverse(BigInteger.valueOf(mod)).longValue();
         return ((a)*(binverse%mod))%mod;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //Big C
+    
+    inv[1]=1;
+        for (int i=2;i<=2*k;i++){
+            inv[i]=inv[mod%i]*(mod-mod/i)%mod;
+        }
+    public long CC(int n,int r) {
+        long ret=1;
+        for (int i=n-r+1;i<=n;i++)
+            ret=(ret*i)%mod;
+        for (int i=1;i<=r;i++)
+            ret=(ret*inv[i])%mod;
+        return ret;
+    }
