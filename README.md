@@ -1456,6 +1456,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
     [mcmf ](./template/mcmf.txt) <br />
     [?th permutation of String](./template/permutation.txt) <br />
     [z- Algorithm](./template/z.txt) <br />
+    [Interval Insert](./template/interval.txt) <br />
     [Java Templates ](https://sites.google.com/site/indy256/algo/min_cost_flow_simple) <br />
    
     
