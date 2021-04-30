@@ -1,0 +1,14 @@
+public boolean book(int y1, int y2) {
+        
+        Integer low=treemap.lowerKey(y1);
+        Integer ceil=treemap.ceilingKey(y1);
+        if(low!=null&&treemap.get(low)>y1){//check if there is y overlap
+                return false;
+        }
+        if(ceil!=null&&ceil<y2){//check if there is y overlap
+            return false;
+        }
+        
+        treemap.put(y1,y2);
+        return true;
+    }
