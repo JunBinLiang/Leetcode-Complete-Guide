@@ -255,8 +255,8 @@ lass Solution {
                 j++;
             }
 
-			//A[j : n-1] 里的size 都比当前query的大，找到一个id 离当前query 最近的
-			//用到 TreeSet/TreeMap 里的floor 和 ceil，如有不懂可Goold 一下其API
+	    //A[j : n-1] 里的size 都比当前query的大，找到一个id 离当前query 最近的
+	    //用到 TreeSet/TreeMap 里的floor 和 ceil，如有不懂可Goold 一下其API
 			 
             Integer floor = tree.floor(id);
             Integer ceil = tree.ceiling(id);
