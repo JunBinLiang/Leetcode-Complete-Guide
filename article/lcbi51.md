@@ -34,9 +34,9 @@
 #### 题意：
 >给你一个字串，它的偶数index 是字母，奇数index 是数字。如果是字母，我们直接加进去答案里。如果是数字，我们取出前面的字母再把它shift 当前数字值的位置，把最终的这个字母加进去答案里<br/>
 >a1c1e1 ： abcdef <br/><br/>
->s[1] -> shift('a',1) = 'b'
->s[3] -> shift('c',1) = 'd'
-> s[5] -> shift('e',1) = 'f'
+>s[1] -> shift('a',1) = 'b'<br/>
+>s[3] -> shift('c',1) = 'd'<br/>
+> s[5] -> shift('e',1) = 'f'<br/>
 
 
 ### 思路：
@@ -206,7 +206,7 @@ class Solution {
 
 #### 题意：
 >给你两个数组，每个数组都是2D 数组。rooms = [[2,2],[1,2],[3,2]], queries = [[3,1],[3,3],[5,2]].<br/>
->rooms[i] = [roomIdi, sizei]  queries[i] = [preferredj, minSizej]
+>rooms[i] = [roomIdi, sizei]  queries[i] = [preferredj, minSizej]<br/><br/>
 >对于每一个query，我们要找到一个room，他的size>= minSize，并且id 是与它最接近的。如果有两个一样距离的id，我们res[i] 使用最小的那一个。如果没有比他大的房子，res[i]=-1
 
 ### 思路：
