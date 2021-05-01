@@ -88,22 +88,22 @@ class Solution {
 ### :bulb:代码1：
 ```
 class SeatManager {
-    TreeSet<Integer>tree=new TreeSet<>();
+    TreeSet < Integer > tree = new TreeSet < > ();
     public SeatManager(int n) {
-	    //一开始拥有 [1 : n]的数字
-        for(int i=1;i<=n;i++){
+        //一开始拥有 [1 : n]的数字
+        for (int i = 1; i <= n; i++) {
             tree.add(i);
         }
     }
-    
+
     public int reserve() {
-        Integer first=tree.first();//TreeSet 的first 就是最小的那一个
+        Integer first = tree.first(); //TreeSet 的first 就是最小的那一个
         tree.remove(first);
         return first;
     }
-    
+
     public void unreserve(int id) {
-        tree.add(id);//加进去
+        tree.add(id); //加进去
     }
 }
 
@@ -122,21 +122,21 @@ class SeatManager {
 ### :bulb:代码2：
 ```
 class SeatManager {
-    PriorityQueue<Integer>pq=new PriorityQueue<>();
+    PriorityQueue < Integer > pq = new PriorityQueue < > ();
     public SeatManager(int n) {
-        for(int i=1;i<=n;i++){
+        for (int i = 1; i <= n; i++) {
             pq.add(i);
         }
     }
-    
+
     public int reserve() {
-       int mn=pq.poll();//最小
-        while(pq.size()>0&&pq.peek()==mn){//可能有重复的数字，我们要直接移除
+        int mn = pq.poll(); //最小
+        while (pq.size() > 0 && pq.peek() == mn) { //可能有重复的数字，我们要直接移除
             pq.poll();
         }
         return mn;
     }
-    
+
     public void unreserve(int id) {
         pq.add(id);
     }
