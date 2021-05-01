@@ -26,7 +26,7 @@
  **1846**. 一道简单的贪心题目，排一下序就好 （有点惊讶第三题会如此简单，还以为会不会有什么天坑给小编跳）<br/>
  **1847**. 比较好的一题，可以深入学习一下。小编比赛时用的方法比较复杂 (Segment Tree + Binary Search 读者们有兴趣可以试试)，代码比较丑陋的关系赛后重新写了一份TreeSet + 双指针的解法。这里可以对TreeSet/TreeMap 的floor 和 ceiling 这个API 了解一下，非常好用<br/><br/>
 
-**:bulb:吐槽** ： 
+
  
 
 ## 1844 Replace All Digits with Characters
