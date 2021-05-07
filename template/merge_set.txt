@@ -1,0 +1,17 @@
+public class Merge_Set{
+        TreeMap<Integer,Integer>tree=new TreeMap<>();
+        public void add(int l,int r){
+            while(true){
+                Integer floor=tree.floorKey(r);
+                if(floor==null||tree.get(floor)<l)break;
+                r=Math.max(r,tree.get(floor));
+                l=Math.min(l,floor);
+                tree.remove(floor);
+
+            }
+            tree.put(l,r);
+        }
+        public int size(){
+            return tree.size();
+        }
+    }
