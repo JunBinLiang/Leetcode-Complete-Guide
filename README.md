@@ -1461,6 +1461,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
     [Inverse Pair](./template/inversePair.txt) <br />
     [GCD](./template/gcd.txt) <br />
     [Euler](./template/euler.txt) <br />
+    [Weight-1 Shortest Cycle](./template/shortestcycle1.txt) <br />
     [Java Templates ](https://sites.google.com/site/indy256/algo/min_cost_flow_simple) <br />
    
     
