@@ -1431,6 +1431,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    
   #  Algorithm Template 
   [Suffix Array (后缀数组 (nlog^2 n))](./template/suffixArray.txt) <br />
+  [Suffix Array + LCP](./template/suffixlcp.txt) <br />
   [Combination C(n,k) in mod ](./template/Combination.txt) <br />
   [Max Flow Dinic  ](./template/maxflow.txt) <br />
   [Shortest Path ](./template/dijkstra.txt) <br />
