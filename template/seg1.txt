@@ -1,4 +1,5 @@
-    class Seg{
+  //min
+   class Seg{
         int l,r;
         int min=Integer.MAX_VALUE;
         Sol.Seg left=null,right=null;
