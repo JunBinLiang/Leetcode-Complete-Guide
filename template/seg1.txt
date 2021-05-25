@@ -96,3 +96,68 @@
     }
     
     
+    
+    //range update min brute force
+    
+        class Seg{
+        int l,r;
+        long min=Long.MAX_VALUE;
+        Seg left=null,right=null;
+        long sum=0;
+        public Seg(int l,int r){
+            this.l=l;
+            this.r=r;
+            if(l!=r){
+                int mid=l+(r-l)/2;
+                if(l<=mid){
+                    left=new Seg(l,mid);
+                    this.min=Math.min(this.min,left.min);
+                }
+                if(r>=mid+1){
+                    right=new Seg(mid+1,r);
+                    this.min=Math.min(this.min,right.min);
+                }
+            }else{
+                this.min=A[l];
+            }
+        }
+        public long query(int s,int e){
+            if(e<0||s<0)return 0;
+            if(l==s&&r==e){
+                return min;
+            }
+            int mid=l+(r-l)/2; //left :  to mid-1,
+            if(e<=mid){
+                return left.query(s,e)+this.sum;
+            }
+            else if(s>=mid+1){
+                return right.query(s,e)+this.sum;
+            }else{
+                return Math.min(left.query(s,mid),right.query(mid+1,e))+this.sum;
+            }
+        }
+
+        public void update(int s,int e,int val){
+            //System.out.println(s+"  "+e+"  "+this.min+"  "+this.sum);
+            if(s==l&&e==r){
+                this.sum+=val;
+                this.min+=val;
+                return;
+            }
+
+            int mid=l+(r-l)/2;
+            if(e<=mid){
+                left.update(s,e,val);
+            }
+            else if(s>=mid+1){
+                right.update(s,e,val);
+
+            }
+            else{
+                left.update(s,mid,val);
+                right.update(mid+1,e,val);
+            }
+            this.min=Math.min(left.min,right.min)+this.sum;
+        }
+    }
+    
