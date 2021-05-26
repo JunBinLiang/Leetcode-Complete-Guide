@@ -9,7 +9,7 @@
             range=new int[n][2];
             for(int i=0;i<range.length;i++)Arrays.fill(range[i],-1);
             range[0][0]=0;
-            range[0][1]=A.length-1;
+            range[0][1]=A.length-1;// [l,r] the length of the array
         }
 
         public void construct(int id,int l,int r){
@@ -63,7 +63,7 @@
             }
         }
 
-        public void update(int s,int e,int val,int id){
+        public void update(int s,int e,int val,int id){//update a whole range instead of single
             int l=range[id][0],r=range[id][1];
             if(s==l&&e==r){
                 lazysum[id]+=val;
