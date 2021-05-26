@@ -161,3 +161,61 @@
         }
     }
     
+    
+    //range update min little lazy
+       class Seg{
+        int l,r;
+        long min=Long.MAX_VALUE;
+        Seg left=null,right=null;
+        long sum=0;
+        public Seg(int l,int r){
+            this.l=l;
+            this.r=r;
+        }
+        public long query(int s,int e){
+            if(e<0||s<0)return 0;
+            if(l==s&&r==e){
+                return min;
+            }
+            int mid=l+(r-l)/2; //left :  to mid-1,
+            if(left==null)left=new Seg(l,mid);
+            if(right==null)right=new Seg(mid+1,r);
+            if(e<=mid){
+                return left.query(s,e)+this.sum;
+            }
+            else if(s>=mid+1){
+                return right.query(s,e)+this.sum;
+            }else{
+                return Math.min(left.query(s,mid),right.query(mid+1,e))+this.sum;
+            }
+        }
+
+        public void update(int s,int e,int val,int order){
+            if(s==l&&e==r){
+                this.sum+=val;
+                if(order==1){
+                    this.min=0;this.sum=0;
+                }
+                this.min+=val;
+                return;
+            }
+
+            int mid=l+(r-l)/2;
+            if(left==null)left=new Seg(l,mid);
+            if(right==null)right=new Seg(mid+1,r);
+
+            if(e<=mid){
+                left.update(s,e,val,order);
+            }
+            else if(s>=mid+1){
+                right.update(s,e,val,order);
+
+            }
+            else{
+                left.update(s,mid,val,order);
+                right.update(mid+1,e,val,order);
+            }
+            this.min=Math.min(left.min,right.min)+this.sum;
+        }
+    }
+    
