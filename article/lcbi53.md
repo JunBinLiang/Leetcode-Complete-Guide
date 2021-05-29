@@ -134,7 +134,7 @@ class Solution {
 ### 思路：
 1. 我们首先对每个数字进行长度为 1，2，3 . . . 的左右斜线和进行储存<br/><br/>
 2. 我们用 dp[i][j][cnt][0] 表示以 (i , j)为起点长度为cnt 的左斜线和。dp[i][j][cnt][1] 表示以 (i , j)为起点长度为cnt 的右斜线和 <br/><br/>
-3. 如果当前位置是  (i , j)，我们想求以 (i , j) 为起点长度为 n 的四角形和。
+3. 如果当前位置是  (i , j)，我们想求以 (i , j) 为起点长度为 cnt 的四角形和。
 **sum = dp[i][j][cnt][0] + dp[i][j][cnt][1] + dp[i+cnt][j-cnt][cnt][1] + dp[i+cnt][j+cnt][cnt][0] - mat[i][j] - mat[i+2*cnt][j] - mat[i+cnt][j-cnt] - mat[i+cnt][j+cnt]**。公式看起来有点复杂，代码里的comment图会进行更详细解释。 简单点来说，就是把四角形的四条线加起来<br/><br/>
 5. 当然，要注意check 看看是否outbound
 
