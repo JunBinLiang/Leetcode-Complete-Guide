@@ -1490,6 +1490,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    9. [ 莫队,可修莫队 ](./select/9.txt) <br />
    10. [Minumum Cost Max Flow (最小费用最大流) ](https://github.com/JunBinLiang/CF/blob/main/code/237E.txt) <br />
    11. [Boruvka’s algorithm （MST）O(m logn) ](https://www.geeksforgeeks.org/boruvkas-algorithm-greedy-algo-9/) <br />
+   12. [Nim Game ](./select/nim.txt) <br />
    <br/>
    
   
