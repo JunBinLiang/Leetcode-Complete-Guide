@@ -1,0 +1,5 @@
+nim:
+
+xor all stones
+0: first player lost
+1:first player always win
