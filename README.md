@@ -1440,6 +1440,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    [ Fenwick Tree ](./template/BIT.txt) <br />
    [ Hopcroft  (Solving Maximum matching Cardinality for Bipartile Graph)  O(sqrt(n)*m)](./template/Hopcroft.txt) <br />
      [ Min Seg ](./template/seg1.txt) <br />
+     [Segment Tree Range Update](./template/segrange.txt) <br />
      [Range Update Min Lazy Seg ](./template/rangeseg.txt) <br />
      [ Lazy Seg ](./template/Lazyseg1.txt) <br />
      [ 2D Seg ](./template/2Dseg.txt) <br />
