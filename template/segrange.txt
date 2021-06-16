@@ -1,4 +1,4 @@
-    class Seg{
+class Seg{
         int l,r;
         long min=Long.MAX_VALUE;
         long max=Long.MIN_VALUE;
