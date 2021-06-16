@@ -1,4 +1,3 @@
-
     class Seg{
         int l,r;
         long min=Long.MAX_VALUE;
@@ -14,6 +13,9 @@
                 int mid=l+(r-l)/2;
                 if(l<=mid)left=new Seg(l,mid,A);
                 if(r>=mid+1)right=new Seg(mid+1,r,A);
+                this.min=Math.min(left.min,right.min);
+                this.max=Math.max(left.max,right.max);
+                this.sum=left.sum+right.sum;
             }else{
                 this.min=this.max=this.sum=A[l];
             }
@@ -22,7 +24,6 @@
 
         public long query1(int s,int e){//min
             if(e<0||s<0)return 0;
-
             if(this.setTo!=-1){
                 return this.setTo;
             }
