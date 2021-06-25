@@ -1396,6 +1396,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
     [Euler](./template/euler.txt) <br />
     [Weight-1 Shortest Cycle](./template/shortestcycle1.txt) <br />
      [xor a big range](./template/xor.txt) <br />
+     [fft](./template/fft.txt) <br />
     [Java Templates ](https://sites.google.com/site/indy256/algo/min_cost_flow_simple) <br />
    
     
