@@ -1,3 +1,173 @@
+class FFT3 {
+
+    public static class Complex {
+        double r, i;
+
+        public Complex(double real, double imag) {
+            r = real;
+            i = imag;
+        }
+
+        public Complex plus(Complex b) {
+            return new Complex(r + b.r, i + b.i);
+        }
+
+        public Complex minus(Complex b) {
+            return new Complex(r - b.r, i - b.i);
+        }
+
+        public Complex times(Complex b) {
+            return new Complex(r * b.r - i * b.i, r * b.i + i * b.r);
+        }
+
+        public Complex scalar(double s) {
+            return new Complex(r * s, i * s);
+        }
+
+        public Complex conjugate() {
+            return new Complex(r, -i);
+        }
+    }
+
+    public static void change(Complex y[], int len){
+        int i, j, k;
+        for(i = 1, j = len / 2; i < len - 1; i++){
+            if(i < j) {
+                Complex temp = y[i];
+                y[i]=y[j];
+                y[j]=temp;
+            }
+            k = len / 2;
+            while(j >= k){
+                j -= k;
+                k /= 2;
+            }
+            if(j < k) j += k;
+        }
+    }
+
+    public static void fft(Complex y[], int len, int on){
+        change(y, len);
+        for(int h = 2; h <= len; h *= 2){
+            Complex wn=new Complex(Math.cos(-on * 2*Math.PI / h), Math.sin(-on * 2*Math.PI / h));
+            for(int j = 0; j < len; j += h){
+                Complex w=new Complex(1, 0);
+                for(int k = j; k < j + h/2; k++){
+                    Complex u = y[k];
+                    Complex t = w.times(y[k + h/2]);
+                    y[k] = u.plus(t);
+                    y[k + h/2] = u.minus(t);
+                    w = w.times(wn);
+                }
+            }
+        }
+        if(on == -1)
+            for(int i = 0; i < len; i++) {
+                y[i].r /= len;
+            }
+    }
+
+    public static List<Integer> mult(Complex[] a, Complex[] b) {
+        int len1=a.length;
+        int len2=b.length;
+        int length = 1;
+        while(length < len1 * 2 || length < len2 * 2) length *= 2;
+        a = pad(a, length);
+        b = pad(b, length);
+        fft(a,length,1);
+        fft(b,length,1);
+        Complex e[]=new Complex[length];
+        for (int i = 0; i < length; i++) e[i] = a[i].times(b[i]);
+        fft(e,length,-1);
+
+        int sum[]=new int[length+1];
+        for(int i = 0; i < length; i++)
+            sum[i] = (int)(e[i].r + 0.5);
+        for(int i = 0; i < length; i++){
+            sum[i+1] += sum[i] / 10;
+            sum[i] %= 10;
+        }
+
+        length = len1 + len2 - 1;
+        while(sum[length] <= 0 && length > 0) length--;
+        List<Integer>res=new ArrayList<>();
+        for(int i = 0; i <=length; i++){
+            res.add(sum[i]);
+        }
+        return res;
+    }
+
+    public static Complex[] pad(Complex[] arr, int n) {
+        Complex[] padded = new Complex[n];
+        for (int i = 0; i < n; i++) padded[i] = (i < arr.length) ? arr[i] : new Complex(0, 0);
+        return padded;
+    }
+
+    /*public static void main(String[] args)
+    {
+
+        FFT3.Complex[] A = new FFT3.Complex[8];
+        FFT3.Complex[] B = new FFT3.Complex[4];
+        A[0]=new FFT3.Complex(1,0);
+        A[1]=new FFT3.Complex(0,0);
+        A[2]=new FFT3.Complex(1,0);
+        A[3]=new FFT3.Complex(1,0);
+        A[4]=new FFT3.Complex(0,0);
+        A[5]=new FFT3.Complex(0,0);
+        A[6]=new FFT3.Complex(0,0);
+        A[7]=new FFT3.Complex(0,0);
+        B[0]=new FFT3.Complex(0,0);
+        B[1]=new FFT3.Complex(0,0);
+        B[2]=new FFT3.Complex(1,0);
+        B[3]=new FFT3.Complex(1,0);
+        mult(A,B);
+
+    }*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class FFT {
 
     public static Complex[] fft(Complex[] x) {
