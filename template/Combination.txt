@@ -23,10 +23,19 @@
 	//number theory
 	
 	
-	
+	inv[1]=1;
+        for (int i=2;i<inv.length;i++){
+            inv[i]=modInverse(i,MOD)*inv[i-1];
+            inv[i]%=MOD;
+        }
 	private long nCr(int n, int r) {
             return ((fac[n] * inv[r] % mod) * inv[n - r]) % mod;
         }
+	
+	
+	
+	
+	
 	
 	
   
