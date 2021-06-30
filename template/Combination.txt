@@ -21,6 +21,14 @@
 	
 	
 	//number theory
+	
+	
+	
+	private long nCr(int n, int r) {
+            return ((fac[n] * inv[r] % mod) * inv[n - r]) % mod;
+        }
+	
+	
   
   
   init(){
