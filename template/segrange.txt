@@ -123,3 +123,83 @@
     }
 
 }
+
+
+
+
+
+
+
+
+
+//lazy
+    class Seg{
+        int l,r;
+        int sum=0;
+        int setTo=-1;
+        Seg left=null,right=null;
+        public Seg(int l,int r){
+            this.l=l;
+            this.r=r;
+        }
+
+
+        public int query2(int s,int e){//sum
+            if(e<0||s<0)return 0;
+
+
+            if(l==s&&r==e){
+                return this.sum();
+            }
+
+            int mid=l+(r-l)/2; //left :  to mid-1,
+            if(this.left==null)this.left=new Seg(l,mid);
+            if(this.right==null)this.right=new Seg(mid+1,r);
+            if(setTo!=-1){
+                left.update(l,mid,setTo);
+                right.update(mid+1,r,setTo);
+            }
+            if(this.sum()==0)return 0;
+            if(e<=mid){
+                return left.query2(s,e);
+            }
+            else if(s>=mid+1){
+                return right.query2(s,e);
+            }else{
+                return left.query2(s,mid)+right.query2(mid+1,e);
+            }
+        }
+
+
+        public void update(int s,int e,int val){
+            if(e<0||s<0||s>e)return;
+            if(l==s&&r==e){//whole subtree : setTo
+                this.setTo=val;
+                return;
+            }
+            int mid=l+(r-l)/2;
+            if(this.left==null)this.left=new Seg(l,mid);
+            if(this.right==null)this.right=new Seg(mid+1,r);
+            if(setTo!=-1){
+                left.update(l,mid,setTo);
+                right.update(mid+1,r,setTo);
+            }
+            if(e<=mid){
+                left.update(s,e,val);
+            }
+            else if(s>=mid+1){
+                right.update(s,e,val);
+            }else{
+                left.update(s,mid,val);
+                right.update(mid+1,e,val);
+            }
+            this.sum=left.sum()+right.sum();
+            this.setTo=-1;
+        }
+        public int sum() {
+            if (setTo!=-1) return (r-l+1)*(setTo);
+            return sum;
+        }
+    }
+
+}
