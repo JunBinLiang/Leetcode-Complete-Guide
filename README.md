@@ -1399,6 +1399,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
      [fft](./template/fft.txt) <br />
      [Mobius](./template/Mobius.txt) <br />
      [PersistentSeg](./template/persistanttree.txt) <br />
+     [Euler Path](https://binarysearch.com/problems/Flight-Itinerary-Sequelt) <br />
     [Java Templates ](https://sites.google.com/site/indy256/algo/min_cost_flow_simple) <br />
    
     
