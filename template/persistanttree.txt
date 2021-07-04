@@ -55,3 +55,105 @@ class PersistentSeg{
         cur.sum=cur.left.sum+cur.right.sum;
     }
 }
+
+
+
+
+
+
+
+//Maintain longest one
+class PersistentSeg{
+    int l,r;
+    int max = 0;
+    PersistentSeg left=null,right=null;
+    int post=0;int pre=0;
+    TreeMap<Integer,Integer>tree=new TreeMap<>();
+    public PersistentSeg(int l,int r,boolean init){
+        this.l=l;
+        this.r=r;
+        if(l!=r){
+            int mid=l+(r-l)/2;
+            if(l<=mid)left=new PersistentSeg(l,mid,true);
+            if(r>=mid+1)right=new PersistentSeg(mid+1,r,true);
+        }else{
+            this.max=0;
+        }
+    }
+    public PersistentSeg(int l,int r){
+        this.l=l;
+        this.r=r;
+    }
+
+
+    public int query(int s,int e){
+
+        if(e<0||s<0)return 0;
+        if(l==s&&r==e){
+            return max;
+        }
+        int mid=l+(r-l)/2; //left :  to mid-1,
+        if(e<=mid){
+            return left.query(s,e);
+        }
+        else if(s>=mid+1){
+            return right.query(s,e);
+        }
+        else{
+            int mx = Math.max(left.query(s,mid),right.query(mid+1,e));
+            mx=Math.max(mx,Math.min(left.post,mid-s+1)+Math.min(right.pre,e-(mid+1)+1));
+            return mx;
+        }
+    }
+
+    public int len(){
+        return this.r-this.l+1;
+    }
+
+    public static void update(PersistentSeg pre, PersistentSeg cur, int index, int val) {
+        if (cur.l == cur.r) {
+            cur.max = 1;
+            cur.pre=1;
+            cur.post=1;
+            return;
+        }
+
+        int mid = cur.l + (cur.r - cur.l) / 2;
+        if (index <= mid) {//update left
+            cur.right = pre.right;
+            cur.left = new PersistentSeg(pre.left.l, pre.left.r);
+            cur.left.pre=pre.left.pre;cur.left.post=pre.left.post;
+
+            update(pre.left, cur.left, index, val);
+            cur.pre=cur.left.pre;cur.post=cur.right.post;
+
+            if(cur.right.pre==cur.right.len()){
+                cur.post=cur.right.pre+cur.left.post;
+            }
+            if(cur.left.pre==cur.left.len()){
+                cur.pre=cur.left.pre+cur.right.pre;
+            }
+
+
+        } else {//update right
+            cur.left = pre.left;
+            cur.right = new PersistentSeg(pre.right.l, pre.right.r);
+            cur.right.pre=pre.right.pre;cur.right.post=pre.right.post;
+
+            update(pre.right, cur.right, index, val);
+            cur.pre=cur.left.pre;cur.post=cur.right.post;
+
+            if(cur.right.pre==cur.right.len()){
+                cur.post=cur.right.pre+cur.left.post;
+            }
+            if(cur.left.pre==cur.left.len()){
+                cur.pre=cur.left.pre+cur.right.pre;
+            }
+        }
+
+        cur.max = Math.max(cur.left.max, cur.right.max);
+        cur.max=Math.max(cur.max,Math.min(cur.left.post+cur.right.pre,cur.len()));
+    }
+
+
+}
