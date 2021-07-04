@@ -1398,6 +1398,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
      [xor a big range](./template/xor.txt) <br />
      [fft](./template/fft.txt) <br />
      [Mobius](./template/Mobius.txt) <br />
+     [PersistentSeg](./template/persistanttree.txt) <br />
     [Java Templates ](https://sites.google.com/site/indy256/algo/min_cost_flow_simple) <br />
    
     
@@ -1428,14 +1429,6 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    13. [莫比乌斯数 ](https://www.cnblogs.com/lfri/p/11175162.html) <br />
    <br/>
    
-  
-  
-   #  每周周赛题解
-   1. [ 228 Weekly   ](./lccontest/228.md) <br />
-   2. [ 232 Weekly   ](./lccontest/232.md) <br />
-   3. [ 48 Bi-Weekly   ](./lccontest/bi48.md) <br />
-   4. [ 233 Weekly   ](./lccontest/233.md) <br />
-   5. [ 234 Weekly (会补上)   ](./lccontest/234.md) <br />
-  
+ 
 
   
