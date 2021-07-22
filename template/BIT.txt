@@ -95,3 +95,42 @@ class FenWick {
  * obj.update(i,val);
  * int param_2 = obj.sumRange(i,j);
  */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class FenWick {
+        int tree[];//1-index based
+        int A[];
+        public FenWick(int[] A) {
+            this.A=A;
+            tree=new int[A.length+1];
+            int sum=0;
+        }
+
+        public void update(int i, int val) {
+            i++;
+            while(i<tree.length){
+                tree[i]+=val;
+                i+=(i&-i);
+            }
+        }
+
+        public int sumRange(int i, int j) {
+            return pre(j+1)-pre(i);
+        }
+
+        public int pre(int i){
+            int sum=0;
+            while(i>0){
+                sum+=tree[i];
+                i-=(i&-i);
+            }
+            return sum;
+        }
+}
+
