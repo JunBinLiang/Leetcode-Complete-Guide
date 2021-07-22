@@ -38,3 +38,74 @@ class Solution {
     
  
 }
+
+
+
+
+
+
+
+
+
+
+//update version
+
+class Solution {
+    int mod=1000000007;
+    public int maxProfit(int[] A, int orders) {
+     
+        List<Long>list = new ArrayList<>();
+        list.add(0l);
+        
+        for(long i : A){
+            list.add(i);
+        }
+        
+        Collections.sort(list);
+        
+        long res = 0;
+        long cnt = 1;
+        
+        for(int i = list.size() - 2; i >=0; i--){
+            long pre = list.get(i + 1);
+            long dif = pre - list.get(i);
+            
+            if(orders >= dif * cnt){ //7 7 8 8
+                long sum =(list.get(i) + 1 + pre) * dif / 2; 
+                sum *= cnt;
+                res += sum;
+                orders -= dif * cnt;
+            }
+            else{
+                long chunk = orders / cnt;
+                
+                long start = list.get(i + 1) - chunk + 1;
+                long end = list.get(i + 1);
+                
+                
+                long completeTake = (start + end) * (end - start + 1) / 2;
+                completeTake *= cnt;
+                res += completeTake;
+                
+                orders -= chunk * cnt;
+                res += (start - 1) * orders;
+                orders = 0;
+            }
+            
+            cnt++;
+            res %= mod;
+            
+            if(orders == 0){
+                break;
+            }
+            
+        }
+        return (int)(res % mod);
+    }
+}
+
+
+
+
+
+
