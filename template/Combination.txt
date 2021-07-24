@@ -152,3 +152,12 @@
 
         return x;
     }
+
+
+
+
+
+
+public long C(long fact[],int n,int m) {
+        return fact[n]*Pow(fact[n-m],mod-2)%mod*Pow(fact[m],mod-2)%mod;
+    }
