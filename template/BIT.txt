@@ -134,3 +134,38 @@ class FenWick {
         }
 }
 
+
+
+
+
+
+
+    class FenWick {
+        int tree[];//1-index based
+        public FenWick(int n) {
+            tree=new int[n+1];
+            int sum=0;
+        }
+
+        public void update(int i, int val) {
+            i++;
+            while(i<tree.length){
+                tree[i]+=val;
+                i+=(i&-i);
+            }
+        }
+
+        public int sumRange(int i, int j) {
+            return pre(j+1)-pre(i);
+        }
+
+        public int pre(int i){
+            int sum=0;
+            while(i>0){
+                sum+=tree[i];
+                i-=(i&-i);
+            }
+            return sum;
+        }
+    }
+
