@@ -84,7 +84,7 @@
 
         public void update(int index,int val){
             if(l==r){
-                max+=val;
+                max=val;
                 return;
             }
             int mid=l+(r-l)/2;
