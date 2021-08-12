@@ -908,6 +908,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    [ Hopcroft  (Solving Maximum matching Cardinality for Bipartile Graph)  O(sqrt(n)*m)](./template/Hopcroft.txt) <br />
      [ Min Seg ](./template/seg1.txt) <br />
      [Segment Tree Set Range](./template/segrange.txt) <br />
+      [Segment Tree Update Range](https://github.com/JunBinLiang/CF/blob/main/code/52C.txt) <br />
      [Range Update Min Lazy Seg ](./template/rangeseg.txt) <br />
      [ Lazy Seg ](./template/Lazyseg1.txt) <br />
      [ 2D Seg ](./template/2Dseg.txt) <br />
