@@ -968,6 +968,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
    12. [Nim Game ](./select/nim.txt) <br />
    13. [莫比乌斯数 ](https://www.cnblogs.com/lfri/p/11175162.html) <br />
    14. [图的三/四元 环 ](https://blog.csdn.net/weixin_43466755/article/details/112985722?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-4.control) <br />
+   15.  [Centroid Decomposition ](https://robert1003.github.io/2020/01/16/centroid-decomposition.html#how-to-find-a-centroid) <br />
    <br/>
    
  
