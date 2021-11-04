@@ -1,0 +1,31 @@
+class Solution {
+    public String longestPrefix(String s) {
+        int pre[] = pre(s);
+
+        StringBuilder str = new StringBuilder();
+        for(int i = 0; i < pre[s.length() - 1]; i++){
+            str.append(s.charAt(i));
+        }
+        
+        return str.toString();
+    }
+    
+    public int[] pre(String pattern){
+        int pre[]=new int[pattern.length()];
+        int l=0,r=1;
+        while(r<pattern.length()){
+            if(pattern.charAt(r)==pattern.charAt(l)){
+                pre[r]=l+1;
+                l++;
+                r++;
+            }else{
+                if(l==0)r++;
+                else{
+                    l=pre[l-1];
+                }
+            }
+        }
+        return pre;
+    }
+}
+
