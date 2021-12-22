@@ -144,7 +144,6 @@ class FenWick {
         int tree[];//1-index based
         public FenWick(int n) {
             tree=new int[n+1];
-            int sum=0;
         }
 
         public void update(int i, int val) {
