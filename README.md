@@ -939,6 +939,7 @@ Reference : https://ali-ibrahim137.github.io/competitive/programming/2020/01/02/
      [PersistentSeg](./template/persistanttree.txt) <br />
      [Euler Path/Circuit](https://binarysearch.com/problems/Flight-Itinerary-Sequelt) <br />
       [Rolling Hash](./template/hash.txt) <br />
+       [Sparse Table Range Query](./template/sparse.txt) <br />
     [Java Templates ](https://sites.google.com/site/indy256/algo/min_cost_flow_simple) <br />
    
     
