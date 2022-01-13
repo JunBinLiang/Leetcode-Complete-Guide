@@ -1,0 +1,56 @@
+class RangeQuery{
+    int f1[][];
+    int f2[][];
+
+    public void SetMin(int A[]){
+        f1 = new int[21][A.length];
+        for(int i = 0; i < A.length; i++){
+            f1[0][i] = A[i];
+        }
+
+        for(int i = 1; i < f1.length; i++){
+            for(int j = 0; j  <A.length; j++){
+                if((j + (1 << (i - 1))) >= A.length)break;
+                f1[i][j] = Math.min(f1[i - 1][j], f1[i - 1][j + (1 << (i - 1))]);
+            }
+        }
+    }
+
+    public void SetMax(int A[]){
+        f2 = new int[21][A.length];
+        for(int i = 0; i < A.length; i++){
+            f2[0][i] = A[i];
+        }
+
+        for(int i = 1; i < f2.length; i++){
+            for(int j = 0; j  <A.length; j++){
+                if((j + (1 << (i - 1))) >= A.length)break;
+                f2[i][j] = Math.max(f2[i - 1][j], f2[i - 1][j + (1 << (i - 1))]);
+            }
+        }
+    }
+
+    public int min(int l, int r) {
+        int size = r - l + 1;
+        int min = Integer.MAX_VALUE;
+        for(int i = 0; i < 21; i++){
+            if((size & (1 << i)) != 0){
+                min = Math.min(min, f1[i][l]);
+                l += (1 << i);
+            }
+        }
+        return min;
+    }
+
+    public int max(int l, int r){
+        int size = r - l + 1;
+        int max = Integer.MIN_VALUE;
+        for(int i = 0; i < 21; i++){
+            if((size & (1 << i)) != 0){
+                max = Math.max(max, f2[i][l]);
+                l += (1 << i);
+            }
+        }
+        return max;
+    }
+}
