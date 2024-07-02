@@ -32,23 +32,24 @@ The last four operations won't be called when stack is empty.
 class MaxStack {
 
     /** initialize your data structure here. */
-    PriorityQueue<int[]>stack=new PriorityQueue<>((a,b)->{
-        return b[0]-a[0];
+    PriorityQueue<int[]> stack = new PriorityQueue<>((a,b)->{
+        return b[0] - a[0];
     });
     
-    PriorityQueue<int[]>maxheap=new PriorityQueue<>((a,b)->{
-        if(a[1]==b[1])return b[0]-a[0];
-        return b[1]-a[1];
+    PriorityQueue<int[]> maxheap = new PriorityQueue<>((a,b)->{
+        if(a[1] == b[1]) return b[0] - a[0];
+        return b[1] - a[1];
     });
-    int t=0;
-    Set<Integer>set=new HashSet<>();
+    
+    int t = 0;
+    Set<Integer> set = new HashSet<>();
     
     public MaxStack() {
         
     }
     
     public void push(int x) {
-        int A[]=new int[]{t,x};
+        int A[] = new int[]{t, x};
         stack.add(A);
         maxheap.add(A);
         set.add(t);
@@ -56,32 +57,31 @@ class MaxStack {
     }
     
     public int pop() {
-        while(stack.size()>0&&!set.contains(stack.peek()[0]))stack.poll();
-        int top[]=stack.poll();
+        while(stack.size() > 0 && !set.contains(stack.peek()[0])) stack.poll();
+        int top[] = stack.poll();
         set.remove(top[0]);
         return top[1];
     }
     
     public int top() {
-        while(stack.size()>0&&!set.contains(stack.peek()[0]))stack.poll();
-        int top[]=stack.peek();
+        while(stack.size() > 0 && !set.contains(stack.peek()[0])) stack.poll();
+        int top[] = stack.peek();
         return top[1];
     }
     
     public int peekMax() {
-        while(maxheap.size()>0&&!set.contains(maxheap.peek()[0]))maxheap.poll();
-        int top[]=maxheap.peek();
+        while(maxheap.size() > 0 && !set.contains(maxheap.peek()[0])) maxheap.poll();
+        int top[] = maxheap.peek();
         return top[1];
     }
     
     public int popMax() {
-        while(maxheap.size()>0&&!set.contains(maxheap.peek()[0]))maxheap.poll();
-        int top[]=maxheap.poll();
+        while(maxheap.size() > 0 && !set.contains(maxheap.peek()[0])) maxheap.poll();
+        int top[] = maxheap.poll();
         set.remove(top[0]);
         return top[1];
     }
 }
-
 /**
  * Your MaxStack object will be instantiated and called as such:
  * MaxStack obj = new MaxStack();
